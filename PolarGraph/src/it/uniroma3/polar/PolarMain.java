@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 import it.uniroma3.dia.polar.controller.PolarController;
+import it.uniroma3.dia.polar.persistance.FacebookRepository;
 
 public class PolarMain {
 	public static void main(String[] args) {

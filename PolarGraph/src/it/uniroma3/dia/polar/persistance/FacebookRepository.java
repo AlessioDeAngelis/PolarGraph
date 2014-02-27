@@ -13,8 +13,10 @@ import com.restfb.Connection;
 import com.restfb.DefaultFacebookClient;
 import com.restfb.FacebookClient;
 import com.restfb.types.CategorizedFacebookType;
+import com.restfb.types.NamedFacebookType;
 import com.restfb.types.Photo;
 import com.restfb.types.Post;
+import com.restfb.types.Post.Likes;
 import com.restfb.types.User;
 
 public class FacebookRepository {
@@ -91,9 +93,14 @@ public class FacebookRepository {
 		return friends;
 	}
 
-	public List<PolarPlace> retrieveVisitedPlacesByUserId(String fbUserId) {
+	//TODO: find a common method for retrieving to avoid duplicate code
+	/**
+	 * @param fbUserId is the facebook id of the user that wants to be retrieved
+	 * @param source is the facebook path of the resources in the graph api , for example /feed, /posts
+	 * */
+	public List<PolarPlace> retrieveVisitedPlacesByUserId(String fbUserId, String source) {
 		List<PolarPlace> visitedPlaces = new ArrayList<PolarPlace>();
-		Connection<Post> userFeed = facebookClient.fetchConnection(fbUserId + "/feed", Post.class);
+		Connection<Post> userFeed = facebookClient.fetchConnection(fbUserId + source, Post.class);
 		/*
 		 * Firstly get all the feed post
 		 */
@@ -127,11 +134,21 @@ public class FacebookRepository {
 						latitude = post.getPlace().getLocation().getLatitude();
 						longitude = post.getPlace().getLocation().getLongitude();
 					}
+
 					Location location = new Location(locationStreet, locationCity, locationCountry, latitude, longitude);
 
 					visitedPlace.setId(placeId);
 					visitedPlace.setName(placeName);
 					visitedPlace.setLocation(location);
+					
+					//add the likes 
+					if (post.getLikes() != null) {
+						Likes likes = post.getLikes();
+						for (NamedFacebookType type : likes.getData()) {
+							visitedPlace.addLikedBy(type.getId());
+						}
+					}
+					
 					// We fetch the page of the place from facebook because we
 					// need the categories
 					FBPage mypage = facebookClient.fetchObject(placeId, FBPage.class);
@@ -147,6 +164,7 @@ public class FacebookRepository {
 					}
 					visitedPlaces.add(visitedPlace);
 					System.out.println(visitedPlace);
+
 				}
 			}
 		}
@@ -194,6 +212,15 @@ public class FacebookRepository {
 					visitedPlace.setId(placeId);
 					visitedPlace.setName(placeName);
 					visitedPlace.setLocation(location);
+					
+					//add the likes 
+					if (photo.getLikes() != null) {
+						List<NamedFacebookType> likes = photo.getLikes();
+						for (NamedFacebookType type : likes) {
+							visitedPlace.addLikedBy(type.getId());
+						}
+					}
+					
 					// We fetch the page of the place from facebook because we
 					// need the categories
 					FBPage mypage = facebookClient.fetchObject(placeId, FBPage.class);
@@ -211,6 +238,12 @@ public class FacebookRepository {
 					}
 					visitedPlaces.add(visitedPlace);
 					System.out.println(visitedPlace);
+					if (photo.getLikes() != null) {
+						List<NamedFacebookType> likes = photo.getLikes();
+						for (NamedFacebookType type : likes) {
+							System.out.println(type);
+						}
+					}
 				}
 			}
 		}

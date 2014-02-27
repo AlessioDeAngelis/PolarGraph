@@ -38,10 +38,9 @@
 			<artifactId>junit</artifactId>
 			<version>4.11</version>
 		</dependency>
-<!-- 		Remember that this is the enterprise edition, you may need to use community one -->
 		<dependency>
 			<groupId>org.neo4j</groupId>
-			<artifactId>neo4j-enterprise</artifactId>
+			<artifactId>neo4j-community</artifactId>
 			<version>2.0.0</version>
 		</dependency>
 	</dependencies>

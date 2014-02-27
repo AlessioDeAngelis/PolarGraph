@@ -198,13 +198,16 @@ public class CypherRepository extends Repository {
 							+ categoryName + "'}) \n";
 					// Persist the relationship between the place and its
 					// categories
-//					query += partialQuery;
+					// query += partialQuery;
 					this.engine.execute(partialQuery);
 					System.out.println(partialQuery);
-//					partialQuery += "match (place),(category) where place.id='" + placeId + "' AND category.id='"+categoryId +"' with (place) , (category) MERGE (place)-[:HAS_CATEGORY]->(category) \n";
+					// partialQuery +=
+					// "match (place),(category) where place.id='" + placeId +
+					// "' AND category.id='"+categoryId
+					// +"' with (place) , (category) MERGE (place)-[:HAS_CATEGORY]->(category) \n";
 					this.engine.execute(partialQuery);
 					System.out.println(partialQuery);
-					
+
 				}
 				Location location = place.getLocation();
 				if (location != null) {
@@ -215,7 +218,8 @@ public class CypherRepository extends Repository {
 					String locationCountry = StringEscaper.convert(location.getCountry());
 					double latitude = location.getLatitude();
 					double longitude = location.getLongitude();
-					String partialQuery = "match (place:Place) where place.id='" + placeId + "' with place MERGE (location: Location {street: '" + locationStreet + "', city: '"
+					String partialQuery = "match (place:Place) where place.id='" + placeId
+							+ "' with place MERGE (location: Location {street: '" + locationStreet + "', city: '"
 							+ locationCity + "', country: '" + locationCountry + "', latitude:' " + latitude
 							+ "',longitude:'" + longitude + "'}) MERGE (place)-[:LOCATED_IN]->(location) \n";
 					// String partialQuery =
@@ -224,10 +228,10 @@ public class CypherRepository extends Repository {
 					// + "', country: '" + locationCountry + "', latitude:' " +
 					// latitude + "',longitude:'" + longitude
 					// + "'}) \n";
-//					query += partialQuery;
+					// query += partialQuery;
 					System.out.println(partialQuery);
 					engine.execute(partialQuery);
-//					query += partialQuery;
+					// query += partialQuery;
 				}
 				this.engine.execute(query);
 
@@ -238,7 +242,7 @@ public class CypherRepository extends Repository {
 		}
 
 	}
-	
+
 	public void insertPlaceNode(PolarPlace place) {
 		if (place != null) {
 			Transaction tx = graphDb.beginTx();
@@ -288,11 +292,36 @@ public class CypherRepository extends Repository {
 					query += partialQuery;
 					System.out.println(partialQuery);
 				}
+
 				this.engine.execute(query);
 
 				tx.success();
 			} finally {
 				tx.close();
+			}
+		}
+
+	}
+
+	/***
+	 * According to the likedBy attribute it will create nodes and add likes
+	 * relationship
+	 */
+	public void mergePersonLikesPlaceRelationiship(PolarPlace place) {
+		if (place.getLikedBy() != null && place.getLikedBy().size() > 0) {
+			Transaction tx = graphDb.beginTx();
+			try {
+				for (String personId : place.getLikedBy()) {
+					String query = "MERGE (:Person{id:'" + personId +"'})";
+					System.out.println(query);
+					this.engine.execute(query);
+				}
+				tx.success();
+			} finally {
+				tx.close();
+			}
+			for (String personId : place.getLikedBy()) {
+				mergeRelationShipBetweenNodes(personId, "LIKES", place.getId());
 			}
 		}
 

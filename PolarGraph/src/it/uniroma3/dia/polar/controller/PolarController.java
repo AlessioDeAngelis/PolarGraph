@@ -71,17 +71,20 @@ public class PolarController {
 		for (PolarPlace place : visitedPlaces) {
 			this.cypherRepository.insertPlaceNode(place);
 			this.cypherRepository.mergeRelationShipBetweenNodes(fbUserId, "VISITED", place.getId());
+			this.cypherRepository.mergePersonLikesPlaceRelationiship(place);
 		}
 		this.cypherRepository.stopDB();
 	}
 
 
 	public void readVisitedPlacesFromFacebookAndStore(String fbUserId) {
-		List<PolarPlace> visitedPlaces = this.facebookRepository.retrieveVisitedPlacesByUserId(fbUserId);
+		List<PolarPlace> visitedPlaces = this.facebookRepository.retrieveVisitedPlacesByUserId(fbUserId,"/feed");
 		this.cypherRepository.startDB();
 		for (PolarPlace place : visitedPlaces) {
 			this.cypherRepository.insertPlaceNode(place);
 			this.cypherRepository.mergeRelationShipBetweenNodes(fbUserId, "VISITED", place.getId());
+			this.cypherRepository.mergePersonLikesPlaceRelationiship(place);
+
 		}
 		this.cypherRepository.stopDB();
 	}
