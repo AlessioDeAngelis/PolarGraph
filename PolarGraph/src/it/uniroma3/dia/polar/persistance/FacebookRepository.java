@@ -9,6 +9,9 @@ import it.uniroma3.dia.polar.graph.model.PolarPlace;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.restfb.Connection;
 import com.restfb.DefaultFacebookClient;
 import com.restfb.FacebookClient;
@@ -20,6 +23,7 @@ import com.restfb.types.Post.Likes;
 import com.restfb.types.User;
 
 public class FacebookRepository {
+	private final Logger logger = LoggerFactory.getLogger(FacebookRepository.class);
 
 	private String accessToken;
 	private FacebookClient facebookClient;
@@ -33,7 +37,7 @@ public class FacebookRepository {
 		Person person = new Person();
 		User user = this.facebookClient.fetchObject(fbUserId, User.class);
 		person = fbUserToPerson(user);
-		System.out.println(person.getId() + " , " + person.getName() + " retrieved from facebook");
+		logger.debug(person.getId() + " , " + person.getName() + " retrieved from facebook");
 		return person;
 	}
 
@@ -87,16 +91,19 @@ public class FacebookRepository {
 			User facebookFriend = facebookClient.fetchObject(friendFacebookId, User.class);
 			Person friend = fbUserToPerson(facebookFriend);
 			friends.add(friend);
-			System.out.println(friend.getId() + " , " + friend.getName() + " retrieved from facebook");
+			logger.debug(friend.getId() + " , " + friend.getName() + " retrieved from facebook");
 		}
 
 		return friends;
 	}
 
-	//TODO: find a common method for retrieving to avoid duplicate code
+	// TODO: find a common method for retrieving to avoid duplicate code
 	/**
-	 * @param fbUserId is the facebook id of the user that wants to be retrieved
-	 * @param source is the facebook path of the resources in the graph api , for example /feed, /posts
+	 * @param fbUserId
+	 *            is the facebook id of the user that wants to be retrieved
+	 * @param source
+	 *            is the facebook path of the resources in the graph api , for
+	 *            example /feed, /posts
 	 * */
 	public List<PolarPlace> retrieveVisitedPlacesByUserId(String fbUserId, String source) {
 		List<PolarPlace> visitedPlaces = new ArrayList<PolarPlace>();
@@ -140,15 +147,15 @@ public class FacebookRepository {
 					visitedPlace.setId(placeId);
 					visitedPlace.setName(placeName);
 					visitedPlace.setLocation(location);
-					
-					//add the likes 
+
+					// add the likes
 					if (post.getLikes() != null) {
 						Likes likes = post.getLikes();
 						for (NamedFacebookType type : likes.getData()) {
 							visitedPlace.addLikedBy(type.getId());
 						}
 					}
-					
+
 					// We fetch the page of the place from facebook because we
 					// need the categories
 					FBPage mypage = facebookClient.fetchObject(placeId, FBPage.class);
@@ -163,7 +170,7 @@ public class FacebookRepository {
 						}
 					}
 					visitedPlaces.add(visitedPlace);
-					System.out.println(visitedPlace);
+					logger.debug(visitedPlace.toString());
 
 				}
 			}
@@ -212,15 +219,15 @@ public class FacebookRepository {
 					visitedPlace.setId(placeId);
 					visitedPlace.setName(placeName);
 					visitedPlace.setLocation(location);
-					
-					//add the likes 
+
+					// add the likes
 					if (photo.getLikes() != null) {
 						List<NamedFacebookType> likes = photo.getLikes();
 						for (NamedFacebookType type : likes) {
 							visitedPlace.addLikedBy(type.getId());
 						}
 					}
-					
+
 					// We fetch the page of the place from facebook because we
 					// need the categories
 					FBPage mypage = facebookClient.fetchObject(placeId, FBPage.class);
@@ -237,11 +244,11 @@ public class FacebookRepository {
 						}
 					}
 					visitedPlaces.add(visitedPlace);
-					System.out.println(visitedPlace);
+					logger.debug(visitedPlace.toString());
 					if (photo.getLikes() != null) {
 						List<NamedFacebookType> likes = photo.getLikes();
 						for (NamedFacebookType type : likes) {
-							System.out.println(type);
+							logger.debug(type.toString());
 						}
 					}
 				}

@@ -25,8 +25,13 @@ import org.neo4j.graphdb.Transaction;
 import org.neo4j.graphdb.factory.GraphDatabaseFactory;
 import org.neo4j.graphdb.index.Index;
 import org.neo4j.graphdb.index.ReadableIndex;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class CypherRepository extends Repository {
+	
+    private final Logger logger = LoggerFactory.getLogger(CypherRepository.class);
+
 	private GraphDatabaseService graphDb;
 	private ExecutionEngine engine;
 
@@ -146,10 +151,11 @@ public class CypherRepository extends Repository {
 				}
 				rows += "\n";
 			}
-			for (String s : columns) {
-				System.out.println(s);
-			}
-			System.out.println("Rows " + rows);
+			
+//			for (String s : columns) {
+//				System.out.println(s);
+//			}
+//			System.out.println("Rows " + rows);
 			tx.success();
 		} finally {
 			tx.close();
@@ -189,7 +195,7 @@ public class CypherRepository extends Repository {
 				String placeName = StringEscaper.convert(place.getName());
 				String query = "MERGE (place: Place{id:'" + placeId + "',name:'" + placeName + "'}) ";
 				this.engine.execute(query);
-				System.out.println(query);
+				logger.debug(query);
 				for (Category category : categories) {
 					// Persist the category
 					String categoryId = StringEscaper.convert(category.getId());
@@ -200,13 +206,13 @@ public class CypherRepository extends Repository {
 					// categories
 					// query += partialQuery;
 					this.engine.execute(partialQuery);
-					System.out.println(partialQuery);
+					logger.debug(partialQuery);
 					// partialQuery +=
 					// "match (place),(category) where place.id='" + placeId +
 					// "' AND category.id='"+categoryId
 					// +"' with (place) , (category) MERGE (place)-[:HAS_CATEGORY]->(category) \n";
 					this.engine.execute(partialQuery);
-					System.out.println(partialQuery);
+					logger.debug(partialQuery);
 
 				}
 				Location location = place.getLocation();
@@ -229,7 +235,7 @@ public class CypherRepository extends Repository {
 					// latitude + "',longitude:'" + longitude
 					// + "'}) \n";
 					// query += partialQuery;
-					System.out.println(partialQuery);
+					logger.debug(partialQuery);
 					engine.execute(partialQuery);
 					// query += partialQuery;
 				}
@@ -253,7 +259,7 @@ public class CypherRepository extends Repository {
 				String placeId = StringEscaper.convert(place.getId());
 				String placeName = StringEscaper.convert(place.getName());
 				String query = "MERGE (place: Place{id:'" + placeId + "',name:'" + placeName + "'}) \n";
-				System.out.println(query);
+				logger.debug(query);
 				for (Category category : categories) {
 					// Persist the category
 					String categoryId = StringEscaper.convert(category.getId());
@@ -263,10 +269,10 @@ public class CypherRepository extends Repository {
 					// Persist the relationship between the place and its
 					// categories
 					query += partialQuery;
-					System.out.println(partialQuery);
+					logger.debug(partialQuery);
 					partialQuery = "MERGE (place)-[:HAS_CATEGORY]->(category" + categoryId + ") \n";
 					query += partialQuery;
-					System.out.println(partialQuery);
+					logger.debug(partialQuery);
 				}
 				Location location = place.getLocation();
 				if (location != null) {
@@ -287,10 +293,10 @@ public class CypherRepository extends Repository {
 					// latitude + "',longitude:'" + longitude
 					// + "'}) \n";
 					query += partialQuery;
-					System.out.println(partialQuery);
+					logger.debug(partialQuery);
 					partialQuery = "MERGE (place)-[:LOCATED_IN]->(location) \n";
 					query += partialQuery;
-					System.out.println(partialQuery);
+					logger.debug(partialQuery);
 				}
 
 				this.engine.execute(query);
@@ -313,7 +319,7 @@ public class CypherRepository extends Repository {
 			try {
 				for (String personId : place.getLikedBy()) {
 					String query = "MERGE (:Person{id:'" + personId +"'})";
-					System.out.println(query);
+					logger.debug(query);
 					this.engine.execute(query);
 				}
 				tx.success();
@@ -337,7 +343,7 @@ public class CypherRepository extends Repository {
 
 			String query = "MATCH (s),(o) WHERE s.id='" + subjectId + "' AND o.id='" + objectId
 					+ "' WITH s,o MERGE (s)-[:" + relationship + "]->(o);";
-			System.out.println(query);
+			logger.debug(query);
 			this.engine.execute(query);
 			tx.success();
 		} finally {

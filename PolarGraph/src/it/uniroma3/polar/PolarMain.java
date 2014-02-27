@@ -5,10 +5,17 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import it.uniroma3.dia.polar.controller.PolarController;
+import it.uniroma3.dia.polar.persistance.CypherRepository;
 import it.uniroma3.dia.polar.persistance.FacebookRepository;
 
 public class PolarMain {
+	
+    private final static Logger logger = LoggerFactory.getLogger(PolarMain.class);
+	
 	public static void main(String[] args) {
 		Properties props = loadProperties();
 		String accessToken = props.getProperty("access_token");
@@ -18,7 +25,7 @@ public class PolarMain {
 		String fbUserId = props.getProperty("fb_user_id");
 		PolarController polarController = new PolarController(accessToken, dbPath);
 		long start = System.currentTimeMillis();
-		System.out.println("Start");
+		logger.info("Start");
 //		polarController.readUserFromFacebookAndStore(fbUserId);
 		polarController.readVisitedPlacesFromFacebookAndStore(fbUserId);
 //		polarController.readFriendsFromFacebookAndStore(fbUserId);
@@ -27,7 +34,7 @@ public class PolarMain {
 		polarController.readPlacesTaggedInPhotoAndStore(fbUserId);
 //		polarController.readPlacesTaggedInPhotoByFriendsAndStore(fbUserId);
 
-		System.out.println("End in " + (System.currentTimeMillis()-start) + " msec");
+		logger.info("End in " + (System.currentTimeMillis()-start) + " msec");
 	}
 	
 	public static Properties loadProperties(){
