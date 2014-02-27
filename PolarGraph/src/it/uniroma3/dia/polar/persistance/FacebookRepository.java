@@ -12,6 +12,8 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.google.inject.Inject;
+import com.google.inject.name.Named;
 import com.restfb.Connection;
 import com.restfb.DefaultFacebookClient;
 import com.restfb.FacebookClient;
@@ -28,7 +30,8 @@ public class FacebookRepository {
 	private String accessToken;
 	private FacebookClient facebookClient;
 
-	public FacebookRepository(String accessToken) {
+	@Inject
+	public FacebookRepository(@Named("access_token") String accessToken) {
 		this.accessToken = accessToken;
 		this.facebookClient = new DefaultFacebookClient(accessToken);
 	}

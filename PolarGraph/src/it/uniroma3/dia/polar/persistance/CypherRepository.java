@@ -4,13 +4,8 @@ import it.uniroma3.dia.polar.graph.model.Category;
 import it.uniroma3.dia.polar.graph.model.Location;
 import it.uniroma3.dia.polar.graph.model.Person;
 import it.uniroma3.dia.polar.graph.model.PolarPlace;
-import it.uniroma3.dia.polar.graph.model.RelTypes;
 import it.uniroma3.dia.polar.utils.StringEscaper;
 
-import java.io.BufferedWriter;
-import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -20,13 +15,14 @@ import org.neo4j.cypher.javacompat.ExecutionEngine;
 import org.neo4j.cypher.javacompat.ExecutionResult;
 import org.neo4j.graphdb.GraphDatabaseService;
 import org.neo4j.graphdb.Node;
-import org.neo4j.graphdb.Relationship;
 import org.neo4j.graphdb.Transaction;
 import org.neo4j.graphdb.factory.GraphDatabaseFactory;
 import org.neo4j.graphdb.index.Index;
-import org.neo4j.graphdb.index.ReadableIndex;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.google.inject.Inject;
+import com.google.inject.name.Named;
 
 public class CypherRepository extends Repository {
 	
@@ -35,7 +31,8 @@ public class CypherRepository extends Repository {
 	private GraphDatabaseService graphDb;
 	private ExecutionEngine engine;
 
-	public CypherRepository(String dbPath) {
+	@Inject
+	public CypherRepository(@Named("db_path") String dbPath) {
 		super(dbPath);
 	}
 
