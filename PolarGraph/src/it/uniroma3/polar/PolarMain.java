@@ -24,10 +24,6 @@ public class PolarMain {
 	
 
 		Properties props = loadProperties();
-		String accessToken = props.getProperty("access_token");
-		String dbPath = "C:\\Users\\Alessio\\Documents\\Neo4j\\polar.graphdb";
-		dbPath = props.getProperty("db_path");
-
 		String fbUserId = props.getProperty("fb_user_id");
 		
 		PolarController polarController = injector.getInstance(PolarController.class);
