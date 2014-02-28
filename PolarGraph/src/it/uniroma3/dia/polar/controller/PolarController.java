@@ -7,10 +7,12 @@ import it.uniroma3.dia.polar.persistance.FacebookRepository;
 
 import java.util.List;
 
+import com.google.inject.Inject;
+
 public class PolarController {
 	// TODO: don't hardcode string parameters!!!
-	private FacebookRepository facebookRepository;
-	private CypherRepository cypherRepository;
+	private final FacebookRepository facebookRepository;
+	private final CypherRepository cypherRepository;
 	private final String ACCESS_TOKEN = "";
 	private final String DB_PATH = "";
 	private Person currentPerson;
@@ -21,9 +23,16 @@ public class PolarController {
 		this.currentPerson = new Person();
 	}
 
-	public PolarController(String accessToken, String dbPath) {
+	public PolarController(final String accessToken, final String dbPath) {
 		this.facebookRepository = new FacebookRepository(accessToken);
 		this.cypherRepository = new CypherRepository(dbPath);
+		this.currentPerson = new Person();
+	}
+	
+	@Inject
+	public PolarController(final FacebookRepository facebookRepository, final CypherRepository cypherRepository, final String accessToken, final String dbPath) {
+		this.facebookRepository = facebookRepository;
+		this.cypherRepository = cypherRepository;
 		this.currentPerson = new Person();
 	}
 
@@ -54,7 +63,7 @@ public class PolarController {
 			this.readVisitedPlacesFromFacebookAndStore(friendId);
 		}
 	}
-	
+
 	public void readPlacesTaggedInPhotoByFriendsAndStore(String currentFbUserId) {
 		// read the facebook friend ids only if you didn't do it already
 		List<String> friendsId = this.facebookRepository.retrieveFriendsId(currentFbUserId);
@@ -64,24 +73,26 @@ public class PolarController {
 			this.readPlacesTaggedInPhotoAndStore(friendId);
 		}
 	}
-	
+
 	public void readPlacesTaggedInPhotoAndStore(String fbUserId) {
 		List<PolarPlace> visitedPlaces = this.facebookRepository.retrieveVisitedPlacesPhotoTaggedByUserId(fbUserId);
 		this.cypherRepository.startDB();
 		for (PolarPlace place : visitedPlaces) {
 			this.cypherRepository.insertPlaceNode(place);
 			this.cypherRepository.mergeRelationShipBetweenNodes(fbUserId, "VISITED", place.getId());
+			this.cypherRepository.mergePersonLikesPlaceRelationiship(place);
 		}
 		this.cypherRepository.stopDB();
 	}
 
-
 	public void readVisitedPlacesFromFacebookAndStore(String fbUserId) {
-		List<PolarPlace> visitedPlaces = this.facebookRepository.retrieveVisitedPlacesByUserId(fbUserId);
+		List<PolarPlace> visitedPlaces = this.facebookRepository.retrieveVisitedPlacesByUserId(fbUserId, "/feed");
 		this.cypherRepository.startDB();
 		for (PolarPlace place : visitedPlaces) {
 			this.cypherRepository.insertPlaceNode(place);
 			this.cypherRepository.mergeRelationShipBetweenNodes(fbUserId, "VISITED", place.getId());
+			this.cypherRepository.mergePersonLikesPlaceRelationiship(place);
+
 		}
 		this.cypherRepository.stopDB();
 	}

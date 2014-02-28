@@ -2,6 +2,7 @@ package it.uniroma3.dia.polar.graph.model;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 public class PolarPlace {
 	/**
@@ -16,7 +17,15 @@ public class PolarPlace {
 	private Location location;
 
 	private List<Category> categories;
+	/**
+	 * The likes count given by all the community
+	 * */
 	private long likesCount;
+	/**
+	 * The id of the person that like the place
+	 * The direction is "likedBy" and not "likes" because of the way how we retrieve data from facebook
+	 * */
+	private List<String> likedBy;
 
 	public PolarPlace() {
 		super();
@@ -25,15 +34,17 @@ public class PolarPlace {
 		this.likesCount = 0;
 		this.location = new Location();
 		this.categories = new ArrayList<Category>();
+		this.likedBy = new ArrayList<String>();
 	}
 
-	public PolarPlace(String name, String id, Location location, List<Category> categories,long likesCount) {
+	public PolarPlace(String name, String id, Location location, List<Category> categories,long likesCount, List<String> likedBy) {
 		super();
 		this.name = name;
 		this.id = id;
 		this.location = location;
 		this.categories = categories;
 		this.likesCount = 0;
+		this.likedBy = likedBy;
 	}
 
 	public String getName() {
@@ -80,10 +91,22 @@ public class PolarPlace {
 		this.likesCount = likesCount;
 	}
 
+	public List<String> getLikedBy() {
+		return likedBy;
+	}
+
+	public void setLikedBy(List<String> likedBy) {
+		this.likedBy = likedBy;
+	}
+	
+	public void addLikedBy(String personThatLikesIt){
+		this.likedBy.add(personThatLikesIt);
+	}
+
 	@Override
 	public String toString() {
 		return "PolarPlace [name=" + name + ", id=" + id + ", location=" + location + ", categories=" + categories
-				+ ", likesCount=" + likesCount + "]";
+				+ ", likesCount=" + likesCount + ", likedBy=" + likedBy + "]";
 	}
 
 	@Override
@@ -92,6 +115,7 @@ public class PolarPlace {
 		int result = 1;
 		result = prime * result + ((categories == null) ? 0 : categories.hashCode());
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		result = prime * result + ((likedBy == null) ? 0 : likedBy.hashCode());
 		result = prime * result + (int) (likesCount ^ (likesCount >>> 32));
 		result = prime * result + ((location == null) ? 0 : location.hashCode());
 		result = prime * result + ((name == null) ? 0 : name.hashCode());
@@ -116,6 +140,11 @@ public class PolarPlace {
 			if (other.id != null)
 				return false;
 		} else if (!id.equals(other.id))
+			return false;
+		if (likedBy == null) {
+			if (other.likedBy != null)
+				return false;
+		} else if (!likedBy.equals(other.likedBy))
 			return false;
 		if (likesCount != other.likesCount)
 			return false;

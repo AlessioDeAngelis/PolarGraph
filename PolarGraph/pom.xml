@@ -27,22 +27,62 @@
 		</plugins>
 	</build>
 	<dependencies>
+		<!-- =================== -->
+		<!-- JUNIT DIPENDENCIES -->
+		<!-- =================== -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+		</dependency>
+
+		<!-- =================== -->
+		<!-- Neo4J DIPENDENCIES -->
+		<!-- =================== -->
+		<dependency>
+			<groupId>org.neo4j</groupId>
+			<artifactId>neo4j-community</artifactId>
+			<version>2.0.0</version>
+		</dependency>
+
+		<!-- =================== -->
+		<!-- LOGGER DIPENDENCIES -->
+		<!-- =================== -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.6</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.6</version>
+		</dependency>
+
+		<!-- =================== -->
+		<!-- RESTFB DIPENDENCIES -->
+		<!-- =================== -->
 
 		<dependency>
 			<groupId>com.restfb</groupId>
 			<artifactId>restfb</artifactId>
 			<version>1.6.12</version>
 		</dependency>
+		
+		<!-- =================== -->
+		<!-- GUICE DIPENDENCIES -->
+		<!-- =================== -->
 		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.11</version>
-		</dependency>
-<!-- 		Remember that this is the enterprise edition, you may need to use community one -->
-		<dependency>
-			<groupId>org.neo4j</groupId>
-			<artifactId>neo4j-enterprise</artifactId>
-			<version>2.0.0</version>
+			<groupId>com.google.inject</groupId>
+			<artifactId>guice</artifactId>
+			<version>3.0</version>
 		</dependency>
 	</dependencies>
+
+
 </project>
