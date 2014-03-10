@@ -25,12 +25,16 @@ import com.google.inject.Inject;
 import com.google.inject.name.Named;
 
 public class CypherRepository extends Repository {
-	
-    private final Logger logger = LoggerFactory.getLogger(CypherRepository.class);
+
+	private final Logger logger = LoggerFactory.getLogger(CypherRepository.class);
 
 	private GraphDatabaseService graphDb;
 	private ExecutionEngine engine;
 
+	/**
+	 * Named is for the injection of parameters from a properties file. Look at
+	 * guice documentation for more info
+	 * */
 	@Inject
 	public CypherRepository(@Named("db_path") String dbPath) {
 		super(dbPath);
@@ -148,11 +152,11 @@ public class CypherRepository extends Repository {
 				}
 				rows += "\n";
 			}
-			
-//			for (String s : columns) {
-//				System.out.println(s);
-//			}
-//			System.out.println("Rows " + rows);
+
+			// for (String s : columns) {
+			// System.out.println(s);
+			// }
+			// System.out.println("Rows " + rows);
 			tx.success();
 		} finally {
 			tx.close();
@@ -181,6 +185,7 @@ public class CypherRepository extends Repository {
 
 	}
 
+	@Deprecated
 	public void insertPlaceNode4(PolarPlace place) {
 		if (place != null) {
 			Transaction tx = graphDb.beginTx();
@@ -255,7 +260,8 @@ public class CypherRepository extends Repository {
 				List<Category> categories = place.getCategories();
 				String placeId = StringEscaper.convert(place.getId());
 				String placeName = StringEscaper.convert(place.getName());
-				String query = "MERGE (place: Place{id:'" + placeId + "',name:'" + placeName + "'}) \n";
+				String uri = StringEscaper.convert(place.getUri());
+				String query = "MERGE (place: Place{id:'" + placeId + "',name:'" + placeName + "', uri:'" + uri +"'}) \n";
 				logger.debug(query);
 				for (Category category : categories) {
 					// Persist the category
@@ -315,7 +321,7 @@ public class CypherRepository extends Repository {
 			Transaction tx = graphDb.beginTx();
 			try {
 				for (String personId : place.getLikedBy()) {
-					String query = "MERGE (:Person{id:'" + personId +"'})";
+					String query = "MERGE (:Person{id:'" + personId + "'})";
 					logger.debug(query);
 					this.engine.execute(query);
 				}
@@ -371,4 +377,56 @@ public class CypherRepository extends Repository {
 
 	}
 
+	/**
+	 * This method finds all the nodes of the given type
+	 * **/
+	public void findAllNodesByType(String nodeType) {
+		Transaction tx = graphDb.beginTx();
+		try {
+
+			String query = "MATCH (n:" + nodeType + ") return distinct n";
+			logger.debug(query);
+			ExecutionResult result = this.engine.execute(query);
+			logger.info(result.dumpToString());
+			tx.success();
+		} finally {
+			tx.close();
+		}
+	}
+
+	
+	/**
+	 * This query will return all the places that the person visited together with the
+	 * number of friends that also went there
+	 * */
+	public void countFriendsThatVisitedSimilarPlaces(String personId) {
+		Transaction tx = graphDb.beginTx();
+		try {
+			Map<String, Object> params = new HashMap<String, Object>();
+			params.put( "personId", personId );
+			String query = "MATCH (me)-[:VISITED]->(place), (friend)-[:VISITED]->(place) WHERE me.id = {personId} "
+					+ " RETURN place, count(friend) as visitors ORDER BY  visitors DESC";
+			logger.debug(query);
+			ExecutionResult result = this.engine.execute(query,params);
+			logger.info(result.dumpToString());
+			tx.success();
+		} finally {
+			tx.close();
+		}
+	}
+	
+	public void queryLike(String personId) {
+		Transaction tx = graphDb.beginTx();
+		try {
+			Map<String, Object> params = new HashMap<String, Object>();
+			params.put( "personId", personId );
+			String query = "MATCH (me)-[r:LIKES]->(place) return me,r,place ";
+			logger.debug(query);
+			ExecutionResult result = this.engine.execute(query,params);
+			logger.info(result.dumpToString());
+			tx.success();
+		} finally {
+			tx.close();
+		}
+	}
 }

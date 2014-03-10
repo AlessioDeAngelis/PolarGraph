@@ -22,22 +22,30 @@ public class PolarPlace {
 	 * */
 	private long likesCount;
 	/**
-	 * The id of the person that like the place
-	 * The direction is "likedBy" and not "likes" because of the way how we retrieve data from facebook
+	 * The id of the person that like the place The direction is "likedBy" and
+	 * not "likes" because of the way how we retrieve data from facebook
 	 * */
 	private List<String> likedBy;
+
+	/**
+	 * The dbpedia uri of the place. Not all the places have an uri, only those
+	 * that are recognized as entities in dbpedia
+	 * */
+	private String uri;
 
 	public PolarPlace() {
 		super();
 		this.name = "";
 		this.id = "";
+		this.uri = "";
 		this.likesCount = 0;
 		this.location = new Location();
 		this.categories = new ArrayList<Category>();
 		this.likedBy = new ArrayList<String>();
 	}
 
-	public PolarPlace(String name, String id, Location location, List<Category> categories,long likesCount, List<String> likedBy) {
+	public PolarPlace(String name, String id, Location location, List<Category> categories, long likesCount,
+			List<String> likedBy, String uri) {
 		super();
 		this.name = name;
 		this.id = id;
@@ -45,6 +53,7 @@ public class PolarPlace {
 		this.categories = categories;
 		this.likesCount = 0;
 		this.likedBy = likedBy;
+		this.uri = uri;
 	}
 
 	public String getName() {
@@ -98,15 +107,23 @@ public class PolarPlace {
 	public void setLikedBy(List<String> likedBy) {
 		this.likedBy = likedBy;
 	}
-	
-	public void addLikedBy(String personThatLikesIt){
+
+	public void addLikedBy(String personThatLikesIt) {
 		this.likedBy.add(personThatLikesIt);
+	}
+
+	public String getUri() {
+		return uri;
+	}
+
+	public void setUri(String uri) {
+		this.uri = uri;
 	}
 
 	@Override
 	public String toString() {
 		return "PolarPlace [name=" + name + ", id=" + id + ", location=" + location + ", categories=" + categories
-				+ ", likesCount=" + likesCount + ", likedBy=" + likedBy + "]";
+				+ ", likesCount=" + likesCount + ", likedBy=" + likedBy + ", uri=" + uri + "]";
 	}
 
 	@Override
@@ -119,6 +136,7 @@ public class PolarPlace {
 		result = prime * result + (int) (likesCount ^ (likesCount >>> 32));
 		result = prime * result + ((location == null) ? 0 : location.hashCode());
 		result = prime * result + ((name == null) ? 0 : name.hashCode());
+		result = prime * result + ((uri == null) ? 0 : uri.hashCode());
 		return result;
 	}
 
@@ -158,9 +176,12 @@ public class PolarPlace {
 				return false;
 		} else if (!name.equals(other.name))
 			return false;
+		if (uri == null) {
+			if (other.uri != null)
+				return false;
+		} else if (!uri.equals(other.uri))
+			return false;
 		return true;
 	}
-
-	
 
 }
