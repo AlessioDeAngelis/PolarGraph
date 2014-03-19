@@ -102,7 +102,7 @@
 		</dependency>
 
 		<!-- =================== -->
-		<!-- XML DIPENDENCIES    -->
+		<!-- XML DIPENDENCIES -->
 		<!-- =================== -->
 		<dependency>
 			<groupId>org.jdom</groupId>
@@ -115,9 +115,16 @@
 			<version>1.1.6</version>
 		</dependency>
 
+		<!-- =================== -->
+		<!-- RDF DIPENDENCIES -->
+		<!-- =================== -->
+		<dependency>
+			<groupId>org.apache.jena</groupId>
+			<artifactId>apache-jena-libs</artifactId>
+			<type>pom</type>
+			<version>2.11.1</version>
+		</dependency>
+
 
 	</dependencies>
-
-
-
 </project>
