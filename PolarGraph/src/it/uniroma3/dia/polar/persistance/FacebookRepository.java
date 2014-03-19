@@ -75,7 +75,8 @@ public class FacebookRepository {
 		// TODO: something that we could do is retrieving only the ids of the
 		// user and the name and merging the other personal info only if they
 		// are really needed, for example only when the person is a user of
-		// polar
+		// the system
+		this.logger.info("RETRIEVING THE FACEBOOK FRIENDS OF THE USER " + fbUserId);
 		List<Person> friends = new ArrayList<Person>();
 		// we retrieve from facebook of the friends of the current user, given
 		// its id
@@ -96,6 +97,7 @@ public class FacebookRepository {
 			friends.add(friend);
 			logger.debug(friend.getId() + " , " + friend.getName() + " retrieved from facebook");
 		}
+		this.logger.info("END");
 
 		return friends;
 	}
@@ -109,6 +111,8 @@ public class FacebookRepository {
 	 *            example /feed, /posts
 	 * */
 	public List<PolarPlace> retrieveVisitedPlacesByUserId(String fbUserId, String source) {
+		this.logger.info("RETRIEVING THE PLACES VISITED (POSTS) BY THE USER " + fbUserId);
+
 		List<PolarPlace> visitedPlaces = new ArrayList<PolarPlace>();
 		Connection<Post> userFeed = facebookClient.fetchConnection(fbUserId + source, Post.class);
 		/*
@@ -178,10 +182,14 @@ public class FacebookRepository {
 				}
 			}
 		}
+		this.logger.info("END");
+
 		return visitedPlaces;
 	}
 
 	public List<PolarPlace> retrieveVisitedPlacesPhotoTaggedByUserId(String fbUserId) {
+		this.logger.info("RETRIEVING THE PLACES VISITED (PHOTOS) BY THE USER " + fbUserId);
+
 		List<PolarPlace> visitedPlaces = new ArrayList<PolarPlace>();
 		Connection<Photo> userFeed = facebookClient.fetchConnection(fbUserId + "/photos", Photo.class);
 		/*
@@ -257,6 +265,8 @@ public class FacebookRepository {
 				}
 			}
 		}
+		this.logger.info("END");
+
 		return visitedPlaces;
 	}
 }

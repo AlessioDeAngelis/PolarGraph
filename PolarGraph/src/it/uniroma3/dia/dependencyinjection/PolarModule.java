@@ -1,8 +1,13 @@
 package it.uniroma3.dia.dependencyinjection;
 
+import it.uniroma3.dia.polar.controller.PolarController;
+import it.uniroma3.dia.polar.controller.PropertiesController;
+import it.uniroma3.dia.polar.disambiguator.Disambiguator;
+import it.uniroma3.dia.polar.disambiguator.NaiveDisambiguator;
+import it.uniroma3.dia.polar.disambiguator.XMLParser;
 import it.uniroma3.dia.polar.persistance.CypherRepository;
 import it.uniroma3.dia.polar.persistance.FacebookRepository;
-import it.uniroma3.polar.PolarMain;
+import it.uniroma3.dia.polar.rest.RestManager;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -32,8 +37,14 @@ public class PolarModule extends AbstractModule {
 	@Override
 	protected void configure() {
 		bindProperties();
+        bind(PolarController.class).in(Singleton.class);
         bind(FacebookRepository.class).in(Singleton.class);
         bind(CypherRepository.class).in(Singleton.class);
+        bind(RestManager.class).in(Singleton.class);
+        bind(Disambiguator.class).to(NaiveDisambiguator.class).in(Singleton.class);
+        bind(PropertiesController.class).in(Singleton.class);
+        bind(XMLParser.class).in(Singleton.class);
+
 	}
 	
 	private void bindProperties(){
