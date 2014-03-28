@@ -1,0 +1,24 @@
+trova tutte le risorse
+
+PREFIX edm: <http://www.europeana.eu/schemas/edm/>
+PREFIX ore: <http://www.openarchives.org/ore/terms/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/> 
+
+SELECT ?title ?mediaURL ?creator ?source WHERE {
+  ?resource 
+            ore:proxyIn ?proxy ;
+            dc:title ?title ;
+            dc:creator ?creator ;
+            dc:source ?source . 
+  ?proxy edm:isShownBy ?mediaURL . 
+ }
+OFFSET 600
+LIMIT 100
+
+
+SELECT distinct ?o ?title
+WHERE {
+?s rdf:type ore:Proxy; dc:subject ?o ; dc:title ?title.
+  FILTER ( regex ( str(?o), "Rosario") )
+} LIMIT 100
+
