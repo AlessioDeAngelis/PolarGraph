@@ -27,9 +27,9 @@ public class CypherRepositoryJunitTest {
 		alessio.setId("31189");
 		alessio.setName("Alessio");
 		alessio.setSurname("De Angelis");
-		List<Person> friends = new ArrayList<>();
+		List<Person> friends = new ArrayList<Person>();
 		
-		for (int i = 0; i < 100; i++) {
+		for (int i = 0; i < 200; i++) {
 			Person friend = new Person();
 			friend.setId(""+i);
 			friend.setName("Friend #"+i);
