@@ -3,9 +3,9 @@ package it.uniroma3.dia.polar.controller;
 import it.uniroma3.dia.polar.disambiguator.Disambiguator;
 import it.uniroma3.dia.polar.graph.model.Person;
 import it.uniroma3.dia.polar.graph.model.PolarPlace;
+import it.uniroma3.dia.polar.graph.model.RecommendedObject;
 import it.uniroma3.dia.polar.persistance.CypherRepository;
 import it.uniroma3.dia.polar.persistance.FacebookRepository;
-import it.uniroma3.dia.polar.ranker.RankedPlace;
 import it.uniroma3.dia.polar.ranker.Ranker;
 
 import java.util.ArrayList;
@@ -61,12 +61,30 @@ public class PolarController {
 				.retrievePersonByUserId(fbUserId);
 		List<Person> friends = this.facebookRepository
 				.retrieveFriendsByUserId(fbUserId);
-		person.setFriends(friends);
+		// person.setFriends(friends);
 		this.currentPerson = person;
 		this.cypherRepository.startDB();
-//		since neo4j cannot handle to save so many nodes at one time you should split the dataset in smaller ones
-//TODO: splittare il numero di amici in più liste in modo da farlo gestire meglio e salvarli in più volte
-		this.cypherRepository.insertPersonAndFriends(person);
+		// since neo4j cannot handle to save so many nodes at one time you
+		// should split the dataset in smaller ones
+		int numberOfFriendsProcessed = 0;
+		int numberOfNodesToStore = 100;
+		while (numberOfFriendsProcessed < friends.size()) {
+			
+			
+			if (numberOfFriendsProcessed + numberOfNodesToStore < friends
+					.size()) {
+				
+				person.setFriends(friends.subList(numberOfFriendsProcessed,
+						numberOfFriendsProcessed + numberOfNodesToStore));
+				
+			} else {
+				person.setFriends(friends.subList(numberOfFriendsProcessed,
+						friends.size()));
+			}
+			numberOfFriendsProcessed += numberOfNodesToStore;
+			
+			this.cypherRepository.insertPersonAndFriends(person);
+		}
 		this.cypherRepository.stopDB();
 	}
 
@@ -118,28 +136,30 @@ public class PolarController {
 
 	public void recommendPlace(String fbUserId) {
 		// recommend a place with the strategy of the given ranker
-		List<RankedPlace> rankedPlaces = this.ranker.rankPlaces(fbUserId);
-		for (RankedPlace rankedPlace : rankedPlaces) {
-			logger.info("Place Name: " + rankedPlace.getName() + ", uri: " + rankedPlace.getUri() + ", score: " + rankedPlace.getScore() );
+		List<RecommendedObject> rankedPlaces = this.ranker.recommendObject(fbUserId);
+		for (RecommendedObject rankedPlace : rankedPlaces) {
+			logger.info("Place Name: " + rankedPlace.getName() + ", uri: "
+					+ rankedPlace.getUri() + ", score: "
+					+ rankedPlace.getScore());
 		}
 	}
 
 	private List<PolarPlace> disambiguatePlaces(Collection<PolarPlace> places) {
 		List<PolarPlace> placesAfterDisambiguation = new ArrayList<PolarPlace>();
 		for (PolarPlace place : places) {
-			if(place != null){
-			String placeNameBeforeDisambiguation = place.getName();
-			PolarPlace placeAfterDisambiguation = this.disambiguator
-					.disambiguatePlace(place);
-			placesAfterDisambiguation.add(placeAfterDisambiguation);
-			logger.info("Place name before: "
-					+ placeNameBeforeDisambiguation
-					+ ", place name after disambiguation: "
-					+ placeAfterDisambiguation.getName()
-					+ ", uri: "
-					+ (placeAfterDisambiguation.getUri() != null ? placeAfterDisambiguation
-							.getUri() : ""));
-		}
+			if (place != null) {
+				String placeNameBeforeDisambiguation = place.getName();
+				PolarPlace placeAfterDisambiguation = this.disambiguator
+						.disambiguatePlace(place);
+				placesAfterDisambiguation.add(placeAfterDisambiguation);
+				logger.info("Place name before: "
+						+ placeNameBeforeDisambiguation
+						+ ", place name after disambiguation: "
+						+ placeAfterDisambiguation.getName()
+						+ ", uri: "
+						+ (placeAfterDisambiguation.getUri() != null ? placeAfterDisambiguation
+								.getUri() : ""));
+			}
 		}
 		return placesAfterDisambiguation;
 	}

@@ -1,8 +1,9 @@
 package it.uniroma3.dia.polar.ranker;
 
-import it.uniroma3.dia.polar.comparator.RankedPlaceComparatorByScoreDesc;
+import it.uniroma3.dia.polar.comparator.RecommendedObjectComparatorByScoreDesc;
 import it.uniroma3.dia.polar.graph.model.Couple;
 import it.uniroma3.dia.polar.graph.model.PolarPlace;
+import it.uniroma3.dia.polar.graph.model.RecommendedObject;
 import it.uniroma3.dia.polar.persistance.CypherRepository;
 
 import java.util.ArrayList;
@@ -26,7 +27,7 @@ public class NaiveRanker implements Ranker{
 	 * and assigns a score that is calculated by dividing the maximum number of visitors among all places by the actual number of visitors of the current place
 	 * */
 	@Override
-	public List<RankedPlace> rankPlaces(String userId) {
+	public List<RecommendedObject> recommendObject(String userId) {
 		this.repository.startDB();
 		Map<String, Couple<PolarPlace,Long>> place2visitors = this.repository.findPlacesVisitedByTheUserAndCountFriends(userId);
 		this.repository.stopDB();
@@ -41,9 +42,9 @@ public class NaiveRanker implements Ranker{
 		//the normalized score is the number of visitors divided by the maxscore
 		
 		//create the ranked places list
-		List<RankedPlace> rankedPlaces = new ArrayList<RankedPlace>();
+		List<RecommendedObject> rankedPlaces = new ArrayList<RecommendedObject>();
 		for(Couple<PolarPlace, Long> couple : place2visitors.values()){
-			RankedPlace rankedPlace = convertToRankedPlace(couple.getFirst());
+			RecommendedObject rankedPlace = convertToRecommendedObject(couple.getFirst());
 			Long visitors = couple.getSecond();
 			double normalizedScore = visitors.doubleValue() / maxScore;
 			rankedPlace.setScore(normalizedScore);
@@ -51,10 +52,11 @@ public class NaiveRanker implements Ranker{
 		}
 		
 		//sort the list according to the score
-		Collections.sort(rankedPlaces, new RankedPlaceComparatorByScoreDesc());
+		Collections.sort(rankedPlaces, new RecommendedObjectComparatorByScoreDesc());
 		return rankedPlaces;
 	}
 	
+	@Deprecated
 	private RankedPlace convertToRankedPlace(PolarPlace place){
 		RankedPlace rankedPlace = new RankedPlace();
 		rankedPlace.setId(place.getId());
@@ -64,6 +66,15 @@ public class NaiveRanker implements Ranker{
 		rankedPlace.setLikesCount(place.getLikesCount());
 		rankedPlace.setCategories(place.getCategories());
 		rankedPlace.setLikedBy(place.getLikedBy());
+		return rankedPlace;
+	}
+	
+	private RecommendedObject convertToRecommendedObject(PolarPlace place){
+		RecommendedObject rankedPlace = new RecommendedObject();
+		rankedPlace.setId(place.getId());
+		rankedPlace.setName(place.getName());
+		rankedPlace.setUri(place.getUri());
+
 		return rankedPlace;
 	}
 }

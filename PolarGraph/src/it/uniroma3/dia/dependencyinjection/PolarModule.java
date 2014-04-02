@@ -10,6 +10,8 @@ import it.uniroma3.dia.polar.persistance.CypherRepository;
 import it.uniroma3.dia.polar.persistance.FacebookRepository;
 import it.uniroma3.dia.polar.ranker.NaiveRanker;
 import it.uniroma3.dia.polar.ranker.Ranker;
+import it.uniroma3.dia.polar.ranker.SemanticBaseRanker;
+import it.uniroma3.dia.polar.rdf.JenaManager;
 import it.uniroma3.dia.polar.rest.RestManager;
 
 import java.io.FileNotFoundException;
@@ -45,7 +47,9 @@ public class PolarModule extends AbstractModule {
         bind(CypherRepository.class).in(Singleton.class);
         bind(RestManager.class).in(Singleton.class);
         bind(Disambiguator.class).to(NaiveDisambiguator.class).in(Singleton.class);
-        bind(Ranker.class).to(NaiveRanker.class).in(Singleton.class);
+        bind(Ranker.class).to(SemanticBaseRanker.class).in(Singleton.class);
+        bind(NaiveRanker.class).in(Singleton.class);
+        bind(JenaManager.class).in(Singleton.class);
         bind(PropertiesController.class).in(Singleton.class);
         bind(XMLParser.class).in(Singleton.class);
         bind(JSONParser.class).in(Singleton.class);
