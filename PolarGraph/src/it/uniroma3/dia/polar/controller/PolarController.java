@@ -140,7 +140,7 @@ public class PolarController {
 		for (RecommendedObject rankedPlace : rankedPlaces) {
 			logger.info("Place Name: " + rankedPlace.getName() + ", uri: "
 					+ rankedPlace.getUri() + ", score: "
-					+ rankedPlace.getScore());
+					+ rankedPlace.getScore()+", mediaUrl: " + rankedPlace.getMediaUrl());
 		}
 	}
 

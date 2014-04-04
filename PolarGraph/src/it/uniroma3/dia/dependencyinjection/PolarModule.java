@@ -47,7 +47,8 @@ public class PolarModule extends AbstractModule {
         bind(CypherRepository.class).in(Singleton.class);
         bind(RestManager.class).in(Singleton.class);
         bind(Disambiguator.class).to(NaiveDisambiguator.class).in(Singleton.class);
-        bind(Ranker.class).to(SemanticBaseRanker.class).in(Singleton.class);
+//      bind(Ranker.class).to(SemanticBaseRanker.class).in(Singleton.class);
+        bind(Ranker.class).to(NaiveRanker.class).in(Singleton.class);
         bind(NaiveRanker.class).in(Singleton.class);
         bind(JenaManager.class).in(Singleton.class);
         bind(PropertiesController.class).in(Singleton.class);
