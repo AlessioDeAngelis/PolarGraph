@@ -21,7 +21,9 @@ public class PolarMain {
 
 		long start = System.currentTimeMillis();
 		logger.info("Start");
-		storeMyInfo();
+		recommendPlace();
+//		storeMyInfo();
+//		storeMyFriendsInfo();
 //		readAllNodesOfAType("Category");
 		logger.info("End in " + (System.currentTimeMillis() - start) + " msec");
 	}
@@ -41,7 +43,7 @@ public class PolarMain {
 		Injector injector = Guice.createInjector(new PolarModule());
 		CypherRepository repo = injector.getInstance(CypherRepository.class);
 		repo.startDB();
-		repo.findAllNodesByType(nodeType);
+		repo.printAllNodesByType(nodeType);
 		repo.stopDB();
 
 	}
@@ -73,14 +75,35 @@ public class PolarMain {
 
 		Injector injector = Guice.createInjector(new PolarModule());
 		PolarController polarController = injector.getInstance(PolarController.class);
+//
+//		 polarController.readUserFromFacebookAndStore(fbUserId);
+//		polarController.readVisitedPlacesFromFacebookAndStore(fbUserId);
+//		polarController.readPlacesTaggedInPhotoAndStore(fbUserId);
 
-		 polarController.readUserFromFacebookAndStore(fbUserId);
-		polarController.readVisitedPlacesFromFacebookAndStore(fbUserId);
-		// polarController.readFriendsFromFacebookAndStore(fbUserId);
+		 polarController.readFriendsFromFacebookAndStore(fbUserId);
 
-		// polarController.readPlacesVisitedByFriendsAndStore(fbUserId);
-		polarController.readPlacesTaggedInPhotoAndStore(fbUserId);
-		// polarController.readPlacesTaggedInPhotoByFriendsAndStore(fbUserId);
+	}
+	
+	public static void storeMyFriendsInfo() {
+		Properties props = loadProperties();
 
+		String fbUserId = props.getProperty("fb_user_id");
+
+		Injector injector = Guice.createInjector(new PolarModule());
+		PolarController polarController = injector.getInstance(PolarController.class);
+		
+		 polarController.readPlacesVisitedByFriendsAndStore(fbUserId);
+		 polarController.readPlacesTaggedInPhotoByFriendsAndStore(fbUserId);
+
+	}
+	
+	public static void recommendPlace(){
+		Properties props = loadProperties();
+
+		String fbUserId = props.getProperty("fb_user_id");
+
+		Injector injector = Guice.createInjector(new PolarModule());
+		PolarController polarController = injector.getInstance(PolarController.class);
+		polarController.recommendPlace(fbUserId);
 	}
 }

@@ -6,6 +6,14 @@ public class SpottedPlace {
 	private String latitude;
 	private String longitude;
 
+	public SpottedPlace(String name, String uri){
+		super();
+		this.name = name;
+		this.uri = uri;
+		this.latitude = "";
+		this.longitude = "";
+	}
+	
 	public SpottedPlace(String name, String uri, String latitude, String longitude) {
 		super();
 		this.name = name;

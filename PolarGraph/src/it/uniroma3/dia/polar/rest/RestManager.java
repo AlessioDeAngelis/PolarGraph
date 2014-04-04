@@ -12,6 +12,46 @@ public class RestManager {
 	public RestManager(){
 		
 	}
+	
+	public String queryGeonamesByName(String name) {
+		String urlString = "http://api.geonames.org/search?q=" + name + "&username=alessio&type=RDF";
+		String requestMethod = "GET";
+		String requestProperty = "application/xml";
+		String output = this.restOperation(urlString, requestMethod, requestProperty);
+		return output;
+	}
+
+	public String queryGeonamesByLatLng(String lat, String lng) {
+		RestManager restManager = new RestManager();
+		String urlString = "http://api.geonames.org/findNearbyWikipedia?lat=" + lat + "&lng=" + lng
+				+ "&username=alessio&type=RDF";
+		String requestMethod = "GET";
+		String requestProperty = "application/xml";
+		String output = this.restOperation(urlString, requestMethod, requestProperty);
+		return output;
+	}
+
+	public String querySpotlightByName(String name) {
+		RestManager restManager = new RestManager();
+		String urlString = "http://spotlight.sztaki.hu:2222/rest/annotate/?text="
+				+ name.replace(" ", "+").replace(".", "+");
+		String requestMethod = "GET";
+		String requestProperty = "application/xml";
+		String output = this.restOperation(urlString, requestMethod, requestProperty);
+		return output;
+	}
+	
+	public String queryTagMe(String text) {
+		RestManager restManager = new RestManager();		
+		String parsedText = text.replace(" ", "+").replace(".", "+");
+		String urlString = "http://tagme.di.unipi.it/tag?key=gaspare2014&text="+parsedText+"include_categories=true";
+		urlString = "http://tagme.di.unipi.it/tag?key=gaspare2014&include_categories=true&text="+parsedText;
+
+		String requestMethod = "GET";
+		String requestProperty = "application/xml";
+		String output = this.restOperation(urlString, requestMethod, requestProperty);
+		return output;
+	}
 
 	/**
 	 * This method is used to query a rest service and generates its output.

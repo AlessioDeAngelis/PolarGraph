@@ -1,11 +1,13 @@
 package it.uniroma3.dia.polar.persistance;
 
 import it.uniroma3.dia.polar.graph.model.Category;
+import it.uniroma3.dia.polar.graph.model.Couple;
 import it.uniroma3.dia.polar.graph.model.Location;
 import it.uniroma3.dia.polar.graph.model.Person;
 import it.uniroma3.dia.polar.graph.model.PolarPlace;
 import it.uniroma3.dia.polar.utils.StringEscaper;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -26,7 +28,8 @@ import com.google.inject.name.Named;
 
 public class CypherRepository extends Repository {
 
-	private final Logger logger = LoggerFactory.getLogger(CypherRepository.class);
+	private final Logger logger = LoggerFactory
+			.getLogger(CypherRepository.class);
 
 	private GraphDatabaseService graphDb;
 	private ExecutionEngine engine;
@@ -42,7 +45,8 @@ public class CypherRepository extends Repository {
 
 	public void startDB() {
 		// load database
-		this.graphDb = new GraphDatabaseFactory().newEmbeddedDatabase(this.getDbPath());
+		this.graphDb = new GraphDatabaseFactory().newEmbeddedDatabase(this
+				.getDbPath());
 		graphDb.index().getNodeAutoIndexer().setEnabled(true);
 
 		registerShutdownHook(graphDb);
@@ -79,7 +83,8 @@ public class CypherRepository extends Repository {
 			 * parameters via rest
 			 */
 			StringBuilder stringBuilder = new StringBuilder();
-			stringBuilder.append("MERGE (me:Person {id:'" + id + "',name:'" + name + " ',surname:'" + surname + "'})");
+			stringBuilder.append("MERGE (me:Person {id:'" + id + "',name:'"
+					+ name + " ',surname:'" + surname + "'})");
 			stringBuilder.append("\n");
 
 			if (person.getFriends() != null) {
@@ -88,13 +93,17 @@ public class CypherRepository extends Repository {
 					String friendId = friend.getId();
 					String friendName = friend.getName().replaceAll("'", "_");
 					;
-					String friendSurname = friend.getSurname().replaceAll("'", "_");
+					String friendSurname = friend.getSurname().replaceAll("'",
+							"_");
 					;
-					stringBuilder.append("MERGE (friend" + friendId + ":Person {id:'" + friendId + "',name:'"
-							+ friendName + " ',surname:'" + friendSurname + "'})");
+					stringBuilder.append("MERGE (friend" + friendId
+							+ ":Person {id:'" + friendId + "',name:'"
+							+ friendName + " ',surname:'" + friendSurname
+							+ "'})");
 					stringBuilder.append("\n");
 					// then merge the relationship
-					stringBuilder.append("MERGE (me)-[:KNOWS]->(friend" + friendId + ")");
+					stringBuilder.append("MERGE (me)-[:KNOWS]->(friend"
+							+ friendId + ")");
 					stringBuilder.append("\n");
 				}
 
@@ -176,7 +185,8 @@ public class CypherRepository extends Repository {
 			String name = StringEscaper.convert(person.getName());
 			String surname = StringEscaper.convert(person.getSurname());
 			/* Merge doesn't support map parameters but only parameters via rest */
-			String query = "MERGE (node:Person {id:'" + id + "',name:'" + name + " ',surname:'" + surname + "'})";
+			String query = "MERGE (node:Person {id:'" + id + "',name:'" + name
+					+ " ',surname:'" + surname + "'})";
 			this.engine.execute(query);
 			tx.success();
 		} finally {
@@ -195,14 +205,17 @@ public class CypherRepository extends Repository {
 				List<Category> categories = place.getCategories();
 				String placeId = StringEscaper.convert(place.getId());
 				String placeName = StringEscaper.convert(place.getName());
-				String query = "MERGE (place: Place{id:'" + placeId + "',name:'" + placeName + "'}) ";
+				String query = "MERGE (place: Place{id:'" + placeId
+						+ "',name:'" + placeName + "'}) ";
 				this.engine.execute(query);
 				logger.debug(query);
 				for (Category category : categories) {
 					// Persist the category
 					String categoryId = StringEscaper.convert(category.getId());
-					String categoryName = StringEscaper.convert(category.getName());
-					String partialQuery = "MERGE (category" + categoryId + ": Category{id:'" + categoryId + "',name:'"
+					String categoryName = StringEscaper.convert(category
+							.getName());
+					String partialQuery = "MERGE (category" + categoryId
+							+ ": Category{id:'" + categoryId + "',name:'"
 							+ categoryName + "'}) \n";
 					// Persist the relationship between the place and its
 					// categories
@@ -221,15 +234,27 @@ public class CypherRepository extends Repository {
 				if (location != null) {
 
 					// Persist the location
-					String locationStreet = StringEscaper.convert(location.getStreet());
-					String locationCity = StringEscaper.convert(location.getCity());
-					String locationCountry = StringEscaper.convert(location.getCountry());
+					String locationStreet = StringEscaper.convert(location
+							.getStreet());
+					String locationCity = StringEscaper.convert(location
+							.getCity());
+					String locationCountry = StringEscaper.convert(location
+							.getCountry());
 					double latitude = location.getLatitude();
 					double longitude = location.getLongitude();
-					String partialQuery = "match (place:Place) where place.id='" + placeId
-							+ "' with place MERGE (location: Location {street: '" + locationStreet + "', city: '"
-							+ locationCity + "', country: '" + locationCountry + "', latitude:' " + latitude
-							+ "',longitude:'" + longitude + "'}) MERGE (place)-[:LOCATED_IN]->(location) \n";
+					String partialQuery = "match (place:Place) where place.id='"
+							+ placeId
+							+ "' with place MERGE (location: Location {street: '"
+							+ locationStreet
+							+ "', city: '"
+							+ locationCity
+							+ "', country: '"
+							+ locationCountry
+							+ "', latitude:' "
+							+ latitude
+							+ "',longitude:'"
+							+ longitude
+							+ "'}) MERGE (place)-[:LOCATED_IN]->(location) \n";
 					// String partialQuery =
 					// "MERGE (location: Location {city: '" +
 					// locationCity
@@ -261,19 +286,23 @@ public class CypherRepository extends Repository {
 				String placeId = StringEscaper.convert(place.getId());
 				String placeName = StringEscaper.convert(place.getName());
 				String uri = StringEscaper.convert(place.getUri());
-				String query = "MERGE (place: Place{id:'" + placeId + "',name:'" + placeName + "', uri:'" + uri +"'}) \n";
+				String query = "MERGE (place: Place{id:'" + placeId
+						+ "',name:'" + placeName + "', uri:'" + uri + "'}) \n";
 				logger.debug(query);
 				for (Category category : categories) {
 					// Persist the category
 					String categoryId = StringEscaper.convert(category.getId());
-					String categoryName = StringEscaper.convert(category.getName());
-					String partialQuery = "MERGE (category" + categoryId + ": Category{id:'" + categoryId + "',name:'"
+					String categoryName = StringEscaper.convert(category
+							.getName());
+					String partialQuery = "MERGE (category" + categoryId
+							+ ": Category{id:'" + categoryId + "',name:'"
 							+ categoryName + "'}) \n";
 					// Persist the relationship between the place and its
 					// categories
 					query += partialQuery;
 					logger.debug(partialQuery);
-					partialQuery = "MERGE (place)-[:HAS_CATEGORY]->(category" + categoryId + ") \n";
+					partialQuery = "MERGE (place)-[:HAS_CATEGORY]->(category"
+							+ categoryId + ") \n";
 					query += partialQuery;
 					logger.debug(partialQuery);
 				}
@@ -281,14 +310,24 @@ public class CypherRepository extends Repository {
 				if (location != null) {
 
 					// Persist the location
-					String locationStreet = StringEscaper.convert(location.getStreet());
-					String locationCity = StringEscaper.convert(location.getCity());
-					String locationCountry = StringEscaper.convert(location.getCountry());
+					String locationStreet = StringEscaper.convert(location
+							.getStreet());
+					String locationCity = StringEscaper.convert(location
+							.getCity());
+					String locationCountry = StringEscaper.convert(location
+							.getCountry());
 					double latitude = location.getLatitude();
 					double longitude = location.getLongitude();
-					String partialQuery = "MERGE (location: Location {street: '" + locationStreet + "', city: '"
-							+ locationCity + "', country: '" + locationCountry + "', latitude:' " + latitude
-							+ "',longitude:'" + longitude + "'}) \n";
+					String partialQuery = "MERGE (location: Location {street: '"
+							+ locationStreet
+							+ "', city: '"
+							+ locationCity
+							+ "', country: '"
+							+ locationCountry
+							+ "', latitude:' "
+							+ latitude
+							+ "',longitude:'"
+							+ longitude + "'}) \n";
 					// String partialQuery =
 					// "MERGE (location: Location {city: '" +
 					// locationCity
@@ -340,12 +379,14 @@ public class CypherRepository extends Repository {
 	 * Create merging a relationship between a subject node and an object node,
 	 * if it doesn't already exist You need to have the ids of the two nodes
 	 * */
-	public void mergeRelationShipBetweenNodes(String subjectId, String relationship, String objectId) {
+	public void mergeRelationShipBetweenNodes(String subjectId,
+			String relationship, String objectId) {
 		Transaction tx = graphDb.beginTx();
 		try {
 
-			String query = "MATCH (s),(o) WHERE s.id='" + subjectId + "' AND o.id='" + objectId
-					+ "' WITH s,o MERGE (s)-[:" + relationship + "]->(o);";
+			String query = "MATCH (s),(o) WHERE s.id='" + subjectId
+					+ "' AND o.id='" + objectId + "' WITH s,o MERGE (s)-[:"
+					+ relationship + "]->(o);";
 			logger.debug(query);
 			this.engine.execute(query);
 			tx.success();
@@ -380,7 +421,7 @@ public class CypherRepository extends Repository {
 	/**
 	 * This method finds all the nodes of the given type
 	 * **/
-	public void findAllNodesByType(String nodeType) {
+	public void printAllNodesByType(String nodeType) {
 		Transaction tx = graphDb.beginTx();
 		try {
 
@@ -394,35 +435,81 @@ public class CypherRepository extends Repository {
 		}
 	}
 
-	
 	/**
-	 * This query will return all the places that the person visited together with the
-	 * number of friends that also went there
+	 * This query will return all the places that the person visited together
+	 * with the number of friends that also went there
 	 * */
 	public void countFriendsThatVisitedSimilarPlaces(String personId) {
 		Transaction tx = graphDb.beginTx();
 		try {
 			Map<String, Object> params = new HashMap<String, Object>();
-			params.put( "personId", personId );
+			params.put("personId", personId);
 			String query = "MATCH (me)-[:VISITED]->(place), (friend)-[:VISITED]->(place) WHERE me.id = {personId} "
 					+ " RETURN place, count(friend) as visitors ORDER BY  visitors DESC";
 			logger.debug(query);
-			ExecutionResult result = this.engine.execute(query,params);
+			ExecutionResult result = this.engine.execute(query, params);
 			logger.info(result.dumpToString());
 			tx.success();
 		} finally {
 			tx.close();
 		}
 	}
-	
+
+	public Map<String, Couple<PolarPlace, Long>> findPlacesVisitedByTheUserAndCountFriends(
+			String userId) {
+		Transaction tx = graphDb.beginTx();
+		// a map where each element is a couple place, number of friends that
+		// visited it. The key is the id of the place and the value is the couple place-counnt of visitors
+		Map<String, Couple<PolarPlace, Long>> placesCount = new HashMap<String,Couple<PolarPlace, Long>>();
+		try {
+			Map<String, Object> params = new HashMap<String, Object>();
+			params.put("personId", userId);
+
+			String query = "MATCH (me)-[:VISITED]->(place), (place)-[:HAS_CATEGORY]->(category) WHERE me.id = {personId} with place, category match (friend)-[:VISITED]->(place)  "
+					+ " RETURN place, category, count(friend) as visitors ORDER BY  visitors DESC";
+			logger.debug(query);
+			ExecutionResult result = this.engine.execute(query, params);
+			String rows = "";
+			String prevNodeId = ""; //it is used to check if you are changing the place node. In fact there are more rows with the same place node but different categories
+			PolarPlace place = null;
+			for (Map<String, Object> row : result) {
+				Node nodePlace  = (Node)row.get("place");
+				String nodePlaceId = (String) nodePlace.getProperty("id","");
+				String nodePlaceName = (String) nodePlace.getProperty("name","");
+				String nodePlaceUri = (String) nodePlace.getProperty("uri","");
+				if(!prevNodeId.equals(nodePlaceId)){//create a new place node only if the id is different, otherwise the place is the same
+					prevNodeId = nodePlaceId;//update the prev node id value
+					place = new PolarPlace();
+					place.setId(nodePlaceId);
+					place.setUri(nodePlaceUri);
+					place.setName(nodePlaceName);
+				}
+				//add the category. Note that there can be more than one category for each place
+				Node nodeCategory = (Node)row.get("category");
+				String nodeCategoryId = (String) nodeCategory.getProperty("id");
+				String nodeCategoryName = (String) nodeCategory.getProperty("name");
+				if(place!=null){
+					Category category = new Category(nodeCategoryName, nodeCategoryId);
+					place.addCategory(category);
+				}
+				Long visitors = (Long)row.get("visitors");
+				placesCount.put(nodePlaceId, new Couple<PolarPlace, Long>(place, visitors));
+			}
+			tx.success();
+		} finally {
+			tx.close();
+		}
+		return placesCount;
+	}
+
 	public void queryLike(String personId) {
 		Transaction tx = graphDb.beginTx();
 		try {
 			Map<String, Object> params = new HashMap<String, Object>();
-			params.put( "personId", personId );
+			params.put("personId", personId);
 			String query = "MATCH (me)-[r:LIKES]->(place) return me,r,place ";
 			logger.debug(query);
-			ExecutionResult result = this.engine.execute(query,params);
+			ExecutionResult result = this.engine.execute(query, params);
 			logger.info(result.dumpToString());
 			tx.success();
 		} finally {

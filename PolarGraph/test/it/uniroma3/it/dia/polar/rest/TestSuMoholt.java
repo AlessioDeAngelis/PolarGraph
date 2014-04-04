@@ -18,17 +18,18 @@ public class TestSuMoholt {
 	private final static Logger logger = LoggerFactory.getLogger(TestSuMoholt.class);
 
 	public static void main(String[] args) {
-//		logger.info("TESTING THE ACCURACY OF GEONAMES RESULTS");
-//		logger.info("QUERY MOHOLT");
-//		logger.debug(queryGeonamesByName("moholt") + "\n");
-//		logger.info("QUERY MOHOLT stud.by");
-//		logger.info(queryGeonamesByName("moholt stud by" + "\n"));
-//		logger.info("QUERY Moholt, Sor-Trondelag, Norway");
-//		logger.info(queryGeonamesByName("Moholt, Sor-Trondelag, Norway") + "\n");
-//		logger.info("QUERY Moholt Studentby, Trondheim");
-//		logger.info(queryGeonamesByName("Moholt Studentby, Trondheim") + "\n");
-//		logger.info("QUERY Moholt Trondheim!");
-//		logger.info(queryGeonamesByName("Moholt Trondheim"));
+		logger.info("TESTING THE ACCURACY OF GEONAMES RESULTS");
+		logger.info("QUERY MOHOLT");
+		logger.debug(queryGeonamesByName("moholt") + "\n");
+		logger.info("QUERY MOHOLT stud.by");
+		logger.info(queryGeonamesByName("moholt stud by" + "\n"));
+		logger.info("QUERY Moholt, Sor-Trondelag, Norway");
+		logger.info(queryGeonamesByName("Moholt, Sor-Trondelag, Norway") + "\n");
+		logger.info("QUERY Moholt Studentby, Trondheim");
+		logger.info(queryGeonamesByName("Moholt Studentby, Trondheim") + "\n");
+		logger.info("QUERY Moholt Trondheim!");
+		logger.info(queryGeonamesByName("Moholt Trondheim"));
+//		http://spotlight.sztaki.hu:2222/rest/annotate/?text=Moholt+Studentby,+Trondheim
 		
 		logger.info("TESTING THE ACCURACY OF SPOTLIGHT RESULTS");
 		logger.info("QUERY MOHOLT");
@@ -42,14 +43,14 @@ public class TestSuMoholt {
 		logger.info("QUERY Moholt Trondheim!");
 		logger.info(querySpotlightByName("Moholt Trondheim"));
 		
-//		logger.info("TESTING THE ACCURACY OF GEONAMES BY LAT & LNG RESULTS");
-//		logger.info("QUERY MOHOLT stud.by");
-//		logger.info(queryGeonamesByLatLng("63.4115387872","10.4303010494")+"\n");
-//		logger.info(queryGeonamesByLatLng("63.4115125972","10.4300937262")+"\n");
-//		logger.info(queryGeonamesByLatLng("63.4101749","10.4277983")+"\n");
-//		logger.info("QUERY Moholt, Sor-Trondelag, Norway");
-//		logger.info(queryGeonamesByLatLng("63.4","10.4333")+"\n");
-//		logger.info(queryGeonamesByLatLng("63.412691177065","10.43272078882")+"\n");
+		logger.info("TESTING THE ACCURACY OF GEONAMES BY LAT & LNG RESULTS");
+		logger.info("QUERY MOHOLT stud.by");
+		logger.info(queryGeonamesByLatLng("63.4115387872","10.4303010494")+"\n");
+		logger.info(queryGeonamesByLatLng("63.4115125972","10.4300937262")+"\n");
+		logger.info(queryGeonamesByLatLng("63.4101749","10.4277983")+"\n");
+		logger.info("QUERY Moholt, Sor-Trondelag, Norway");
+		logger.info(queryGeonamesByLatLng("63.4","10.4333")+"\n");
+		logger.info(queryGeonamesByLatLng("63.412691177065","10.43272078882")+"\n");
 
 
 
@@ -76,7 +77,9 @@ public class TestSuMoholt {
 	
 	public static String querySpotlightByName(String name){
 		RestManager restManager = new RestManager();
-		String urlString = "http://spotlight.sztaki.hu:2222/rest/annotate/?text=" + name.replace(" ", "+").replace(".", "+");
+//		String urlString = "http://spotlight.sztaki.hu:2222/rest/annotate/?text=" + name.replace(" ", "+").replace(".", "+"); //it stopped working suddenly
+		String urlString = "http://spotlight.dbpedia.org/rest/annotate/?text=" + name.replace(" ", "+").replace(".", "+");
+
 		String requestMethod = "GET";
 		String requestProperty = "application/xml";
 		String output = restManager.restOperation(urlString, requestMethod, requestProperty);
