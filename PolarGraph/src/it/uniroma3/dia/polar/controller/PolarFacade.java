@@ -19,14 +19,14 @@ import org.slf4j.LoggerFactory;
 
 import com.google.inject.Inject;
 
-public class PolarController {
+public class PolarFacade {
 
 	private final Logger logger = LoggerFactory
-			.getLogger(PolarController.class);
+			.getLogger(PolarFacade.class);
 	// TODO: don't hardcode string parameters!!!
 	private final FacebookRepository facebookRepository;
 	private final CypherRepository cypherRepository;
-	private final PropertiesController propertiesController;
+	private final PropertiesManager propertiesController;
 	private final String ACCESS_TOKEN = "";
 	private final String DB_PATH = "";
 	private final Disambiguator disambiguator;
@@ -34,9 +34,9 @@ public class PolarController {
 	private final Ranker ranker;
 
 	@Inject
-	public PolarController(final FacebookRepository facebookRepository,
+	public PolarFacade(final FacebookRepository facebookRepository,
 			final CypherRepository cypherRepository,
-			final PropertiesController propertiesController,
+			final PropertiesManager propertiesController,
 			final Disambiguator disambiguator, final String accessToken,
 			final String dbPath, final Ranker ranker) {
 		this.facebookRepository = facebookRepository;

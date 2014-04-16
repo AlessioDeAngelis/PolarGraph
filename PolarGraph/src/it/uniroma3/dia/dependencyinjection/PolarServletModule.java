@@ -19,6 +19,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
+import javax.servlet.ServletContext;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -26,18 +28,17 @@ import com.google.inject.AbstractModule;
 import com.google.inject.Singleton;
 import com.google.inject.name.Names;
 import com.google.inject.servlet.ServletModule;
-import com.google.inject.util.Providers;
 
 /**
- * To use without servlet
+ * To be used with servlet
  * */
-public class PolarModule extends AbstractModule {
+public class PolarServletModule extends AbstractModule {
 
 	private final static Logger logger = LoggerFactory
-			.getLogger(PolarModule.class);
-
-	public PolarModule() {
-
+			.getLogger(PolarServletModule.class);
+private final ServletContext context;
+	public PolarServletModule(final ServletContext context) {
+		this.context = context;
 	}
 
 	/***
@@ -71,14 +72,13 @@ public class PolarModule extends AbstractModule {
 
 	private void bindProperties() {
 		Properties properties = new Properties();
-		try {
-			String path = "data/polar_graph.properties";
-	
-			properties.load(new FileReader(path));
+		String path = "data/polar_graph.properties";
+		try {	
+			properties.load(new FileReader(context.getRealPath("/")+path));
 			// this will bind the properties to guice
 			Names.bindProperties(binder(), properties);
 		} catch (FileNotFoundException e) {
-			logger.error("The configuration file for the properties can not be found");
+			logger.error("The configuration file for the properties can not be found " + context.getRealPath("/")+path);
 		} catch (IOException e) {
 			logger.error("I/O Exception during loading configuration");
 		}
