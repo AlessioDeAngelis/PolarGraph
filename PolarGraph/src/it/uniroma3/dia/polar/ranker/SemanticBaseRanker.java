@@ -36,7 +36,7 @@ public class SemanticBaseRanker implements Ranker {
 				.recommendObject(userId);
 		List<RecommendedObject> recommendedObjects = new ArrayList<RecommendedObject>();
 		String term = rankedPlaces.get(2).getName();
-		// recommendedObjects = jenaManager.textQueryEuropeana(term);
+//		 recommendedObjects = jenaManager.textQueryEuropeana(term);
 		for (int i = 0; i < rankedPlaces.size(); i++) {
 			try {
 				RecommendedObject obj = rankedPlaces.get(i);

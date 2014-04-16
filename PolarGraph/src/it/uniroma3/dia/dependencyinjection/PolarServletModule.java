@@ -10,6 +10,7 @@ import it.uniroma3.dia.polar.persistance.CypherRepository;
 import it.uniroma3.dia.polar.persistance.FacebookRepository;
 import it.uniroma3.dia.polar.ranker.NaiveRanker;
 import it.uniroma3.dia.polar.ranker.Ranker;
+import it.uniroma3.dia.polar.ranker.SemanticBaseRanker;
 import it.uniroma3.dia.polar.rdf.JenaManager;
 import it.uniroma3.dia.polar.rest.RestManager;
 
@@ -55,9 +56,9 @@ private final ServletContext context;
 		bind(RestManager.class).in(Singleton.class);
 		bind(Disambiguator.class).to(NaiveDisambiguator.class).in(
 				Singleton.class);
-		// bind(Ranker.class).to(SemanticBaseRanker.class).in(Singleton.class);
-		bind(Ranker.class).to(NaiveRanker.class).in(Singleton.class);
-		bind(NaiveRanker.class).in(Singleton.class);
+		 bind(Ranker.class).to(SemanticBaseRanker.class).in(Singleton.class);
+//		bind(Ranker.class).to(NaiveRanker.class).in(Singleton.class);
+//		bind(NaiveRanker.class).in(Singleton.class);
 		bind(JenaManager.class).in(Singleton.class);
 		bind(PropertiesManager.class).in(Singleton.class);
 		bind(XMLParser.class).in(Singleton.class);

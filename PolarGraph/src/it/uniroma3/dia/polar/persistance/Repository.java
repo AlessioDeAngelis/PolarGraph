@@ -36,8 +36,8 @@ public abstract class Repository {
 	 * Remove a node in the graph db
 	 * */
 	public void removeNode(Node node) {
-		EmbeddedGraphDatabase graphDb = (EmbeddedGraphDatabase) new GraphDatabaseFactory().newEmbeddedDatabase(this
-				.getDbPath());
+		EmbeddedGraphDatabase graphDb = (EmbeddedGraphDatabase) new GraphDatabaseFactory()
+				.newEmbeddedDatabase(this.getDbPath());
 		Transaction tx = graphDb.beginTx();
 		try {
 			// we have first to remove all the relationships of the node
@@ -58,5 +58,9 @@ public abstract class Repository {
 	public abstract void insert(Object o, Index index);
 
 	public abstract void remove(Object o);
+
+	public void setDbPath(String dbPath) {
+		this.dbPath = dbPath;
+	}
 
 }

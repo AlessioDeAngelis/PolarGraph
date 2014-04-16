@@ -7,11 +7,12 @@ import it.uniroma3.dia.polar.graph.model.Person;
 import it.uniroma3.dia.polar.graph.model.PolarPlace;
 import it.uniroma3.dia.polar.utils.StringEscaper;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+
+import javax.servlet.ServletContext;
 
 import org.neo4j.cypher.javacompat.ExecutionEngine;
 import org.neo4j.cypher.javacompat.ExecutionResult;
@@ -459,8 +460,9 @@ public class CypherRepository extends Repository {
 			String userId) {
 		Transaction tx = graphDb.beginTx();
 		// a map where each element is a couple place, number of friends that
-		// visited it. The key is the id of the place and the value is the couple place-counnt of visitors
-		Map<String, Couple<PolarPlace, Long>> placesCount = new HashMap<String,Couple<PolarPlace, Long>>();
+		// visited it. The key is the id of the place and the value is the
+		// couple place-counnt of visitors
+		Map<String, Couple<PolarPlace, Long>> placesCount = new HashMap<String, Couple<PolarPlace, Long>>();
 		try {
 			Map<String, Object> params = new HashMap<String, Object>();
 			params.put("personId", userId);
@@ -470,30 +472,41 @@ public class CypherRepository extends Repository {
 			logger.debug(query);
 			ExecutionResult result = this.engine.execute(query, params);
 			String rows = "";
-			String prevNodeId = ""; //it is used to check if you are changing the place node. In fact there are more rows with the same place node but different categories
+			String prevNodeId = ""; // it is used to check if you are changing
+									// the place node. In fact there are more
+									// rows with the same place node but
+									// different categories
 			PolarPlace place = null;
 			for (Map<String, Object> row : result) {
-				Node nodePlace  = (Node)row.get("place");
-				String nodePlaceId = (String) nodePlace.getProperty("id","");
-				String nodePlaceName = (String) nodePlace.getProperty("name","");
-				String nodePlaceUri = (String) nodePlace.getProperty("uri","");
-				if(!prevNodeId.equals(nodePlaceId)){//create a new place node only if the id is different, otherwise the place is the same
-					prevNodeId = nodePlaceId;//update the prev node id value
+				Node nodePlace = (Node) row.get("place");
+				String nodePlaceId = (String) nodePlace.getProperty("id", "");
+				String nodePlaceName = (String) nodePlace.getProperty("name",
+						"");
+				String nodePlaceUri = (String) nodePlace.getProperty("uri", "");
+				if (!prevNodeId.equals(nodePlaceId)) {// create a new place node
+														// only if the id is
+														// different, otherwise
+														// the place is the same
+					prevNodeId = nodePlaceId;// update the prev node id value
 					place = new PolarPlace();
 					place.setId(nodePlaceId);
 					place.setUri(nodePlaceUri);
 					place.setName(nodePlaceName);
 				}
-				//add the category. Note that there can be more than one category for each place
-				Node nodeCategory = (Node)row.get("category");
+				// add the category. Note that there can be more than one
+				// category for each place
+				Node nodeCategory = (Node) row.get("category");
 				String nodeCategoryId = (String) nodeCategory.getProperty("id");
-				String nodeCategoryName = (String) nodeCategory.getProperty("name");
-				if(place!=null){
-					Category category = new Category(nodeCategoryName, nodeCategoryId);
+				String nodeCategoryName = (String) nodeCategory
+						.getProperty("name");
+				if (place != null) {
+					Category category = new Category(nodeCategoryName,
+							nodeCategoryId);
 					place.addCategory(category);
 				}
-				Long visitors = (Long)row.get("visitors");
-				placesCount.put(nodePlaceId, new Couple<PolarPlace, Long>(place, visitors));
+				Long visitors = (Long) row.get("visitors");
+				placesCount.put(nodePlaceId, new Couple<PolarPlace, Long>(
+						place, visitors));
 			}
 			tx.success();
 		} finally {

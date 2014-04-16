@@ -134,7 +134,7 @@ public class PolarFacade {
 		storePlaces(fbUserId, placesToStore);
 	}
 
-	public void recommendPlace(String fbUserId) {
+	public List<RecommendedObject> recommendPlace(String fbUserId) {
 		// recommend a place with the strategy of the given ranker
 		List<RecommendedObject> rankedPlaces = this.ranker.recommendObject(fbUserId);
 		for (RecommendedObject rankedPlace : rankedPlaces) {
@@ -142,6 +142,7 @@ public class PolarFacade {
 					+ rankedPlace.getUri() + ", score: "
 					+ rankedPlace.getScore()+", mediaUrl: " + rankedPlace.getMediaUrl());
 		}
+		return rankedPlaces;
 	}
 
 	private List<PolarPlace> disambiguatePlaces(Collection<PolarPlace> places) {

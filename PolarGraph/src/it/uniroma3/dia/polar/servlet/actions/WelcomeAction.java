@@ -1,13 +1,12 @@
 package it.uniroma3.dia.polar.servlet.actions;
 
-import it.uniroma3.dia.dependencyinjection.PolarModule;
 import it.uniroma3.dia.dependencyinjection.PolarServletModule;
 import it.uniroma3.dia.polar.controller.PolarFacade;
 import it.uniroma3.dia.polar.controller.PropertiesManager;
+import it.uniroma3.dia.polar.persistance.CypherRepository;
 
 import java.util.Properties;
 
-import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 
@@ -27,8 +26,11 @@ public class WelcomeAction extends Action {
 		String fbUserId = props.getProperty("fb_user_id");
 		
 		PolarFacade polarFacade = injector.getInstance(PolarFacade.class);
+		CypherRepository repository = injector.getInstance(CypherRepository.class);
+		repository.setDbPath(request.getServletContext().getRealPath("/")+repository.getDbPath());
 		request.getSession().setAttribute("facade", polarFacade);	
 		request.getSession().setAttribute("fb_user_id", fbUserId );	
+		request.getSession().setAttribute("injector", injector);
 
 		return "homepage";
 	}

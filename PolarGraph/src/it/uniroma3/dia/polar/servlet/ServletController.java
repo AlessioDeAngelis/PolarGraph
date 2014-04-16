@@ -2,6 +2,7 @@ package it.uniroma3.dia.polar.servlet;
 
 import it.uniroma3.dia.polar.servlet.actions.Action;
 import it.uniroma3.dia.polar.servlet.actions.LoginAction;
+import it.uniroma3.dia.polar.servlet.actions.RecommendAction;
 import it.uniroma3.dia.polar.servlet.actions.WelcomeAction;
 
 import java.io.IOException;
@@ -41,10 +42,12 @@ public class ServletController extends HttpServlet {
 		this.command2actionClass = new HashMap<String, Class>();
 		this.command2actionClass.put("/login.do", LoginAction.class);
 		this.command2actionClass.put("/welcome.do", WelcomeAction.class);
+		this.command2actionClass.put("/recommend.do", RecommendAction.class);
 
 		this.result2page = new HashMap<String, String>();
 		this.result2page.put("autenticazioneriuscita", "/main.jsp");
 		this.result2page.put("homepage", "/homepage.jsp");
+		this.result2page.put("recommended_objects_returned", "/recommended.jsp");
 	}
 
 	/**

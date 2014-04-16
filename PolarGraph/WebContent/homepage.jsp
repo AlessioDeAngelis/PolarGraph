@@ -12,6 +12,10 @@
 <body>
     
 
-HOMEPAGE il tuo id è <%= id %>
+HOMEPAGE il tuo id è ${fb_user_id}
+
+<form action="recommend.do" method="post">
+<p><input type="submit" value="Recommend" name="conferma" /></p>
+</form>
 </body>
 </html>
