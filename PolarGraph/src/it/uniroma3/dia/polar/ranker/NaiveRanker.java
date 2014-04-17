@@ -13,7 +13,7 @@ import java.util.Map;
 
 import com.google.inject.Inject;
 
-public class NaiveRanker implements Ranker{
+public class NaiveRanker extends Ranker{
 	
 	private final CypherRepository repository;
 	

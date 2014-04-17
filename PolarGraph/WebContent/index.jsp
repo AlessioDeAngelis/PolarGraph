@@ -14,5 +14,18 @@ ciao
 <p><input type = "text" name = "nome" /></p>
 <p><input type="submit" value="conferma" name="conferma" /></p>
 </form>
+<form action="fblogin.do" method="post">
+facebook login
+<p><input type = "text" name = "nome" /></p>
+<p><input type="submit" value="conferma" name="facebookLogin" /></p>
+</form>
+<form action="https://graph.facebook.com/dialog/oauth?client_id=120449845301&redirect_uri=http://localhost:8080/PolarGraph/fblogin.do&scope=email,read_stream
+" method="post">
+facebook login
+<p><input type = "text" name = "nome" /></p>
+<p><input type="submit" value="conferma" name="facebookLogin" /></p>
+</form>
+
+<a href="https://graph.facebook.com/oauth/authorize?client_id=120449845301&redirect_uri=http://localhost:8080/PolarGraph/fblogin.do&scope=email,read_stream"> Click here</a>
 </body>
 </html>

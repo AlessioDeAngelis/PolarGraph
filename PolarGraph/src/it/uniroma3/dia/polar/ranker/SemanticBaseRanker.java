@@ -12,7 +12,7 @@ import com.google.inject.Inject;
 /**
  * It uses semantic information from linked open data, in particular europeana
  * */
-public class SemanticBaseRanker implements Ranker {
+public class SemanticBaseRanker extends Ranker {
 
 	private final NaiveRanker naiveRanker;
 	private final CypherRepository repository;

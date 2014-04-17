@@ -150,7 +150,28 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
+		<!-- =================== -->
+		<!-- VISURAL COMMON DEPENDECIES -->
+		<!-- =================== -->
+		<!-- visural-common is a general purpose Java library with various "odds 
+			and ends" utilities including. -->
+		<dependency>
+			<groupId>com.visural</groupId>
+			<artifactId>visural-common</artifactId>
+			<version>0.5.0</version>
+		</dependency>
+
 
 
 	</dependencies>
+	<!-- =================== -->
+		<!-- VISURAL COMMON REPOSITORY -->
+		<!-- =================== -->
+	<repositories>
+        <repository>
+            <id>visural-common</id>
+            <name>visural-common</name>
+            <url>http://visural-common.googlecode.com/svn/trunk/visural-common/maven/</url>
+        </repository>
+    </repositories>
 </project>

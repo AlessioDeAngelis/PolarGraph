@@ -40,7 +40,7 @@ public class ServletController extends HttpServlet {
 
 		Class clazz = Action.class;
 		this.command2actionClass = new HashMap<String, Class>();
-		this.command2actionClass.put("/login.do", LoginAction.class);
+		this.command2actionClass.put("/fblogin.do", LoginAction.class);
 		this.command2actionClass.put("/welcome.do", WelcomeAction.class);
 		this.command2actionClass.put("/recommend.do", RecommendAction.class);
 
@@ -48,6 +48,7 @@ public class ServletController extends HttpServlet {
 		this.result2page.put("autenticazioneriuscita", "/main.jsp");
 		this.result2page.put("homepage", "/homepage.jsp");
 		this.result2page.put("recommended_objects_returned", "/recommended.jsp");
+		this.result2page.put("facebook_login_ok", "/userLogged.jsp");
 	}
 
 	/**
@@ -66,7 +67,6 @@ public class ServletController extends HttpServlet {
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 		String nextPage = "";
-
 		try {
 			String servletPath = request.getServletPath();
 			Class clazz = this.command2actionClass

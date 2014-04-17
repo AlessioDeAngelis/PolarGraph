@@ -15,7 +15,12 @@
 HOMEPAGE il tuo id è ${fb_user_id}
 
 <form action="recommend.do" method="post">
+<p><input type="radio" value="naive" name="rankerType"/>Naive</p>
+<p><input type="radio" value="semanticbase" name="rankerType"/>Semantic</p>
+<p><input type="radio" value="metodo 3" name="rankerType"/></p>
+
 <p><input type="submit" value="Recommend" name="conferma" /></p>
+</form>
 </form>
 </body>
 </html>

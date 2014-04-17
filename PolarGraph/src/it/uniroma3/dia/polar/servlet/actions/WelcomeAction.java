@@ -1,6 +1,8 @@
 package it.uniroma3.dia.polar.servlet.actions;
 
 import it.uniroma3.dia.dependencyinjection.PolarServletModule;
+import it.uniroma3.dia.dependencyinjection.RankerType;
+import it.uniroma3.dia.dependencyinjection.TemporaryRankerModule;
 import it.uniroma3.dia.polar.controller.PolarFacade;
 import it.uniroma3.dia.polar.controller.PropertiesManager;
 import it.uniroma3.dia.polar.persistance.CypherRepository;
@@ -20,6 +22,7 @@ public class WelcomeAction extends Action {
 			throws ServletException {
 		Properties props;
 		Injector injector = Guice.createInjector(new PolarServletModule(request.getServletContext()));
+//		injector.createChildInjector(new TemporaryRankerModule(request.getServletContext(), RankerType.NAIVE));
 		PropertiesManager propertiesController = injector.getInstance(PropertiesManager.class);
 		props = propertiesController.getProperties(request.getServletContext().getRealPath("/")+"data/polar_graph.properties");
 		
