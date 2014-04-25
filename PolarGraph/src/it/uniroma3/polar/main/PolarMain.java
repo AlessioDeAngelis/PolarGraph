@@ -1,8 +1,8 @@
-package it.uniroma3.polar;
+package it.uniroma3.polar.main;
 
 import it.uniroma3.dia.dependencyinjection.PolarModule;
-import it.uniroma3.dia.polar.controller.PolarController;
-import it.uniroma3.dia.polar.controller.PropertiesController;
+import it.uniroma3.dia.polar.controller.PolarFacade;
+import it.uniroma3.dia.polar.controller.PropertiesManager;
 import it.uniroma3.dia.polar.persistance.CypherRepository;
 
 import java.util.Properties;
@@ -31,8 +31,8 @@ public class PolarMain {
 	public static Properties loadProperties() {
 		Properties prop = new Properties();
 		Injector injector = Guice.createInjector(new PolarModule());
-		PropertiesController propertiesController = injector.getInstance(PropertiesController.class);
-		prop = propertiesController.getProperties();
+		PropertiesManager propertiesController = injector.getInstance(PropertiesManager.class);
+		prop = propertiesController.getProperties("data/polar_graph.properties");
 		return prop;
 	}
 
@@ -74,7 +74,7 @@ public class PolarMain {
 		String fbUserId = props.getProperty("fb_user_id");
 
 		Injector injector = Guice.createInjector(new PolarModule());
-		PolarController polarController = injector.getInstance(PolarController.class);
+		PolarFacade polarController = injector.getInstance(PolarFacade.class);
 //
 //		 polarController.readUserFromFacebookAndStore(fbUserId);
 //		polarController.readVisitedPlacesFromFacebookAndStore(fbUserId);
@@ -90,7 +90,7 @@ public class PolarMain {
 		String fbUserId = props.getProperty("fb_user_id");
 
 		Injector injector = Guice.createInjector(new PolarModule());
-		PolarController polarController = injector.getInstance(PolarController.class);
+		PolarFacade polarController = injector.getInstance(PolarFacade.class);
 		
 		 polarController.readPlacesVisitedByFriendsAndStore(fbUserId);
 		 polarController.readPlacesTaggedInPhotoByFriendsAndStore(fbUserId);
@@ -103,7 +103,7 @@ public class PolarMain {
 		String fbUserId = props.getProperty("fb_user_id");
 
 		Injector injector = Guice.createInjector(new PolarModule());
-		PolarController polarController = injector.getInstance(PolarController.class);
+		PolarFacade polarController = injector.getInstance(PolarFacade.class);
 		polarController.recommendPlace(fbUserId);
 	}
 }

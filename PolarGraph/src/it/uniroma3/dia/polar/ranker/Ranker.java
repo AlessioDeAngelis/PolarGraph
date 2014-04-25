@@ -4,7 +4,9 @@ import it.uniroma3.dia.polar.graph.model.RecommendedObject;
 
 import java.util.List;
 
-public interface Ranker {
+public class Ranker {
 
-	public List<RecommendedObject> recommendObject(String userId);
+	public List<RecommendedObject> recommendObject(String userId){
+		return null;
+	}
 }

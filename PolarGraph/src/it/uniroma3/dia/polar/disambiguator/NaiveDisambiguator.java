@@ -1,6 +1,6 @@
 package it.uniroma3.dia.polar.disambiguator;
 
-import it.uniroma3.dia.polar.controller.PropertiesController;
+import it.uniroma3.dia.polar.controller.PropertiesManager;
 import it.uniroma3.dia.polar.graph.model.Location;
 import it.uniroma3.dia.polar.graph.model.PolarPlace;
 import it.uniroma3.dia.polar.rest.RestManager;
@@ -15,13 +15,13 @@ import com.google.inject.Inject;
 public class NaiveDisambiguator implements Disambiguator {
 
 	private final RestManager restManager;
-	private final PropertiesController propertiesController;
+	private final PropertiesManager propertiesController;
 	private final XMLParser xmlParser;
 	private final JSONParser jsonParser;
 
 	@Inject
 	public NaiveDisambiguator(final RestManager restManager,
-			final PropertiesController propertiesController,
+			final PropertiesManager propertiesController,
 			final XMLParser xmlParser, final JSONParser jsonParser) {
 		this.restManager = restManager;
 		this.propertiesController = propertiesController;

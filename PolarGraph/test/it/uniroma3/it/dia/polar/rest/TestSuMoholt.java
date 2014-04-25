@@ -1,7 +1,7 @@
 package it.uniroma3.it.dia.polar.rest;
 
 import it.uniroma3.dia.polar.rest.RestManager;
-import it.uniroma3.polar.PolarMain;
+import it.uniroma3.polar.main.PolarMain;
 
 import java.io.BufferedReader;
 import java.io.IOException;

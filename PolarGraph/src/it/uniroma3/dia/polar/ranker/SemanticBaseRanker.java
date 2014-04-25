@@ -12,7 +12,7 @@ import com.google.inject.Inject;
 /**
  * It uses semantic information from linked open data, in particular europeana
  * */
-public class SemanticBaseRanker implements Ranker {
+public class SemanticBaseRanker extends Ranker {
 
 	private final NaiveRanker naiveRanker;
 	private final CypherRepository repository;
@@ -36,7 +36,7 @@ public class SemanticBaseRanker implements Ranker {
 				.recommendObject(userId);
 		List<RecommendedObject> recommendedObjects = new ArrayList<RecommendedObject>();
 		String term = rankedPlaces.get(2).getName();
-		// recommendedObjects = jenaManager.textQueryEuropeana(term);
+//		 recommendedObjects = jenaManager.textQueryEuropeana(term);
 		for (int i = 0; i < rankedPlaces.size(); i++) {
 			try {
 				RecommendedObject obj = rankedPlaces.get(i);
