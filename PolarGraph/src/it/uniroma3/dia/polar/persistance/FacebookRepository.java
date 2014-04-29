@@ -5,6 +5,7 @@ import it.uniroma3.dia.polar.graph.model.FBPage;
 import it.uniroma3.dia.polar.graph.model.Location;
 import it.uniroma3.dia.polar.graph.model.Person;
 import it.uniroma3.dia.polar.graph.model.PolarPlace;
+import it.uniroma3.dia.polar.utils.ApplicationProperties;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,6 +18,7 @@ import com.google.inject.name.Named;
 import com.restfb.Connection;
 import com.restfb.DefaultFacebookClient;
 import com.restfb.FacebookClient;
+import com.restfb.FacebookClient.AccessToken;
 import com.restfb.types.CategorizedFacebookType;
 import com.restfb.types.NamedFacebookType;
 import com.restfb.types.Photo;
@@ -27,13 +29,23 @@ import com.restfb.types.User;
 public class FacebookRepository {
 	private final Logger logger = LoggerFactory.getLogger(FacebookRepository.class);
 
-	private String accessToken;
+	private String accessTokenString;
 	private FacebookClient facebookClient;
+	private AccessToken accessToken;
 
 	@Inject
-	public FacebookRepository(@Named("access_token") String accessToken) {
-		this.accessToken = accessToken;
-		this.facebookClient = new DefaultFacebookClient(accessToken);
+	public FacebookRepository(@Named("access_token") String accessTokenString) {
+		this.accessTokenString = accessTokenString;
+		this.facebookClient = new DefaultFacebookClient(accessTokenString);
+	}
+	
+	/**
+	 * Call this method to extend the access token time_to_live to 60 days (instead of 1 hour)
+	 * */
+	public void extendTokenLife(){
+		this.accessToken = this.facebookClient.obtainExtendedAccessToken(ApplicationProperties.FACEBOOK_CLIENT_ID, ApplicationProperties.FACEBOOK_SECURE_KEY, accessTokenString);
+		this.accessTokenString = this.accessToken.getAccessToken();
+		this.facebookClient = new DefaultFacebookClient(this.accessToken.getAccessToken());
 	}
 
 	public Person retrievePersonByUserId(String fbUserId) {

@@ -8,7 +8,7 @@ import it.uniroma3.dia.polar.disambiguator.NaiveDisambiguator;
 import it.uniroma3.dia.polar.disambiguator.XMLParser;
 import it.uniroma3.dia.polar.persistance.CypherRepository;
 import it.uniroma3.dia.polar.persistance.FacebookRepository;
-import it.uniroma3.dia.polar.ranker.NaiveRanker;
+import it.uniroma3.dia.polar.ranker.NaiveSocialRanker;
 import it.uniroma3.dia.polar.ranker.Ranker;
 import it.uniroma3.dia.polar.rdf.JenaManager;
 import it.uniroma3.dia.polar.rest.RestManager;

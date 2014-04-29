@@ -1,0 +1,11 @@
+select distinct ?p1 ?c ?p2 ?cx WHERE { dbpedia:Geirangerfjord ?p1 ?cx.
+?cx ?p2 ?c. ?c rdf:type dbpedia-owl:Place. 
+}
+ LIMIT 100
+ 
+ SELECT ?type WHERE { 
+  
+ ?type a <http://dbpedia.org/ontology/WorldHeritageSite> .
+?type ?p dbpedia:France .
+
+} order by ?type

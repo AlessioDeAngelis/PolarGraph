@@ -8,7 +8,7 @@ import it.uniroma3.dia.polar.disambiguator.NaiveDisambiguator;
 import it.uniroma3.dia.polar.disambiguator.XMLParser;
 import it.uniroma3.dia.polar.persistance.CypherRepository;
 import it.uniroma3.dia.polar.persistance.FacebookRepository;
-import it.uniroma3.dia.polar.ranker.NaiveRanker;
+import it.uniroma3.dia.polar.ranker.NaiveSocialRanker;
 import it.uniroma3.dia.polar.ranker.Ranker;
 import it.uniroma3.dia.polar.rdf.JenaManager;
 import it.uniroma3.dia.polar.rest.RestManager;
@@ -46,7 +46,7 @@ public class PolarModule extends AbstractModule {
 	 */
 	@Override
 	protected void configure() {
-		install(new ServletModule());
+//		install(new ServletModule()); //TODO: uncomment it if you are using servlet
 		bindProperties();
 		bind(PolarFacade.class).in(Singleton.class);
 		bind(FacebookRepository.class).in(Singleton.class);
@@ -55,8 +55,7 @@ public class PolarModule extends AbstractModule {
 		bind(Disambiguator.class).to(NaiveDisambiguator.class).in(
 				Singleton.class);
 		// bind(Ranker.class).to(SemanticBaseRanker.class).in(Singleton.class);
-		bind(Ranker.class).to(NaiveRanker.class).in(Singleton.class);
-		bind(NaiveRanker.class).in(Singleton.class);
+		bind(Ranker.class).to(NaiveSocialRanker.class).in(Singleton.class);
 		bind(JenaManager.class).in(Singleton.class);
 		bind(PropertiesManager.class).in(Singleton.class);
 		bind(XMLParser.class).in(Singleton.class);

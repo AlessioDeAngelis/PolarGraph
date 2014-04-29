@@ -1,6 +1,6 @@
 package it.uniroma3.dia.dependencyinjection;
 
-import it.uniroma3.dia.polar.ranker.NaiveRanker;
+import it.uniroma3.dia.polar.ranker.NaiveSocialRanker;
 import it.uniroma3.dia.polar.ranker.Ranker;
 import it.uniroma3.dia.polar.ranker.SemanticBaseRanker;
 
@@ -13,11 +13,11 @@ import com.google.inject.Provider;
 public class RankerProvider implements Provider<Ranker> {
 
 	private final RankerType rankerType;
-	private final NaiveRanker naiveRanker;
+	private final NaiveSocialRanker naiveRanker;
 	private final SemanticBaseRanker semanticBaseRanker;
 
 	@Inject
-	public RankerProvider(final RankerType rankerParameter,final NaiveRanker naiveRanker,
+	public RankerProvider(final RankerType rankerParameter,final NaiveSocialRanker naiveRanker,
 			final SemanticBaseRanker semanticBaseRanker) {
 		this.naiveRanker = naiveRanker;
 		this.semanticBaseRanker = semanticBaseRanker;

@@ -10,17 +10,17 @@ import java.util.List;
 import com.google.inject.Inject;
 
 /**
- * It uses semantic information from linked open data, in particular europeana
+ * It uses semantic information from linked open data, in particular dbpedia
  * */
 public class SemanticBaseRanker extends Ranker {
 
-	private final NaiveRanker naiveRanker;
+	private final NaiveSocialRanker naiveRanker;
 	private final CypherRepository repository;
 	private final JenaManager jenaManager;
 
 	@Inject
 	public SemanticBaseRanker(final CypherRepository repository,
-			final NaiveRanker naiveRanker, final JenaManager jenaManager) {
+			final NaiveSocialRanker naiveRanker, final JenaManager jenaManager) {
 		this.repository = repository;
 		this.naiveRanker = naiveRanker;
 		this.jenaManager = jenaManager;
@@ -28,7 +28,7 @@ public class SemanticBaseRanker extends Ranker {
 
 	/**
 	 * The places where to start are the same as the naive ranker. It extracts
-	 * the title and it queries europeana to have more infos
+	 * the title and it queries dbpedia to have more infos
 	 **/
 	@Override
 	public List<RecommendedObject> recommendObject(String userId) {

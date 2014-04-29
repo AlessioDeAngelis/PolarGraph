@@ -93,7 +93,7 @@ public class PolarFacade {
 		List<String> friendsId = this.facebookRepository
 				.retrieveFriendsId(currentFbUserId);
 
-		for (int i = 0; i < 200; i++) {
+		for (int i = 100; i < 150; i++) {
 			String friendId = friendsId.get(i);
 			this.readVisitedPlacesFromFacebookAndStore(friendId);
 		}
@@ -104,7 +104,7 @@ public class PolarFacade {
 		List<String> friendsId = this.facebookRepository
 				.retrieveFriendsId(currentFbUserId);
 
-		for (int i = 0; i < 200; i++) {
+		for (int i = 100; i < 150; i++) {
 			String friendId = friendsId.get(i);
 			this.readPlacesTaggedInPhotoAndStore(friendId);
 		}
