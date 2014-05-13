@@ -1,0 +1,66 @@
+
+PREFIX dcterms:<http://purl.org/dc/terms/>
+ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+  PREFIX dbp-prop: <http://dbpedia.org/property/>
+   PREFIX dbpedia: <http://dbpedia.org/resource/> 
+   PREFIX dbpedia-owl: <http://dbpedia.org/ontology/> 
+   select distinct ?c WHERE{ <http://dbpedia.org/resource/Colosseum> 
+   dcterms:subject ?cy. <http://dbpedia.org/resource/Bohemian_Paradise>
+    ?p1 ?cy. ?c dcterms:subject  ?cy.  { ?c a <http://dbpedia.org/ontology/Abbey>.}  
+    UNION { ?c a <http://dbpedia.org/ontology/AmusementParkAttraction>.}  UNION { ?c a <http://dbpedia.org/ontology/Archeologist>.}  UNION { ?c a <http://dbpedia.org/ontology/Archipelago>.}  UNION { ?c a <http://dbpedia.org/ontology/Architect>.}  UNION { ?c a <http://dbpedia.org/ontology/ArchitecturalStructure>.}  UNION { ?c a <http://dbpedia.org/ontology/Artist>.}  UNION { ?c a <http://dbpedia.org/ontology/Artwork>.}  UNION { ?c a <http://dbpedia.org/ontology/Book>.}  UNION { ?c a <http://dbpedia.org/ontology/Building>.}  UNION { ?c a <http://dbpedia.org/ontology/Castle>.}  UNION { ?c a <http://dbpedia.org/ontology/Cave>.}  UNION { ?c a <http://dbpedia.org/ontology/Church>.}  UNION { ?c a <http://dbpedia.org/ontology/City>.}  UNION { ?c a <http://dbpedia.org/ontology/Country>.}  UNION { ?c a <http://dbpedia.org/ontology/Glacier>.}  UNION { ?c a <http://dbpedia.org/ontology/Historian>.}  UNION { ?c a <http://dbpedia.org/ontology/HistoricBuilding>.}  UNION { ?c a <http://dbpedia.org/ontology/HistoricPlace>.}  UNION { ?c a <http://dbpedia.org/ontology/HistoricalPeriod>.}  UNION { ?c a <http://dbpedia.org/ontology/Island>.}  UNION { ?c a <http://dbpedia.org/ontology/Lake>.}  UNION { ?c a <http://dbpedia.org/ontology/Locality>.}  UNION { ?c a <http://dbpedia.org/ontology/Monument>.}  UNION { ?c a <http://dbpedia.org/ontology/Mosque>.}  UNION { ?c a <http://dbpedia.org/ontology/Mountain>.}  UNION { ?c a <http://dbpedia.org/ontology/Museum>.}  UNION { ?c a <http://dbpedia.org/ontology/MusicalWork>.}  UNION { ?c a <http://dbpedia.org/ontology/Opera>.}  UNION { ?c a <http://dbpedia.org/ontology/Painter>.}  UNION { ?c a <http://dbpedia.org/ontology/Painting>.}  UNION { ?c a <http://dbpedia.org/ontology/Park>.}  UNION { ?c a <http://dbpedia.org/ontology/Photographer>.}  UNION { ?c a <http://dbpedia.org/ontology/Rive>.}  UNION { ?c a <http://dbpedia.org/ontology/Sculptor>.}  UNION { ?c a <http://dbpedia.org/ontology/Sculpture>.}  UNION { ?c a <http://dbpedia.org/ontology/Settlement>.}  UNION { ?c a <http://dbpedia.org/ontology/Stadium>.}  UNION { ?c a <http://dbpedia.org/ontology/Synagogue>.}  UNION { ?c a <http://dbpedia.org/ontology/Temple>.}  UNION { ?c a <http://dbpedia.org/ontology/Tower>.}  UNION { ?c a <http://dbpedia.org/ontology/Volcano>.}  UNION { ?c a <http://dbpedia.org/ontology/WaterTower>.}  UNION { ?c a <http://dbpedia.org/ontology/WorldHeritageSite>.}  UNION { ?c a <http://dbpedia.org/ontology/Work>.}  UNION { ?c a <http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity>.}  } LIMIT 50 
+
+
+trova tutte le risorse
+
+PREFIX edm: <http://www.europeana.eu/schemas/edm/>
+PREFIX ore: <http://www.openarchives.org/ore/terms/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/> 
+
+SELECT ?title ?mediaURL ?creator ?source WHERE {
+  ?resource 
+            ore:proxyIn ?proxy ;
+            dc:title ?title ;
+            dc:creator ?creator ;
+            dc:source ?source . 
+  ?proxy edm:isShownBy ?mediaURL . 
+ }
+OFFSET 600
+LIMIT 100
+
+SELECT ?s ?creator ?proxy ?resource ?provider
+WHERE {
+	?s dc:title "Roma" .
+  ?s dc:creator ?creator.
+  ?s ore:proxyIn ?proxy.
+  ?proxy edm:object ?resource.
+  ?proxy edm:provider ?provider.
+} LIMIT 100
+
+SELECT ?creator ?proxy ?mediaUrl ?provider ?subject  ?title ?type
+WHERE {
+  ?s dc:creator ?creator;
+   ore:proxyIn ?proxy;
+     dc:subject ?subject;
+     dc:title ?title;
+       dc:type ?type.     
+      ?proxy edm:isShownBy ?mediaURL.
+  ?proxy edm:provider ?provider.
+  {    ?s dc:title 'Roma' .} UNION {    ?s dc:subject 'Roma' .} 
+} LIMIT 100
+
+SELECT distinct ?o ?title
+WHERE {
+?s rdf:type ore:Proxy; dc:subject ?o ; dc:title ?title.
+  FILTER ( regex ( str(?o), "Rosario") )
+} LIMIT 100
+
+
+ select distinct  ?x ?museum where {?x dbpedia-owl:location dbpedia:Paris. ?x dbpedia-owl:Museum ?museum.} LIMIT 1000
+ 
+ PREFIX dbp-prop: <http://dbpedia.org/property/> PREFIX dbpedia: <http://dbpedia.org/resource/> PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
+
+ select distinct  ?y where { ?x dbpedia-owl:museum <http://dbpedia.org/resource/The_Louvre>. <http://dbpedia.org/resource/The_Louvre> owl:sameAs ?y.  } LIMIT 1000
+ 
+ PREFIX dbp-prop: <http://dbpedia.org/property/> PREFIX dbpedia: <http://dbpedia.org/resource/> PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
+
+ select distinct  ?opera ?museum where { ?opera dbpedia-owl:museum ?museum. ?museum dbp-prop:location dbpedia:Rome  } LIMIT 1000

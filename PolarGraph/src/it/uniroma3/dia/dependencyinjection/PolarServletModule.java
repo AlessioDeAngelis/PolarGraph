@@ -3,14 +3,14 @@ package it.uniroma3.dia.dependencyinjection;
 import it.uniroma3.dia.polar.controller.PolarFacade;
 import it.uniroma3.dia.polar.controller.PropertiesManager;
 import it.uniroma3.dia.polar.disambiguator.Disambiguator;
-import it.uniroma3.dia.polar.disambiguator.JSONParser;
 import it.uniroma3.dia.polar.disambiguator.NaiveDisambiguator;
-import it.uniroma3.dia.polar.disambiguator.XMLParser;
+import it.uniroma3.dia.polar.parser.JSONParser;
+import it.uniroma3.dia.polar.parser.XMLParser;
 import it.uniroma3.dia.polar.persistance.CypherRepository;
 import it.uniroma3.dia.polar.persistance.FacebookRepository;
-import it.uniroma3.dia.polar.ranker.NaiveSocialRanker;
-import it.uniroma3.dia.polar.ranker.Ranker;
 import it.uniroma3.dia.polar.rdf.JenaManager;
+import it.uniroma3.dia.polar.recommender.Recommender;
+import it.uniroma3.dia.polar.recommender.social.NaiveSocialRecommender;
 import it.uniroma3.dia.polar.rest.RestManager;
 
 import java.io.FileNotFoundException;
@@ -77,7 +77,7 @@ public class PolarServletModule extends AbstractModule {
 		// .annotatedWith(Names.named("db_path"))
 		// .toProvider(Providers.<String>of(null));
 		bind(RankerType.class).toInstance(rankerType);
-		bind(Ranker.class).toProvider(RankerProvider.class).in(Singleton.class);
+		bind(Recommender.class).toProvider(RankerProvider.class).in(Singleton.class);
 //		bind(Ranker.class).in(Singleton.class);
 	}
 	

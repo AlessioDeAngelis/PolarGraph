@@ -1,7 +1,10 @@
-package it.uniroma3.dia.polar.disambiguator;
+package it.uniroma3.dia.polar.parser;
+
+import it.uniroma3.dia.polar.disambiguator.SpottedPlace;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 

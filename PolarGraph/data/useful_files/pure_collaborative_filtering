@@ -1,0 +1,21 @@
+match (u:Person)-[:VISITED]->()<-[:VISITED]-(other)-[:VISITED]->(p)
+where u.id = '1366205360'
+return p.name,count(*)
+order by count(*) desc;
+
+
+Mia versione
+MATCH (person)-[:VISITED]->(place), (place)-[:HAS_CATEGORY]->(category:Category) 
+WHERE category.name = 'Monument'  OR 
+category.name = 'Tourist Attraction'  OR 
+category.name = 'Museum' 
+RETURN distinct place.name, count(person) as visitors 
+ORDER BY visitors DESC
+
+match (u:Person)-[:VISITED]->()<-[:VISITED]-(other)-[:VISITED]->(p)-[:HAS_CATEGORY]->(category:Category)
+where u.id = '1366205360' AND ( category.name = 'Monument'  OR 
+category.name = 'Tourist Attraction'  OR 
+category.name = 'Museum' )
+return p.name,count(*) as visitors
+order by visitors desc;
+

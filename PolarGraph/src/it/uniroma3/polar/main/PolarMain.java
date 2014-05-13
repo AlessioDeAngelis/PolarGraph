@@ -3,10 +3,12 @@ package it.uniroma3.polar.main;
 import it.uniroma3.dia.dependencyinjection.PolarModule;
 import it.uniroma3.dia.polar.controller.PolarFacade;
 import it.uniroma3.dia.polar.controller.PropertiesManager;
-import it.uniroma3.dia.polar.graph.model.Category;
 import it.uniroma3.dia.polar.graph.model.Couple;
+import it.uniroma3.dia.polar.graph.model.PolarPlace;
+import it.uniroma3.dia.polar.graph.model.RecommendedObject;
 import it.uniroma3.dia.polar.persistance.CypherRepository;
-import it.uniroma3.dia.polar.persistance.FacebookRepository;
+import it.uniroma3.dia.polar.recommender.semantic.SemanticCleverRecommender;
+import it.uniroma3.dia.polar.recommender.social.SelectedCategoriesSocialRecommender;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,10 +29,10 @@ public class PolarMain {
 		long start = System.currentTimeMillis();
 		logger.info("Start");
 //		recommendPlace();
-//		storeMyInfo();
+		storeMyInfo();
 //		storeMyFriendsInfo();
 //		readAllNodesOfAType("Category");
-		placeCategories();
+//		placeCategories();
 		logger.info("End in " + (System.currentTimeMillis() - start) + " msec");
 	}
 
@@ -84,9 +86,9 @@ public class PolarMain {
 //
 		 polarController.readUserFromFacebookAndStore(fbUserId);
 		polarController.readVisitedPlacesFromFacebookAndStore(fbUserId);
-		polarController.readPlacesTaggedInPhotoAndStore(fbUserId);
+//		polarController.readPlacesTaggedInPhotoAndStore(fbUserId);
 
-		 polarController.readFriendsFromFacebookAndStore(fbUserId);
+//		 polarController.readFriendsFromFacebookAndStore(fbUserId);
 
 	}
 	
@@ -119,17 +121,14 @@ public class PolarMain {
 		String fbUserId = props.getProperty("fb_user_id");
 
 		Injector injector = Guice.createInjector(new PolarModule());
-		CypherRepository r = injector.getInstance(CypherRepository.class);
-		r.startDB();
-//		List<Couple<Category, Long>> categoriesCount = r.findPlacesVisitedByTheUserAndCountCategories(fbUserId);
-//		r.findPlacesBySingleCategoryName(fbUserId, "Church"); //Tourist Attraction is very good
-		List<String> categories = new ArrayList<String>();
-		categories.add("Monument");
-		categories.add("Tourist Attraction");
-		categories.add("Museum");
-		r.findPlacesByMultiplesCategoryNames(fbUserId, categories);
 		
-		r.stopDB();
+//		SelectedCategoriesSocialRanker ranker = injector.getInstance(SelectedCategoriesSocialRanker.class);
+//		List<RecommendedObject> obs = ranker.recommendObject(fbUserId);
+//		for(RecommendedObject o : obs){
+//			logger.debug(o.getUri() + ", " +o.getScore());
+//		}
+		SemanticCleverRecommender ranker = injector.getInstance(SemanticCleverRecommender.class);
+		ranker.recommendObject(fbUserId);
 	}
 	
 }

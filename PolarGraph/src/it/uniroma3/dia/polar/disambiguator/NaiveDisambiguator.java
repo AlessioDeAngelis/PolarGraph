@@ -3,6 +3,8 @@ package it.uniroma3.dia.polar.disambiguator;
 import it.uniroma3.dia.polar.controller.PropertiesManager;
 import it.uniroma3.dia.polar.graph.model.Location;
 import it.uniroma3.dia.polar.graph.model.PolarPlace;
+import it.uniroma3.dia.polar.parser.JSONParser;
+import it.uniroma3.dia.polar.parser.XMLParser;
 import it.uniroma3.dia.polar.rest.RestManager;
 
 import java.util.List;

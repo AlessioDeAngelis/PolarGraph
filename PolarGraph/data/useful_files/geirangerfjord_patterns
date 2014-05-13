@@ -1,0 +1,255 @@
+
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:85 - http://dbpedia.org/resource/Geirangerfjord
+ ============ 
+
+
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Norway, 8
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/ontology/NaturalPlace, 6
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://en.wikipedia.org/wiki/Geirangerfjord, 6
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/ontology/BodyOfWater, 6
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://www.w3.org/2002/07/owl#Thing, 6
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Sunnm%C3%B8re, 5
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/ontology/Wikidata:Q532, 5
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Template:Reflist, 5
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Template:Convert, 5
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://schema.org/BodyOfWater, 5
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Category:Stranda, 5
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://www.opengis.net/gml/_Feature, 5
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://schema.org/Place, 5
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/List_of_World_Heritage_Sites_in_Europe, 5
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/ontology/Place, 5
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Template:Infobox_body_of_water, 5
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Geiranger, 5
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/M%C3%B8re_og_Romsdal, 5
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://pl.dbpedia.org/resource/Geirangerfjord, 4
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://es.dbpedia.org/resource/Fiordo_de_Geiranger, 4
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Template:World_Heritage_Sites_in_Norway, 4
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - 562151686^^http://www.w3.org/2001/XMLSchema#integer, 4
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://ja.dbpedia.org/resource/????????????_-_?????????????????????, 4
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Category:Fjords_of_M%C3%B8re_og_Romsdal, 4
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://nl.dbpedia.org/resource/Geirangerfjord, 4
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://eu.dbpedia.org/resource/Geirangerfjord, 4
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://pt.dbpedia.org/resource/Fiorde_de_Geiranger, 4
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://www.wikidata.org/entity/Q193989, 4
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Template:Infobox_World_Heritage_Site, 4
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - 7.129^^http://www.w3.org/2001/XMLSchema#float, 4
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Category:World_Heritage_Sites_in_Norway, 4
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - 62.121^^http://www.w3.org/2001/XMLSchema#float, 4
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - Geirangerfjorden@en, 4
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - 2232837^^http://www.w3.org/2001/XMLSchema#integer, 4
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://wifo5-03.informatik.uni-mannheim.de/flickrwrappr/photos/Geirangerfjord, 4
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://cs.dbpedia.org/resource/Geirangerfjord, 4
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://fr.dbpedia.org/resource/Geirangerfjord, 4
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - 605446259^^http://www.w3.org/2001/XMLSchema#integer, 4
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - Geirangerfjord@en, 4
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://de.dbpedia.org/resource/Geirangerfjord, 4
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://ru.dbpedia.org/resource/?????????-?????, 4
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://whc.unesco.org/en/list/1195, 4
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - Natural@en, 4
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - {{#invoke:Infobox|infobox}}{{#invoke:Infobox body of water tracking|tracking}} Template:Infobox World Heritage SiteThe Geirangerfjorden is a fjord in the Sunnmøre region of Møre og Romsdal county, Norway. It located entirely in Stranda Municipality. It is a {{safesubst:#invoke:convert|convert}} long branch off of the Sunnylvsfjorden, which is a branch off of the Storfjorden (Great Fjord).@en, 4
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://it.dbpedia.org/resource/Geirangerfjord, 4
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://www.visitnorway.com/en/Articles/Theme/Fjord-and-mountains/Fjord-guide/The-Geirangerfjord/, 4
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - View of the fjord@en, 4
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - 62.121 7.129@en, 3
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Snake_River_Falls, 3
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Bat_(Lagoon), 3
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/The_Bat_(Kings_Island;_opened_1981), 3
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://www.geiranger.no, 3
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Sidewinder_(Elitch_Gardens), 3
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://www.visitalesund-geiranger.com/en/, 3
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Riptide_(Canada's_Wonderland), 3
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/The_Bat_(Kings_Island;_opened_1993), 3
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://www.geirangerfjord.net, 3
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/The_Bat_(Canada's_Wonderland), 3
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/The_Beast_(roller_coaster), 3
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Comet_(Hersheypark), 3
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Mexico_(Epcot), 3
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Sidewinder_(Hersheypark), 3
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Comet_(Lincoln_Park), 3
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Bubbleworks, 3
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Mumbo_Jumbo_(roller_coaster), 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Splash_Mountain, 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Superman:_Ultimate_Flight_(Six_Flags_Discovery_Kingdom), 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Videopolis_(Disneyland_Paris), 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Disney's_Nightmare_in_the_Sky, 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/America_the_Beautiful_(Disney), 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Steel_Lasso, 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Sky_Scrapper, 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Escape_from_Madagascar, 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Flying_Fish_(roller_coaster), 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/RC_Racer, 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Batman_The_Escape, 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Walt_Disney:_One_Man's_Dream, 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/The_Voyage_(roller_coaster), 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Hellesylt, 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Antarctica:_Empire_of_the_Penguin, 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Grizzly_River_Run, 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/SkyPoint_Observation_Deck, 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Renegade_(roller_coaster), 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Sunnylvsfjorden, 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Silver_Star_(roller_coaster), 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Adventureland_Bazaar, 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Back_at_the_Barnyard_Hayride, 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Journey_into_Imagination_with_Figment, 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Muppet*Vision_3D, 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Thunder_Run_(Canada's_Wonderland), 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Racer_(Kennywood), 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Air_(roller_coaster), 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Jumpin'_Jellyfish, 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/AquaDuck_(water_coaster), 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/El_Rio_del_Tiempo, 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Silly_Symphony_Swings, 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Ice_Blast:_The_Ride, 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Journey_into_Narnia:_Prince_Caspian, 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Fly_%E2%80%93_The_Great_Nor'easter, 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Expedition_GeForce, 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/ExtraTERRORestrial_Alien_Encounter, 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Monster_Mansion, 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/T_Express, 2
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Urnes_Stave_Church, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Alistair_Hargreaves, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Seven_Dwarfs_Mine_Train, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/David_Gage, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - ? ?????? ???? ????????? ??? ?? ?????? ??? ?????????? ?????? ??? ??????@el, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/ontology/Country, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - Stranda@en, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - ??????????????, ??????? ??????? ????????? ????? (?.?. ???????) ??? ?????????? ??? ?? ? ?? ???????????? ???? ???????. ? ???? ??????????????? ??? ??? ????????? ???????????? ???? ??????? ?????? ??? ?????, ???? ???????, ??????? ? ???????.@el, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - Template:Infobox settlementGeiranger is a small tourist village in Sunnmøre region of Møre og Romsdal county in the western part of Norway. It lies in Stranda Municipality at the head of the Geirangerfjorden, which is a branch of the large Storfjorden. The nearest city is Ålesund. Geiranger is home to some of the most spectacular scenery in the world, and has been named the best travel destination in Scandinavia by Lonely Planet.@en, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Toyland_Tours, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Vega%C3%B8yan, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/X_(roller_coaster), 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Rock_carvings_at_Alta, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Brad_Mika, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Patrick_Lambie, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Cobra_(PowerPark), 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Grover's_Alpine_Express, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Multan_Cricket_Stadium, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Air_Grover, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Richie_Pugh, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - Geiranger@en, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Irish_general_election,_2002, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - 2014-04-11T09:29:15.681Z^^http://www.w3.org/2001/XMLSchema#dateTime, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Steve_Surridge, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - natürlicher Ort@de, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Sam_Young_(American_football), 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - Møre og Romsdal@en, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - ?????? ????@el, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Tera_Mtembu, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - natuurgebied@nl, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Wildebeest_(ride), 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Geirangerfjorden, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Geiranger_Fiord, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Raging_Spirits, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://fr.dbpedia.org/resource/Comté_de_Møre_og_Romsdal, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Klondike_Gold_Mine_(roller_coaster), 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Jonah_Lomu, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Liabygda_Church, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Brad_Shields, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - vii, viii@en, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Formula_Rossa, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Taylor_Lewan, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - ?????@el, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Stranda_Church, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Speed_City_Raceway, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Danny_Watkins, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - Norway@en, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Nemesis_Inferno, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - 1195^^http://www.w3.org/2001/XMLSchema#integer, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/ontology/Settlement, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Jason_Macdonald, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Kingda_Ka, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Alfa_Romeo_MiTo, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Steve_Winn, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - body of water@en, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Scooby's_Ghoster_Coaster, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Pandamonium_(ride), 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - ??@ja, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Hurakan_Condor, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - natural place@en, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/ontology/Village, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Amobi_Okoye, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/KDSD-FM, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Liabygda, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Ben_May_(rugby_union), 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - Fjords of Møre og Romsdal@en, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://www.w3.org/2004/02/skos/core#Concept, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Thomas_Welch_(American_football), 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Canal_des_houill%C3%A8res_de_la_Sarre, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - distesa d'acqua@it, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - Gewässer@de, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Pieter_Myburgh, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Dalsnibba, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://www.wikidata.org/entity/Q50627, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Rocco_Jansen, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://www.w3.org/2002/07/owl#Class, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Brad_Barritt, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Moto_Coaster_(Darien_Lake), 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - -f6d9a2c:145cd35dba2:-7fff, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Steel_First, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Helsem, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Superman_Escape, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Runaway_Mine_Train_(Six_Flags_Great_Adventure), 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - List of World Heritage Sites in Europe@en, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Marius_Joubert, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Kali_River_Rapids, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - 38^^http://www.w3.org/2001/XMLSchema#integer, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Powder_Keg:_A_Blast_into_the_Wilderness, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Hornindalsrokken, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Jamie_Heaslip, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Radiator_Springs_Racers, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Fantasy_in_the_Sky, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Zack_Martin, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Djupvatnet, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Struve_Geodetic_Arc, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Lelia_Masaga, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Exterminator_(roller_coaster), 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Judge_Roy_Scream, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Rua_Tipoki, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - étendue d'eau@fr, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Dresden_Funicular_Railway, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/LaMarr_Woodley, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Backlot_Stunt_Coaster, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Nathan_Mauger, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/WZXV, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Pony_Express_(roller_coaster), 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Great_Moments_with_Mr._Lincoln, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Shawn_Crable, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Brixentaler_Ache, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - Sunnmøre@en, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Justin_Peelle, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Falcon's_Fury, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Jano_Vermaak, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Willie_Ripia, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Geiranger_Fjord, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Keith_Robinson_(rugby_union), 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Sunnylven_Church, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Runaway_Mine_Train_(Alton_Towers), 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - 2005^^http://www.w3.org/2001/XMLSchema#integer, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - Template:Pp-moveNorway (/?n?rwe?/; Norwegian: About this sound Norge (Bokmål) or About this sound Noreg (Nynorsk)), officially the Kingdom of Norway (de jure Kongeriget Norge (Danish), de facto Kongeriket Norge in Bokmål and Kongeriket Noreg in Nynorsk), is a Scandinavian unitary constitutional monarchy whose territory comprises the western portion of the Scandinavian Peninsula, Jan Mayen, the Arctic archipelago of Svalbard, and the sub-Antarctic Bouvet Island.@en, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Lome_Fa'atau, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Geiranger_Church, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Knott's_Berry_Farm's_Wild_West_Stunt_show, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Green_Lantern:_First_Flight_(Six_Flags_Magic_Mountain), 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - World Heritage Sites in Norway@en, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Mark_Herzlich, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - Thing, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/ontology/PopulatedPlace, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - lieu naturel@fr, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - 2014-04-03T06:11:59.309Z^^http://www.w3.org/2001/XMLSchema#dateTime, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - Sunnylvsfjorden@en, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/The_Crypt_(Kings_Dominion), 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Norwegian_County_Road_63, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Isaac_Boss, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - Der natürlicher Ort beinhaltet alle Orte die natürlicherweise im Universum existieren.@de, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Mark_Robinson_(rugby_union_born_1974), 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/HalloWishes, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - Cuerpo de agua@es, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Andrew_Hore, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/N%C3%A6r%C3%B8yfjord, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - 6168^^http://www.w3.org/2001/XMLSchema#integer, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - 29^^http://www.w3.org/2001/XMLSchema#integer, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://dbpedia.org/resource/Motu_Matu'u, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - The natural place encompasses all places occurring naturally in universe.@en, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - http://schema.org/Country, 1
+2014-05-05 18:32:01 INFO  SemanticCleverRankerTest2:95 - schema:BodyOfWater, 1
+

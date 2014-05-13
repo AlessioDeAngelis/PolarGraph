@@ -1,11 +1,23 @@
 package it.uniroma3.dia.polar.graph.model;
 
-public class RecommendedObject {
+import java.io.Serializable;
+
+public class RecommendedObject implements Serializable{
+
+	private static final long serialVersionUID = 1659709820237051388L;
 	private String id;
 	private String name;
 	private String uri;
 	private double score;
 	private String mediaUrl;
+	/**
+	 * The concept that originated this Recommended Object. For example: you are
+	 * recommended Geirangerfjord since you like Geiranger
+	 * */
+	private String why;
+	private String creator;
+	private String provider;
+	private String source;
 
 	public RecommendedObject() {
 		super();
@@ -14,6 +26,10 @@ public class RecommendedObject {
 		this.uri = "";
 		this.score = 0d;
 		this.mediaUrl = "";
+		this.why = "";
+		this.creator = "";
+		this.provider = "";
+		this.source = "";
 	}
 
 	public RecommendedObject(String id, String name, String uri) {
@@ -23,6 +39,10 @@ public class RecommendedObject {
 		this.uri = uri;
 		this.score = 0d;
 		this.mediaUrl = "";
+		this.why = "";
+		this.creator = "";
+		this.provider = "";
+		this.source = "";
 	}
 
 	public String getId() {
@@ -65,19 +85,50 @@ public class RecommendedObject {
 		this.mediaUrl = mediaUrl;
 	}
 
+	public String getCreator() {
+		return creator;
+	}
+
+	public void setCreator(String creator) {
+		this.creator = creator;
+	}
+
+	public String getProvider() {
+		return provider;
+	}
+
+	public void setProvider(String provider) {
+		this.provider = provider;
+	}
+
+	public String getSource() {
+		return source;
+	}
+
+	public void setSource(String source) {
+		this.source = source;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
-		result = prime * result
-				+ ((mediaUrl == null) ? 0 : mediaUrl.hashCode());
+		result = prime * result + ((mediaUrl == null) ? 0 : mediaUrl.hashCode());
 		result = prime * result + ((name == null) ? 0 : name.hashCode());
 		long temp;
 		temp = Double.doubleToLongBits(score);
 		result = prime * result + (int) (temp ^ (temp >>> 32));
 		result = prime * result + ((uri == null) ? 0 : uri.hashCode());
 		return result;
+	}
+
+	public String getWhy() {
+		return why;
+	}
+
+	public void setWhy(String why) {
+		this.why = why;
 	}
 
 	@Override
@@ -104,8 +155,7 @@ public class RecommendedObject {
 				return false;
 		} else if (!name.equals(other.name))
 			return false;
-		if (Double.doubleToLongBits(score) != Double
-				.doubleToLongBits(other.score))
+		if (Double.doubleToLongBits(score) != Double.doubleToLongBits(other.score))
 			return false;
 		if (uri == null) {
 			if (other.uri != null)
@@ -117,8 +167,8 @@ public class RecommendedObject {
 
 	@Override
 	public String toString() {
-		return "RecommendedObject [id=" + id + ", name=" + name + ", uri="
-				+ uri + ", score=" + score + ", mediaUrl=" + mediaUrl + "]";
+		return "RecommendedObject [id=" + id + ", name=" + name + ", uri=" + uri + ", score=" + score + ", mediaUrl="
+				+ mediaUrl + "]";
 	}
 
 }

@@ -6,7 +6,7 @@ import it.uniroma3.dia.polar.graph.model.PolarPlace;
 import it.uniroma3.dia.polar.graph.model.RecommendedObject;
 import it.uniroma3.dia.polar.persistance.CypherRepository;
 import it.uniroma3.dia.polar.persistance.FacebookRepository;
-import it.uniroma3.dia.polar.ranker.Ranker;
+import it.uniroma3.dia.polar.recommender.Recommender;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -31,21 +31,30 @@ public class PolarFacade {
 	private final String DB_PATH = "";
 	private final Disambiguator disambiguator;
 	private Person currentPerson;
-	private final Ranker ranker;
+	private Recommender recommender;
 
 	@Inject
 	public PolarFacade(final FacebookRepository facebookRepository,
 			final CypherRepository cypherRepository,
 			final PropertiesManager propertiesController,
 			final Disambiguator disambiguator, final String accessToken,
-			final String dbPath, final Ranker ranker) {
+			final String dbPath) {
 		this.facebookRepository = facebookRepository;
 		this.cypherRepository = cypherRepository;
 		this.propertiesController = propertiesController;
 		this.disambiguator = disambiguator;
-		this.ranker = ranker;
 		this.currentPerson = new Person();
+	}	
+
+	public Recommender getRecommender() {
+		return recommender;
 	}
+	
+	public void setRecommender(Recommender recommender) {
+		this.recommender = recommender;
+	}
+
+
 
 	public void readUserFromFacebookAndStore(String fbUserId) {
 		Person person = this.facebookRepository
@@ -136,7 +145,7 @@ public class PolarFacade {
 
 	public List<RecommendedObject> recommendPlace(String fbUserId) {
 		// recommend a place with the strategy of the given ranker
-		List<RecommendedObject> rankedPlaces = this.ranker.recommendObject(fbUserId);
+		List<RecommendedObject> rankedPlaces = this.recommender.recommendObject(fbUserId);
 		for (RecommendedObject rankedPlace : rankedPlaces) {
 			logger.info("Place Name: " + rankedPlace.getName() + ", uri: "
 					+ rankedPlace.getUri() + ", score: "
