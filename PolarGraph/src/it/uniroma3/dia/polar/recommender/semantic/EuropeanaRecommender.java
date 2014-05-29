@@ -33,6 +33,7 @@ public class EuropeanaRecommender extends Recommender {
 
 	@Override
 	public List<RecommendedObject> recommendObject(String userId) {
+		socialRecommender.setCategories(this.getCategories());
 		List<RecommendedObject> rankedPlaces = socialRecommender.recommendObject(userId);
 		List<RecommendedObject> recommendedObjects = new ArrayList<RecommendedObject>();
 		int i = 0;

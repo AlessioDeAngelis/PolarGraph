@@ -18,6 +18,7 @@ public class RecommendedObject implements Serializable{
 	private String creator;
 	private String provider;
 	private String source;
+	private String externalLink;
 
 	public RecommendedObject() {
 		super();
@@ -30,6 +31,7 @@ public class RecommendedObject implements Serializable{
 		this.creator = "";
 		this.provider = "";
 		this.source = "";
+		this.externalLink = "";
 	}
 
 	public RecommendedObject(String id, String name, String uri) {
@@ -43,6 +45,7 @@ public class RecommendedObject implements Serializable{
 		this.creator = "";
 		this.provider = "";
 		this.source = "";
+		this.externalLink = "";
 	}
 
 	public String getId() {
@@ -107,6 +110,14 @@ public class RecommendedObject implements Serializable{
 
 	public void setSource(String source) {
 		this.source = source;
+	}
+
+	public String getExternalLink() {
+		return externalLink;
+	}
+
+	public void setExternalLink(String externalLink) {
+		this.externalLink = externalLink;
 	}
 
 	@Override

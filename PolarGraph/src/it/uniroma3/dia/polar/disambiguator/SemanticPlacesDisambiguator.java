@@ -1,6 +1,7 @@
 package it.uniroma3.dia.polar.disambiguator;
 
 import it.uniroma3.dia.polar.controller.PropertiesManager;
+import it.uniroma3.dia.polar.graph.model.Category;
 import it.uniroma3.dia.polar.graph.model.Couple;
 import it.uniroma3.dia.polar.graph.model.Location;
 import it.uniroma3.dia.polar.graph.model.PolarPlace;
@@ -44,6 +45,12 @@ public class SemanticPlacesDisambiguator implements Disambiguator {
 	 * */
 	@Override
 	public PolarPlace disambiguatePlace(PolarPlace placeToDisambiguate) {
+		double maxDistance = 0.005;
+		for (Category category : placeToDisambiguate.getCategories()) {
+			if (category.getName() != null && category.getName().equals("City")) {
+				maxDistance = 2;
+			}
+		}
 		SpottedPlace correctPlace = null;
 
 		String term = placeToDisambiguate.getName();
@@ -59,16 +66,20 @@ public class SemanticPlacesDisambiguator implements Disambiguator {
 			}
 			// let's check if the geo coordinates of the place retrieved by
 			// TagMeService is close to the location of the placeToDisambiguate
+			//otherwise the heuristics says that the concepts coincide if they have exactly the same name and the max distance is higher 
 			else if (placeDbpediaUri != null && !placeDbpediaUri.equals("") && !placeDbpediaUri.equals(" ")) {
 				Couple<String, String> latLng = jenaManager.retrieveLatLangFromDbpedia(placeDbpediaUri);
-				double lat1 = Double.parseDouble(latLng.getFirst());
-				double lng1 = Double.parseDouble(latLng.getSecond());
-				double lat2 = placeToDisambiguate.getLocation().getLatitude();
-				double lng2 = placeToDisambiguate.getLocation().getLongitude();
-				double maxDistance = 0.3;
-				if (isTheSamePlaceByCoordinates(lat1, lng1, lat2, lng2, maxDistance)) {
-					correctPlace = tagMePlace;
-					break;
+				if (latLng != null && !latLng.getFirst().equals("") && !latLng.getSecond().equals("")) {
+					double lat1 = Double.parseDouble(latLng.getFirst());
+					double lng1 = Double.parseDouble(latLng.getSecond());
+					double lat2 = placeToDisambiguate.getLocation().getLatitude();
+					double lng2 = placeToDisambiguate.getLocation().getLongitude();
+					// double maxDistance = 0.005;
+					boolean nameEqualityAndGeoCloseness = (isTheSamePlaceByCoordinates(lat1, lng1, lat2, lng2, 3) && placeDbpediaUri.equals("http://dbpedia.org/resource/"+termSanitized.replaceAll(" ", "_")));
+					if (isTheSamePlaceByCoordinates(lat1, lng1, lat2, lng2, maxDistance) || nameEqualityAndGeoCloseness) {
+						correctPlace = tagMePlace;
+						break;
+					}
 				}
 			}
 
@@ -82,7 +93,6 @@ public class SemanticPlacesDisambiguator implements Disambiguator {
 					double lng1 = Double.parseDouble(geonamesPlace.getLongitude());
 					double lat2 = placeToDisambiguate.getLocation().getLatitude();
 					double lng2 = placeToDisambiguate.getLocation().getLongitude();
-					double maxDistance = 0.3;
 					if (isTheSamePlaceByCoordinates(lat1, lng1, lat2, lng2, maxDistance)) {
 						correctPlace = geonamesPlace;
 						break;
@@ -91,25 +101,25 @@ public class SemanticPlacesDisambiguator implements Disambiguator {
 			}
 		}
 		// else {
-		//
-		// // query geonames service by lat and long
-		// String lat = "" + placeToDisambiguate.getLocation().getLatitude();
-		// String lng = "" + placeToDisambiguate.getLocation().getLongitude();
-		// if (!lat.equals("") && !lng.equals("")) {
-		// String geonameByLatLngXMLOutput =
-		// this.restManager.queryGeonamesByLatLng(lat, lng);
-		// geonamesPlaces =
-		// this.xmlParser.parseGeonamesRDF(geonameByLatLngXMLOutput);
-		// if (geonamesPlaces != null && geonamesPlaces.size() > 0) {
-		// correctPlace = geonamesPlaces.get(0);
-		// }
-		// for (SpottedPlace place : geonamesPlaces) {
-		// if (place.getName() != null && place.getName().contains(term)) {
-		// correctPlace = place;
-		// break;
-		// }
-		// }
-		// }
+		if (correctPlace == null) {
+			// // query geonames service by lat and long
+			String lat = "" + placeToDisambiguate.getLocation().getLatitude();
+			String lng = "" + placeToDisambiguate.getLocation().getLongitude();
+			if (!lat.equals("") && !lng.equals("")) {
+				String geonameByLatLngXMLOutput = this.restManager.queryGeonamesByLatLng(lat, lng);
+				List<SpottedPlace> geonamesPlaces = this.xmlParser.parseGeonamesRDF(geonameByLatLngXMLOutput);
+				if (geonamesPlaces != null && geonamesPlaces.size() > 0) {
+					correctPlace = geonamesPlaces.get(0);
+				}
+				for (SpottedPlace place : geonamesPlaces) {
+					if (place.getName() != null && place.getName().contains(term)) {
+						correctPlace = place;
+						break;
+					}
+				}
+			}
+		}
+
 		// }
 
 		// update the original polar place after the disambiguation

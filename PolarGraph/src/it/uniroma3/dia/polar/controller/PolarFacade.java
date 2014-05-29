@@ -102,7 +102,7 @@ public class PolarFacade {
 		List<String> friendsId = this.facebookRepository
 				.retrieveFriendsId(currentFbUserId);
 
-		for (int i = 100; i < 150; i++) {
+		for (int i = 20; i < 40; i++) {
 			String friendId = friendsId.get(i);
 			this.readVisitedPlacesFromFacebookAndStore(friendId);
 		}
@@ -113,7 +113,7 @@ public class PolarFacade {
 		List<String> friendsId = this.facebookRepository
 				.retrieveFriendsId(currentFbUserId);
 
-		for (int i = 100; i < 150; i++) {
+		for (int i = 10; i < 40; i++) {
 			String friendId = friendsId.get(i);
 			this.readPlacesTaggedInPhotoAndStore(friendId);
 		}
@@ -159,8 +159,7 @@ public class PolarFacade {
 		for (PolarPlace place : places) {
 			if (place != null) {
 				String placeNameBeforeDisambiguation = place.getName();
-				PolarPlace placeAfterDisambiguation = this.disambiguator
-						.disambiguatePlace(place);
+				PolarPlace placeAfterDisambiguation = this.disambiguator.disambiguatePlace(place);
 				placesAfterDisambiguation.add(placeAfterDisambiguation);
 				logger.info("Place name before: "
 						+ placeNameBeforeDisambiguation

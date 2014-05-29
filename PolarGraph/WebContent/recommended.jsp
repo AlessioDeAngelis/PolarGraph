@@ -28,22 +28,36 @@ th,td {
 						<th>TITLE</th>
 						<td>${concept.name}</td>
 					</tr>
-					<tr>
-						<th>CREATOR</th>
-						<td>${concept.creator}</td>
-					</tr>
-					<tr>
-						<th>SOURCE</th>
-						<td>${concept.source}</td>
-					</tr>
-					<tr>
-						<th>PROVIDER</th>
-						<td>${concept.provider}</td>
-					</tr>
-					<tr>
-						<th>MEDIA</th>
-						<td><img src="${concept.mediaUrl}" /></td>
-					</tr>
+					<c:if test="${!empty concept.creator}">
+						<tr>
+							<th>CREATOR</th>
+							<td> ${concept.creator}</td>
+						</tr>
+					</c:if>
+					<c:if test="${!empty concept.source}">
+						<tr>
+							<th>SOURCE</th>
+							<td>${concept.source}</td>
+						</tr>
+					</c:if>
+					<c:if test="${!empty concept.provider}">
+						<tr>
+							<th>PROVIDER</th>
+							<td>${concept.provider}</td>
+						</tr>
+					</c:if>
+					<c:if test="${!empty concept.mediaUrl}">
+						<tr>
+							<th>MEDIA</th>
+							<td><img src="${concept.mediaUrl}" /></td>
+						</tr>
+					</c:if>
+					<c:if test="${!empty concept.externalLink}">
+						<tr>
+							<th>LINK</th>
+							<td><a href="${concept.externalLink}" />${concept.externalLink}</td>
+						</tr>
+					</c:if>
 				</table>
 			</li>
 		</ul>

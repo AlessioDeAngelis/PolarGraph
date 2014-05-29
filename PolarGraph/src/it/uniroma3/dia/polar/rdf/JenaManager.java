@@ -5,6 +5,8 @@ import it.uniroma3.dia.polar.graph.model.RecommendedObject;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.HashMap;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -34,7 +36,7 @@ public class JenaManager {
 		queryString.append(" PREFIX edm: <http://www.europeana.eu/schemas/edm/> ");
 		queryString.append(" PREFIX ore: <http://www.openarchives.org/ore/terms/> ");
 		queryString.append(" PREFIX dc: <http://purl.org/dc/elements/1.1/> ");
-		queryString.append("  SELECT distinct ?proxy ?creator ?mediaURL ?provider ?title ?source"); // at
+		queryString.append("  SELECT distinct ?proxy ?creator ?mediaURL ?provider ?title ?source ?cho"); // at
 																									// the
 																									// moment
 																									// we
@@ -51,7 +53,8 @@ public class JenaManager {
 		queryString.append(" dc:title ?source;");
 		queryString.append(" dc:type ?type.");
 		queryString.append(" ?proxy edm:isShownBy ?mediaURL. ");
-		queryString.append("   ?proxy edm:provider ?provider. ");
+		queryString.append("   ?proxy edm:dataProvider ?provider. ");
+		queryString.append(" ?proxy edm:aggregatedCHO ?cho. ");
 		queryString.append(" {    ?s dc:title '" + term + "' .} UNION ");
 		queryString.append(" {     ?s dc:subject '" + term + "' .} } LIMIT 100");
 
@@ -73,6 +76,7 @@ public class JenaManager {
 			String creator = solution.get("creator").toString();
 			String provider = solution.get("provider").toString();
 			String source = solution.get("source").toString();
+			String externalLink = "http://europeana.ontotext.com/resource?uri="+solution.get("cho").toString();
 
 			if (!prevUri.equals(uri)) { // different object, create it and add
 										// it to the collection
@@ -84,6 +88,7 @@ public class JenaManager {
 				retrievedObject.setProvider(provider);
 				retrievedObject.setWhy(term);
 				retrievedObject.setSource(source);
+				retrievedObject.setExternalLink(externalLink);
 				retrievedObjects.add(retrievedObject);
 			} else { // same object as before, update the creator values
 				retrievedObject.setCreator(retrievedObject.getCreator() + " ; " + creator);
@@ -200,7 +205,8 @@ public class JenaManager {
 
 		return retrievedObjects;
 	}
-
+	
+	@Deprecated
 	public String queryDbpediaForImageUrl(String dbpediaUri) {
 		String ontology_service = "http://dbpedia.org/sparql";
 		String endpoint = "otee:Endpoints";
@@ -219,6 +225,34 @@ public class JenaManager {
 		}
 
 		return mediaUrl;
+	}
+	
+	/**
+	 * Given a dbpedia uri, extracts extra infos. At the moment the extra infos are the mediaUrl and the external wikipedia link
+	 **/
+	public Map<String,String> queryDbpediaForExtraInfo(String dbpediaUri) {
+		Map<String,String> dbpediaAttribute2value = new HashMap<String,String>();
+		String ontology_service = "http://dbpedia.org/sparql";
+		String endpoint = "otee:Endpoints";
+		String endpointsSparql = "PREFIX dbp-prop: <http://dbpedia.org/property/> PREFIX dbpedia: <http://dbpedia.org/resource/> PREFIX dbpedia-owl: <http://dbpedia.org/ontology/> PREFIX foaf: <http://xmlns.com/foaf/0.1/> select distinct ?mediaUrl ?externalLink { "
+				+ dbpediaUri + " dbpedia-owl:thumbnail ?mediaUrl; foaf:isPrimaryTopicOf ?externalLink.} LIMIT 1";
+
+		QueryExecution queryExecution = QueryExecutionFactory.sparqlService(ontology_service,
+				String.format(endpointsSparql, endpoint));
+		ResultSet results = queryExecution.execSelect();
+
+		String mediaUrl = "";
+		String externalLink = "";
+		if (results.hasNext()) {
+			QuerySolution solution = results.next();
+			mediaUrl = solution.get("mediaUrl").toString();
+			externalLink = solution.get("externalLink").toString();
+			
+			dbpediaAttribute2value.put("mediaUrl",mediaUrl);
+			dbpediaAttribute2value.put("externalLink", externalLink);
+		}
+
+		return dbpediaAttribute2value;
 	}
 
 	public static List<String> conceptQuery(String cm, String cx) {

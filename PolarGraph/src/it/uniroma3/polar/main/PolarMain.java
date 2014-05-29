@@ -29,8 +29,8 @@ public class PolarMain {
 		long start = System.currentTimeMillis();
 		logger.info("Start");
 //		recommendPlace();
-		storeMyInfo();
-//		storeMyFriendsInfo();
+//		storeMyInfo();
+		storeMyFriendsInfo();
 //		readAllNodesOfAType("Category");
 //		placeCategories();
 		logger.info("End in " + (System.currentTimeMillis() - start) + " msec");
@@ -86,7 +86,7 @@ public class PolarMain {
 //
 		 polarController.readUserFromFacebookAndStore(fbUserId);
 		polarController.readVisitedPlacesFromFacebookAndStore(fbUserId);
-//		polarController.readPlacesTaggedInPhotoAndStore(fbUserId);
+		polarController.readPlacesTaggedInPhotoAndStore(fbUserId);
 
 //		 polarController.readFriendsFromFacebookAndStore(fbUserId);
 
