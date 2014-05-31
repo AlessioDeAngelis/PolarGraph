@@ -56,7 +56,7 @@ public class SemanticPlacesDisambiguator implements Disambiguator {
 		String term = placeToDisambiguate.getName();
 		String termSanitized = term.replace(".", "+"); // remove the dots
 		String tagMeJsonOutput = this.restManager.queryTagMe(termSanitized);
-		List<SpottedPlace> tagMePlaces = this.jsonParser.parseTagMe(tagMeJsonOutput);
+		List<SpottedPlace> tagMePlaces = this.jsonParser.parseTagMe(tagMeJsonOutput,0.1);
 		for (SpottedPlace tagMePlace : tagMePlaces) {
 			String placeDbpediaUri = tagMePlace.getUri();
 			// we cannot do refinement based on the coordinates of the tag if

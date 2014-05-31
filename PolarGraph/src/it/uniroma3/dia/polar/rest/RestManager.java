@@ -52,6 +52,17 @@ public class RestManager {
 		String output = this.restOperation(urlString, requestMethod, requestProperty);
 		return output;
 	}
+	
+	public String queryTagMeLongText(String text, String language) {
+		RestManager restManager = new RestManager();		
+		String parsedText = text.replace(" ", "+").replace(".", "+");
+		String urlString = "http://tagme.di.unipi.it/tag?key=gaspare2014&long_text=true&include_categories=true&lang="+language+"&text="+parsedText;
+
+		String requestMethod = "GET";
+		String requestProperty = "application/xml";
+		String output = this.restOperation(urlString, requestMethod, requestProperty);
+		return output;
+	}
 
 	/**
 	 * This method is used to query a rest service and generates its output.

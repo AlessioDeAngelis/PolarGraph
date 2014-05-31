@@ -8,6 +8,8 @@ import it.uniroma3.dia.polar.graph.model.PolarPlace;
 import it.uniroma3.dia.polar.utils.ApplicationProperties;
 
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.List;
 
 import org.slf4j.Logger;
@@ -19,6 +21,9 @@ import com.restfb.Connection;
 import com.restfb.DefaultFacebookClient;
 import com.restfb.FacebookClient;
 import com.restfb.FacebookClient.AccessToken;
+import com.restfb.Parameter;
+import com.restfb.json.JsonArray;
+import com.restfb.json.JsonObject;
 import com.restfb.types.CategorizedFacebookType;
 import com.restfb.types.NamedFacebookType;
 import com.restfb.types.Photo;
@@ -38,12 +43,14 @@ public class FacebookRepository {
 		this.accessTokenString = accessTokenString;
 		this.facebookClient = new DefaultFacebookClient(accessTokenString);
 	}
-	
+
 	/**
-	 * Call this method to extend the access token time_to_live to 60 days (instead of 1 hour)
+	 * Call this method to extend the access token time_to_live to 60 days
+	 * (instead of 1 hour)
 	 * */
-	public void extendTokenLife(){
-		this.accessToken = this.facebookClient.obtainExtendedAccessToken(ApplicationProperties.FACEBOOK_CLIENT_ID, ApplicationProperties.FACEBOOK_SECURE_KEY, accessTokenString);
+	public void extendTokenLife() {
+		this.accessToken = this.facebookClient.obtainExtendedAccessToken(ApplicationProperties.FACEBOOK_CLIENT_ID,
+				ApplicationProperties.FACEBOOK_SECURE_KEY, accessTokenString);
 		this.accessTokenString = this.accessToken.getAccessToken();
 		this.facebookClient = new DefaultFacebookClient(this.accessToken.getAccessToken());
 	}
@@ -107,11 +114,86 @@ public class FacebookRepository {
 			User facebookFriend = facebookClient.fetchObject(friendFacebookId, User.class);
 			Person friend = fbUserToPerson(facebookFriend);
 			friends.add(friend);
-			logger.debug(friend.getId() + " , " + friend.getName() + " retrieved from facebook");		
+			logger.debug(friend.getId() + " , " + friend.getName() + " retrieved from facebook");
 		}
 		this.logger.info("END");
 
 		return friends;
+	}
+
+	/**
+	 * @param fbUserId
+	 *            is the facebook id of the user that wants to be retrieved
+	 * @param source
+	 *            is the facebook path of the resources in the graph api , for
+	 *            example /feed, /posts
+	 * */
+	public List<String> retrievePostsByUserId(String fbUserId, String source) throws NullPointerException {
+		this.logger.info("RETRIEVING THE POSTS BY THE USER " + fbUserId);
+
+		List<String> messages = new ArrayList<>();
+		Connection<Post> userFeed = facebookClient.fetchConnection(fbUserId + source, Post.class);
+		/*
+		 * Firstly get all the feed post
+		 */
+		int numberOfConnections = 0;
+		for (List<Post> myFeedConnectionPage : userFeed) {
+			numberOfConnections++;
+			// TODO: remove the number of connections
+			// TODO: use a set to avoid duplication
+			// if (numberOfConnections > 20) {
+			// break;
+			// }
+			int numberOfPostToAnalyze = myFeedConnectionPage.size() - 1;
+			for (int i = 0; i < numberOfPostToAnalyze; i++) {
+				Post post = myFeedConnectionPage.get(i);
+				/*
+				 * We are interested only in the post that have some place
+				 * bounded
+				 */
+				try {
+					String message = post.getMessage();
+					if (message != null && !message.equals(" ") && !message.equals("")) {
+						messages.add(message);
+					}
+				} catch (NullPointerException e) {
+
+				}
+			}
+		}
+		this.logger.info("END");
+
+		return messages;
+	}
+
+	/**
+	 * @param fbUserId
+	 *            is the facebook id of the user that wants to be retrieved
+	 * @param source
+	 *            is the facebook path of the resources in the graph api , for
+	 *            example /feed, /posts
+	 * */
+	public List<String> retrievePlacesByUserIdV2(String fbUserId, String source) throws NullPointerException {
+		this.logger.info("RETRIEVING THE POSTS BY THE USER " + fbUserId);
+
+		List<String> messages = new ArrayList<>();
+	
+		// Here's how to fetch a connection
+
+	
+		JsonObject photosConnection = facebookClient.fetchObject("v2.0/me/tagged_places", JsonObject.class,
+				Parameter.with("limit", 300));
+
+		JsonArray array = photosConnection.getJsonArray("data");
+		System.out.println(array);
+		for (int i = 0; i < array.length(); i++) {
+			JsonObject object = array.getJsonObject(i);
+			JsonObject placeString = object.getJsonObject("place");
+			System.out.println(placeString);
+			//TODO: vedere se questo è fattibile da fare con l'oath
+		}
+
+		return messages;
 	}
 
 	// TODO: find a common method for retrieving to avoid duplicate code
@@ -122,7 +204,7 @@ public class FacebookRepository {
 	 *            is the facebook path of the resources in the graph api , for
 	 *            example /feed, /posts
 	 * */
-	public List<PolarPlace> retrieveVisitedPlacesByUserId(String fbUserId, String source) throws NullPointerException{
+	public List<PolarPlace> retrieveVisitedPlacesByUserId(String fbUserId, String source) throws NullPointerException {
 		this.logger.info("RETRIEVING THE PLACES VISITED (POSTS) BY THE USER " + fbUserId);
 
 		List<PolarPlace> visitedPlaces = new ArrayList<PolarPlace>();
@@ -145,63 +227,64 @@ public class FacebookRepository {
 				 * We are interested only in the post that have some place
 				 * bounded
 				 */
-				try{
+				try {
 					PolarPlace visitedPlace = null;
-				if (post != null && post.getPlace() != null && post.getPlace().getLocation() != null) {
-					// Construct the polar place
-					visitedPlace = new PolarPlace();
-					String placeId = post.getPlace().getId();
-					String placeName = post.getPlace().getName();
-					String locationStreet = post.getPlace().getLocation().getStreet();
-					String locationCity = post.getPlace().getLocation().getCity();
-					String locationCountry = post.getPlace().getLocation().getCountry();
-					double latitude = 0;
-					double longitude = 0;
-					if (post.getPlace().getLocation().getLatitude() != null
-							&& post.getPlace().getLocation().getLongitude() != null) {
-						latitude = post.getPlace().getLocation().getLatitude();
-						longitude = post.getPlace().getLocation().getLongitude();
-					}
+					if (post != null && post.getPlace() != null && post.getPlace().getLocation() != null) {
+						// Construct the polar place
+						visitedPlace = new PolarPlace();
+						String placeId = post.getPlace().getId();
+						String placeName = post.getPlace().getName();
+						String locationStreet = post.getPlace().getLocation().getStreet();
+						String locationCity = post.getPlace().getLocation().getCity();
+						String locationCountry = post.getPlace().getLocation().getCountry();
+						double latitude = 0;
+						double longitude = 0;
+						if (post.getPlace().getLocation().getLatitude() != null
+								&& post.getPlace().getLocation().getLongitude() != null) {
+							latitude = post.getPlace().getLocation().getLatitude();
+							longitude = post.getPlace().getLocation().getLongitude();
+						}
 
-					Location location = new Location(locationStreet, locationCity, locationCountry, latitude, longitude);
+						Location location = new Location(locationStreet, locationCity, locationCountry, latitude,
+								longitude);
 
-					visitedPlace.setId(placeId);
-					visitedPlace.setName(placeName);
-					visitedPlace.setLocation(location);
+						visitedPlace.setId(placeId);
+						visitedPlace.setName(placeName);
+						visitedPlace.setLocation(location);
 
-					// add the likes
-					if (post.getLikes() != null) {
-						Likes likes = post.getLikes();
-						for (NamedFacebookType type : likes.getData()) {
-							visitedPlace.addLikedBy(type.getId());
+						// add the likes
+						if (post.getLikes() != null) {
+							Likes likes = post.getLikes();
+							for (NamedFacebookType type : likes.getData()) {
+								visitedPlace.addLikedBy(type.getId());
+							}
+						}
+
+						// We fetch the page of the place from facebook because
+						// we
+						// need the categories
+						FBPage mypage = facebookClient.fetchObject(placeId, FBPage.class);
+						if (mypage != null) {
+							long likesCount = 0;
+							try {
+								likesCount = mypage.getLikes();
+							} catch (NullPointerException e) {
+
+							}
+							visitedPlace.setLikesCount(likesCount);
+							for (CategorizedFacebookType fbCategory : mypage.getCategoryList()) {
+								Category category = new Category();
+								category.setId(fbCategory.getId());
+								category.setName(fbCategory.getName());
+								visitedPlace.addCategory(category);
+							}
 						}
 					}
-
-					// We fetch the page of the place from facebook because we
-					// need the categories
-					FBPage mypage = facebookClient.fetchObject(placeId, FBPage.class);
-					if (mypage != null) {
-						long likesCount = 0;
-						try{
-							likesCount = mypage.getLikes();
-						}
-						catch(NullPointerException e){
-							
-						}
-						visitedPlace.setLikesCount(likesCount);
-						for (CategorizedFacebookType fbCategory : mypage.getCategoryList()) {
-							Category category = new Category();
-							category.setId(fbCategory.getId());
-							category.setName(fbCategory.getName());
-							visitedPlace.addCategory(category);
-						}
-					}
-				}
 					visitedPlaces.add(visitedPlace);
 					logger.debug(visitedPlace.toString());
 
-				}catch(NullPointerException e){
-					
+				} catch (NullPointerException e) {
+
 				}
 			}
 		}
@@ -210,7 +293,7 @@ public class FacebookRepository {
 		return visitedPlaces;
 	}
 
-	public List<PolarPlace> retrieveVisitedPlacesPhotoTaggedByUserId(String fbUserId) throws NullPointerException{
+	public List<PolarPlace> retrieveVisitedPlacesPhotoTaggedByUserId(String fbUserId) throws NullPointerException {
 		this.logger.info("RETRIEVING THE PLACES VISITED (PHOTOS) BY THE USER " + fbUserId);
 
 		List<PolarPlace> visitedPlaces = new ArrayList<PolarPlace>();
@@ -233,8 +316,8 @@ public class FacebookRepository {
 				 * We are interested only in the post that have some place
 				 * bounded
 				 */
-				
-				try{
+
+				try {
 					if (photo != null && photo.getPlace() != null && photo.getPlace().getLocation() != null) {
 						// Construct the polar place
 						PolarPlace visitedPlace = new PolarPlace();
@@ -250,7 +333,8 @@ public class FacebookRepository {
 							latitude = photo.getPlace().getLocation().getLatitude();
 							longitude = photo.getPlace().getLocation().getLongitude();
 						}
-						Location location = new Location(locationStreet, locationCity, locationCountry, latitude, longitude);
+						Location location = new Location(locationStreet, locationCity, locationCountry, latitude,
+								longitude);
 
 						visitedPlace.setId(placeId);
 						visitedPlace.setName(placeName);
@@ -264,7 +348,8 @@ public class FacebookRepository {
 							}
 						}
 
-						// We fetch the page of the place from facebook because we
+						// We fetch the page of the place from facebook because
+						// we
 						// need the categories
 						FBPage mypage = facebookClient.fetchObject(placeId, FBPage.class);
 						if (mypage != null) {
@@ -288,8 +373,8 @@ public class FacebookRepository {
 							}
 						}
 					}
-				}catch(NullPointerException e){
-					
+				} catch (NullPointerException e) {
+
 				}
 			}
 		}

@@ -5,6 +5,7 @@ import it.uniroma3.dia.polar.persistance.FacebookRepository;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.List;
 import java.util.Properties;
 
 import org.junit.Before;
@@ -40,11 +41,19 @@ public class FacebookRepositoryTest {
 		return prop;
 	}
 
-	@Test
+//	@Test
 	public void retrievePlaceTest() {
 		long start = System.currentTimeMillis();
 		this.repository.retrieveVisitedPlacesPhotoTaggedByUserId(facebookUserId);
 		long end = System.currentTimeMillis();
 		System.out.println("ENDED in " + (end - start) +" (msec)");
+	}
+	
+	@Test
+	public void retrievePostsTest(){
+		List<String> ss = this.repository.retrievePlacesByUserIdV2(facebookUserId, "/tagged_places");
+		for(String s:ss){
+			System.out.println(s);
+		}
 	}
 }

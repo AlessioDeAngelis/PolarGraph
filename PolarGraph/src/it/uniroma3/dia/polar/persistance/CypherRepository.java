@@ -341,7 +341,7 @@ public class CypherRepository extends Repository {
 		}
 
 	}
-
+	
 	/**
 	 * Create merging a relationship between a subject node and an object node,
 	 * if it doesn't already exist You need to have the ids of the two nodes
@@ -730,6 +730,30 @@ public class CypherRepository extends Repository {
 			tx.close();
 		}
 		return placesAndVisitors;
+	}
+	
+	/**
+	 * Create a triple in the graph: personId -[TALKS_ABOUT]->concept
+	 * */
+	public void mergeUserTalksAboutRelationship(String subjectId, String objectName, String objectUri) {
+		Transaction tx = graphDb.beginTx();
+		try {
+			Map<String, Object> params = new HashMap<String, Object>();
+			Map<String,Object> conceptProps =  new HashMap<>();
+				params.put("personId", subjectId);
+//				params.put("conceptProps", conceptProps);
+				params.put("objectName", objectName);
+				params.put("objectUri", objectUri);
+
+//			String query = "MATCH (s) WHERE s.id={personId} WITH s MERGE (s)-[:TALKS_ABOUT]->(o:Concept{name: {conceptProps}.name, uri: {conceptProps}.uri});";
+			String query = "MATCH (s) WHERE s.id={personId} WITH s MERGE (s)-[:TALKS_ABOUT]->(o:Concept{name: {objectName}, uri: {objectUri}});";
+
+			logger.debug(query);
+			this.engine.execute(query,params);
+			tx.success();
+		} finally {
+			tx.close();
+		}
 	}
 
 }

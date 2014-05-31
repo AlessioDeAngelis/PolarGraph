@@ -51,7 +51,7 @@ public class NaiveDisambiguator implements Disambiguator {
 		String termSanitized = term.replace(".", "+"); // remove the dots
 		String tagMeJsonOutput = this.restManager.queryTagMe(termSanitized);
 		List<SpottedPlace> tagMePlaces = this.jsonParser
-				.parseTagMe(tagMeJsonOutput);
+				.parseTagMe(tagMeJsonOutput,0.1);
 		if (tagMePlaces != null && tagMePlaces.size() > 0) {
 			correctPlace = tagMePlaces.get(0);
 		} else {
