@@ -49,7 +49,7 @@ public class NaiveDisambiguator implements Disambiguator {
 
 		String term = placeToDisambiguate.getName();
 		String termSanitized = term.replace(".", "+"); // remove the dots
-		String tagMeJsonOutput = this.restManager.queryTagMe(termSanitized);
+		String tagMeJsonOutput = this.restManager.queryTagMe(termSanitized,"en");
 		List<SpottedPlace> tagMePlaces = this.jsonParser
 				.parseTagMe(tagMeJsonOutput,0.1);
 		if (tagMePlaces != null && tagMePlaces.size() > 0) {

@@ -10,6 +10,7 @@ import it.uniroma3.dia.polar.utils.ApplicationProperties;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.Iterator;
 import java.util.List;
 
 import org.slf4j.Logger;
@@ -44,6 +45,10 @@ public class FacebookRepository {
 		this.facebookClient = new DefaultFacebookClient(accessTokenString);
 	}
 
+	public void setAccessTokenString(String accessTokenString) {
+		this.accessTokenString = accessTokenString;
+	}
+
 	/**
 	 * Call this method to extend the access token time_to_live to 60 days
 	 * (instead of 1 hour)
@@ -53,6 +58,10 @@ public class FacebookRepository {
 				ApplicationProperties.FACEBOOK_SECURE_KEY, accessTokenString);
 		this.accessTokenString = this.accessToken.getAccessToken();
 		this.facebookClient = new DefaultFacebookClient(this.accessToken.getAccessToken());
+	}
+
+	public User retrieveLoggedUser() {
+		return this.facebookClient.fetchObject("me", User.class);
 	}
 
 	public Person retrievePersonByUserId(String fbUserId) {
@@ -177,10 +186,9 @@ public class FacebookRepository {
 		this.logger.info("RETRIEVING THE POSTS BY THE USER " + fbUserId);
 
 		List<String> messages = new ArrayList<>();
-	
+
 		// Here's how to fetch a connection
 
-	
 		JsonObject photosConnection = facebookClient.fetchObject("v2.0/me/tagged_places", JsonObject.class,
 				Parameter.with("limit", 300));
 
@@ -189,8 +197,8 @@ public class FacebookRepository {
 		for (int i = 0; i < array.length(); i++) {
 			JsonObject object = array.getJsonObject(i);
 			JsonObject placeString = object.getJsonObject("place");
-			System.out.println(placeString);
-			//TODO: vedere se questo è fattibile da fare con l'oath
+			// System.out.println(placeString);
+			// TODO: vedere se questo è fattibile da fare con l'oath
 		}
 
 		return messages;
@@ -204,6 +212,7 @@ public class FacebookRepository {
 	 *            is the facebook path of the resources in the graph api , for
 	 *            example /feed, /posts
 	 * */
+	@Deprecated
 	public List<PolarPlace> retrieveVisitedPlacesByUserId(String fbUserId, String source) throws NullPointerException {
 		this.logger.info("RETRIEVING THE PLACES VISITED (POSTS) BY THE USER " + fbUserId);
 
@@ -293,6 +302,7 @@ public class FacebookRepository {
 		return visitedPlaces;
 	}
 
+	@Deprecated
 	public List<PolarPlace> retrieveVisitedPlacesPhotoTaggedByUserId(String fbUserId) throws NullPointerException {
 		this.logger.info("RETRIEVING THE PLACES VISITED (PHOTOS) BY THE USER " + fbUserId);
 
@@ -381,5 +391,81 @@ public class FacebookRepository {
 		this.logger.info("END");
 
 		return visitedPlaces;
+	}
+
+	public List<PolarPlace> retrieveUserTaggedLocations(String fbUserId) {
+		JsonObject photosConnection = facebookClient.fetchObject("v1.0/"+fbUserId+"/locations", JsonObject.class,
+				Parameter.with("limit", 300));
+
+		JsonArray array = photosConnection.getJsonArray("data");
+		List<PolarPlace> places = new ArrayList<>();
+		for (int i = 0; i < array.length(); i++) {
+			JsonObject object = array.getJsonObject(i);
+			// System.out.println(object.toString());
+			if (object.has("place")) {
+				JsonObject placeObject = object.getJsonObject("place");
+	
+				PolarPlace visitedPlace = new PolarPlace();
+				String placeId = placeObject.getString("id");
+				String placeName = placeObject.getString("name");
+				
+				if(placeObject.has("location")){
+					JsonObject locationObject = placeObject.getJsonObject("location");
+					Location location = new Location();
+					double latitude = locationObject.getDouble("latitude");
+					double longitude = locationObject.getDouble("longitude");
+					String city = "";
+					String street = "";
+					String country = "";
+					if(locationObject.has("city")){
+						city = locationObject.getString("city");
+					}
+					if(locationObject.has("street")){
+						street = locationObject.getString("street");
+					}if(locationObject.has("country")){
+						country = locationObject.getString("country");
+					}
+					location.setCountry(country);
+					location.setCity(city);
+					location.setStreet(street);
+					location.setLatitude(latitude);
+					location.setLongitude(longitude);
+					visitedPlace.setLocation(location);
+				}
+				visitedPlace.setId(placeId);
+				visitedPlace.setName(placeName);
+				
+				//do not add the place if you already have it to limit the api calls
+				boolean placeInTheList = false;
+				for(PolarPlace pp : places){
+					if(placeId.equals(pp.getId())){
+						placeInTheList = true;
+						break;
+					}
+				}
+				
+				if(!placeInTheList){
+					// We fetch the page of the place from facebook because
+					// we
+					// need the categories
+					FBPage mypage = facebookClient.fetchObject(placeId, FBPage.class);
+					if (mypage != null) {
+						if (mypage.getLikes() != null) {
+							long likesCount = mypage.getLikes();
+							visitedPlace.setLikesCount(likesCount);
+						}
+						for (CategorizedFacebookType fbCategory : mypage.getCategoryList()) {
+							Category category = new Category();
+							category.setId(fbCategory.getId());
+							category.setName(fbCategory.getName());
+							visitedPlace.addCategory(category);
+						}
+					}
+					places.add(visitedPlace);
+				}
+				
+			}
+		}
+		return places;
 	}
 }

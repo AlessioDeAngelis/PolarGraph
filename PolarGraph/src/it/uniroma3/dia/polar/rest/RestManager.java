@@ -3,9 +3,11 @@ package it.uniroma3.dia.polar.rest;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLEncoder;
 
 public class RestManager {
 	
@@ -41,11 +43,15 @@ public class RestManager {
 		return output;
 	}
 	
-	public String queryTagMe(String text) {
+	public String queryTagMe(String text, String language) {
 		RestManager restManager = new RestManager();		
-		String parsedText = text.replace(" ", "+").replace(".", "+");
-		String urlString = "http://tagme.di.unipi.it/tag?key=gaspare2014&text="+parsedText+"include_categories=true";
-		urlString = "http://tagme.di.unipi.it/tag?key=gaspare2014&include_categories=true&text="+parsedText;
+		String parsedText = "";
+		try {
+			parsedText = URLEncoder.encode(text,"UTF-8");
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
+		String urlString = "http://tagme.di.unipi.it/tag?key=gaspare2014&include_categories=true&text="+parsedText+"&lang="+language;
 
 		String requestMethod = "GET";
 		String requestProperty = "application/xml";
@@ -55,7 +61,12 @@ public class RestManager {
 	
 	public String queryTagMeLongText(String text, String language) {
 		RestManager restManager = new RestManager();		
-		String parsedText = text.replace(" ", "+").replace(".", "+");
+		String parsedText = "";
+		try {
+			parsedText = URLEncoder.encode(text,"UTF-8");
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
 		String urlString = "http://tagme.di.unipi.it/tag?key=gaspare2014&long_text=true&include_categories=true&lang="+language+"&text="+parsedText;
 
 		String requestMethod = "GET";

@@ -4,16 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>User logged</title>
+<title>User data stored</title>
 </head>
 <body>
-Welcome ${facebookUser.firstName} 
-
-<p><a href="storeFacebookUserData.do" method="post"> Store your info </a></p>
-<p><a href="storeFacebookFriendData.do" method="post"> Store your friends info </a></p>
-<p><a href="chooseSocialCategories.jsp"> Go to the recommendation page </a></p>
-
-
-
+User data stored
 </body>
 </html>

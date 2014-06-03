@@ -87,8 +87,8 @@ public class PolarMain {
 		PolarFacade polarController = injector.getInstance(PolarFacade.class);
 		//
 		polarController.readUserFromFacebookAndStore(fbUserId);
-		polarController.readVisitedPlacesFromFacebookAndStore(fbUserId);
-		polarController.readPlacesTaggedInPhotoAndStore(fbUserId);
+//		polarController.readVisitedPlacesFromFacebookAndStore(fbUserId);
+//		polarController.readPlacesTaggedInPhotoAndStore(fbUserId);
 
 		// polarController.readFriendsFromFacebookAndStore(fbUserId);
 
@@ -146,5 +146,7 @@ public class PolarMain {
 		polarController.readUserPostsAndStore(fbUserId);
 		repo.stopDB();
 	}
+	
+	
 
 }

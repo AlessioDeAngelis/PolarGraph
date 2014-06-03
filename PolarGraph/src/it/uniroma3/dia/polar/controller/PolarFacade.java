@@ -98,12 +98,13 @@ public class PolarFacade {
 		// read the facebook friend ids only if you didn't do it already
 		List<String> friendsId = this.facebookRepository.retrieveFriendsId(currentFbUserId);
 
-		for (int i = 20; i < 40; i++) {
+		for (int i = 7; i < 200; i++) {
 			String friendId = friendsId.get(i);
 			this.readVisitedPlacesFromFacebookAndStore(friendId);
 		}
 	}
 
+	@Deprecated
 	public void readPlacesTaggedInPhotoByFriendsAndStore(String currentFbUserId) {
 		// read the facebook friend ids only if you didn't do it already
 		List<String> friendsId = this.facebookRepository.retrieveFriendsId(currentFbUserId);
@@ -114,25 +115,19 @@ public class PolarFacade {
 		}
 	}
 
+	@Deprecated
 	public void readPlacesTaggedInPhotoAndStore(String fbUserId) {
 		List<PolarPlace> visitedPlaces = this.facebookRepository.retrieveVisitedPlacesPhotoTaggedByUserId(fbUserId);
-		// now you should disambiguate the places in order to have just one
 		// place for nodes that are semantically the same
 		List<PolarPlace> placesToStore = disambiguatePlaces(visitedPlaces);
 		storePlaces(fbUserId, placesToStore);
-	}
+	} // now you should disambiguate the places in order to have just one
 
 	public void readVisitedPlacesFromFacebookAndStore(String fbUserId) {
-		List<PolarPlace> visitedPlaces = this.facebookRepository.retrieveVisitedPlacesByUserId(fbUserId, "/feed");
-
-		// let's remove duplicates
-		Set<PolarPlace> visitedPlacesSet = new HashSet<PolarPlace>();
-		for (PolarPlace place : visitedPlaces) {
-			visitedPlacesSet.add(place);
-		}
+		List<PolarPlace> visitedPlaces = this.facebookRepository.retrieveUserTaggedLocations(fbUserId);
 		// now you should disambiguate the places in order to have just one
 		// place for nodes that are semantically the same
-		List<PolarPlace> placesToStore = disambiguatePlaces(visitedPlacesSet);
+		List<PolarPlace> placesToStore = disambiguatePlaces(visitedPlaces);
 		storePlaces(fbUserId, placesToStore);
 	}
 
@@ -176,9 +171,13 @@ public class PolarFacade {
 				String placeNameBeforeDisambiguation = place.getName();
 				PolarPlace placeAfterDisambiguation = this.disambiguator.disambiguatePlace(place);
 				placesAfterDisambiguation.add(placeAfterDisambiguation);
+
 				logger.info("Place name before: " + placeNameBeforeDisambiguation
 						+ ", place name after disambiguation: " + placeAfterDisambiguation.getName() + ", uri: "
 						+ (placeAfterDisambiguation.getUri() != null ? placeAfterDisambiguation.getUri() : ""));
+//				logger.info("Place name before: " + place
+//						+ ", place name after disambiguation: " + placeAfterDisambiguation.getName() + ", uri: "
+//						+ (placeAfterDisambiguation.getUri() != null ? placeAfterDisambiguation.getUri() : ""));
 			}
 		}
 		return placesAfterDisambiguation;

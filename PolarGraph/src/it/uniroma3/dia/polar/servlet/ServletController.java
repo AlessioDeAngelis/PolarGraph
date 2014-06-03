@@ -4,6 +4,8 @@ import it.uniroma3.dia.polar.servlet.actions.Action;
 import it.uniroma3.dia.polar.servlet.actions.ChooseSocialCategoriesAction;
 import it.uniroma3.dia.polar.servlet.actions.LoginAction;
 import it.uniroma3.dia.polar.servlet.actions.RecommendAction;
+import it.uniroma3.dia.polar.servlet.actions.StoreFacebookFriendDataAction;
+import it.uniroma3.dia.polar.servlet.actions.StoreFacebookUserDataAction;
 import it.uniroma3.dia.polar.servlet.actions.WelcomeAction;
 
 import java.io.IOException;
@@ -45,13 +47,19 @@ public class ServletController extends HttpServlet {
 		this.command2actionClass.put("/welcome.do", WelcomeAction.class);
 		this.command2actionClass.put("/recommend.do", RecommendAction.class);
 		this.command2actionClass.put("/chooseCategories.do", ChooseSocialCategoriesAction.class);
+		this.command2actionClass.put("/storeFacebookUserData.do", StoreFacebookUserDataAction.class);
+		this.command2actionClass.put("/storeFacebookFriendData.do", StoreFacebookFriendDataAction.class);
 
+		
 		this.result2page = new HashMap<String, String>();
 		this.result2page.put("autenticazioneriuscita", "/main.jsp");
 		this.result2page.put("categories_choosen", "/chooseRecommender.jsp");
 		this.result2page.put("recommended_objects_returned", "/recommended.jsp");
 		this.result2page.put("facebook_login_ok", "/userLogged.jsp");
 		this.result2page.put("chooseSocialCategories", "/chooseSocialCategories.jsp");
+		this.result2page.put("userDataStored", "/userDataStored.jsp");
+		this.result2page.put("friendsDataStored", "/friendsDataStored.jsp");
+
 
 	}
 
