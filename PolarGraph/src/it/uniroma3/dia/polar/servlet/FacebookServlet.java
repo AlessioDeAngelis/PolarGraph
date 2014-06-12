@@ -1,6 +1,6 @@
 package it.uniroma3.dia.polar.servlet;
 
-import it.uniroma3.dia.polar.utils.ApplicationProperty;
+import it.uniroma3.dia.polar.utils.ApplicationProperties;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -35,11 +35,11 @@ public class FacebookServlet extends HttpServlet {
 
 		if (code != null) {
 			String red = "https://graph.facebook.com/oauth/access_token?client_id="
-					+ ApplicationProperty.FACEBOOK_CLIENT_ID
+					+ ApplicationProperties.FACEBOOK_CLIENT_ID
 					+ "&redirect_uri="
 					+ redirectUri
 					+ "&client_secret="
-					+ ApplicationProperty.FACEBOOK_SECURE_KEY + "&code=" + code;
+					+ ApplicationProperties.FACEBOOK_SECURE_KEY + "&code=" + code;
 
 			System.out.println(red);
 

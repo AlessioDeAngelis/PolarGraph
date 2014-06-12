@@ -3,8 +3,15 @@ package it.uniroma3.polar.main;
 import it.uniroma3.dia.dependencyinjection.PolarModule;
 import it.uniroma3.dia.polar.controller.PolarFacade;
 import it.uniroma3.dia.polar.controller.PropertiesManager;
+import it.uniroma3.dia.polar.graph.model.Couple;
+import it.uniroma3.dia.polar.graph.model.PolarPlace;
+import it.uniroma3.dia.polar.graph.model.RecommendedObject;
 import it.uniroma3.dia.polar.persistance.CypherRepository;
+import it.uniroma3.dia.polar.recommender.semantic.SemanticCleverRecommender;
+import it.uniroma3.dia.polar.recommender.social.SelectedCategoriesSocialRecommender;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Properties;
 
 import org.slf4j.Logger;
@@ -16,15 +23,18 @@ import com.google.inject.Injector;
 public class PolarMain {
 
 	private final static Logger logger = LoggerFactory.getLogger(PolarMain.class);
-//TODO: only one injector invocation
+
+	// TODO: only one injector invocation
 	public static void main(String[] args) {
 
 		long start = System.currentTimeMillis();
 		logger.info("Start");
-		recommendPlace();
-//		storeMyInfo();
-//		storeMyFriendsInfo();
-//		readAllNodesOfAType("Category");
+		// recommendPlace();
+		// storeMyInfo();
+		// storeMyFriendsInfo();
+		// readAllNodesOfAType("Category");
+		// placeCategories();
+		storeMyPosts();
 		logger.info("End in " + (System.currentTimeMillis() - start) + " msec");
 	}
 
@@ -75,15 +85,15 @@ public class PolarMain {
 
 		Injector injector = Guice.createInjector(new PolarModule());
 		PolarFacade polarController = injector.getInstance(PolarFacade.class);
-//
-//		 polarController.readUserFromFacebookAndStore(fbUserId);
+		//
+		polarController.readUserFromFacebookAndStore(fbUserId);
 //		polarController.readVisitedPlacesFromFacebookAndStore(fbUserId);
 //		polarController.readPlacesTaggedInPhotoAndStore(fbUserId);
 
-		 polarController.readFriendsFromFacebookAndStore(fbUserId);
+		// polarController.readFriendsFromFacebookAndStore(fbUserId);
 
 	}
-	
+
 	public static void storeMyFriendsInfo() {
 		Properties props = loadProperties();
 
@@ -91,13 +101,13 @@ public class PolarMain {
 
 		Injector injector = Guice.createInjector(new PolarModule());
 		PolarFacade polarController = injector.getInstance(PolarFacade.class);
-		
-		 polarController.readPlacesVisitedByFriendsAndStore(fbUserId);
-		 polarController.readPlacesTaggedInPhotoByFriendsAndStore(fbUserId);
+
+		polarController.readPlacesVisitedByFriendsAndStore(fbUserId);
+		polarController.readPlacesTaggedInPhotoByFriendsAndStore(fbUserId);
 
 	}
-	
-	public static void recommendPlace(){
+
+	public static void recommendPlace() {
 		Properties props = loadProperties();
 
 		String fbUserId = props.getProperty("fb_user_id");
@@ -106,4 +116,37 @@ public class PolarMain {
 		PolarFacade polarController = injector.getInstance(PolarFacade.class);
 		polarController.recommendPlace(fbUserId);
 	}
+
+	public static void placeCategories() {
+		Properties props = loadProperties();
+
+		String fbUserId = props.getProperty("fb_user_id");
+
+		Injector injector = Guice.createInjector(new PolarModule());
+
+		// SelectedCategoriesSocialRanker ranker =
+		// injector.getInstance(SelectedCategoriesSocialRanker.class);
+		// List<RecommendedObject> obs = ranker.recommendObject(fbUserId);
+		// for(RecommendedObject o : obs){
+		// logger.debug(o.getUri() + ", " +o.getScore());
+		// }
+		SemanticCleverRecommender ranker = injector.getInstance(SemanticCleverRecommender.class);
+		ranker.recommendObject(fbUserId,null);
+	}
+
+	public static void storeMyPosts() {
+		Properties props = loadProperties();
+
+		String fbUserId = props.getProperty("fb_user_id");
+
+		Injector injector = Guice.createInjector(new PolarModule());
+		CypherRepository repo = injector.getInstance(CypherRepository.class);
+		PolarFacade polarController = injector.getInstance(PolarFacade.class);
+		repo.startDB();
+		polarController.readUserPostsAndStore(fbUserId);
+		repo.stopDB();
+	}
+	
+	
+
 }

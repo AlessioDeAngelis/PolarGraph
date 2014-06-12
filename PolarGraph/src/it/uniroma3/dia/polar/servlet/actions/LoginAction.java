@@ -1,6 +1,10 @@
 package it.uniroma3.dia.polar.servlet.actions;
 
-import it.uniroma3.dia.polar.utils.ApplicationProperty;
+import it.uniroma3.dia.dependencyinjection.PolarServletModule;
+import it.uniroma3.dia.polar.controller.PolarFacade;
+import it.uniroma3.dia.polar.persistance.CypherRepository;
+import it.uniroma3.dia.polar.persistance.FacebookRepository;
+import it.uniroma3.dia.polar.utils.ApplicationProperties;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -10,6 +14,10 @@ import java.net.URL;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
+
+import com.google.inject.Guice;
+import com.google.inject.Injector;
+import com.restfb.types.User;
 
 public class LoginAction extends Action {
 
@@ -33,11 +41,11 @@ http://www.html.it/articoli/interazione-con-facebook/
 
 		if (code != null) {
 			String red = "https://graph.facebook.com/oauth/access_token?client_id="
-					+ ApplicationProperty.FACEBOOK_CLIENT_ID
+					+ ApplicationProperties.FACEBOOK_CLIENT_ID
 					+ "&redirect_uri="
 					+ redirectUri
 					+ "&client_secret="
-					+ ApplicationProperty.FACEBOOK_SECURE_KEY + "&code=" + code;
+					+ ApplicationProperties.FACEBOOK_SECURE_KEY + "&code=" + code;
 	
 
 
@@ -71,8 +79,26 @@ http://www.html.it/articoli/interazione-con-facebook/
 				throw new RuntimeException(e);
 			}
 		}
-		request.getSession().setAttribute("access_token", accessToken);
-		request.getSession().setAttribute("expires", expires);
+		
+		//now that the user is logged initialize the guice injector and store the current fb user info
+		Injector injector = Guice.createInjector(new PolarServletModule(request.getServletContext()));
+		FacebookRepository facebookRepository = injector.getInstance(FacebookRepository.class);
+		facebookRepository.setAccessTokenString(accessToken);
+		facebookRepository.extendTokenLife();
+		User user = facebookRepository.retrieveLoggedUser();
+		PolarFacade polarFacade = injector.getInstance(PolarFacade.class);
+		CypherRepository repository = injector.getInstance(CypherRepository.class);
+		repository.setDbPath("data/db/db_"+ user.getId()+".graph");
+		repository.setDbPath(request.getServletContext().getRealPath("/")+repository.getDbPath());
+		System.out.println(repository.getDbPath());
+
+		request.getSession().setAttribute("facade", polarFacade);	
+		request.getSession().setAttribute("facebookUser", user );	
+		request.getSession().setAttribute("fb_user_id", user.getId() );	
+
+		request.getSession().setAttribute("injector", injector);
+
+		
 		return "facebook_login_ok";
 	}
 

@@ -2,7 +2,7 @@ package it.uniroma3.it.dia.polar.disambiguator;
 
 import org.junit.Test;
 
-import it.uniroma3.dia.polar.disambiguator.XMLParser;
+import it.uniroma3.dia.polar.parser.XMLParser;
 
 public class XMLParserTest {
 	public void parseSpotlightTest() {

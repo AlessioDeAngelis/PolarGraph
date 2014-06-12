@@ -1,4 +1,6 @@
-package it.uniroma3.dia.polar.disambiguator;
+package it.uniroma3.dia.polar.parser;
+
+import it.uniroma3.dia.polar.disambiguator.SpottedPlace;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;

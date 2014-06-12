@@ -2,7 +2,6 @@ package it.uniroma3.dia.polar.servlet.actions;
 
 import it.uniroma3.dia.dependencyinjection.PolarServletModule;
 import it.uniroma3.dia.dependencyinjection.RankerType;
-import it.uniroma3.dia.dependencyinjection.TemporaryRankerModule;
 import it.uniroma3.dia.polar.controller.PolarFacade;
 import it.uniroma3.dia.polar.controller.PropertiesManager;
 import it.uniroma3.dia.polar.persistance.CypherRepository;
@@ -35,7 +34,7 @@ public class WelcomeAction extends Action {
 		request.getSession().setAttribute("fb_user_id", fbUserId );	
 		request.getSession().setAttribute("injector", injector);
 
-		return "homepage";
+		return "chooseSocialCategories";
 	}
 	
 	

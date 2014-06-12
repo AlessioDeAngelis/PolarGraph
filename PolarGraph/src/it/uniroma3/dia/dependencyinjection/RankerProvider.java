@@ -1,8 +1,8 @@
 package it.uniroma3.dia.dependencyinjection;
 
-import it.uniroma3.dia.polar.ranker.NaiveRanker;
-import it.uniroma3.dia.polar.ranker.Ranker;
-import it.uniroma3.dia.polar.ranker.SemanticBaseRanker;
+import it.uniroma3.dia.polar.recommender.Recommender;
+import it.uniroma3.dia.polar.recommender.semantic.SemanticBaseRecommender;
+import it.uniroma3.dia.polar.recommender.social.NaiveSocialRecommender;
 
 import com.google.inject.Inject;
 import com.google.inject.Provider;
@@ -10,22 +10,22 @@ import com.google.inject.Provider;
 /**
  * The provider for Ranker implementation used by guice injection
  * */
-public class RankerProvider implements Provider<Ranker> {
+public class RankerProvider implements Provider<Recommender> {
 
 	private final RankerType rankerType;
-	private final NaiveRanker naiveRanker;
-	private final SemanticBaseRanker semanticBaseRanker;
+	private final NaiveSocialRecommender naiveRanker;
+	private final SemanticBaseRecommender semanticBaseRanker;
 
 	@Inject
-	public RankerProvider(final RankerType rankerParameter,final NaiveRanker naiveRanker,
-			final SemanticBaseRanker semanticBaseRanker) {
+	public RankerProvider(final RankerType rankerParameter,final NaiveSocialRecommender naiveRanker,
+			final SemanticBaseRecommender semanticBaseRanker) {
 		this.naiveRanker = naiveRanker;
 		this.semanticBaseRanker = semanticBaseRanker;
 		this.rankerType = rankerParameter;
 	}
 
 	@Override
-	public Ranker get() {
+	public Recommender get() {
 		switch(rankerType){
 		case SEMANTICBASE:
 			return semanticBaseRanker;

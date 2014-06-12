@@ -1,6 +1,5 @@
-package it.uniroma3.dia.polar.ranker;
+package it.uniroma3.dia.polar.graph.model;
 
-import it.uniroma3.dia.polar.graph.model.PolarPlace;
 
 public class RankedPlace extends PolarPlace {
 	private double score;

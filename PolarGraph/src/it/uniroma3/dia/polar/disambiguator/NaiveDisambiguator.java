@@ -3,6 +3,8 @@ package it.uniroma3.dia.polar.disambiguator;
 import it.uniroma3.dia.polar.controller.PropertiesManager;
 import it.uniroma3.dia.polar.graph.model.Location;
 import it.uniroma3.dia.polar.graph.model.PolarPlace;
+import it.uniroma3.dia.polar.parser.JSONParser;
+import it.uniroma3.dia.polar.parser.XMLParser;
 import it.uniroma3.dia.polar.rest.RestManager;
 
 import java.util.List;
@@ -47,9 +49,9 @@ public class NaiveDisambiguator implements Disambiguator {
 
 		String term = placeToDisambiguate.getName();
 		String termSanitized = term.replace(".", "+"); // remove the dots
-		String tagMeJsonOutput = this.restManager.queryTagMe(termSanitized);
+		String tagMeJsonOutput = this.restManager.queryTagMe(termSanitized,"en");
 		List<SpottedPlace> tagMePlaces = this.jsonParser
-				.parseTagMe(tagMeJsonOutput);
+				.parseTagMe(tagMeJsonOutput,0.1);
 		if (tagMePlaces != null && tagMePlaces.size() > 0) {
 			correctPlace = tagMePlaces.get(0);
 		} else {

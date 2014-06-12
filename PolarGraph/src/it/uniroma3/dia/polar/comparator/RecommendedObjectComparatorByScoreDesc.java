@@ -1,7 +1,7 @@
 package it.uniroma3.dia.polar.comparator;
 
+import it.uniroma3.dia.polar.graph.model.RankedPlace;
 import it.uniroma3.dia.polar.graph.model.RecommendedObject;
-import it.uniroma3.dia.polar.ranker.RankedPlace;
 
 import java.util.Comparator;
 

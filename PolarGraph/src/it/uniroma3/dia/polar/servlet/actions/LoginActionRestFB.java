@@ -1,6 +1,6 @@
 package it.uniroma3.dia.polar.servlet.actions;
 
-import it.uniroma3.dia.polar.utils.ApplicationProperty;
+import it.uniroma3.dia.polar.utils.ApplicationProperties;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -19,7 +19,7 @@ public class LoginActionRestFB extends Action {
 	public String executeAction(HttpServletRequest request)
 			throws ServletException {
 		AccessToken accessToken =
-				  new DefaultFacebookClient().obtainAppAccessToken(ApplicationProperty.FACEBOOK_CLIENT_ID, ApplicationProperty.FACEBOOK_SECURE_KEY);
+				  new DefaultFacebookClient().obtainAppAccessToken(ApplicationProperties.FACEBOOK_CLIENT_ID, ApplicationProperties.FACEBOOK_SECURE_KEY);
 
 		String accessTokenString = accessToken.getAccessToken();
 		request.getSession().setAttribute("access_token", accessTokenString);
