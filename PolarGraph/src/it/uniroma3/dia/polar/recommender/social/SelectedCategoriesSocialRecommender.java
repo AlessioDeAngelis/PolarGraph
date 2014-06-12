@@ -29,7 +29,7 @@ public class SelectedCategoriesSocialRecommender extends AbstractSelectedCategor
 	}
 
 	@Override
-	public List<RecommendedObject> recommendObject(String userId) {
+	public List<RecommendedObject> recommendObject(String userId, List<RecommendedObject> inputObjects) {
 		this.getRepository().startDB();
 		if (this.getCategories().isEmpty()) { // if it is empty add default
 												// categories

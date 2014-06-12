@@ -1,0 +1,1 @@
+select distinct ?m ?p ?o1 where {?m ?p ?o1. ?m dcterms:subject ?o. dbpedia:Colosseum dcterms:subject ?o. ?m a dbpedia-owl:Place. filter(regex(?p, "^http://dbpedia.org/ontology")) } LIMIT 100

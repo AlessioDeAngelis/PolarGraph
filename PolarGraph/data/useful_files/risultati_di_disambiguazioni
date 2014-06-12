@@ -141,3 +141,586 @@ C:\workspaceEclipseEE\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpweb
 2014-06-02 19:13:10 INFO  PolarFacade:175 - Place name before: Dorat, Auvergne, France, place name after disambiguation: Auvergne (region), uri: http://dbpedia.org/resource/Auvergne_(region)
 2014-06-02 19:13:12 INFO  PolarFacade:175 - Place name before: Antony, France, place name after disambiguation: Antony, uri: 
 2014-06-02 19:13:13 INFO  PolarFacade:175 - Place name before: Yessentuki, place name after disambiguation: Yessentuki, uri: http://dbpedia.org/resource/Yessentuki
+2014-06-03 12:44:06 INFO  PolarFacade:175 - Place name before: XS Night & Day Club, place name after disambiguation: XS Night & Day Club, uri: 
+2014-06-03 12:44:07 INFO  PolarFacade:175 - Place name before: Fat-Tuesday Bar, place name after disambiguation: Fat-Tuesday Bar, uri: 
+2014-06-03 12:44:07 INFO  PolarFacade:175 - Place name before: Campo Dei Fiori, place name after disambiguation: Campo Dei Fiori, uri: 
+2014-06-03 12:44:13 INFO  PolarFacade:175 - Place name before: Palazzo delle Esposizioni, place name after disambiguation: Palazzo delle Esposizioni, uri: http://dbpedia.org/resource/Palazzo_delle_Esposizioni
+2014-06-03 12:44:13 INFO  PolarFacade:175 - Place name before: Rifugio Orso Bruno, place name after disambiguation: Rifugio Orso Bruno, uri: 
+2014-06-03 12:44:15 INFO  PolarFacade:175 - Place name before: Trentino-Alto Adige, Italy, place name after disambiguation: Trentino-Alto Adige, Italy, uri: 
+2014-06-03 12:44:16 INFO  PolarFacade:175 - Place name before: Val Di Rabbi, place name after disambiguation: Val Di Rabbi, uri: 
+2014-06-03 12:44:16 INFO  PolarFacade:175 - Place name before: VAL DI SOLE, place name after disambiguation: Val di Sole, uri: http://dbpedia.org/resource/Val_di_Sole
+2014-06-03 12:44:16 INFO  PolarFacade:175 - Place name before: Agritur Malga Valpiana, place name after disambiguation: Agritur Malga Valpiana, uri: 
+2014-06-03 12:44:16 INFO  PolarFacade:175 - Place name before: Lago Dei Caprioli, place name after disambiguation: Lago Dei Caprioli, uri: 
+2014-06-03 12:44:17 INFO  PolarFacade:175 - Place name before: Guardiaregia, place name after disambiguation: Guardiaregia, uri: http://dbpedia.org/resource/Guardiaregia
+2014-06-03 12:44:17 INFO  PolarFacade:175 - Place name before: Ippodromo delle Capannelle, place name after disambiguation: Capannelle Racecourse, uri: http://dbpedia.org/resource/Capannelle_Racecourse
+2014-06-03 12:44:17 INFO  PolarFacade:175 - Place name before: Ippodromo delle Capannelle, place name after disambiguation: Capannelle Racecourse, uri: http://dbpedia.org/resource/Capannelle_Racecourse
+2014-06-03 12:44:17 INFO  PolarFacade:175 - Place name before: Monte Sole, place name after disambiguation: Monte Sole, uri: 
+2014-06-03 12:44:18 INFO  PolarFacade:175 - Place name before: Molfetta, Italy, place name after disambiguation: Molfetta, uri: http://dbpedia.org/resource/Molfetta
+2014-06-03 12:44:18 INFO  PolarFacade:175 - Place name before: Cristalli Di Zucchero, place name after disambiguation: Cristalli Di Zucchero, uri: 
+2014-06-03 12:44:19 INFO  PolarFacade:175 - Place name before: Parco Nazionale Monti Della Laga, place name after disambiguation: Parco Nazionale Monti Della Laga, uri: 
+2014-06-03 12:44:19 INFO  PolarFacade:175 - Place name before: Rome, Italy, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-06-03 12:44:19 INFO  PolarFacade:175 - Place name before: Monte Soratte Innevato (insieme A Seneca), place name after disambiguation: Monte Soratte Innevato (insieme A Seneca), uri: 
+2014-06-03 12:44:19 INFO  PolarFacade:175 - Place name before: Villa Pamphili, place name after disambiguation: Villa Doria Pamphili, uri: http://dbpedia.org/resource/Villa_Doria_Pamphili
+2014-06-03 12:44:25 INFO  PolarFacade:175 - Place name before: City Hall - Barcelona, place name after disambiguation: Barcelona, uri: http://dbpedia.org/resource/Barcelona
+2014-06-03 12:44:25 INFO  PolarFacade:175 - Place name before: El Pati Guanyabens, place name after disambiguation: El Pati Guanyabens, uri: 
+2014-06-03 12:44:26 INFO  PolarFacade:175 - Place name before: Razzmatazz, place name after disambiguation: Razzmatazz, uri: 
+2014-06-03 12:44:26 INFO  PolarFacade:175 - Place name before: El Dirty de Razzmatazz, place name after disambiguation: El Dirty de Razzmatazz, uri: 
+2014-06-03 12:44:26 INFO  PolarFacade:175 - Place name before: Sant Feliu de Guixols, place name after disambiguation: Sant Feliu de GuÃ­xols, uri: 
+2014-06-03 12:44:27 INFO  PolarFacade:175 - Place name before: Playa de Mataró, place name after disambiguation: Playa de Mataró, uri: 
+2014-06-03 12:44:27 INFO  PolarFacade:175 - Place name before: Platja De Mataro, place name after disambiguation: Platja De Mataro, uri: 
+2014-06-03 12:44:27 INFO  PolarFacade:175 - Place name before: Kristiansten Festning, place name after disambiguation: Kristiansten Fortress, uri: http://dbpedia.org/resource/Kristiansten_Fortress
+2014-06-03 12:44:28 INFO  PolarFacade:175 - Place name before: Trondheim, Norway, place name after disambiguation: Trondheim, uri: http://dbpedia.org/resource/Trondheim
+2014-06-03 12:44:28 INFO  PolarFacade:175 - Place name before: Trondhjem, Sor-Trondelag, Norway, place name after disambiguation: Trondheim, uri: http://dbpedia.org/resource/Trondheim
+2014-06-03 12:44:29 INFO  PolarFacade:175 - Place name before: Norway, place name after disambiguation: Norway, uri: http://dbpedia.org/resource/Norway
+2014-06-03 12:44:29 INFO  PolarFacade:175 - Place name before: Mataró, place name after disambiguation: MatarÃ³, uri: http://dbpedia.org/resource/Matar%C3%B3
+2014-06-03 12:44:30 INFO  PolarFacade:175 - Place name before: Les Santes!, place name after disambiguation: Les Santes!, uri: 
+2014-06-03 12:44:30 INFO  PolarFacade:175 - Place name before: Can Foix, place name after disambiguation: Can Foix, uri: 
+2014-06-03 12:44:31 INFO  PolarFacade:175 - Place name before: Rome, Italy, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-06-03 12:44:46 INFO  PolarFacade:175 - Place name before: SOS 4.8 2014, place name after disambiguation: SOS 4.8 2014, uri: 
+2014-06-03 12:44:46 INFO  PolarFacade:175 - Place name before: Terraza Gymage, place name after disambiguation: Terraza Gymage, uri: 
+2014-06-03 12:44:46 INFO  PolarFacade:175 - Place name before: Plaza de Santa Ana, place name after disambiguation: Plaza de Santa Ana, uri: http://dbpedia.org/resource/Plaza_de_Santa_Ana
+2014-06-03 12:44:47 INFO  PolarFacade:175 - Place name before: Port Olímpic, Barcelona, place name after disambiguation: Barcelona, uri: http://dbpedia.org/resource/Barcelona
+2014-06-03 12:44:47 INFO  PolarFacade:175 - Place name before: Aeropuerto de Madrid-Barajas T4, place name after disambiguation: Aeropuerto de Madrid-Barajas T4, uri: 
+2014-06-03 12:44:48 INFO  PolarFacade:175 - Place name before: La Tita Rivera, place name after disambiguation: La Tita Rivera, uri: 
+2014-06-03 12:44:48 INFO  PolarFacade:175 - Place name before: Playa Maspalomas, place name after disambiguation: Maspalomas, uri: http://dbpedia.org/resource/Maspalomas
+2014-06-03 12:44:48 INFO  PolarFacade:175 - Place name before: Madrid–Barajas Airport, place name after disambiguation: Madridâ€“Barajas Airport, uri: http://dbpedia.org/resource/Madrid%E2%80%93Barajas_Airport
+2014-06-03 12:44:49 INFO  PolarFacade:175 - Place name before: La Latina, place name after disambiguation: La Latina, uri: http://dbpedia.org/resource/La_Latina_%28Madrid_Metro%29
+2014-06-03 12:44:50 INFO  PolarFacade:175 - Place name before: La Puerta De Alcala, place name after disambiguation: Puerta de AlcalÃ¡, uri: http://dbpedia.org/resource/Puerta_de_Alcal%C3%A1
+2014-06-03 12:44:51 INFO  PolarFacade:175 - Place name before: Barrio De Malasaña, place name after disambiguation: Barrio De Malasaña, uri: 
+2014-06-03 12:44:51 INFO  PolarFacade:175 - Place name before: Zoo Wuppertal, place name after disambiguation: Wuppertal Zoo, uri: http://dbpedia.org/resource/Wuppertal_Zoo
+2014-06-03 12:44:51 INFO  PolarFacade:175 - Place name before: Wuppertaler Brauhaus, place name after disambiguation: Wuppertaler Brauhaus, uri: 
+2014-06-03 12:44:53 INFO  PolarFacade:175 - Place name before: Mondo Disko, place name after disambiguation: Mondo Disko, uri: 
+2014-06-03 12:44:53 INFO  PolarFacade:175 - Place name before: Berlin - Kreuzberg, place name after disambiguation: Kreuzberg, uri: http://dbpedia.org/resource/Kreuzberg
+2014-06-03 12:44:54 INFO  PolarFacade:175 - Place name before: T4 Aeropuerto De Madrid Barajas, place name after disambiguation: T4 Aeropuerto De Madrid Barajas, uri: 
+2014-06-03 12:44:54 INFO  PolarFacade:175 - Place name before: The Hovse, place name after disambiguation: The Hovse, uri: 
+2014-06-03 12:44:54 INFO  PolarFacade:175 - Place name before: Playa De Laga., place name after disambiguation: Laga, uri: 
+2014-06-03 12:44:55 INFO  PolarFacade:175 - Place name before: Paris, France, place name after disambiguation: Paris, uri: http://dbpedia.org/resource/Paris
+2014-06-03 12:44:56 INFO  PolarFacade:175 - Place name before: Sala Siroco, place name after disambiguation: Sala Siroco, uri: 
+2014-06-03 12:44:56 INFO  PolarFacade:175 - Place name before: Madrid, place name after disambiguation: Madrid, uri: http://dbpedia.org/resource/Madrid
+2014-06-03 12:44:57 INFO  PolarFacade:175 - Place name before: Trondheim, Norway, place name after disambiguation: Trondheim, uri: http://dbpedia.org/resource/Trondheim
+2014-06-03 12:44:58 INFO  PolarFacade:175 - Place name before: Weekday Trondheim, place name after disambiguation: Trondheim, uri: http://dbpedia.org/resource/Trondheim
+2014-06-03 12:44:58 INFO  PolarFacade:175 - Place name before: Aeropuerto Internacional De Bilbao, place name after disambiguation: Bilbao, uri: http://dbpedia.org/resource/Bilbao
+2014-06-03 12:44:58 INFO  PolarFacade:175 - Place name before: Aeroport d'Eivissa - Ibiza Airport, place name after disambiguation: Ibiza Airport, uri: http://dbpedia.org/resource/Ibiza_Airport
+2014-06-03 12:44:59 INFO  PolarFacade:175 - Place name before: Cala d'Hort, Ibiza, place name after disambiguation: Cala d'Hort, Ibiza, uri: 
+2014-06-03 12:44:59 INFO  PolarFacade:175 - Place name before: Sankeys Ibiza, place name after disambiguation: Sankeys Ibiza, uri: 
+2014-06-03 12:45:00 INFO  PolarFacade:175 - Place name before: Formentera, place name after disambiguation: Formentera, uri: http://dbpedia.org/resource/Formentera
+2014-06-03 12:45:00 INFO  PolarFacade:175 - Place name before: Ushuaïa Ibiza Beach Hotel (Official), place name after disambiguation: Ushuaïa Ibiza Beach Hotel (Official), uri: 
+2014-06-03 12:45:01 INFO  PolarFacade:175 - Place name before: Portinatx Ibiza, place name after disambiguation: Ibiza Town, uri: http://dbpedia.org/resource/Ibiza_Town
+2014-06-03 12:45:01 INFO  PolarFacade:175 - Place name before: Ibiza, place name after disambiguation: Ibiza, uri: http://dbpedia.org/resource/Ibiza
+2014-06-03 12:45:01 INFO  PolarFacade:175 - Place name before: Gernika, place name after disambiguation: Guernica, uri: http://dbpedia.org/resource/Guernica
+2014-06-03 12:45:01 INFO  PolarFacade:175 - Place name before: Museo Guggenheim Bilbao, place name after disambiguation: Guggenheim Museum Bilbao, uri: http://dbpedia.org/resource/Guggenheim_Museum_Bilbao
+2014-06-03 12:45:02 INFO  PolarFacade:175 - Place name before: Aeroporto De Orly -Paris, place name after disambiguation: Orly, France, uri: http://dbpedia.org/resource/Orly,_France
+2014-06-03 12:45:02 INFO  PolarFacade:175 - Place name before: Gernika-Lumo, place name after disambiguation: Guernica, uri: http://dbpedia.org/resource/Guernica
+2014-06-03 12:45:02 INFO  PolarFacade:175 - Place name before: Playa La Manga, place name after disambiguation: La Manga, uri: http://dbpedia.org/resource/La_Manga
+2014-06-03 12:45:03 INFO  PolarFacade:175 - Place name before: Alicante Airport, place name after disambiguation: Alicante Airport, uri: http://dbpedia.org/resource/Alicante_Airport
+2014-06-03 12:45:03 INFO  PolarFacade:175 - Place name before: La Manga del Mar Menor, place name after disambiguation: La Manga, uri: http://dbpedia.org/resource/La_Manga
+2014-06-03 12:45:03 INFO  PolarFacade:175 - Place name before: Alexanderplatz, place name after disambiguation: Alexanderplatz, uri: http://dbpedia.org/resource/Alexanderplatz
+2014-06-03 12:45:04 INFO  PolarFacade:175 - Place name before: Aeropuerto de Bilbao, place name after disambiguation: Bilbao, uri: http://dbpedia.org/resource/Bilbao
+2014-06-03 12:45:04 INFO  PolarFacade:175 - Place name before: Ibarrangelu, place name after disambiguation: Ibarrangelu, uri: http://dbpedia.org/resource/Ibarrangelu
+2014-06-03 12:45:04 INFO  PolarFacade:175 - Place name before: Los Monegros, place name after disambiguation: Los Monegros, uri: 
+2014-06-03 12:45:04 INFO  PolarFacade:175 - Place name before: Platja de la Barceloneta, place name after disambiguation: La Barceloneta, Barcelona, uri: http://dbpedia.org/resource/La_Barceloneta,_Barcelona
+2014-06-03 12:45:05 INFO  PolarFacade:175 - Place name before: Barcelona, Spain, place name after disambiguation: Barcelona, uri: http://dbpedia.org/resource/Barcelona
+2014-06-03 12:45:05 INFO  PolarFacade:175 - Place name before: Mundaka, place name after disambiguation: Mundaka, uri: http://dbpedia.org/resource/Mundaka
+2014-06-03 12:45:05 INFO  PolarFacade:175 - Place name before: Barcelona Airport, place name after disambiguation: Barcelonaâ€“El Prat Airport, uri: http://dbpedia.org/resource/Barcelona%E2%80%93El_Prat_Airport
+2014-06-03 12:45:05 INFO  PolarFacade:175 - Place name before: Silken Ramblas, place name after disambiguation: Silken Ramblas, uri: 
+2014-06-03 12:45:08 INFO  PolarFacade:175 - Place name before: Adams, place name after disambiguation: Adams, uri: 
+2014-06-03 12:45:08 INFO  PolarFacade:175 - Place name before: Realfagbygget NTNU, place name after disambiguation: Norwegian University of Science and Technology, uri: http://dbpedia.org/resource/Norwegian_University_of_Science_and_Technology
+2014-06-03 12:45:08 INFO  PolarFacade:175 - Place name before: Nevsky Prospect St. Petersburg, place name after disambiguation: Saint Petersburg, uri: http://dbpedia.org/resource/Saint_Petersburg
+2014-06-03 12:45:08 INFO  PolarFacade:175 - Place name before: Kazan Cathedral, place name after disambiguation: Kazan Cathedral, St. Petersburg, uri: http://dbpedia.org/resource/Kazan_Cathedral,_St._Petersburg
+2014-06-03 12:45:08 INFO  PolarFacade:175 - Place name before: Saint Petersburg, Russia, place name after disambiguation: Saint Petersburg, uri: http://dbpedia.org/resource/Saint_Petersburg
+2014-06-03 12:45:09 INFO  PolarFacade:175 - Place name before: ??????????????? ??????? - The State Hermitage Museum, place name after disambiguation: Hermitage Museum, uri: http://dbpedia.org/resource/Hermitage_Museum
+2014-06-03 12:45:09 INFO  PolarFacade:175 - Place name before: Tallinn, Estonia, place name after disambiguation: Tallinn, uri: http://dbpedia.org/resource/Tallinn
+2014-06-03 12:45:10 INFO  PolarFacade:175 - Place name before: Pärnu, place name after disambiguation: PÃ¤rnu, uri: http://dbpedia.org/resource/P%C3%A4rnu
+2014-06-03 12:45:10 INFO  PolarFacade:175 - Place name before: Riga, Latvia, place name after disambiguation: Latvia, uri: http://dbpedia.org/resource/Latvia
+2014-06-03 12:45:22 INFO  PolarFacade:175 - Place name before: Piazza di Campitelli, place name after disambiguation: Campitelli, uri: http://dbpedia.org/resource/Campitelli
+2014-06-03 12:45:22 INFO  PolarFacade:175 - Place name before: Lettere e Filosofia Roma3, place name after disambiguation: Lettere e Filosofia Roma3, uri: 
+2014-06-03 12:45:22 INFO  PolarFacade:175 - Place name before: Canino (Vt), place name after disambiguation: Canino, uri: http://dbpedia.org/resource/Canino
+2014-06-03 12:45:23 INFO  PolarFacade:175 - Place name before: Vatican Museums - Musei Vaticani, place name after disambiguation: Vatican Museums, uri: http://dbpedia.org/resource/Vatican_Museums
+2014-06-03 12:45:23 INFO  PolarFacade:175 - Place name before: Ponton Dell Elce, place name after disambiguation: Ponton dell'Elce, uri: 
+2014-06-03 12:45:23 INFO  PolarFacade:175 - Place name before: Faber Beach, place name after disambiguation: Faber Beach, uri: 
+2014-06-03 12:45:24 INFO  PolarFacade:175 - Place name before: Università Roma Tre - Lettere e Filosofia, place name after disambiguation: Roma Tre University, uri: http://dbpedia.org/resource/Roma_Tre_University
+2014-06-03 12:45:24 INFO  PolarFacade:175 - Place name before: Centro Commerciale Gulliver, place name after disambiguation: Centro Commerciale Gulliver, uri: 
+2014-06-03 12:45:25 INFO  PolarFacade:175 - Place name before: Ostia Lido, place name after disambiguation: Lido di Ostia, uri: http://dbpedia.org/resource/Ostia_%28Rome%29
+2014-06-03 12:45:25 INFO  PolarFacade:175 - Place name before: Stazione La Storta, place name after disambiguation: Stazione La Storta, uri: 
+2014-06-03 12:45:26 INFO  PolarFacade:175 - Place name before: Den Gode Nabo, place name after disambiguation: Den Gode Nabo, uri: 
+2014-06-03 12:45:26 INFO  PolarFacade:175 - Place name before: Moholt, Sor-Trondelag, Norway, place name after disambiguation: Moholt, uri: http://dbpedia.org/resource/Moholt
+2014-06-03 12:45:26 INFO  PolarFacade:175 - Place name before: Norwegian University of Science and Technology, place name after disambiguation: Norwegian University of Science and Technology, uri: http://dbpedia.org/resource/Norwegian_University_of_Science_and_Technology
+2014-06-03 12:45:26 INFO  PolarFacade:175 - Place name before: NTNU Dragvoll Idrettssenter, place name after disambiguation: Dragvoll, uri: http://dbpedia.org/resource/Dragvoll
+2014-06-03 12:45:26 INFO  PolarFacade:175 - Place name before: Trondheim, Norway, place name after disambiguation: Trondheim, uri: http://dbpedia.org/resource/Trondheim
+2014-06-03 12:45:27 INFO  PolarFacade:175 - Place name before: Elektrobygget Gløshaugen NTNU, place name after disambiguation: Norwegian University of Science and Technology, uri: http://dbpedia.org/resource/Norwegian_University_of_Science_and_Technology
+2014-06-03 12:45:27 INFO  PolarFacade:175 - Place name before: Piazza Venezia, place name after disambiguation: Piazza Venezia, uri: http://dbpedia.org/resource/Piazza_Venezia
+2014-06-03 12:45:27 INFO  PolarFacade:175 - Place name before: Circonvallazione Cornelia, place name after disambiguation: Circonvallazione Cornelia, uri: 
+2014-06-03 12:45:28 INFO  PolarFacade:175 - Place name before: Stazione Laurentina Metro B, place name after disambiguation: Stazione Laurentina Metro B, uri: 
+2014-06-03 12:45:28 INFO  PolarFacade:175 - Place name before: Cerveteri!, place name after disambiguation: Cerveteri, uri: http://dbpedia.org/resource/Cerveteri
+2014-06-03 12:45:28 INFO  PolarFacade:175 - Place name before: Autostrada civitavecchia - verso Grosseto, place name after disambiguation: Civitavecchia, uri: http://dbpedia.org/resource/Civitavecchia
+2014-06-03 12:45:28 INFO  PolarFacade:175 - Place name before: Viale Trastevere, place name after disambiguation: Trastevere, uri: http://dbpedia.org/resource/Trastevere
+2014-06-03 12:45:29 INFO  PolarFacade:175 - Place name before: White Club, place name after disambiguation: White Club, uri: 
+2014-06-03 12:45:30 INFO  PolarFacade:175 - Place name before: A1 Bologna, place name after disambiguation: A1 Bologna, uri: 
+2014-06-03 12:45:30 INFO  PolarFacade:175 - Place name before: Autostrada A1, place name after disambiguation: Autostrada A1, uri: 
+2014-06-03 12:45:30 INFO  PolarFacade:175 - Place name before: Villa Borghese, place name after disambiguation: Villa Borghese, uri: http://dbpedia.org/resource/Villa_Borghese_gardens
+2014-06-03 12:45:31 INFO  PolarFacade:175 - Place name before: Circo Massimo, place name after disambiguation: Circus Maximus, uri: http://dbpedia.org/resource/Circus_Maximus
+2014-06-03 12:45:31 INFO  PolarFacade:175 - Place name before: Testaccio, place name after disambiguation: Testaccio, uri: http://dbpedia.org/resource/Testaccio
+2014-06-03 12:45:31 INFO  PolarFacade:175 - Place name before: Stazione Trastevere, place name after disambiguation: Trastevere, uri: http://dbpedia.org/resource/Trastevere
+2014-06-03 12:45:31 INFO  PolarFacade:175 - Place name before: Biblioteca  roma tre-Lettere E Filosofia, place name after disambiguation: Biblioteca  roma tre-Lettere E Filosofia, uri: 
+2014-06-03 12:45:32 INFO  PolarFacade:175 - Place name before: Maccarese, Lazio, Italy, place name after disambiguation: Lazio, uri: http://dbpedia.org/resource/Lazio
+2014-06-03 12:45:32 INFO  PolarFacade:175 - Place name before: Villa Pamphili, place name after disambiguation: Villa Doria Pamphili, uri: http://dbpedia.org/resource/Villa_Doria_Pamphili
+2014-06-03 12:45:32 INFO  PolarFacade:175 - Place name before: Universita' di RomaTre - Facolta' di Lettere e Filosofia, place name after disambiguation: Universita' di RomaTre - Facolta' di Lettere e Filosofia, uri: 
+2014-06-03 12:45:37 INFO  PolarFacade:175 - Place name before: Thailand, place name after disambiguation: Thailand, uri: http://dbpedia.org/resource/Thailand
+2014-06-03 12:45:37 INFO  PolarFacade:175 - Place name before: Bangkok, Thailand, place name after disambiguation: Thailand, uri: http://dbpedia.org/resource/Thailand
+2014-06-03 12:45:40 INFO  PolarFacade:175 - Place name before: Koh Phangan, place name after disambiguation: Koh Phangan, uri: 
+2014-06-03 12:45:40 INFO  PolarFacade:175 - Place name before: Ko Tao, place name after disambiguation: Ko Tao, uri: http://dbpedia.org/resource/Ko_Tao
+2014-06-03 12:45:41 INFO  PolarFacade:175 - Place name before: Chumphon, Thailand, place name after disambiguation: Changwat Chumphon, uri: http://dbpedia.org/resource/Chumphon_Province
+2014-06-03 12:45:41 INFO  PolarFacade:175 - Place name before: Chiang Mai, Thailand, place name after disambiguation: Chiang Mai, uri: http://dbpedia.org/resource/Chiang_Mai
+2014-06-03 12:45:48 INFO  PolarFacade:175 - Place name before: Trollstigen, place name after disambiguation: Trollstigen, uri: http://dbpedia.org/resource/Trollstigen
+2014-06-03 12:45:48 INFO  PolarFacade:175 - Place name before: Nidaros Domkirke, Nidarosdomen Trondheim, place name after disambiguation: Nidaros Cathedral, uri: http://dbpedia.org/resource/Nidaros_Cathedral
+2014-06-03 12:45:48 INFO  PolarFacade:175 - Place name before: Preikestolen, place name after disambiguation: Preikestolen, uri: http://dbpedia.org/resource/Preikestolen
+2014-06-03 12:45:49 INFO  PolarFacade:175 - Place name before: Tonga bar, place name after disambiguation: Tonga bar, uri: 
+2014-06-03 12:45:49 INFO  PolarFacade:175 - Place name before: Porto, Portugal, place name after disambiguation: Porto, uri: http://dbpedia.org/resource/Porto
+2014-06-03 12:45:49 INFO  PolarFacade:175 - Place name before: Lisbon, Portugal, place name after disambiguation: Lisbon, uri: http://dbpedia.org/resource/Lisbon
+2014-06-03 12:45:50 INFO  PolarFacade:175 - Place name before: Sintra, Portugal, place name after disambiguation: Portugal, uri: http://dbpedia.org/resource/Portugal
+2014-06-03 12:45:50 INFO  PolarFacade:175 - Place name before: Oceanário de Lisboa, place name after disambiguation: Lisbon, uri: http://dbpedia.org/resource/Lisbon
+2014-06-03 12:45:50 INFO  PolarFacade:175 - Place name before: Matute Restaurant og Pizzeria, place name after disambiguation: Matute Restaurant og Pizzeria, uri: 
+2014-06-03 12:45:51 INFO  PolarFacade:175 - Place name before: Bergen Lufthavn Flesland, place name after disambiguation: Bergen Airport, Flesland, uri: http://dbpedia.org/resource/Bergen_Airport,_Flesland
+2014-06-03 12:45:51 INFO  PolarFacade:175 - Place name before: Tingeling's, place name after disambiguation: Tingeling's, uri: 
+2014-06-03 12:45:52 INFO  PolarFacade:175 - Place name before: Bagels & Beans Haarlem, place name after disambiguation: Haarlem, uri: http://dbpedia.org/resource/Haarlem
+2014-06-03 12:45:52 INFO  PolarFacade:175 - Place name before: Meny Moholt, place name after disambiguation: Moholt, uri: http://dbpedia.org/resource/Moholt
+2014-06-03 12:45:52 INFO  PolarFacade:175 - Place name before: Trondheim, Norway, place name after disambiguation: Trondheim, uri: http://dbpedia.org/resource/Trondheim
+2014-06-03 12:45:52 INFO  PolarFacade:175 - Place name before: Dragvoll Lesesal 9409, place name after disambiguation: Dragvoll, uri: http://dbpedia.org/resource/Dragvoll
+2014-06-03 12:45:52 INFO  PolarFacade:175 - Place name before: Værnes, place name after disambiguation: Værnes, uri: 
+2014-06-03 12:45:53 INFO  PolarFacade:175 - Place name before: Feios, Sogn Og Fjordane, Norway, place name after disambiguation: Sogn og Fjordane, uri: http://dbpedia.org/resource/Sogn_og_Fjordane
+2014-06-03 12:45:53 INFO  PolarFacade:175 - Place name before: Leiden, Netherlands, place name after disambiguation: Netherlands, uri: http://dbpedia.org/resource/Netherlands
+2014-06-03 12:45:54 INFO  PolarFacade:175 - Place name before: Nijmegen, Netherlands, place name after disambiguation: Nijmegen, uri: http://dbpedia.org/resource/Nijmegen
+2014-06-03 12:45:54 INFO  PolarFacade:175 - Place name before: Gouda, place name after disambiguation: Gouda, uri: http://dbpedia.org/resource/Gouda
+2014-06-03 12:45:54 INFO  PolarFacade:175 - Place name before: Voss, Norway, place name after disambiguation: Voss, uri: http://dbpedia.org/resource/Voss
+2014-06-03 12:45:54 INFO  PolarFacade:175 - Place name before: Haarlem, Netherlands, place name after disambiguation: Netherlands, uri: http://dbpedia.org/resource/Netherlands
+2014-06-03 12:45:55 INFO  PolarFacade:175 - Place name before: The Hague, Netherlands, place name after disambiguation: Netherlands, uri: http://dbpedia.org/resource/Netherlands
+2014-06-03 12:45:55 INFO  PolarFacade:175 - Place name before: Norwegian University of Science and Technology, place name after disambiguation: Norwegian University of Science and Technology, uri: http://dbpedia.org/resource/Norwegian_University_of_Science_and_Technology
+2014-06-03 12:46:07 INFO  PolarFacade:175 - Place name before: Zurich, Switzerland, place name after disambiguation: Zurich, uri: http://dbpedia.org/resource/Canton_of_Zurich
+2014-06-03 12:46:07 INFO  PolarFacade:175 - Place name before: Geneva, Switzerland, place name after disambiguation: Geneva, uri: http://dbpedia.org/resource/Geneva
+2014-06-03 12:46:07 INFO  PolarFacade:175 - Place name before: Les Baux-de-Provence, place name after disambiguation: Les Baux-de-Provence, uri: http://dbpedia.org/resource/Les_Baux-de-Provence
+2014-06-03 12:46:08 INFO  PolarFacade:175 - Place name before: Mont-Ventoux, place name after disambiguation: Mont-Ventoux, uri: 
+2014-06-03 12:46:08 INFO  PolarFacade:175 - Place name before: Avignon, France, place name after disambiguation: Avignon, uri: http://dbpedia.org/resource/Avignon
+2014-06-03 12:46:08 INFO  PolarFacade:175 - Place name before: Saint-Tropez, place name after disambiguation: Saint-Tropez, uri: http://dbpedia.org/resource/Saint-Tropez
+2014-06-03 12:46:09 INFO  PolarFacade:175 - Place name before: Calanques de Cassis, place name after disambiguation: Cassis, uri: http://dbpedia.org/resource/Cassis
+2014-06-03 12:46:09 INFO  PolarFacade:175 - Place name before: Gorges Du Verdon, place name after disambiguation: Gorges Du Verdon, uri: 
+2014-06-03 12:46:09 INFO  PolarFacade:175 - Place name before: Cannes, place name after disambiguation: Cannes, uri: http://dbpedia.org/resource/Cannes
+2014-06-03 12:46:09 INFO  PolarFacade:175 - Place name before: Éze, Provence-Alpes-Cote D'Azur, France, place name after disambiguation: Ãˆze, uri: http://dbpedia.org/resource/%C3%88ze
+2014-06-03 12:46:10 INFO  PolarFacade:175 - Place name before: Monaco, place name after disambiguation: Monaco, uri: http://dbpedia.org/resource/Monaco
+2014-06-03 12:46:10 INFO  PolarFacade:175 - Place name before: Nice, France, place name after disambiguation: Nice, uri: http://dbpedia.org/resource/Nice
+2014-06-03 12:46:10 INFO  PolarFacade:175 - Place name before: Brussels, Belgium, place name after disambiguation: Brussels, uri: http://dbpedia.org/resource/Brussels
+2014-06-03 12:46:10 INFO  PolarFacade:175 - Place name before: Brugge, Belgium, place name after disambiguation: Bruges, uri: http://dbpedia.org/resource/Bruges
+2014-06-03 12:46:11 INFO  PolarFacade:175 - Place name before: Nantes, France, place name after disambiguation: Nantes, uri: http://dbpedia.org/resource/Nantes
+2014-06-03 12:46:11 INFO  PolarFacade:175 - Place name before: Grenoble, France, place name after disambiguation: Grenoble, uri: http://dbpedia.org/resource/Grenoble
+2014-06-03 12:46:11 INFO  PolarFacade:175 - Place name before: Chateauneuf du Pape, place name after disambiguation: ChÃ¢teauneuf-du-Pape, uri: http://dbpedia.org/resource/Ch%C3%A2teauneuf-du-Pape
+2014-06-03 12:46:12 INFO  PolarFacade:175 - Place name before: Corner Brook, Newfoundland and Labrador, place name after disambiguation: Corner Brook, uri: http://dbpedia.org/resource/Corner_Brook
+2014-06-03 12:46:12 INFO  PolarFacade:175 - Place name before: Craftsbury, Vermont, place name after disambiguation: Craftsbury, Vermont, uri: http://dbpedia.org/resource/Craftsbury,_Vermont
+2014-06-03 12:46:12 INFO  PolarFacade:175 - Place name before: Trapp Family Lodge, place name after disambiguation: Trapp Family Lodge, uri: http://dbpedia.org/resource/Trapp_Family_Lodge
+2014-06-03 12:46:13 INFO  PolarFacade:175 - Place name before: Jackson, New Hampshire, place name after disambiguation: Jackson, New Hampshire, uri: http://dbpedia.org/resource/Jackson,_New_Hampshire
+2014-06-03 12:46:13 INFO  PolarFacade:175 - Place name before: Harbourfront Centre, place name after disambiguation: Harbourfront Centre, uri: http://dbpedia.org/resource/Harbourfront_Centre
+2014-06-03 12:46:14 INFO  PolarFacade:175 - Place name before: Whistler, Canada, place name after disambiguation: Whistler, British Columbia, uri: http://dbpedia.org/resource/Whistler,_British_Columbia
+2014-06-03 12:46:14 INFO  PolarFacade:175 - Place name before: Whistler Olympic Park, place name after disambiguation: Whistler Olympic Park, uri: http://dbpedia.org/resource/Whistler_Olympic_Park
+2014-06-03 12:46:14 INFO  PolarFacade:175 - Place name before: Whistler Village, place name after disambiguation: Whistler, British Columbia, uri: http://dbpedia.org/resource/Whistler,_British_Columbia
+2014-06-03 12:46:14 INFO  PolarFacade:175 - Place name before: Val-David, Quebec, place name after disambiguation: Val-David, Quebec, uri: http://dbpedia.org/resource/Val-David,_Quebec
+2014-06-03 12:46:15 INFO  PolarFacade:175 - Place name before: Waterville, Maine, place name after disambiguation: Waterville, Maine, uri: http://dbpedia.org/resource/Waterville,_Maine
+2014-06-03 12:46:15 INFO  PolarFacade:175 - Place name before: Lake Placid Olympic Center, place name after disambiguation: Herb Brooks Arena, uri: http://dbpedia.org/resource/Herb_Brooks_Arena
+2014-06-03 12:46:15 INFO  PolarFacade:175 - Place name before: Trondheim, Norway, place name after disambiguation: Trondheim, uri: http://dbpedia.org/resource/Trondheim
+2014-06-03 12:46:16 INFO  PolarFacade:175 - Place name before: McDonald's Vesterbrogade, place name after disambiguation: Vesterbrogade, uri: http://dbpedia.org/resource/Vesterbrogade
+2014-06-03 12:46:16 INFO  PolarFacade:175 - Place name before: Oppdal, place name after disambiguation: Oppdal, uri: http://dbpedia.org/resource/Oppdal
+2014-06-03 12:46:16 INFO  PolarFacade:175 - Place name before: NTNU gløshaugen, place name after disambiguation: Norwegian University of Science and Technology, uri: http://dbpedia.org/resource/Norwegian_University_of_Science_and_Technology
+2014-06-03 12:46:17 INFO  PolarFacade:175 - Place name before: Å, Lofoten, Norway, place name after disambiguation: Ã…, uri: http://dbpedia.org/resource/%C3%85%2C_Moskenes
+2014-06-03 12:46:17 INFO  PolarFacade:175 - Place name before: Geiranger, Norway, place name after disambiguation: Geiranger, uri: http://dbpedia.org/resource/Geiranger
+2014-06-03 12:46:17 INFO  PolarFacade:175 - Place name before: Rema 1000 Moholt, place name after disambiguation: Moholt, uri: http://dbpedia.org/resource/Moholt
+2014-06-03 12:46:18 INFO  PolarFacade:175 - Place name before: Lofoten Islands, place name after disambiguation: Lofoten Islands, uri: 
+2014-06-03 12:46:18 INFO  PolarFacade:175 - Place name before: Moholt Trondheim!, place name after disambiguation: Moholt, uri: http://dbpedia.org/resource/Moholt
+2014-06-03 12:46:18 INFO  PolarFacade:175 - Place name before: Mont-Tremblant!!! :), place name after disambiguation: Mont-Tremblant, Quebec, uri: http://dbpedia.org/resource/Mont-Tremblant,_Quebec
+2014-06-03 12:46:18 INFO  PolarFacade:175 - Place name before: Cap Tremblant, place name after disambiguation: Wyndham Cap Tremblant, uri: 
+2014-06-03 12:46:19 INFO  PolarFacade:175 - Place name before: Hôtel Hilton Québec, place name after disambiguation: Hilton, uri: 
+2014-06-03 12:46:19 INFO  PolarFacade:175 - Place name before: Craftsbury Outdoor Center, place name after disambiguation: Craftsbury, Vermont, uri: http://dbpedia.org/resource/Craftsbury,_Vermont
+2014-06-03 12:46:20 INFO  PolarFacade:175 - Place name before: Bar Le Club Date, place name after disambiguation: Bar Le Club Date, uri: 
+2014-06-03 12:46:20 INFO  PolarFacade:175 - Place name before: PEPS, place name after disambiguation: PEPS, uri: http://dbpedia.org/resource/PEPS
+2014-06-03 12:46:20 INFO  PolarFacade:175 - Place name before: San Diego, California, place name after disambiguation: San Diego, uri: http://dbpedia.org/resource/San_Diego
+2014-06-03 12:46:24 INFO  PolarFacade:175 - Place name before: Roma, Italia, place name after disambiguation: Italy, uri: http://dbpedia.org/resource/Italy
+2014-06-03 12:46:25 INFO  PolarFacade:175 - Place name before: Istanbul, Turkey, place name after disambiguation: Istanbul, uri: http://dbpedia.org/resource/Istanbul
+2014-06-03 12:46:25 INFO  PolarFacade:175 - Place name before: Soverato, place name after disambiguation: Soverato, uri: http://dbpedia.org/resource/Soverato
+2014-06-03 12:46:32 INFO  PolarFacade:175 - Place name before: Montserrat, Spain, place name after disambiguation: Montserrat, Spain, uri: 
+2014-06-03 12:46:32 INFO  PolarFacade:175 - Place name before: Fiestas De Bellvitge, place name after disambiguation: Bellvitge, uri: http://dbpedia.org/resource/Bellvitge
+2014-06-03 12:46:32 INFO  PolarFacade:175 - Place name before: Tyresta nationalpark, place name after disambiguation: Tyresta National Park, uri: http://dbpedia.org/resource/Tyresta_National_Park
+2014-06-03 12:46:33 INFO  PolarFacade:175 - Place name before: Lanzarote, Spain, place name after disambiguation: Lanzarote Airport, uri: http://dbpedia.org/resource/Lanzarote_Airport
+2014-06-03 12:46:33 INFO  PolarFacade:175 - Place name before: Playa De Famara, Lanzarote, place name after disambiguation: Playa De Famara, Lanzarote, uri: 
+2014-06-03 12:46:33 INFO  PolarFacade:175 - Place name before: Isla de Fuerteventura - Corralejo., place name after disambiguation: Corralejo, uri: http://dbpedia.org/resource/Corralejo
+2014-06-03 12:46:34 INFO  PolarFacade:175 - Place name before: Bundoran, place name after disambiguation: Bundoran, uri: http://dbpedia.org/resource/Bundoran
+2014-06-03 12:46:34 INFO  PolarFacade:175 - Place name before: Nick Havanna, place name after disambiguation: Nick Havanna, uri: 
+2014-06-03 12:46:34 INFO  PolarFacade:175 - Place name before: Barcelona, Spain, place name after disambiguation: Barcelona, uri: http://dbpedia.org/resource/Barcelona
+2014-06-03 12:46:35 INFO  PolarFacade:175 - Place name before: Bojan on Thursdays, place name after disambiguation: Bojan on Thursdays, uri: 
+2014-06-03 12:46:35 INFO  PolarFacade:175 - Place name before: Kista Galleria, place name after disambiguation: Kista, uri: http://dbpedia.org/resource/Kista
+2014-06-03 12:46:35 INFO  PolarFacade:175 - Place name before: CC Gran Via 2, place name after disambiguation: CC Gran Via 2, uri: 
+2014-06-03 12:46:36 INFO  PolarFacade:175 - Place name before: Trondheim, Norway, place name after disambiguation: Trondheim, uri: http://dbpedia.org/resource/Trondheim
+2014-06-03 12:46:36 INFO  PolarFacade:175 - Place name before: Norway, place name after disambiguation: Norway, uri: http://dbpedia.org/resource/Norway
+2014-06-03 12:46:37 INFO  PolarFacade:175 - Place name before: Stockholm, place name after disambiguation: Stockholm, uri: http://dbpedia.org/resource/Stockholm
+2014-06-03 12:46:37 INFO  PolarFacade:175 - Place name before: Stockholm, Sweden, place name after disambiguation: Sweden, uri: http://dbpedia.org/resource/Sweden
+2014-06-03 12:46:37 INFO  PolarFacade:175 - Place name before: Epsom College, place name after disambiguation: Epsom College, uri: http://dbpedia.org/resource/Epsom_College
+2014-06-03 12:46:38 INFO  PolarFacade:175 - Place name before: Cines filmax gran via, Barcelona, place name after disambiguation: Gran Via de les Corts Catalanes, uri: http://dbpedia.org/resource/Gran_Via_de_les_Corts_Catalanes
+2014-06-03 12:46:38 INFO  PolarFacade:175 - Place name before: Platja d'Aro, place name after disambiguation: Castell-Platja d'Aro, uri: http://dbpedia.org/resource/Castell-Platja_dAro
+2014-06-03 12:46:38 INFO  PolarFacade:175 - Place name before: Rober's Castelldefels, place name after disambiguation: Castelldefels, uri: http://dbpedia.org/resource/Castelldefels
+2014-06-03 12:46:39 INFO  PolarFacade:175 - Place name before: Epsom, place name after disambiguation: Epsom, uri: http://dbpedia.org/resource/Epsom
+2014-06-03 12:46:39 INFO  PolarFacade:175 - Place name before: Oslo, Noruega, place name after disambiguation: Oslo, uri: http://dbpedia.org/resource/Oslo
+2014-06-03 12:46:48 INFO  PolarFacade:175 - Place name before: Biblioteca Nazionale Centrale di Roma, place name after disambiguation: Biblioteca Nazionale Centrale di Roma, uri: http://dbpedia.org/resource/Biblioteca_Nazionale_Centrale_di_Roma
+2014-06-03 12:46:48 INFO  PolarFacade:175 - Place name before: Universita' Degli Studi Di Roma 'La Sapienza, place name after disambiguation: Sapienza University of Rome, uri: http://dbpedia.org/resource/Sapienza_University_of_Rome
+2014-06-03 12:46:48 INFO  PolarFacade:175 - Place name before: Castel Romano Designer Outlet, place name after disambiguation: Castel Romano Designer Outlet, uri: 
+2014-06-03 12:46:49 INFO  PolarFacade:175 - Place name before: Il Peperone, place name after disambiguation: Il Peperone, uri: 
+2014-06-03 12:46:49 INFO  PolarFacade:175 - Place name before: Il Pomodorino Napoli, place name after disambiguation: Naples, uri: http://dbpedia.org/resource/Naples
+2014-06-03 12:46:49 INFO  PolarFacade:175 - Place name before: Facoltà Di Sociologia La Sapienza, place name after disambiguation: Facoltà Di Sociologia La Sapienza, uri: 
+2014-06-03 12:46:50 INFO  PolarFacade:175 - Place name before: Chianciano Terme- Toscana, place name after disambiguation: Chianciano Terme, uri: http://dbpedia.org/resource/Chianciano_Terme
+2014-06-03 12:46:50 INFO  PolarFacade:175 - Place name before: Amalfi Coast - Positano, place name after disambiguation: Positano, uri: http://dbpedia.org/resource/Positano
+2014-06-03 12:46:50 INFO  PolarFacade:175 - Place name before: Ristorante I Re di Napoli, place name after disambiguation: Naples, uri: http://dbpedia.org/resource/Naples
+2014-06-03 12:46:51 INFO  PolarFacade:175 - Place name before: Stazione di Roma Termini, place name after disambiguation: Roma Termini railway station, uri: http://dbpedia.org/resource/Roma_Termini_railway_station
+2014-06-03 12:46:51 INFO  PolarFacade:175 - Place name before: Fregene - Lido, place name after disambiguation: Fregene - Lido, uri: 
+2014-06-03 12:46:51 INFO  PolarFacade:175 - Place name before: Stadio Olimpico, place name after disambiguation: Stadio Olimpico, uri: http://dbpedia.org/resource/Stadio_Olimpico
+2014-06-03 12:46:52 INFO  PolarFacade:175 - Place name before: Internazionali Bnl Foro Italico, place name after disambiguation: Foro Italico, uri: http://dbpedia.org/resource/Foro_Italico
+2014-06-03 12:46:52 INFO  PolarFacade:175 - Place name before: Università La Sapienza - Sociologia e Comunicazione, place name after disambiguation: Università La Sapienza - Sociologia e Comunicazione, uri: 
+2014-06-03 12:46:53 INFO  PolarFacade:175 - Place name before: Università La Sapienza- Facoltà di Sociologia, place name after disambiguation: Università La Sapienza- Facoltà di Sociologia, uri: 
+2014-06-03 12:46:53 INFO  PolarFacade:175 - Place name before: Universitá La Sapienza di Roma - facoltá di Sociologia, place name after disambiguation: Sapienza University of Rome, uri: http://dbpedia.org/resource/Sapienza_University_of_Rome
+2014-06-03 12:46:56 INFO  PolarFacade:175 - Place name before: Las Palmas De Gran Canarias, place name after disambiguation: Telde, uri: http://dbpedia.org/resource/Telde
+2014-06-03 12:46:56 INFO  PolarFacade:175 - Place name before: UGC Cine Citè Porta Di Roma, place name after disambiguation: UGC Cine Citè Porta Di Roma, uri: 
+2014-06-03 12:46:56 INFO  PolarFacade:175 - Place name before: Sogno Del Mare Fregene, place name after disambiguation: Sogno Del Mare Fregene, uri: 
+2014-06-03 12:46:56 INFO  PolarFacade:175 - Place name before: Rome, Italy, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-06-03 12:46:57 INFO  PolarFacade:175 - Place name before: Uscitina Rilassante in Barca, place name after disambiguation: Uscitina Rilassante in Barca, uri: 
+2014-06-03 12:46:58 INFO  PolarFacade:175 - Place name before: Tennis club Oasi Di Pace Roma, place name after disambiguation: Tennis club Oasi Di Pace Roma, uri: 
+2014-06-03 12:46:58 INFO  PolarFacade:175 - Place name before: Chikutei, place name after disambiguation: Chikutei, uri: 
+2014-06-03 12:46:58 INFO  PolarFacade:175 - Place name before: Facendo Opere D'arte, place name after disambiguation: Facendo Opere D'arte, uri: 
+2014-06-03 12:46:58 INFO  PolarFacade:175 - Place name before: Deliriousland, place name after disambiguation: Deliriousland, uri: 
+2014-06-03 12:46:58 INFO  PolarFacade:175 - Place name before: Wok Parioli, place name after disambiguation: Parioli, uri: http://dbpedia.org/resource/Parioli
+2014-06-03 12:47:09 INFO  PolarFacade:175 - Place name before: Città dell'Altra Economia - CAE, place name after disambiguation: Città dell'Altra Economia - CAE, uri: 
+2014-06-03 12:47:09 INFO  PolarFacade:175 - Place name before: University of Rome Tor Vergata, place name after disambiguation: University of Rome Tor Vergata, uri: http://dbpedia.org/resource/University_of_Rome_Tor_Vergata
+2014-06-03 12:47:10 INFO  PolarFacade:175 - Place name before: Locanda dei Girasoli, place name after disambiguation: Locanda dei Girasoli, uri: 
+2014-06-03 12:47:10 INFO  PolarFacade:175 - Place name before: India, place name after disambiguation: India, uri: http://dbpedia.org/resource/India
+2014-06-03 12:47:10 INFO  PolarFacade:175 - Place name before: Roma, Queensland, place name after disambiguation: Roma, Queensland, uri: http://dbpedia.org/resource/Roma,_Queensland
+2014-06-03 12:47:10 INFO  PolarFacade:175 - Place name before: Ca' Foscari, place name after disambiguation: Universita Ca'Foscari di Venezia, uri: http://dbpedia.org/resource/Ca%27_Foscari
+2014-06-03 12:47:11 INFO  PolarFacade:175 - Place name before: Madrid, place name after disambiguation: Madrid, uri: 
+2014-06-03 12:47:20 INFO  PolarFacade:175 - Place name before: Brussels, Belgium, place name after disambiguation: Brussels, uri: http://dbpedia.org/resource/Brussels
+2014-06-03 12:47:20 INFO  PolarFacade:175 - Place name before: Sweety Gelato Roma, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-06-03 12:47:20 INFO  PolarFacade:175 - Place name before: Maranega, place name after disambiguation: Maranega, uri: 
+2014-06-03 12:47:21 INFO  PolarFacade:175 - Place name before: Campo Dei Fiori, place name after disambiguation: Campo Dei Fiori, uri: 
+2014-06-03 12:47:21 INFO  PolarFacade:175 - Place name before: Piazza Trilussa, place name after disambiguation: Piazza Trilussa, uri: 
+2014-06-03 12:47:22 INFO  PolarFacade:175 - Place name before: Tbar, place name after disambiguation: Tbar, uri: 
+2014-06-03 12:47:22 INFO  PolarFacade:175 - Place name before: Facoltà di Scienze Politiche, Università di Roma "La Sapienza", place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-06-03 12:47:23 INFO  PolarFacade:175 - Place name before: Villa Comunale / Il giardino incantato - Salerno, place name after disambiguation: Salerno, uri: http://dbpedia.org/resource/Salerno
+2014-06-03 12:47:23 INFO  PolarFacade:175 - Place name before: Bucaresti, place name after disambiguation: Bucharest, uri: http://dbpedia.org/resource/Bucharest
+2014-06-03 12:47:24 INFO  PolarFacade:175 - Place name before: Auditorium Parco della Musica - Roma, place name after disambiguation: Parco della Musica, uri: http://dbpedia.org/resource/Parco_della_Musica
+2014-06-03 12:47:24 INFO  PolarFacade:175 - Place name before: Roma - Trastevere, Ristorante Carlo Menta, place name after disambiguation: Roma Trastevere railway station, uri: http://dbpedia.org/resource/Roma_Trastevere_railway_station
+2014-06-03 12:47:25 INFO  PolarFacade:175 - Place name before: La Pace Del Cervello Ristorante Pub, place name after disambiguation: La Pace Del Cervello Ristorante Pub, uri: 
+2014-06-03 12:47:25 INFO  PolarFacade:175 - Place name before: Sapienza Università di Roma, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-06-03 12:47:26 INFO  PolarFacade:175 - Place name before: Shishà, place name after disambiguation: Shishà, uri: 
+2014-06-03 12:47:26 INFO  PolarFacade:175 - Place name before: Clink 78, place name after disambiguation: The Clink, uri: http://dbpedia.org/resource/The_Clink
+2014-06-03 12:47:27 INFO  PolarFacade:175 - Place name before: Colosseo, place name after disambiguation: Colosseum, uri: http://dbpedia.org/resource/Colosseum
+2014-06-03 12:47:27 INFO  PolarFacade:175 - Place name before: Le Onde Venosa Acqua Park, place name after disambiguation: Venosa, uri: http://dbpedia.org/resource/Venosa
+2014-06-03 12:47:28 INFO  PolarFacade:175 - Place name before: Venosa, place name after disambiguation: Venosa, uri: http://dbpedia.org/resource/Venosa
+2014-06-03 12:47:28 INFO  PolarFacade:175 - Place name before: Laghi Di Monticchio, place name after disambiguation: Monticchio, uri: http://dbpedia.org/resource/Monticchio
+2014-06-03 12:47:28 INFO  PolarFacade:175 - Place name before: Santa Marinella, place name after disambiguation: Santa Marinella, uri: http://dbpedia.org/resource/Santa_Marinella
+2014-06-03 12:47:31 INFO  PolarFacade:175 - Place name before: Bali Caffe, place name after disambiguation: Bali Caffe, uri: 
+2014-06-03 12:47:31 INFO  PolarFacade:175 - Place name before: Budapest Liszt Ferenc Airport Terminal 2A, place name after disambiguation: Budapest Ferenc Liszt International Airport, uri: http://dbpedia.org/resource/Budapest_Ferenc_Liszt_International_Airport
+2014-06-03 12:47:31 INFO  PolarFacade:175 - Place name before: Rome, Italy, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-06-03 12:47:32 INFO  PolarFacade:175 - Place name before: Hell's Gate National Park, place name after disambiguation: Hell's Gate National Park, uri: http://dbpedia.org/resource/Hell%27s_Gate_National_Park
+2014-06-03 12:47:33 INFO  PolarFacade:175 - Place name before: New York, NY, place name after disambiguation: New York, uri: http://dbpedia.org/resource/New_York_City
+2014-06-03 12:47:35 INFO  PolarFacade:175 - Place name before: New York City, place name after disambiguation: New York City, uri: 
+2014-06-03 12:47:36 INFO  PolarFacade:175 - Place name before: Roman, Romania, place name after disambiguation: Roman, uri: http://dbpedia.org/resource/Roman%2C_Romania
+2014-06-03 12:47:36 INFO  PolarFacade:175 - Place name before: Bordeaux, France, place name after disambiguation: Bordeaux, uri: http://dbpedia.org/resource/Bordeaux
+2014-06-03 12:47:36 INFO  PolarFacade:175 - Place name before: Paris, France, place name after disambiguation: Paris, uri: http://dbpedia.org/resource/Paris
+2014-06-03 12:47:37 INFO  PolarFacade:175 - Place name before: Montreal, Quebec, place name after disambiguation: Montreal, uri: http://dbpedia.org/resource/Montreal
+2014-06-03 12:47:45 INFO  PolarFacade:175 - Place name before: Monkey Beach, Ko Phi Phi, place name after disambiguation: Phi Phi Islands, uri: http://dbpedia.org/resource/Phi_Phi_Islands
+2014-06-03 12:47:46 INFO  PolarFacade:175 - Place name before: Grand Hotel Des Bains Riccione, place name after disambiguation: Riccione, uri: http://dbpedia.org/resource/Riccione
+2014-06-03 12:47:46 INFO  PolarFacade:175 - Place name before: Santarcangelo Di Romagna, place name after disambiguation: Santarcangelo di Romagna, uri: http://dbpedia.org/resource/Santarcangelo_di_Romagna
+2014-06-03 12:47:48 INFO  PolarFacade:175 - Place name before: Piter Pan, place name after disambiguation: Piter Pan, uri: 
+2014-06-03 12:47:50 INFO  PolarFacade:175 - Place name before: Peter & Villa delle rose, place name after disambiguation: Peter & Villa delle rose, uri: 
+2014-06-03 12:47:51 INFO  PolarFacade:175 - Place name before: Casa Della Zia!!, place name after disambiguation: Casa Della Zia!!, uri: 
+2014-06-03 12:47:52 INFO  PolarFacade:175 - Place name before: London Bridge @ The Shard, place name after disambiguation: London Bridge, uri: http://dbpedia.org/resource/London_Bridge
+2014-06-03 12:47:55 INFO  PolarFacade:175 - Place name before: Enoteca Monte Giove, place name after disambiguation: Enoteca Monte Giove, uri: 
+2014-06-03 12:47:55 INFO  PolarFacade:175 - Place name before: Aquafan ® - Riccione, place name after disambiguation: Riccione, uri: http://dbpedia.org/resource/Riccione
+2014-06-03 12:47:56 INFO  PolarFacade:175 - Place name before: San Marino, California, place name after disambiguation: San Marino, California, uri: http://dbpedia.org/resource/San_Marino,_California
+2014-06-03 12:47:56 INFO  PolarFacade:175 - Place name before: Politecnico Delle Marche, place name after disambiguation: Politecnico Delle Marche, uri: 
+2014-06-03 12:47:56 INFO  PolarFacade:175 - Place name before: Grottammare, place name after disambiguation: Grottammare, uri: http://dbpedia.org/resource/Grottammare
+2014-06-03 12:47:57 INFO  PolarFacade:175 - Place name before: London, United Kingdom, place name after disambiguation: London, uri: http://dbpedia.org/resource/London
+2014-06-03 12:48:12 INFO  PolarFacade:175 - Place name before: The Space Cinema Moderno, place name after disambiguation: The Space Cinema Moderno, uri: 
+2014-06-03 12:48:13 INFO  PolarFacade:175 - Place name before: Gardens of Vatican City, place name after disambiguation: Gardens of Vatican City, uri: http://dbpedia.org/resource/Gardens_of_Vatican_City
+2014-06-03 12:48:13 INFO  PolarFacade:175 - Place name before: Caleta Buena, Cuba, place name after disambiguation: Caleta Buena, uri: 
+2014-06-03 12:48:14 INFO  PolarFacade:175 - Place name before: Piazza San Pietro, Città del Vaticano, place name after disambiguation: Saint Peter's Square, uri: http://dbpedia.org/resource/Saint_Peter's_Square
+2014-06-03 12:48:15 INFO  PolarFacade:175 - Place name before: Campoceraso, place name after disambiguation: Campoceraso-P.I.P., uri: 
+2014-06-03 12:48:15 INFO  PolarFacade:175 - Place name before: Altare della Patria, place name after disambiguation: Altare della Patria, uri: http://dbpedia.org/resource/Altare_della_Patria
+2014-06-03 12:48:16 INFO  PolarFacade:175 - Place name before: Dolce & Gabbana Piazza Di Spagna, place name after disambiguation: Spanish Steps, uri: http://dbpedia.org/resource/Spanish_Steps
+2014-06-03 12:48:17 INFO  PolarFacade:175 - Place name before: Jean Louis David, place name after disambiguation: Jean Louis David, uri: 
+2014-06-03 12:48:17 INFO  PolarFacade:175 - Place name before: Ostia Roma, place name after disambiguation: Ostia Antica, uri: http://dbpedia.org/resource/Ostia_Antica
+2014-06-03 12:48:18 INFO  PolarFacade:175 - Place name before: Mezza Maratona Roma Ostia, place name after disambiguation: Mezza Maratona Roma Ostia, uri: 
+2014-06-03 12:48:19 INFO  PolarFacade:175 - Place name before: Roma Via Del Corso, place name after disambiguation: Via del Corso, uri: http://dbpedia.org/resource/Via_del_Corso
+2014-06-03 12:48:19 INFO  PolarFacade:175 - Place name before: Warsaw, Poland, place name after disambiguation: Warsaw, uri: http://dbpedia.org/resource/Warsaw
+2014-06-03 12:48:19 INFO  PolarFacade:175 - Place name before: Auditorium Parco della Musica - Roma, place name after disambiguation: Parco della Musica, uri: http://dbpedia.org/resource/Parco_della_Musica
+2014-06-03 12:48:19 INFO  PolarFacade:175 - Place name before: Colosseum, place name after disambiguation: Colosseum, uri: http://dbpedia.org/resource/Colosseum
+2014-06-03 12:48:20 INFO  PolarFacade:175 - Place name before: UTS - Upter Teatro Studio, place name after disambiguation: UTS - Upter Teatro Studio, uri: 
+2014-06-03 12:48:21 INFO  PolarFacade:175 - Place name before: Istituto Polacco di Roma, place name after disambiguation: Istituto Polacco di Roma, uri: 
+2014-06-03 12:48:22 INFO  PolarFacade:175 - Place name before: Rome, Italy, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-06-03 12:48:22 INFO  PolarFacade:175 - Place name before: Naples, Italy, place name after disambiguation: Naples, uri: http://dbpedia.org/resource/Naples
+2014-06-03 12:48:22 INFO  PolarFacade:175 - Place name before: Casadimario, place name after disambiguation: Casadimario, uri: 
+2014-06-03 12:48:22 INFO  PolarFacade:175 - Place name before: Capri, Italy, place name after disambiguation: Capri, uri: http://dbpedia.org/resource/Capri
+2014-06-03 12:48:23 INFO  PolarFacade:175 - Place name before: Taboobar Amsterdam, place name after disambiguation: Amsterdam, uri: http://dbpedia.org/resource/Amsterdam
+2014-06-03 12:48:23 INFO  PolarFacade:175 - Place name before: Ospedale I.D.I, place name after disambiguation: Ospedale I.D.I, uri: 
+2014-06-03 12:48:24 INFO  PolarFacade:175 - Place name before: Teatro dell'Opera di Roma, place name after disambiguation: Teatro dell'Opera di Roma, uri: 
+2014-06-03 12:48:25 INFO  PolarFacade:175 - Place name before: Via Cavour, Roma, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-06-03 12:48:25 INFO  PolarFacade:175 - Place name before: Piazza Navona, place name after disambiguation: Piazza Navona, uri: http://dbpedia.org/resource/Piazza_Navona
+2014-06-03 12:48:26 INFO  PolarFacade:175 - Place name before: U Szwejka, place name after disambiguation: U Szwejka, uri: 
+2014-06-03 12:48:27 INFO  PolarFacade:175 - Place name before: Hard Rock Cafe Warszawa, place name after disambiguation: Warsaw, uri: http://dbpedia.org/resource/Warsaw
+2014-06-03 12:48:27 INFO  PolarFacade:175 - Place name before: Rynek G?ówny, place name after disambiguation: Rynek G?ówny, uri: 
+2014-06-03 12:48:28 INFO  PolarFacade:175 - Place name before: Cafe Vincent, place name after disambiguation: Cafe Vincent, uri: 
+2014-06-03 12:48:28 INFO  PolarFacade:175 - Place name before: Lido-Ostia, Roma, place name after disambiguation: Lido di Ostia, uri: http://dbpedia.org/resource/Ostia_%28Rome%29
+2014-06-03 12:48:28 INFO  PolarFacade:175 - Place name before: Treno Frecciarossa, place name after disambiguation: Treno Frecciarossa, uri: 
+2014-06-03 12:48:29 INFO  PolarFacade:175 - Place name before: Campo Dei Fiori, place name after disambiguation: Campo Dei Fiori, uri: 
+2014-06-03 12:48:29 INFO  PolarFacade:175 - Place name before: Rione Monti, place name after disambiguation: Monti (rione of Rome), uri: http://dbpedia.org/resource/Monti_(rione_of_Rome)
+2014-06-03 12:48:29 INFO  PolarFacade:175 - Place name before: Paestum, place name after disambiguation: Paestum, uri: http://dbpedia.org/resource/Paestum
+2014-06-03 12:48:30 INFO  PolarFacade:175 - Place name before: Stadio Olimpico The Wall Live - Roger Waters, place name after disambiguation: Stadio Olimpico, uri: http://dbpedia.org/resource/Stadio_Olimpico
+2014-06-03 12:48:30 INFO  PolarFacade:175 - Place name before: Warsaw Chopin Airport, place name after disambiguation: Warsaw Chopin Airport, uri: http://dbpedia.org/resource/Warsaw_Chopin_Airport
+2014-06-03 12:48:30 INFO  PolarFacade:175 - Place name before: Flisak '76, place name after disambiguation: Flisak '76, uri: 
+2014-06-03 12:48:31 INFO  PolarFacade:175 - Place name before: Zatoka Sztuki Beach Club, place name after disambiguation: Zatoka Sztuki Beach Club, uri: 
+2014-06-03 12:48:31 INFO  PolarFacade:175 - Place name before: Morskie Oko, place name after disambiguation: Morskie Oko, uri: http://dbpedia.org/resource/Morskie_Oko
+2014-06-03 12:48:31 INFO  PolarFacade:175 - Place name before: Bar Szara, place name after disambiguation: Bar Szara, uri: 
+2014-06-03 12:48:31 INFO  PolarFacade:175 - Place name before: Lubi? To, place name after disambiguation: Lubi? To, uri: 
+2014-06-03 12:48:32 INFO  PolarFacade:175 - Place name before: La Playa, place name after disambiguation: La Playa, uri: 
+2014-06-03 12:48:32 INFO  PolarFacade:175 - Place name before: Italy, place name after disambiguation: Italy, uri: http://dbpedia.org/resource/Italy
+2014-06-03 12:48:33 INFO  PolarFacade:175 - Place name before: Sorrento, Italy, place name after disambiguation: Sorrento, uri: http://dbpedia.org/resource/Sorrento
+2014-06-03 12:48:39 INFO  PolarFacade:175 - Place name before: School of Chemical and Biomedical Engineering, NTU, place name after disambiguation: Nanyang Technological University, uri: http://dbpedia.org/resource/Nanyang_Technological_University
+2014-06-03 12:48:40 INFO  PolarFacade:175 - Place name before: Nanyang Auditorium NTU, place name after disambiguation: Nanyang Technological University, uri: http://dbpedia.org/resource/Nanyang_Technological_University
+2014-06-03 12:48:40 INFO  PolarFacade:175 - Place name before: Hangang Park, Yeouinaru, place name after disambiguation: Yeouinaru Station, uri: http://dbpedia.org/resource/Yeouinaru_Station
+2014-06-03 12:48:40 INFO  PolarFacade:175 - Place name before: Costa Sands Resort @ Downtown East, place name after disambiguation: Costa Sands Resort @ Downtown East, uri: 
+2014-06-03 12:48:41 INFO  PolarFacade:175 - Place name before: Sunway Resort Hotel & Spa, place name after disambiguation: Sunway Resort Hotel & Spa, uri: 
+2014-06-03 12:48:42 INFO  PolarFacade:175 - Place name before: Fika Swedish Cafe and Bistro., place name after disambiguation: Fika Swedish Cafe and Bistro., uri: 
+2014-06-03 12:48:42 INFO  PolarFacade:175 - Place name before: Lisbon, Portugal, place name after disambiguation: Lisbon, uri: http://dbpedia.org/resource/Lisbon
+2014-06-03 12:48:43 INFO  PolarFacade:175 - Place name before: Prague, Czech Republic, place name after disambiguation: Prague, uri: http://dbpedia.org/resource/Prague
+2014-06-03 12:48:43 INFO  PolarFacade:175 - Place name before: Kallang Theatre, place name after disambiguation: Kallang Theatre, uri: 
+2014-06-03 12:48:43 INFO  PolarFacade:175 - Place name before: Kalang Theater, place name after disambiguation: Kalang Theater, uri: 
+2014-06-03 12:48:43 INFO  PolarFacade:175 - Place name before: The Star Vista Mall, place name after disambiguation: The Star Vista Mall, uri: 
+2014-06-03 12:48:44 INFO  PolarFacade:175 - Place name before: Pisa, Italy, place name after disambiguation: Pisa, uri: http://dbpedia.org/resource/Pisa
+2014-06-03 12:48:44 INFO  PolarFacade:175 - Place name before: Hamburg-Mitte, Hamburg, Germany, place name after disambiguation: Hamburg-Mitte, uri: http://dbpedia.org/resource/Hamburg-Mitte
+2014-06-03 12:48:49 INFO  PolarFacade:175 - Place name before: Svartlamon, Trondheim, place name after disambiguation: Svartlamon, uri: http://dbpedia.org/resource/Svartlamon
+2014-06-03 12:48:50 INFO  PolarFacade:175 - Place name before: Klæbu kommune, place name after disambiguation: Klæbu kommune, uri: 
+2014-06-03 12:48:51 INFO  PolarFacade:175 - Place name before: Antalya, Turkey, place name after disambiguation: Antalya, uri: http://dbpedia.org/resource/Antalya
+2014-06-03 12:48:52 INFO  PolarFacade:175 - Place name before: Jakobsli, place name after disambiguation: Jakobsli, uri: 
+2014-06-03 12:48:53 INFO  PolarFacade:175 - Place name before: The Mission District, place name after disambiguation: Mission District, San Francisco, uri: http://dbpedia.org/resource/Mission_District,_San_Francisco
+2014-06-03 12:48:53 INFO  PolarFacade:175 - Place name before: Santa Cruz, California, place name after disambiguation: Santa Cruz, California, uri: http://dbpedia.org/resource/Santa_Cruz,_California
+2014-06-03 12:48:54 INFO  PolarFacade:175 - Place name before: Seal Rocks Beach, place name after disambiguation: Seal Rocks Beach, uri: 
+2014-06-03 12:48:54 INFO  PolarFacade:175 - Place name before: Dinah's Garden Hotel, place name after disambiguation: Dinah's Garden Hotel & Trader Vic's, uri: 
+2014-06-03 12:48:54 INFO  PolarFacade:175 - Place name before: San Francisco Wharf/Pier 39, place name after disambiguation: San Francisco, uri: http://dbpedia.org/resource/San_Francisco
+2014-06-03 12:48:55 INFO  PolarFacade:175 - Place name before: New York, New York, place name after disambiguation: New York, uri: http://dbpedia.org/resource/New_York_City
+2014-06-03 12:48:55 INFO  PolarFacade:175 - Place name before: Trondheim, Norway, place name after disambiguation: Trondheim, uri: http://dbpedia.org/resource/Trondheim
+2014-06-03 12:48:56 INFO  PolarFacade:175 - Place name before: Turku, Finland, place name after disambiguation: Turku, uri: http://dbpedia.org/resource/Turku
+2014-06-03 12:48:56 INFO  PolarFacade:175 - Place name before: Barcelona, Spain, place name after disambiguation: Barcelona, uri: http://dbpedia.org/resource/Barcelona
+2014-06-03 12:49:11 INFO  PolarFacade:175 - Place name before: Tribunale Di Rimini, place name after disambiguation: Rimini, uri: http://dbpedia.org/resource/Rimini
+2014-06-03 12:49:12 INFO  PolarFacade:175 - Place name before: La Musica Nelle Aie - Castel Raniero Folk Festival, place name after disambiguation: La Musica Nelle Aie - Castel Raniero Folk Festival, uri: 
+2014-06-03 12:49:13 INFO  PolarFacade:175 - Place name before: Il Pane e le Rose, place name after disambiguation: Il Pane e le Rose, uri: 
+2014-06-03 12:49:13 INFO  PolarFacade:175 - Place name before: Biblioteca A.Baldini, place name after disambiguation: Biblioteca A.Baldini, uri: 
+2014-06-03 12:49:14 INFO  PolarFacade:175 - Place name before: Savignano Centro, place name after disambiguation: Savignano Centro, uri: 
+2014-06-03 12:49:14 INFO  PolarFacade:175 - Place name before: Piazza Ganganelli Santarcangelo, place name after disambiguation: Piazza Ganganelli Santarcangelo, uri: 
+2014-06-03 12:49:14 INFO  PolarFacade:175 - Place name before: Rimini, place name after disambiguation: Rimini, uri: http://dbpedia.org/resource/Rimini
+2014-06-03 12:49:15 INFO  PolarFacade:175 - Place name before: Circolo dei Malfattori - Sala Diana, place name after disambiguation: Circolo dei Malfattori - Sala Diana, uri: 
+2014-06-03 12:49:17 INFO  PolarFacade:175 - Place name before: Autostrada Emilia romagna, place name after disambiguation: Autostrada Emilia romagna, uri: 
+2014-06-03 12:49:17 INFO  PolarFacade:175 - Place name before: Imola Centro, place name after disambiguation: Imola, uri: http://dbpedia.org/resource/Imola
+2014-06-03 12:49:18 INFO  PolarFacade:175 - Place name before: Stazione FS Reggio Emilia, place name after disambiguation: Reggio Emilia, uri: http://dbpedia.org/resource/Reggio_Emilia
+2014-06-03 12:49:18 INFO  PolarFacade:175 - Place name before: Cesenatico (Valverde), place name after disambiguation: Cesenatico, uri: http://dbpedia.org/resource/Cesenatico
+2014-06-03 12:49:19 INFO  PolarFacade:175 - Place name before: Camera Dei Deputati - Sala Refettorio - Palazzo San Macuto, place name after disambiguation: Camera Dei Deputati - Sala Refettorio - Palazzo San Macuto, uri: 
+2014-06-03 12:49:19 INFO  PolarFacade:175 - Place name before: Roma CentoCelle, place name after disambiguation: Centocelle Airport, uri: http://dbpedia.org/resource/Centocelle_Airport
+2014-06-03 12:49:20 INFO  PolarFacade:175 - Place name before: Roma, Italia, place name after disambiguation: Italy, uri: http://dbpedia.org/resource/Italy
+2014-06-03 12:49:20 INFO  PolarFacade:175 - Place name before: Saiano, place name after disambiguation: Saiano, uri: 
+2014-06-03 12:49:21 INFO  PolarFacade:175 - Place name before: Tribunale Dei Minorenni, place name after disambiguation: Tribunale Dei Minorenni, uri: 
+2014-06-03 12:49:21 INFO  PolarFacade:175 - Place name before: Comune di Cattolica, place name after disambiguation: Cattolica, uri: http://dbpedia.org/resource/Cattolica
+2014-06-03 12:49:21 INFO  PolarFacade:175 - Place name before: Porto di Cattolica, place name after disambiguation: Porto di Cattolica, uri: 
+2014-06-03 12:49:22 INFO  PolarFacade:175 - Place name before: Quartiere San Cristoforo, place name after disambiguation: Quartiere San Cristoforo, uri: 
+2014-06-03 12:49:22 INFO  PolarFacade:175 - Place name before: Ravenna, Italy, place name after disambiguation: Ravenna, uri: http://dbpedia.org/resource/Ravenna
+2014-06-03 12:49:23 INFO  PolarFacade:175 - Place name before: Cesenatico, place name after disambiguation: Cesenatico, uri: http://dbpedia.org/resource/Cesenatico
+2014-06-03 12:49:23 INFO  PolarFacade:175 - Place name before: Piazza Maggiore, place name after disambiguation: Piazza Maggiore, uri: http://dbpedia.org/resource/Piazza_Maggiore
+2014-06-03 12:49:23 INFO  PolarFacade:175 - Place name before: Rimini Centro, place name after disambiguation: Rimini, uri: http://dbpedia.org/resource/Rimini
+2014-06-03 12:49:24 INFO  PolarFacade:175 - Place name before: Santa Maria Nuova City, place name after disambiguation: Santa Maria Nuova, Marche, uri: http://dbpedia.org/resource/Santa_Maria_Nuova,_Marche
+2014-06-03 12:49:24 INFO  PolarFacade:175 - Place name before: Cinema Teatro Tiberio, place name after disambiguation: Cinema Teatro Tiberio, uri: 
+2014-06-03 12:49:24 INFO  PolarFacade:175 - Place name before: FOB, place name after disambiguation: FOB, uri: 
+2014-06-03 12:49:25 INFO  PolarFacade:175 - Place name before: Padova, place name after disambiguation: Padua, uri: 
+2014-06-03 12:49:26 INFO  PolarFacade:175 - Place name before: Tribunale Padova, place name after disambiguation: Tribunale Padova, uri: 
+2014-06-03 12:49:26 INFO  PolarFacade:175 - Place name before: Repubblica Di San Marino R S M, place name after disambiguation: San Marino, uri: http://dbpedia.org/resource/San_Marino
+2014-06-03 12:49:26 INFO  PolarFacade:175 - Place name before: Santarcangelo Di Romagna, place name after disambiguation: Santarcangelo di Romagna, uri: http://dbpedia.org/resource/Santarcangelo_di_Romagna
+2014-06-03 12:49:27 INFO  PolarFacade:175 - Place name before: Grotta Rossa (Spazio Pubblico Autogestito), place name after disambiguation: Grotta Rossa (Spazio Pubblico Autogestito), uri: 
+2014-06-03 12:49:28 INFO  PolarFacade:175 - Place name before: Tribunale, place name after disambiguation: Tribunale, uri: 
+2014-06-03 12:49:28 INFO  PolarFacade:175 - Place name before: Autostrada A1, place name after disambiguation: Autostrada A1, uri: 
+2014-06-03 12:49:28 INFO  PolarFacade:175 - Place name before: Bologna Centro, place name after disambiguation: Bologna, uri: http://dbpedia.org/resource/Bologna
+2014-06-03 12:49:29 INFO  PolarFacade:175 - Place name before: Tribunale Forlì, place name after disambiguation: Tribunale Forlì, uri: 
+2014-06-03 12:49:29 INFO  PolarFacade:175 - Place name before: Fiera dei Becchi (Santarcangelo di Romagna), place name after disambiguation: Fiera dei Becchi (Santarcangelo di Romagna), uri: 
+2014-06-03 12:49:29 INFO  PolarFacade:175 - Place name before: Fiera Dei Becchi Santarcangelo, place name after disambiguation: Fiera Dei Becchi Santarcangelo, uri: 
+2014-06-03 12:49:30 INFO  PolarFacade:175 - Place name before: San Marino (RSM), place name after disambiguation: San Marino, uri: http://dbpedia.org/resource/San_Marino
+2014-06-03 12:49:30 INFO  PolarFacade:175 - Place name before: Sagra Della Castagna,Marradi,Firenze., place name after disambiguation: Sagra Della Castagna,Marradi,Firenze., uri: 
+2014-06-03 12:49:30 INFO  PolarFacade:175 - Place name before: Marradi (FI), place name after disambiguation: Marradi, uri: http://dbpedia.org/resource/Marradi
+2014-06-03 12:49:31 INFO  PolarFacade:175 - Place name before: Cremona - Centro, place name after disambiguation: Cremona, uri: http://dbpedia.org/resource/Cremona
+2014-06-03 12:49:31 INFO  PolarFacade:175 - Place name before: A14..., place name after disambiguation: A14..., uri: 
+2014-06-03 12:49:32 INFO  PolarFacade:175 - Place name before: Tribunale Rimini, place name after disambiguation: Rimini, uri: http://dbpedia.org/resource/Rimini
+2014-06-03 12:49:32 INFO  PolarFacade:175 - Place name before: Piazza Saffi, Forli, place name after disambiguation: Piazza Saffi, uri: http://dbpedia.org/resource/Piazza_Saffi
+2014-06-03 12:49:32 INFO  PolarFacade:175 - Place name before: Piazza del Popolo, place name after disambiguation: Piazza del Popolo, uri: http://dbpedia.org/resource/Piazza_del_Popolo
+2014-06-03 12:49:33 INFO  PolarFacade:175 - Place name before: Cooperativa "Lavoro e non solo", place name after disambiguation: Cooperativa "Lavoro e non solo", uri: 
+2014-06-03 12:49:41 INFO  PolarFacade:175 - Place name before: Trondheim, Norway, place name after disambiguation: Trondheim, uri: http://dbpedia.org/resource/Trondheim
+2014-06-03 12:49:42 INFO  PolarFacade:175 - Place name before: Trondheim Norway, place name after disambiguation: Trondheim, uri: http://dbpedia.org/resource/Trondheim
+2014-06-03 12:49:42 INFO  PolarFacade:175 - Place name before: Garrucha Almeria, place name after disambiguation: Garrucha, uri: http://dbpedia.org/resource/Garrucha
+2014-06-03 12:49:43 INFO  PolarFacade:175 - Place name before: Playa Puzol, place name after disambiguation: Playa Puzol, uri: 
+2014-06-03 12:49:43 INFO  PolarFacade:175 - Place name before: Valencia, Spain, place name after disambiguation: Valencia, uri: http://dbpedia.org/resource/Valencia
+2014-06-03 12:49:43 INFO  PolarFacade:175 - Place name before: Moholt stud.by, place name after disambiguation: Moholt, uri: http://dbpedia.org/resource/Moholt
+2014-06-03 12:49:44 INFO  PolarFacade:175 - Place name before: Bonrepòs i Mirambell, place name after disambiguation: BonrepÃ²s i Mirambell, uri: http://dbpedia.org/resource/Bonrep%C3%B2s_i_Mirambell
+2014-06-03 12:49:44 INFO  PolarFacade:175 - Place name before: Capitolo, place name after disambiguation: Capitolo, uri: 
+2014-06-03 12:49:44 INFO  PolarFacade:175 - Place name before: Ladestien, place name after disambiguation: Ladestien, uri: http://dbpedia.org/resource/Ladestien
+2014-06-03 12:49:45 INFO  PolarFacade:175 - Place name before: Bar Circus As, place name after disambiguation: Bar Circus As, uri: 
+2014-06-03 12:49:45 INFO  PolarFacade:175 - Place name before: Estenstadhytta, place name after disambiguation: Estenstadhytta, uri: 
+2014-06-03 12:49:45 INFO  PolarFacade:175 - Place name before: Moholt Studentby, place name after disambiguation: Moholt, uri: http://dbpedia.org/resource/Moholt
+2014-06-03 12:49:45 INFO  PolarFacade:175 - Place name before: Oslo Lufthavn Gardermoen, place name after disambiguation: Oslo Airport, Gardermoen, uri: http://dbpedia.org/resource/Oslo_Airport,_Gardermoen
+2014-06-03 12:49:46 INFO  PolarFacade:175 - Place name before: Oslo, Norway, place name after disambiguation: Oslo, uri: http://dbpedia.org/resource/Oslo
+2014-06-03 12:49:46 INFO  PolarFacade:175 - Place name before: Peñon de Ifach, place name after disambiguation: Peñon de Ifach, uri: 
+2014-06-03 12:49:48 INFO  PolarFacade:175 - Place name before: Trondhjem, Sor-Trondelag, Norway, place name after disambiguation: Trondheim, uri: http://dbpedia.org/resource/Trondheim
+2014-06-03 12:49:50 INFO  PolarFacade:175 - Place name before: Stavanger Oil and Gas Museum, place name after disambiguation: Stavanger, uri: http://dbpedia.org/resource/Stavanger
+2014-06-03 12:49:50 INFO  PolarFacade:175 - Place name before: Kjeragbolten, place name after disambiguation: Kjeragbolten, uri: http://dbpedia.org/resource/Kjeragbolten
+2014-06-03 12:49:51 INFO  PolarFacade:175 - Place name before: Preikestolen, Rogaland, place name after disambiguation: Preikestolen, uri: http://dbpedia.org/resource/Preikestolen
+2014-06-03 12:49:51 INFO  PolarFacade:175 - Place name before: Narvik, place name after disambiguation: Narvik, uri: http://dbpedia.org/resource/Narvik
+2014-06-03 12:49:51 INFO  PolarFacade:175 - Place name before: Riviera Maya (Mexico), place name after disambiguation: Riviera Maya (Mexico), uri: 
+2014-06-03 12:50:01 INFO  PolarFacade:175 - Place name before: Palais De Chaillot, place name after disambiguation: TrocadÃ©ro, uri: http://dbpedia.org/resource/Trocad%C3%A9ro
+2014-06-03 12:50:02 INFO  PolarFacade:175 - Place name before: Rennes, France, place name after disambiguation: Rennes, uri: http://dbpedia.org/resource/Rennes
+2014-06-03 12:50:02 INFO  PolarFacade:175 - Place name before: Paris, France, place name after disambiguation: Paris, uri: http://dbpedia.org/resource/Paris
+2014-06-03 12:50:03 INFO  PolarFacade:175 - Place name before: Grande Mosquée de Paris, place name after disambiguation: Paris, uri: http://dbpedia.org/resource/Paris
+2014-06-03 12:50:04 INFO  PolarFacade:175 - Place name before: Centre Pompidou, place name after disambiguation: Centre Georges Pompidou, uri: http://dbpedia.org/resource/Centre_Georges_Pompidou
+2014-06-03 12:50:05 INFO  PolarFacade:175 - Place name before: Berlin, Germany, place name after disambiguation: Berlin, uri: http://dbpedia.org/resource/Berlin
+2014-06-03 12:50:05 INFO  PolarFacade:175 - Place name before: Naxos, place name after disambiguation: Naxos, uri: http://dbpedia.org/resource/Naxos
+2014-06-03 12:50:05 INFO  PolarFacade:175 - Place name before: Place de la Nation, place name after disambiguation: Place de la Nation, uri: http://dbpedia.org/resource/Place_de_la_Nation
+2014-06-03 12:50:06 INFO  PolarFacade:175 - Place name before: Trégastel, place name after disambiguation: TrÃ©gastel, uri: 
+2014-06-03 12:50:06 INFO  PolarFacade:175 - Place name before: Ploumanach, place name after disambiguation: Ploumanach, uri: 
+2014-06-03 12:50:06 INFO  PolarFacade:175 - Place name before: Saint-Cast-le-Guildo, place name after disambiguation: Saint-Cast-le-Guildo, uri: http://dbpedia.org/resource/Saint-Cast-le-Guildo
+2014-06-03 12:50:07 INFO  PolarFacade:175 - Place name before: Erquy, place name after disambiguation: Erquy, uri: http://dbpedia.org/resource/Erquy
+2014-06-03 12:50:07 INFO  PolarFacade:175 - Place name before: Saint-Jacut-de-la-Mer, place name after disambiguation: Saint-Jacut-de-la-Mer, uri: http://dbpedia.org/resource/Saint-Jacut-de-la-Mer
+2014-06-03 12:50:07 INFO  PolarFacade:175 - Place name before: Plage De Beg Léguer, place name after disambiguation: BeclÃ©guer, uri: 
+2014-06-03 12:50:10 INFO  PolarFacade:175 - Place name before: Santorini, place name after disambiguation: Santorini, uri: 
+2014-06-03 12:50:11 INFO  PolarFacade:175 - Place name before: Lannion, place name after disambiguation: Lannion, uri: http://dbpedia.org/resource/Lannion
+2014-06-03 12:50:11 INFO  PolarFacade:175 - Place name before: Rome, Italy, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-06-03 12:50:13 INFO  PolarFacade:175 - Place name before: Norway, place name after disambiguation: Norway, uri: http://dbpedia.org/resource/Norway
+2014-06-03 12:50:14 INFO  PolarFacade:175 - Place name before: Åre, Sweden, place name after disambiguation: Ã…re Kommun, uri: http://dbpedia.org/resource/%C3%85re_Municipality
+2014-06-03 12:50:15 INFO  PolarFacade:175 - Place name before: Oslo, Norway, place name after disambiguation: Oslo, uri: http://dbpedia.org/resource/Oslo
+2014-06-03 12:50:15 INFO  PolarFacade:175 - Place name before: Fosenkoia, place name after disambiguation: Fosenkoia, uri: 
+2014-06-03 12:50:15 INFO  PolarFacade:175 - Place name before: Moholt Studentby, Trondheim, place name after disambiguation: Moholt, uri: http://dbpedia.org/resource/Moholt
+2014-06-03 12:50:16 INFO  PolarFacade:175 - Place name before: Trondheim, Norway, place name after disambiguation: Trondheim, uri: http://dbpedia.org/resource/Trondheim
+2014-06-03 12:50:16 INFO  PolarFacade:175 - Place name before: Oppdal, place name after disambiguation: Oppdal, uri: http://dbpedia.org/resource/Oppdal
+2014-06-03 12:50:17 INFO  PolarFacade:175 - Place name before: Prat, Bretagne, France, place name after disambiguation: Brittany (administrative region), uri: http://dbpedia.org/resource/Brittany_(administrative_region)
+2014-06-03 12:50:25 INFO  PolarFacade:175 - Place name before: Policlinico Umberto I, place name after disambiguation: Policlinico Umberto I, uri: 
+2014-06-03 12:50:27 INFO  PolarFacade:175 - Place name before: Mò Mò Republic, place name after disambiguation: Mò Mò Republic, uri: 
+2014-06-03 12:50:27 INFO  PolarFacade:175 - Place name before: Rome, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-06-03 12:50:28 INFO  PolarFacade:175 - Place name before: Trondheim, Norway, place name after disambiguation: Trondheim, uri: http://dbpedia.org/resource/Trondheim
+2014-06-03 12:50:28 INFO  PolarFacade:175 - Place name before: Röros Norge, place name after disambiguation: Röros Norge, uri: 
+2014-06-03 12:50:28 INFO  PolarFacade:175 - Place name before: Rome, Italy, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-06-03 12:50:29 INFO  PolarFacade:175 - Place name before: Esc Atelier, place name after disambiguation: Esc Atelier, uri: 
+2014-06-03 12:50:29 INFO  PolarFacade:175 - Place name before: Monte Amiata, place name after disambiguation: Mount Amiata, uri: http://dbpedia.org/resource/Mount_Amiata
+2014-06-03 12:50:29 INFO  PolarFacade:175 - Place name before: Palaglobo Sora, place name after disambiguation: Palaglobo Sora, uri: 
+2014-06-03 12:50:30 INFO  PolarFacade:175 - Place name before: Universita' Degli Studi La Sapienza, place name after disambiguation: Universita' Degli Studi La Sapienza, uri: 
+2014-06-03 12:50:37 INFO  PolarFacade:175 - Place name before: Massif de la Dôle - Suisse, place name after disambiguation: Massif de la Dôle - Suisse, uri: 
+2014-06-03 12:50:38 INFO  PolarFacade:175 - Place name before: Nusfjord I Lofoten, place name after disambiguation: Nusfjord I Lofoten, uri: 
+2014-06-03 12:50:39 INFO  PolarFacade:175 - Place name before: Mysuseter, Oppland, Norway, place name after disambiguation: MysusÃ¦tre, uri: 
+2014-06-03 12:50:40 INFO  PolarFacade:175 - Place name before: La Vattay-Mont Jura, place name after disambiguation: La Vattay-Mont Jura, uri: 
+2014-06-03 12:50:40 INFO  PolarFacade:175 - Place name before: Cessy, place name after disambiguation: Cessy, uri: http://dbpedia.org/resource/Cessy
+2014-06-03 12:50:40 INFO  PolarFacade:175 - Place name before: Olavsgruva, place name after disambiguation: Olavsgruva, uri: 
+2014-06-03 12:50:42 INFO  PolarFacade:175 - Place name before: Røros, place name after disambiguation: RÃ¸ros Airport, uri: http://dbpedia.org/resource/R%C3%B8ros_Airport
+2014-06-03 12:50:42 INFO  PolarFacade:175 - Place name before: Trondheim, Norway, place name after disambiguation: Trondheim, uri: http://dbpedia.org/resource/Trondheim
+2014-06-03 12:50:43 INFO  PolarFacade:175 - Place name before: Norway, place name after disambiguation: Norway, uri: http://dbpedia.org/resource/Norway
+2014-06-03 12:50:44 INFO  PolarFacade:175 - Place name before: Lofoten, Norway, place name after disambiguation: SvolvÃ¦r (Lofoten), uri: 
+2014-06-03 12:50:44 INFO  PolarFacade:175 - Place name before: Jotunheimen, place name after disambiguation: Jotunheimen, uri: 
+2014-06-03 12:50:45 INFO  PolarFacade:175 - Place name before: Lac de Sainte Croix - Gorges du Verdon, place name after disambiguation: Lake of Sainte-Croix, uri: http://dbpedia.org/resource/Lake_of_Sainte-Croix
+2014-06-03 12:50:45 INFO  PolarFacade:175 - Place name before: Grenoble, France, place name after disambiguation: Grenoble, uri: http://dbpedia.org/resource/Grenoble
+2014-06-03 12:50:46 INFO  PolarFacade:175 - Place name before: Plateau De Gève, Autrans, place name after disambiguation: Autrans, uri: http://dbpedia.org/resource/Autrans
+2014-06-03 12:50:46 INFO  PolarFacade:175 - Place name before: Risoul, place name after disambiguation: Risoul, uri: http://dbpedia.org/resource/Risoul
+2014-06-03 12:50:46 INFO  PolarFacade:175 - Place name before: Ovronnaz, place name after disambiguation: Ovronnaz, uri: http://dbpedia.org/resource/Ovronnaz
+2014-06-03 12:50:47 INFO  PolarFacade:175 - Place name before: La Colmiane, place name after disambiguation: La Colmiane, uri: 
+2014-06-03 12:50:47 INFO  PolarFacade:175 - Place name before: Val Thorens, place name after disambiguation: Val Thorens, uri: http://dbpedia.org/resource/Val_Thorens
+2014-06-03 12:50:47 INFO  PolarFacade:175 - Place name before: Saint-Hilaire-De-Riez, Pays De La Loire, France, place name after disambiguation: Saint-Hilaire-de-Riez, uri: http://dbpedia.org/resource/Saint-Hilaire-de-Riez
+2014-06-03 12:50:48 INFO  PolarFacade:175 - Place name before: Lyon, place name after disambiguation: Lyon, uri: http://dbpedia.org/resource/Lyon
+2014-06-03 12:50:49 INFO  PolarFacade:175 - Place name before: Orcieres Merlette, place name after disambiguation: OrciÃ¨res-Merlette, uri: 
+2014-06-03 12:50:49 INFO  PolarFacade:175 - Place name before: Stubaital, place name after disambiguation: Stubaital, uri: http://dbpedia.org/resource/Stubaital
+2014-06-03 12:50:55 INFO  PolarFacade:175 - Place name before: Pozzuoli, place name after disambiguation: Pozzuoli, uri: http://dbpedia.org/resource/Pozzuoli
+2014-06-03 12:50:55 INFO  PolarFacade:175 - Place name before: Colosseo, place name after disambiguation: Colosseum, uri: http://dbpedia.org/resource/Colosseum
+2014-06-03 12:50:56 INFO  PolarFacade:175 - Place name before: Autostrada Roma Napoli, place name after disambiguation: Autostrada Roma Napoli, uri: 
+2014-06-03 12:50:56 INFO  PolarFacade:175 - Place name before: Pratoni Del Vivaro, place name after disambiguation: Pratoni Del Vivaro, uri: 
+2014-06-03 12:50:56 INFO  PolarFacade:175 - Place name before: Naples, Italy, place name after disambiguation: Naples, uri: http://dbpedia.org/resource/Naples
+2014-06-03 12:50:57 INFO  PolarFacade:175 - Place name before: Munich, Germany, place name after disambiguation: Munich, uri: http://dbpedia.org/resource/Munich
+2014-06-03 12:50:57 INFO  PolarFacade:175 - Place name before: Accademia Aeronautica Pozzuoli, place name after disambiguation: Pozzuoli, uri: http://dbpedia.org/resource/Pozzuoli
+2014-06-03 12:50:59 INFO  PolarFacade:175 - Place name before: Hofbräuhaus München - Das Original, place name after disambiguation: Hofbräuhaus München - Das Original, uri: 
+2014-06-03 12:50:59 INFO  PolarFacade:175 - Place name before: El Chiringuito, place name after disambiguation: El Chiringuito, uri: 
+2014-06-03 12:51:01 INFO  PolarFacade:175 - Place name before: ORION, place name after disambiguation: ORION, uri: 
+2014-06-03 12:51:01 INFO  PolarFacade:175 - Place name before: Accademia Aeronautica, place name after disambiguation: Accademia Aeronautica, uri: http://dbpedia.org/resource/Accademia_Aeronautica
+2014-06-03 12:51:02 INFO  PolarFacade:175 - Place name before: In Ogni Dove, place name after disambiguation: In Ogni Dove, uri: 
+2014-06-03 12:51:03 INFO  PolarFacade:175 - Place name before: Aeroporto Grazzanise, place name after disambiguation: Grazzanise, uri: http://dbpedia.org/resource/Grazzanise
+2014-06-03 12:51:04 INFO  PolarFacade:175 - Place name before: Guidonia, Lazio, Italy, place name after disambiguation: Guidonia Montecelio, uri: http://dbpedia.org/resource/Guidonia_Montecelio
+2014-06-03 12:51:09 INFO  PolarFacade:175 - Place name before: Boca do Inferno, place name after disambiguation: Boca do Inferno, uri: http://dbpedia.org/resource/Boca_do_Inferno
+2014-06-03 12:51:10 INFO  PolarFacade:175 - Place name before: Lisbon, Portugal, place name after disambiguation: Lisbon, uri: http://dbpedia.org/resource/Lisbon
+2014-06-03 12:51:10 INFO  PolarFacade:175 - Place name before: Trondheim lufthavn Værnes, place name after disambiguation: Trondheim lufthavn Værnes, uri: 
+2014-06-03 12:51:10 INFO  PolarFacade:175 - Place name before: Trolltunga, place name after disambiguation: Trolltunga, uri: http://dbpedia.org/resource/Trolltunga
+2014-06-03 12:51:11 INFO  PolarFacade:175 - Place name before: Trondheim, Norway, place name after disambiguation: Trondheim, uri: http://dbpedia.org/resource/Trondheim
+2014-06-03 12:51:12 INFO  PolarFacade:175 - Place name before: Amber Club, place name after disambiguation: Amber Club, uri: 
+2014-06-03 12:51:12 INFO  PolarFacade:175 - Place name before: BYSCENEN, place name after disambiguation: BYSCENEN, uri: 
+2014-06-03 12:51:12 INFO  PolarFacade:175 - Place name before: Realfagbygget NTNU, place name after disambiguation: Norwegian University of Science and Technology, uri: http://dbpedia.org/resource/Norwegian_University_of_Science_and_Technology
+2014-06-03 12:51:12 INFO  PolarFacade:175 - Place name before: Skistua Bymarka, place name after disambiguation: Bymarka, uri: http://dbpedia.org/resource/Bymarka
+2014-06-03 12:51:13 INFO  PolarFacade:175 - Place name before: Geiranger, Norway, place name after disambiguation: Geiranger, uri: http://dbpedia.org/resource/Geiranger
+2014-06-03 12:51:13 INFO  PolarFacade:175 - Place name before: Trondheim, place name after disambiguation: Trondheim, uri: http://dbpedia.org/resource/Trondheim
+2014-06-03 12:51:13 INFO  PolarFacade:175 - Place name before: Geirangerfjorden, place name after disambiguation: Geirangerfjord, uri: http://dbpedia.org/resource/Geirangerfjord
+2014-06-03 12:51:13 INFO  PolarFacade:175 - Place name before: Munkholmen, place name after disambiguation: Munkholmen, uri: http://dbpedia.org/resource/Munkholmen
+2014-06-03 12:51:14 INFO  PolarFacade:175 - Place name before: Australia, place name after disambiguation: Australia, uri: 
+2014-06-03 12:51:16 INFO  PolarFacade:175 - Place name before: La Cour Des Grands, place name after disambiguation: La Cour Des Grands, uri: 
+2014-06-03 12:51:19 INFO  PolarFacade:175 - Place name before: Donostia-San Sebastián, Spain, place name after disambiguation: San Sebastian, uri: http://dbpedia.org/resource/San_Sebasti%C3%A1n
+2014-06-03 12:51:19 INFO  PolarFacade:175 - Place name before: Calella De Palafrugell, place name after disambiguation: Calella de Palafrugell, uri: http://dbpedia.org/resource/Calella_de_Palafrugell
+2014-06-03 12:51:20 INFO  PolarFacade:175 - Place name before: Monestir De Sant Pere De Rodes, place name after disambiguation: Sant Pere de Rodes, uri: http://dbpedia.org/resource/Sant_Pere_de_Rodes
+2014-06-03 12:51:20 INFO  PolarFacade:175 - Place name before: Delta de l'Ebre, place name after disambiguation: Delta de l'Ebre, uri: 
+2014-06-03 12:51:21 INFO  PolarFacade:175 - Place name before: Å i Lofoten, place name after disambiguation: Ã…, uri: http://dbpedia.org/resource/%C3%85%2C_Moskenes
+2014-06-03 12:51:25 INFO  PolarFacade:175 - Place name before: Zhangjiajie, place name after disambiguation: Zhangjiajie, uri: http://dbpedia.org/resource/Zhangjiajie
+2014-06-03 12:51:26 INFO  PolarFacade:175 - Place name before: ZhangJiaJie National Forrest Park, place name after disambiguation: ZhangJiaJie National Forrest Park, uri: 
+2014-06-03 12:51:28 INFO  PolarFacade:175 - Place name before: Wuhan, China, place name after disambiguation: Wuhan, uri: http://dbpedia.org/resource/Wuhan
+2014-06-03 12:51:29 INFO  PolarFacade:175 - Place name before: China, place name after disambiguation: China, uri: http://dbpedia.org/resource/China
+2014-06-03 12:51:30 INFO  PolarFacade:175 - Place name before: Yichang, place name after disambiguation: Yichang, uri: http://dbpedia.org/resource/Yichang
+2014-06-03 12:51:31 INFO  PolarFacade:175 - Place name before: Washington, District of Columbia, place name after disambiguation: Washington, D.C., uri: http://dbpedia.org/resource/Washington,_D.C.
+2014-06-03 12:51:40 INFO  PolarFacade:175 - Place name before: Sport en Cultuur TU Delft, place name after disambiguation: Delft University of Technology, uri: http://dbpedia.org/resource/Delft_University_of_Technology
+2014-06-03 12:51:41 INFO  PolarFacade:175 - Place name before: Delf, place name after disambiguation: Delf, uri: 
+2014-06-03 12:51:42 INFO  PolarFacade:175 - Place name before: In Karolina's Blanket, place name after disambiguation: In Karolina's Blanket, uri: 
+2014-06-03 12:51:42 INFO  PolarFacade:175 - Place name before: Rotterdam, Netherlands, place name after disambiguation: Netherlands, uri: http://dbpedia.org/resource/Netherlands
+2014-06-03 12:51:43 INFO  PolarFacade:175 - Place name before: Knokke-Heist, Belgium, place name after disambiguation: Knokke-Heist, uri: http://dbpedia.org/resource/Knokke-Heist
+2014-06-03 12:51:43 INFO  PolarFacade:175 - Place name before: Trakai Island Castle, place name after disambiguation: Trakai, uri: http://dbpedia.org/resource/Trakai
+2014-06-03 12:51:43 INFO  PolarFacade:175 - Place name before: Alytus County, place name after disambiguation: Alytus County, uri: http://dbpedia.org/resource/Alytus_County
+2014-06-03 12:51:43 INFO  PolarFacade:175 - Place name before: TU Delft Library, place name after disambiguation: Delft University of Technology, uri: http://dbpedia.org/resource/Delft_University_of_Technology
+2014-06-03 12:51:44 INFO  PolarFacade:175 - Place name before: Centrum Delft, place name after disambiguation: Delft, uri: http://dbpedia.org/resource/Delft
+2014-06-03 12:51:46 INFO  PolarFacade:175 - Place name before: Nice, France, place name after disambiguation: Nice, uri: http://dbpedia.org/resource/Nice
+2014-06-03 12:51:47 INFO  PolarFacade:175 - Place name before: TU Delft, place name after disambiguation: Delft University of Technology, uri: http://dbpedia.org/resource/Delft_University_of_Technology
+2014-06-03 12:51:47 INFO  PolarFacade:175 - Place name before: Strand van Scheveningen, place name after disambiguation: Scheveningen, uri: http://dbpedia.org/resource/Scheveningen
+2014-06-03 12:51:48 INFO  PolarFacade:175 - Place name before: Zürich, Switzerland, place name after disambiguation: Switzerland, uri: http://dbpedia.org/resource/Switzerland
+2014-06-03 12:51:48 INFO  PolarFacade:175 - Place name before: Vevey, Switzerland, place name after disambiguation: Vevey, uri: http://dbpedia.org/resource/Vevey
+2014-06-03 12:51:48 INFO  PolarFacade:175 - Place name before: Neuchâtel, Switzerland, place name after disambiguation: Switzerland, uri: http://dbpedia.org/resource/Switzerland
+2014-06-03 12:51:48 INFO  PolarFacade:175 - Place name before: Delft, place name after disambiguation: Delft, uri: http://dbpedia.org/resource/Delft
+2014-06-03 12:51:50 INFO  PolarFacade:175 - Place name before: Gdansk, Poland, place name after disambiguation: GdaÅ„sk, uri: http://dbpedia.org/resource/Gda%C5%84sk
+2014-06-03 12:51:50 INFO  PolarFacade:175 - Place name before: Sopot, Poland, place name after disambiguation: Sopot, uri: http://dbpedia.org/resource/Sopot
+2014-06-03 12:51:51 INFO  PolarFacade:175 - Place name before: Trellborg, Sweden, place name after disambiguation: Trellborg, Sweden, uri: 
+2014-06-03 12:51:51 INFO  PolarFacade:175 - Place name before: Gda?sk, Poland, place name after disambiguation: GdaÅ„sk, uri: http://dbpedia.org/resource/Gda%C5%84sk
+2014-06-03 12:51:52 INFO  PolarFacade:175 - Place name before: Trondheim, Norway, place name after disambiguation: Trondheim, uri: http://dbpedia.org/resource/Trondheim
+2014-06-03 12:51:52 INFO  PolarFacade:175 - Place name before: Cannes, place name after disambiguation: Cannes, uri: http://dbpedia.org/resource/Cannes
+2014-06-03 12:51:52 INFO  PolarFacade:175 - Place name before: NTNU, place name after disambiguation: Norwegian University of Science and Technology, uri: http://dbpedia.org/resource/Norwegian_University_of_Science_and_Technology
+2014-06-03 12:51:52 INFO  PolarFacade:175 - Place name before: Matheran, place name after disambiguation: Matheran, uri: http://dbpedia.org/resource/Matheran
+2014-06-03 12:51:53 INFO  PolarFacade:175 - Place name before: CERN, place name after disambiguation: CERN, uri: http://dbpedia.org/resource/CERN
+2014-06-03 12:51:53 INFO  PolarFacade:175 - Place name before: Monaco, place name after disambiguation: Monaco, uri: http://dbpedia.org/resource/Monaco
+2014-06-03 12:51:53 INFO  PolarFacade:175 - Place name before: Amsterdam, Netherlands, place name after disambiguation: Netherlands, uri: http://dbpedia.org/resource/Netherlands
+2014-06-03 12:51:54 INFO  PolarFacade:175 - Place name before: Tolani maritime Institute(BITS), Talegaon, Pune, place name after disambiguation: Talegaon Dabhade, uri: http://dbpedia.org/resource/Talegaon_Dabhade
+2014-06-03 12:51:54 INFO  PolarFacade:175 - Place name before: Antwerp, Belgium, place name after disambiguation: Antwerp, uri: http://dbpedia.org/resource/Antwerp
+2014-06-03 12:51:55 INFO  PolarFacade:175 - Place name before: Baroda, Gujarat, India, place name after disambiguation: Vadodara, uri: http://dbpedia.org/resource/Vadodara
+2014-06-03 12:51:58 INFO  PolarFacade:175 - Place name before: Dødens Dal, place name after disambiguation: Dødens Dal, uri: 
+2014-06-03 12:51:58 INFO  PolarFacade:175 - Place name before: Foreningen Ett skritt videre, place name after disambiguation: Foreningen Ett skritt videre, uri: 
+2014-06-03 12:51:59 INFO  PolarFacade:175 - Place name before: Trondheim, Norway, place name after disambiguation: Trondheim, uri: http://dbpedia.org/resource/Trondheim
+2014-06-03 12:52:04 INFO  PolarFacade:175 - Place name before: Piscina 2 Giugno, place name after disambiguation: Piscina 2 Giugno, uri: 
+2014-06-03 12:52:04 INFO  PolarFacade:175 - Place name before: Azienda Ospedaliero-Universitaria "Santa Maria della Misericordia", place name after disambiguation: Azienda Ospedaliero-Universitaria "Santa Maria della Misericordia", uri: 
+2014-06-03 12:52:04 INFO  PolarFacade:175 - Place name before: Venezia Stazione Santa Lucia, place name after disambiguation: Venice, uri: http://dbpedia.org/resource/Venice
+2014-06-03 12:52:05 INFO  PolarFacade:175 - Place name before: Parma, Italy, place name after disambiguation: Parma, uri: http://dbpedia.org/resource/Parma
+2014-06-03 12:52:05 INFO  PolarFacade:175 - Place name before: Ottavo Cancello, place name after disambiguation: Ottavo Cancello, uri: 
+2014-06-03 12:52:06 INFO  PolarFacade:175 - Place name before: Rainbow MagicLand - pagina ufficiale, place name after disambiguation: Rainbow MagicLand - pagina ufficiale, uri: 
+2014-06-03 12:52:06 INFO  PolarFacade:175 - Place name before: All'Ombra Del Colosseo, place name after disambiguation: Colosseum, uri: http://dbpedia.org/resource/Colosseum
+2014-06-03 12:52:06 INFO  PolarFacade:175 - Place name before: Piazza Venezia, place name after disambiguation: Piazza Venezia, uri: http://dbpedia.org/resource/Piazza_Venezia
+2014-06-03 12:52:08 INFO  PolarFacade:175 - Place name before: Lecce, place name after disambiguation: Lecce, uri: 
+2014-06-03 12:52:08 INFO  PolarFacade:175 - Place name before: Sotto casa di Andrea, place name after disambiguation: Sotto casa di Andrea, uri: 
+2014-06-03 12:52:09 INFO  PolarFacade:175 - Place name before: Villaggio Del Fanciullo, place name after disambiguation: Villaggio Del Fanciullo, uri: 
+2014-06-03 12:52:10 INFO  PolarFacade:175 - Place name before: Piscina ZERONOVE - Eur Torrino, place name after disambiguation: Piscina ZERONOVE - Eur Torrino, uri: 
+2014-06-03 12:52:10 INFO  PolarFacade:175 - Place name before: Acrobax, place name after disambiguation: Acrobax, uri: 
+2014-06-03 12:52:14 INFO  PolarFacade:175 - Place name before: Osteria "da sora lella", place name after disambiguation: Osteria "da sora lella", uri: 
+2014-06-03 12:52:14 INFO  PolarFacade:175 - Place name before: Capitolo, place name after disambiguation: Capitolo, uri: 
+2014-06-03 12:52:15 INFO  PolarFacade:175 - Place name before: Trondheim, Norway, place name after disambiguation: Trondheim, uri: http://dbpedia.org/resource/Trondheim

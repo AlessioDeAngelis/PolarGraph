@@ -9,6 +9,7 @@ import it.uniroma3.dia.polar.parser.JSONParser;
 import it.uniroma3.dia.polar.persistance.CypherRepository;
 import it.uniroma3.dia.polar.persistance.FacebookRepository;
 import it.uniroma3.dia.polar.recommender.Recommender;
+import it.uniroma3.dia.polar.recommender.RecommenderChainManager;
 import it.uniroma3.dia.polar.rest.RestManager;
 
 import java.net.URLEncoder;
@@ -35,19 +36,21 @@ public class PolarFacade {
 	private final String ACCESS_TOKEN = "";
 	private final String DB_PATH = "";
 	private final Disambiguator disambiguator;
+	private final RecommenderChainManager recommenderChainManager;
 	private Person currentPerson;
 	private Recommender recommender;
 
 	@Inject
 	public PolarFacade(final FacebookRepository facebookRepository, final CypherRepository cypherRepository,
 			final PropertiesManager propertiesController, final Disambiguator disambiguator,
-			final RestManager restManager, final JSONParser jsonParser, final String accessToken, final String dbPath) {
+			final RestManager restManager, final JSONParser jsonParser, final RecommenderChainManager recommenderChainManager, final String accessToken, final String dbPath) {
 		this.facebookRepository = facebookRepository;
 		this.cypherRepository = cypherRepository;
 		this.propertiesController = propertiesController;
 		this.restManager = restManager;
 		this.jsonParser = jsonParser;
 		this.disambiguator = disambiguator;
+		this.recommenderChainManager = recommenderChainManager;
 		this.currentPerson = new Person();
 	}
 
@@ -103,6 +106,10 @@ public class PolarFacade {
 			this.readVisitedPlacesFromFacebookAndStore(friendId);
 		}
 	}
+	
+	public void addRecommenderToTheRecommenderChainManager(Recommender recommender){
+		this.recommenderChainManager.addRecommender(recommender);
+	}
 
 	@Deprecated
 	public void readPlacesTaggedInPhotoByFriendsAndStore(String currentFbUserId) {
@@ -156,7 +163,9 @@ public class PolarFacade {
 
 	public List<RecommendedObject> recommendPlace(String fbUserId) {
 		// recommend a place with the strategy of the given ranker
-		List<RecommendedObject> rankedPlaces = this.recommender.recommendObject(fbUserId);
+//		List<RecommendedObject> rankedPlaces = this.recommender.recommendObject(fbUserId);
+		List<RecommendedObject> rankedPlaces = this.recommenderChainManager.startRecommendationChain(fbUserId);
+
 		for (RecommendedObject rankedPlace : rankedPlaces) {
 			logger.info("Place Name: " + rankedPlace.getName() + ", uri: " + rankedPlace.getUri() + ", score: "
 					+ rankedPlace.getScore() + ", mediaUrl: " + rankedPlace.getMediaUrl());

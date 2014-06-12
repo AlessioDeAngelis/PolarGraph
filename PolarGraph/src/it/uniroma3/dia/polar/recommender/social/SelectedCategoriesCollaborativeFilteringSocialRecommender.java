@@ -29,8 +29,8 @@ public class SelectedCategoriesCollaborativeFilteringSocialRecommender extends A
 	}		
 	
 	@Override
-	public List<RecommendedObject> recommendObject(String userId) {
-		return super.recommendObject(userId);
+	public List<RecommendedObject> recommendObject(String userId, List<RecommendedObject> inputObjects) {
+		return super.recommendObject(userId, inputObjects);
 	}
 	
 	@Override

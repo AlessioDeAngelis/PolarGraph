@@ -26,7 +26,7 @@ public abstract class Recommender {
 		this.categories = categories;
 	}
 
-	public abstract List<RecommendedObject> recommendObject(String userId);
+	public abstract List<RecommendedObject> recommendObject(String userId, List<RecommendedObject> inputObjects);
 
 	/***
 	 * Converts from a place to a RecommendedObject

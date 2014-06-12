@@ -33,14 +33,14 @@ public class SemanticBaseRecommender extends Recommender {
 	 * the title and it queries dbpedia to have more infos
 	 **/
 	@Override
-	public List<RecommendedObject> recommendObject(String userId) {
-		List<RecommendedObject> rankedPlaces = naiveRanker.recommendObject(userId);
+	public List<RecommendedObject> recommendObject(String userId, List<RecommendedObject> inputObjects) {
+//		List<RecommendedObject> inputObjects = naiveRanker.recommendObject(userId);
 		List<RecommendedObject> recommendedObjects = new ArrayList<RecommendedObject>();
-		String term = rankedPlaces.get(0).getName();
+		String term = inputObjects.get(0).getName();
 		// recommendedObjects = jenaManager.textQueryEuropeana(term);
-		for (int i = 0; i < rankedPlaces.size(); i++) {
+		for (int i = 0; i < inputObjects.size(); i++) {
 			try {
-				RecommendedObject obj = rankedPlaces.get(i);
+				RecommendedObject obj = inputObjects.get(i);
 				if (obj.getUri() != null && !obj.getUri().equals("")) {
 					recommendedObjects.addAll(jenaManager.textQueryDbpedia(obj.getUri()));
 				}

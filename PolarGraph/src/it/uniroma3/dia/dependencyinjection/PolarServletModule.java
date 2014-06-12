@@ -11,6 +11,7 @@ import it.uniroma3.dia.polar.persistance.CypherRepository;
 import it.uniroma3.dia.polar.persistance.FacebookRepository;
 import it.uniroma3.dia.polar.rdf.JenaManager;
 import it.uniroma3.dia.polar.recommender.Recommender;
+import it.uniroma3.dia.polar.recommender.RecommenderChainManager;
 import it.uniroma3.dia.polar.recommender.semantic.EuropeanaRecommender;
 import it.uniroma3.dia.polar.recommender.semantic.SemanticBaseRecommender;
 import it.uniroma3.dia.polar.recommender.semantic.SemanticCleverRecommender;
@@ -77,7 +78,8 @@ public class PolarServletModule extends AbstractModule {
 		bind(PropertiesManager.class).in(Singleton.class);
 		bind(XMLParser.class).in(Singleton.class);
 		bind(JSONParser.class).in(Singleton.class);
-		
+		bind(RecommenderChainManager.class).in(Singleton.class);
+
 		bind(RecommenderFactory.class).in(Singleton.class);
 
 		bind(SemanticBaseRecommender.class).in(Singleton.class);

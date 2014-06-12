@@ -399,6 +399,7 @@ public class FacebookRepository {
 
 		JsonArray array = photosConnection.getJsonArray("data");
 		List<PolarPlace> places = new ArrayList<>();
+		try{
 		for (int i = 0; i < array.length(); i++) {
 			JsonObject object = array.getJsonObject(i);
 			// System.out.println(object.toString());
@@ -465,6 +466,9 @@ public class FacebookRepository {
 				}
 				
 			}
+		}
+		}catch(com.restfb.json.JsonException e){
+			
 		}
 		return places;
 	}

@@ -32,13 +32,13 @@ public class EuropeanaRecommender extends Recommender {
 	}
 
 	@Override
-	public List<RecommendedObject> recommendObject(String userId) {
-		socialRecommender.setCategories(this.getCategories());
-		List<RecommendedObject> rankedPlaces = socialRecommender.recommendObject(userId);
+	public List<RecommendedObject> recommendObject(String userId, List<RecommendedObject> inputObjects) {
+//		socialRecommender.setCategories(this.getCategories());
+//		List<RecommendedObject> inputObjects = socialRecommender.recommendObject(userId);
 		List<RecommendedObject> recommendedObjects = new ArrayList<RecommendedObject>();
 		int i = 0;
-		while (recommendedObjects.size() <= 0 && i < rankedPlaces.size()) {
-			String term = rankedPlaces.get(i).getName();
+		while (recommendedObjects.size() <= 0 && i < inputObjects.size()) {
+			String term = inputObjects.get(i).getName();
 			// TODO:this method should return europenaa objects instead
 			recommendedObjects.addAll(jenaManager.queryEuropeana(term));
 			System.out.println(term + " " + recommendedObjects.size());

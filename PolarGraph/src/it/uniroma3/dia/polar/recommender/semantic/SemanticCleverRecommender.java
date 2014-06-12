@@ -45,24 +45,24 @@ public class SemanticCleverRecommender extends Recommender {
 	 * the title and it queries dbpedia to have more infos
 	 **/
 	@Override
-	public List<RecommendedObject> recommendObject(String userId) {
-		List<RecommendedObject> rankedPlaces = socialRanker.recommendObject(userId);
+	public List<RecommendedObject> recommendObject(String userId, List<RecommendedObject> inputObjects) {
+//		List<RecommendedObject> inputObjects = socialRanker.recommendObject(userId);
 		List<RecommendedObject> recommendedObjects = new ArrayList<RecommendedObject>();
 
 		String resultString = "";
 		List<SimilarConcept> similarConceptList = new ArrayList<>();
 		for (int i = 0; i < 1; i++) {
-			for (int j = 0; j < rankedPlaces.size() - 1; j++) {
-				if (i != j && rankedPlaces.get(i).getUri() != null && !rankedPlaces.get(i).getUri().equals("")
-						&& !rankedPlaces.get(i).getUri().equals(" ")
+			for (int j = 0; j < inputObjects.size() - 1; j++) {
+				if (i != j && inputObjects.get(i).getUri() != null && !inputObjects.get(i).getUri().equals("")
+						&& !inputObjects.get(i).getUri().equals(" ")
 
-						&& rankedPlaces.get(j).getUri() != null && !rankedPlaces.get(j).getUri().equals(" ")
-						&& !rankedPlaces.get(j).getUri().equals("")
+						&& inputObjects.get(j).getUri() != null && !inputObjects.get(j).getUri().equals(" ")
+						&& !inputObjects.get(j).getUri().equals("")
 
 				) {
-					double alphaFactor = rankedPlaces.get(i).getScore() * 0.6 + rankedPlaces.get(j).getScore() * 0.4;
-					String cm = "<" + rankedPlaces.get(i).getUri() + ">";
-					String cx = "<" + rankedPlaces.get(j).getUri() + ">";
+					double alphaFactor = inputObjects.get(i).getScore() * 0.6 + inputObjects.get(j).getScore() * 0.4;
+					String cm = "<" + inputObjects.get(i).getUri() + ">";
+					String cx = "<" + inputObjects.get(j).getUri() + ">";
 					int similarity = jenaManager.conceptQuery(cm, cx).size();
 					resultString += "SIMILARITY BETWEEN " + cm + " AND " + cx + " IS " + similarity
 							+ " while with the factor is " + similarity * alphaFactor + "\n";
@@ -106,7 +106,7 @@ public class SemanticCleverRecommender extends Recommender {
 		// }
 		// }
 
-		rankedPlaces.clear(); // to free space
+		inputObjects.clear(); // to free space
 		return recommendedObjects;
 	}
 }

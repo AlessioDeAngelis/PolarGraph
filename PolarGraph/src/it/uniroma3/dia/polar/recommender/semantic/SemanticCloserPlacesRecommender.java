@@ -38,18 +38,18 @@ public class SemanticCloserPlacesRecommender extends Recommender {
 	 * the title and it queries dbpedia to have more infos
 	 **/
 	@Override
-	public List<RecommendedObject> recommendObject(String userId) {
-		socialRecommender.setCategories(this.getCategories());
-		List<RecommendedObject> rankedPlaces = socialRecommender.recommendObject(userId);
+	public List<RecommendedObject> recommendObject(String userId, List<RecommendedObject> inputObjects) {
+//		socialRecommender.setCategories(this.getCategories());
+//		List<RecommendedObject> inputObjects = socialRecommender.recommendObject(userId,inputObjects);
 		List<RecommendedObject> recommendedObjects = new ArrayList<RecommendedObject>();
 		String placeUri = " ";
 		int i = 0;
 		List<String> closeDbpediaConcepts = new ArrayList<>();
-		if (rankedPlaces == null || rankedPlaces.size() <= 0) {
-			recommendedObjects = rankedPlaces;
+		if (inputObjects == null || inputObjects.size() <= 0) {
+			recommendedObjects = inputObjects;
 		} else {
-			for (i = 0; i < rankedPlaces.size(); i++) {
-				placeUri = rankedPlaces.get(i).getUri();
+			for (i = 0; i < inputObjects.size(); i++) {
+				placeUri = inputObjects.get(i).getUri();
 
 				if (!placeUri.equals("") && !placeUri.equals(" ")) {
 					// get the concepts
@@ -75,7 +75,7 @@ public class SemanticCloserPlacesRecommender extends Recommender {
 
 		}
 
-		rankedPlaces.clear(); // to free space
+		inputObjects.clear(); // to free space
 		return recommendedObjects;
 	}
 }

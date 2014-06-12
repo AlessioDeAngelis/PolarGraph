@@ -3,6 +3,8 @@ package it.uniroma3.dia.polar.rdf;
 import it.uniroma3.dia.polar.graph.model.Couple;
 import it.uniroma3.dia.polar.graph.model.RecommendedObject;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -31,6 +33,7 @@ public class JenaManager {
 		// + term
 		// +
 		// "')) ?resource ore:proxyIn ?proxy ; dc:title ?title ; dc:subject ?sunject; dc:creator ?creator ; dc:source ?source . ?proxy edm:isShownBy ?mediaURL .  } limit 50";
+		term = term.replace("'", "");
 		StringBuilder queryString = new StringBuilder();
 		queryString.append("PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> ");
 		queryString.append(" PREFIX edm: <http://www.europeana.eu/schemas/edm/> ");
@@ -61,7 +64,8 @@ public class JenaManager {
 		// QueryExecution queryExecution =
 		// QueryExecutionFactory.sparqlService(ontology_service,
 		// String.format(endpointsSparql, endpoint));
-		QueryExecution queryExecution = QueryExecutionFactory.sparqlService(ontology_service, queryString.toString());
+		QueryExecution 	queryExecution = QueryExecutionFactory.sparqlService(ontology_service, String.format(queryString.toString(),endpoint));
+		
 		ResultSet results = queryExecution.execSelect();
 
 		List<RecommendedObject> retrievedObjects = new ArrayList<RecommendedObject>();

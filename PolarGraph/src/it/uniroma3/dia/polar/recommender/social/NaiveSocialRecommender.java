@@ -31,7 +31,7 @@ public class NaiveSocialRecommender extends Recommender {
 	}
 
 	@Override
-	public List<RecommendedObject> recommendObject(String userId) {
+	public List<RecommendedObject> recommendObject(String userId, List<RecommendedObject> inputObjects) {
 		this.repository.startDB();
 		Map<String, Couple<PolarPlace, Long>> place2visitors = this.repository
 				.findPlacesVisitedByTheUserAndCountFriends(userId);

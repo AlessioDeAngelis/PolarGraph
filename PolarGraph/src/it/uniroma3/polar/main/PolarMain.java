@@ -131,7 +131,7 @@ public class PolarMain {
 		// logger.debug(o.getUri() + ", " +o.getScore());
 		// }
 		SemanticCleverRecommender ranker = injector.getInstance(SemanticCleverRecommender.class);
-		ranker.recommendObject(fbUserId);
+		ranker.recommendObject(fbUserId,null);
 	}
 
 	public static void storeMyPosts() {

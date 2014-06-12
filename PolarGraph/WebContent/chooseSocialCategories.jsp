@@ -56,6 +56,5 @@
 
 <p><input type="submit" value="Recommend" name="conferma" /></p>
 </form>
-</form>
 </body>
 </html>

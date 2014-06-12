@@ -18,9 +18,12 @@ public class RecommendAction extends Action {
 
 	@Override
 	public String executeAction(HttpServletRequest request) throws ServletException {
-		String rankerName = request.getParameter("rankerType");// from
-																// chooseRecommender.jsp
-																// form
+
+		// from chooseRecommender.jsp form
+		String[] rankerSocialNames = request.getParameterValues("rankerSocialType");
+		String[] rankerDbpediaNames = request.getParameterValues("rankerDbpediaType");
+		String[] rankerEuropeanaNames = request.getParameterValues("rankerEuropeanaType");
+
 		List<String> categories = (ArrayList<String>) request.getSession().getAttribute("choosenCategories");
 		// Injector injector = Guice.createInjector(new
 		// PolarServletModule(request.getServletContext(),RankerType.fromString(rankerName)));
@@ -34,17 +37,45 @@ public class RecommendAction extends Action {
 
 		PolarFacade polarFacade = injector.getInstance(PolarFacade.class);
 		RecommenderFactory recommenderFactory = injector.getInstance(RecommenderFactory.class);
-		CypherRepository repository = injector.getInstance(CypherRepository.class);
-		Recommender recommender = recommenderFactory.createRecommender(rankerName, injector);
-		if (categories != null) {
-			recommender.setCategories(categories);
+
+		// firstly add the social recommender. At least one recommender must be
+		// present in the list
+		if (rankerSocialNames == null || rankerSocialNames.length == 0) {
+			Recommender recommender = recommenderFactory.createRecommender("naive", injector);
+			polarFacade.addRecommenderToTheRecommenderChainManager(recommender);
 		}
-		polarFacade.setRecommender(recommender);
+		for (int i = 0; i < rankerSocialNames.length; i++) {
+			String socialRecommenderName = rankerSocialNames[i];
+			Recommender socialRecommender = recommenderFactory.createRecommender(socialRecommenderName, injector);
+			if (categories != null) {
+				socialRecommender.setCategories(categories);
+			}
+			polarFacade.addRecommenderToTheRecommenderChainManager(socialRecommender);
+		}
+
+		// secondly a dbpedia recommender. It is not required the presence of a
+		// dbpedia recommender
+		if (rankerDbpediaNames != null) {
+			for (int i = 0; i < rankerDbpediaNames.length; i++) {
+				String dbpediaRecommenderName = rankerDbpediaNames[i];
+				Recommender dbpediaRecommender = recommenderFactory.createRecommender(dbpediaRecommenderName, injector);
+				polarFacade.addRecommenderToTheRecommenderChainManager(dbpediaRecommender);
+			}
+		}
+
+		// at the end an europeana semantic recommender. It is not required the
+		// presence of an europeana recommender but it is strongly recommended
+		if (rankerEuropeanaNames != null) {
+			for (int i = 0; i < rankerEuropeanaNames.length; i++) {
+				String europeanaRecommenderName = rankerEuropeanaNames[i];
+				Recommender europeanaRecommender = recommenderFactory.createRecommender(europeanaRecommenderName,
+						injector);
+				polarFacade.addRecommenderToTheRecommenderChainManager(europeanaRecommender);
+			}
+		}
 		List<RecommendedObject> objs = polarFacade.recommendPlace(userId);
 		request.getSession().setAttribute("recommendedObjects", objs);
-		request.getSession().setAttribute("injector", injector);
 
 		return "recommended_objects_returned";
 	}
-
 }
