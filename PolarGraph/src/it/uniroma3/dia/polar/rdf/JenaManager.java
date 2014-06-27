@@ -237,6 +237,8 @@ public class JenaManager {
 	public Map<String,String> queryDbpediaForExtraInfo(String dbpediaUri) {
 		Map<String,String> dbpediaAttribute2value = new HashMap<String,String>();
 		String ontology_service = "http://dbpedia.org/sparql";
+		ontology_service = "http://192.168.127.22:8890/sparql";
+
 		String endpoint = "otee:Endpoints";
 		String endpointsSparql = "PREFIX dbp-prop: <http://dbpedia.org/property/> PREFIX dbpedia: <http://dbpedia.org/resource/> PREFIX dbpedia-owl: <http://dbpedia.org/ontology/> PREFIX foaf: <http://xmlns.com/foaf/0.1/> select distinct ?mediaUrl ?externalLink { "
 				+ dbpediaUri + " dbpedia-owl:thumbnail ?mediaUrl; foaf:isPrimaryTopicOf ?externalLink.} LIMIT 1";
