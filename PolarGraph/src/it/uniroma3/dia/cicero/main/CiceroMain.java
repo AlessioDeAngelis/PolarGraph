@@ -20,9 +20,9 @@ import org.slf4j.LoggerFactory;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 
-public class PolarMain {
+public class CiceroMain {
 
-	private final static Logger logger = LoggerFactory.getLogger(PolarMain.class);
+	private final static Logger logger = LoggerFactory.getLogger(CiceroMain.class);
 
 	// TODO: only one injector invocation
 	public static void main(String[] args) {

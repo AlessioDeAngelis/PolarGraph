@@ -1,6 +1,6 @@
 package it.uniroma3.it.dia.cicero.rest;
 
-import it.uniroma3.dia.cicero.main.PolarMain;
+import it.uniroma3.dia.cicero.main.CiceroMain;
 import it.uniroma3.dia.cicero.rest.RestManager;
 
 import java.io.BufferedReader;
