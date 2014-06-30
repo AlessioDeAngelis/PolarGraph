@@ -2,6 +2,8 @@ package it.uniroma3.dia.cicero.controller;
 
 import it.uniroma3.dia.cicero.disambiguator.Disambiguator;
 import it.uniroma3.dia.cicero.disambiguator.SpottedPlace;
+import it.uniroma3.dia.cicero.graph.model.Category;
+import it.uniroma3.dia.cicero.graph.model.Couple;
 import it.uniroma3.dia.cicero.graph.model.Person;
 import it.uniroma3.dia.cicero.graph.model.PolarPlace;
 import it.uniroma3.dia.cicero.graph.model.RecommendedObject;
@@ -37,12 +39,13 @@ public class CiceroFacade {
 	private final String DB_PATH = "";
 	private final Disambiguator disambiguator;
 	private final RecommenderChainManager recommenderChainManager;
+	private final CategoriesManager categoryManager;
 	private Person currentPerson;
 	private Recommender recommender;
 
 	@Inject
 	public CiceroFacade(final FacebookRepository facebookRepository, final CypherRepository cypherRepository,
-			final PropertiesManager propertiesController, final Disambiguator disambiguator,
+			final PropertiesManager propertiesController, final CategoriesManager categoriesManager, final Disambiguator disambiguator,
 			final RestManager restManager, final JSONParser jsonParser, final RecommenderChainManager recommenderChainManager, final String accessToken, final String dbPath) {
 		this.facebookRepository = facebookRepository;
 		this.cypherRepository = cypherRepository;
@@ -50,6 +53,7 @@ public class CiceroFacade {
 		this.restManager = restManager;
 		this.jsonParser = jsonParser;
 		this.disambiguator = disambiguator;
+		this.categoryManager = categoriesManager;
 		this.recommenderChainManager = recommenderChainManager;
 		this.currentPerson = new Person();
 	}
@@ -206,6 +210,15 @@ public class CiceroFacade {
 		this.cypherRepository.startDB();
 		this.cypherRepository.clearGraph();
 		this.cypherRepository.stopDB();
+	}
+	
+	public List<Category> calculateUserFavouriteCategories(String fbUserId){
+		this.cypherRepository.startDB();
+		List<Couple<Category,Double>> retrievedCategories = this.cypherRepository.findUserCategoriesOrderedDesc(fbUserId);
+		List<Category> favouriteCategories = this.categoryManager.calculateUserFavouriteCategories(retrievedCategories, 5);
+		this.cypherRepository.stopDB();
+		
+		return favouriteCategories;
 	}
 
 }

@@ -19,9 +19,9 @@ public class StoreFacebookUserDataAction extends Action {
 		CiceroFacade polarController = injector.getInstance(CiceroFacade.class);
 		
 		//store my info
-//		polarController.readUserFromFacebookAndStore(fbUserId);
+		polarController.readUserFromFacebookAndStore(fbUserId);
 		polarController.readVisitedPlacesFromFacebookAndStore(fbUserId);
-//		polarController.readFriendsFromFacebookAndStore(fbUserId);
+		polarController.readFriendsFromFacebookAndStore(fbUserId);
 		return "userDataStored";
 	}
 

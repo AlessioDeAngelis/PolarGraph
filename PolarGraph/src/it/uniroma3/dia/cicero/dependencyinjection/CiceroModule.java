@@ -1,5 +1,6 @@
 package it.uniroma3.dia.cicero.dependencyinjection;
 
+import it.uniroma3.dia.cicero.controller.CategoriesManager;
 import it.uniroma3.dia.cicero.controller.CiceroFacade;
 import it.uniroma3.dia.cicero.controller.PropertiesManager;
 import it.uniroma3.dia.cicero.disambiguator.Disambiguator;
@@ -76,6 +77,7 @@ public class CiceroModule extends AbstractModule {
 		bind(SelectedCategoriesSocialRecommender.class).in(Singleton.class);
 		bind(SelectedCategoriesCollaborativeFilteringSocialRecommender.class).in(Singleton.class);
 
+		bind(CategoriesManager.class).in(Singleton.class);
 //		bind(String.class)
 //	    .annotatedWith(Names.named("access_token"))
 //	    .toProvider(Providers.<String>of(null));

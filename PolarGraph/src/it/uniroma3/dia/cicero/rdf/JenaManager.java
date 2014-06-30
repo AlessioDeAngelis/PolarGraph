@@ -13,6 +13,8 @@ import java.util.HashMap;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.google.inject.Inject;
+import com.google.inject.name.Named;
 import com.hp.hpl.jena.query.QueryExecution;
 import com.hp.hpl.jena.query.QueryExecutionFactory;
 import com.hp.hpl.jena.query.QuerySolution;
@@ -21,6 +23,12 @@ import com.hp.hpl.jena.query.ResultSet;
 public class JenaManager {
 
 	private final static Logger logger = LoggerFactory.getLogger(JenaManager.class);
+	private final String dbpediaEndpoint;
+
+	@Inject
+	public JenaManager(@Named("dbpedia_endpoint") String dbpediaEndpoint) {
+		this.dbpediaEndpoint = dbpediaEndpoint;
+	}
 
 	// TODO: you could substitute it with europeana object
 	public List<RecommendedObject> queryEuropeana(String term) {
@@ -40,15 +48,15 @@ public class JenaManager {
 		queryString.append(" PREFIX ore: <http://www.openarchives.org/ore/terms/> ");
 		queryString.append(" PREFIX dc: <http://purl.org/dc/elements/1.1/> ");
 		queryString.append("  SELECT distinct ?proxy ?creator ?mediaURL ?provider ?title ?source ?cho"); // at
-																									// the
-																									// moment
-																									// we
-																									// don't
-																									// need
-																									// to
-																									// return
-																									// the
-																									// subject
+		// the
+		// moment
+		// we
+		// don't
+		// need
+		// to
+		// return
+		// the
+		// subject
 		queryString.append(" WHERE { ?s dc:creator ?creator; ");
 		queryString.append(" ore:proxyIn ?proxy; ");
 		queryString.append(" dc:subject ?subject; ");
@@ -64,8 +72,11 @@ public class JenaManager {
 		// QueryExecution queryExecution =
 		// QueryExecutionFactory.sparqlService(ontology_service,
 		// String.format(endpointsSparql, endpoint));
-		QueryExecution 	queryExecution = QueryExecutionFactory.sparqlService(ontology_service, String.format(queryString.toString(),endpoint));
-		
+//		QueryExecution queryExecution = QueryExecutionFactory.sparqlService(ontology_service,
+//				String.format(queryString.toString(), endpoint));
+		QueryExecution queryExecution = QueryExecutionFactory.sparqlService(ontology_service,
+				queryString.toString());
+
 		ResultSet results = queryExecution.execSelect();
 
 		List<RecommendedObject> retrievedObjects = new ArrayList<RecommendedObject>();
@@ -80,7 +91,7 @@ public class JenaManager {
 			String creator = solution.get("creator").toString();
 			String provider = solution.get("provider").toString();
 			String source = solution.get("source").toString();
-			String externalLink = "http://europeana.ontotext.com/resource?uri="+solution.get("cho").toString();
+			String externalLink = "http://europeana.ontotext.com/resource?uri=" + solution.get("cho").toString();
 
 			if (!prevUri.equals(uri)) { // different object, create it and add
 										// it to the collection
@@ -108,7 +119,7 @@ public class JenaManager {
 	 * THE GIVEN URI AND THAT SHARE A CATEGORY WITH IT
 	 * */
 	public List<String> findCloserPlacesFromDbpedia(String term) {
-		String ontology_service = "http://dbpedia.org/sparql";
+		String ontology_service = this.dbpediaEndpoint;
 		String endpoint = "otee:Endpoints";
 		term = "<" + term + ">";
 		StringBuilder queryString = new StringBuilder();
@@ -144,13 +155,14 @@ public class JenaManager {
 
 		return retrievedConcepts;
 	}
-	
+
 	/**
-	 * QUERIES DBPEDIA AND RETURNS THE LAT AND LANG OF THE GIVEN URI. THE URI SHOULD BE ABOUT A PLACE
+	 * QUERIES DBPEDIA AND RETURNS THE LAT AND LANG OF THE GIVEN URI. THE URI
+	 * SHOULD BE ABOUT A PLACE
 	 * */
-	public Couple<String,String> retrieveLatLangFromDbpedia(String term) {
-		String ontology_service = "http://dbpedia.org/sparql";
-//		String ontology_service = "http://live.dbpedia.org/sparql";
+	public Couple<String, String> retrieveLatLangFromDbpedia(String term) {
+		String ontology_service = this.dbpediaEndpoint;
+		// String ontology_service = "http://live.dbpedia.org/sparql";
 
 		String endpoint = "otee:Endpoints";
 		term = "<" + term + ">";
@@ -175,8 +187,8 @@ public class JenaManager {
 		Couple<String, String> latLng = new Couple<String, String>("", "");
 		while (results.hasNext()) {
 			QuerySolution solution = results.next();
-			String lat = ""+ solution.getLiteral("lat").getFloat();
-			
+			String lat = "" + solution.getLiteral("lat").getFloat();
+
 			String lng = "" + solution.getLiteral("lng").getFloat();
 			latLng = new Couple<String, String>(lat, lng);
 		}
@@ -185,7 +197,7 @@ public class JenaManager {
 	}
 
 	public List<RecommendedObject> textQueryDbpedia(String dbpediaUri) {
-		String ontology_service = "http://dbpedia.org/sparql";
+		String ontology_service = this.dbpediaEndpoint;
 		String endpoint = "otee:Endpoints";
 		String endpointsSparql = "PREFIX dbp-prop: <http://dbpedia.org/property/> PREFIX dbpedia: <http://dbpedia.org/resource/> PREFIX dbpedia-owl: <http://dbpedia.org/ontology/> select distinct  ?opera ?museum where { ?opera dbpedia-owl:museum ?museum. ?museum dbp-prop:location "
 				+ "<" + dbpediaUri + ">" + "  } LIMIT 200";
@@ -209,10 +221,10 @@ public class JenaManager {
 
 		return retrievedObjects;
 	}
-	
+
 	@Deprecated
 	public String queryDbpediaForImageUrl(String dbpediaUri) {
-		String ontology_service = "http://dbpedia.org/sparql";
+		String ontology_service = dbpediaEndpoint;
 		String endpoint = "otee:Endpoints";
 		String endpointsSparql = "PREFIX dbp-prop: <http://dbpedia.org/property/> PREFIX dbpedia: <http://dbpedia.org/resource/> PREFIX dbpedia-owl: <http://dbpedia.org/ontology/> select distinct ?mediaUrl { "
 				+ dbpediaUri + " dbpedia-owl:thumbnail ?mediaUrl. } LIMIT 1";
@@ -230,14 +242,14 @@ public class JenaManager {
 
 		return mediaUrl;
 	}
-	
+
 	/**
-	 * Given a dbpedia uri, extracts extra infos. At the moment the extra infos are the mediaUrl and the external wikipedia link
+	 * Given a dbpedia uri, extracts extra infos. At the moment the extra infos
+	 * are the mediaUrl and the external wikipedia link
 	 **/
-	public Map<String,String> queryDbpediaForExtraInfo(String dbpediaUri) {
-		Map<String,String> dbpediaAttribute2value = new HashMap<String,String>();
-		String ontology_service = "http://dbpedia.org/sparql";
-		ontology_service = "http://192.168.127.22:8890/sparql";
+	public Map<String, String> queryDbpediaForExtraInfo(String dbpediaUri) {
+		Map<String, String> dbpediaAttribute2value = new HashMap<String, String>();
+		String ontology_service = this.dbpediaEndpoint;
 
 		String endpoint = "otee:Endpoints";
 		String endpointsSparql = "PREFIX dbp-prop: <http://dbpedia.org/property/> PREFIX dbpedia: <http://dbpedia.org/resource/> PREFIX dbpedia-owl: <http://dbpedia.org/ontology/> PREFIX foaf: <http://xmlns.com/foaf/0.1/> select distinct ?mediaUrl ?externalLink { "
@@ -253,15 +265,15 @@ public class JenaManager {
 			QuerySolution solution = results.next();
 			mediaUrl = solution.get("mediaUrl").toString();
 			externalLink = solution.get("externalLink").toString();
-			
-			dbpediaAttribute2value.put("mediaUrl",mediaUrl);
+
+			dbpediaAttribute2value.put("mediaUrl", mediaUrl);
 			dbpediaAttribute2value.put("externalLink", externalLink);
 		}
 
 		return dbpediaAttribute2value;
 	}
 
-	public static List<String> conceptQuery(String cm, String cx) {
+	public List<String> conceptQuery(String cm, String cx) {
 		List<String> extractedConcepts = new ArrayList<>();
 		List<String> heritageTypes = new ArrayList<>();
 
@@ -317,7 +329,7 @@ public class JenaManager {
 			heritageTypesQueryString += " UNION {" + " ?c a <" + heritageTypes.get(i) + ">.} ";
 		}
 
-		String ontology_service = "http://dbpedia.org/sparql";
+		String ontology_service = this.dbpediaEndpoint;
 		// String ontology_service = "http://live.dbpedia.org/sparql";
 		String endpoint = "otee:Endpoints";
 		/**
@@ -435,14 +447,13 @@ public class JenaManager {
 		// System.out.println(finalResult.toString());
 		return extractedConcepts;
 	}
-	
 
 	public static void main(String[] args) {
 		// String cm = "dbpedia:Girl_with_a_Pearl_Earring";
 		// String cx = "dbpedia:Johannes_Vermeer";
 		String cm = "<http://dbpedia.org/resource/Colosseum>";
 		String cx = "<http://dbpedia.org/resource/Vespasian>";
-		List<String> objs = conceptQuery(cm, cx);
-		System.out.println(objs.size());
+//		List<String> objs = JenaManager.conceptQuery(cm, cx);
+//		System.out.println(objs.size());
 	}
 }

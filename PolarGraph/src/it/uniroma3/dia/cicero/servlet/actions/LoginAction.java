@@ -86,13 +86,13 @@ http://www.html.it/articoli/interazione-con-facebook/
 		facebookRepository.setAccessTokenString(accessToken);
 		facebookRepository.extendTokenLife();
 		User user = facebookRepository.retrieveLoggedUser();
-		CiceroFacade polarFacade = injector.getInstance(CiceroFacade.class);
+		CiceroFacade ciceroFacade = injector.getInstance(CiceroFacade.class);
 		CypherRepository repository = injector.getInstance(CypherRepository.class);
 		repository.setDbPath("data/db/db_"+ user.getId()+".graph");
 		repository.setDbPath(request.getServletContext().getRealPath("/")+repository.getDbPath());
 		System.out.println(repository.getDbPath());
 
-		request.getSession().setAttribute("facade", polarFacade);	
+		request.getSession().setAttribute("facade", ciceroFacade);	
 		request.getSession().setAttribute("facebookUser", user );	
 		request.getSession().setAttribute("fb_user_id", user.getId() );	
 

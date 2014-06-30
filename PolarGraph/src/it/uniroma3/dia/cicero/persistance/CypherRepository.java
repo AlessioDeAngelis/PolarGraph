@@ -734,6 +734,51 @@ public class CypherRepository extends Repository {
 		return placesAndVisitors;
 	}
 	
+	
+	/**
+	 * @param userId
+	 *            the facebook id of the currentUser
+	 * @param categoryNamesList
+	 *            the list containing all the names of the categories linked to
+	 *            the current user and the number of places visited by the user within that category
+	 * @return list of Couples: places - number of visiting people
+	 * 
+	 * */
+	public List<Couple<Category, Double>> findUserCategoriesOrderedDesc(String userId) {
+
+		List<Couple<Category,Double>> categoriesAndLinks = new ArrayList<>();
+		ExecutionResult result = null;
+		Transaction tx = graphDb.beginTx();
+		Map<String, Object> params = null;
+		String query = "";
+		try {
+			
+			//construct the query
+			params = new HashMap<String, Object>();
+			params.put("personId", userId);
+			query = "MATCH (me:Person)-[r1]->(place:Place)-[r2]->(category:Category) WHERE me.id = {personId} RETURN category, COUNT(r2) as links ORDER BY links DESC";
+
+			// querying the engine
+			result = this.engine.execute(query, params);
+			
+			for (Map<String, Object> row : result) {
+				Node nodeCategory = (Node) row.get("category");
+				String nodeCategoryId = (String) nodeCategory.getProperty("id", "");
+				String nodeCategoryName = (String) nodeCategory.getProperty("name", "");
+				Long links = (Long) row.get("links");
+				Category place = new Category();
+				place.setId(nodeCategoryId);
+				place.setName(nodeCategoryName);
+				categoriesAndLinks.add(new Couple<Category, Double>(place, links.doubleValue()));
+			}
+
+			tx.success();
+		} finally {
+			tx.close();
+		}
+		return categoriesAndLinks;
+	}
+	
 	/**
 	 * Create a triple in the graph: personId -[TALKS_ABOUT]->concept
 	 * */

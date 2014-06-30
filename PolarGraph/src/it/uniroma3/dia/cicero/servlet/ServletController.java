@@ -41,7 +41,6 @@ public class ServletController extends HttpServlet {
 	}
 
 	public void init() {
-
 		Class clazz = Action.class;
 		this.command2actionClass = new HashMap<String, Class>();
 		this.command2actionClass.put("/fblogin.do", LoginAction.class);
