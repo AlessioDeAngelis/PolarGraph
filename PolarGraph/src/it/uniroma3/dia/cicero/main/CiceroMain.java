@@ -34,7 +34,7 @@ public class CiceroMain {
 		// storeMyFriendsInfo();
 		// readAllNodesOfAType("Category");
 		// placeCategories();
-		storeMyPosts();
+//		storeMyPosts();
 		logger.info("End in " + (System.currentTimeMillis() - start) + " msec");
 	}
 
