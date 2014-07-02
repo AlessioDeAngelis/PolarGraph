@@ -427,7 +427,7 @@ public class JenaManager {
 
 			finalResult.append("QUERY " + i + " : " + query + "\n");
 			finalResult.append("==================");
-			queryExecution = QueryExecutionFactory.sparqlService(ontology_service, String.format(query, endpoint));
+			queryExecution = QueryExecutionFactory.sparqlService(ontology_service,query);
 			ResultSet results = queryExecution.execSelect();
 
 			while (results.hasNext()) {

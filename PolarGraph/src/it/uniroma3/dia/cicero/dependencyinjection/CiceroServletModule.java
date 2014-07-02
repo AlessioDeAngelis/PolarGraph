@@ -2,6 +2,7 @@ package it.uniroma3.dia.cicero.dependencyinjection;
 
 import it.uniroma3.dia.cicero.controller.CiceroFacade;
 import it.uniroma3.dia.cicero.controller.PropertiesManager;
+import it.uniroma3.dia.cicero.controller.RecommenderChainManager;
 import it.uniroma3.dia.cicero.disambiguator.Disambiguator;
 import it.uniroma3.dia.cicero.disambiguator.NaiveDisambiguator;
 import it.uniroma3.dia.cicero.disambiguator.SemanticPlacesDisambiguator;
@@ -11,7 +12,6 @@ import it.uniroma3.dia.cicero.persistance.CypherRepository;
 import it.uniroma3.dia.cicero.persistance.FacebookRepository;
 import it.uniroma3.dia.cicero.rdf.JenaManager;
 import it.uniroma3.dia.cicero.recommender.Recommender;
-import it.uniroma3.dia.cicero.recommender.RecommenderChainManager;
 import it.uniroma3.dia.cicero.recommender.semantic.EuropeanaRecommender;
 import it.uniroma3.dia.cicero.recommender.semantic.SemanticBaseRecommender;
 import it.uniroma3.dia.cicero.recommender.semantic.SemanticCleverRecommender;

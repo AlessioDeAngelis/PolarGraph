@@ -1,6 +1,7 @@
-package it.uniroma3.dia.cicero.recommender;
+package it.uniroma3.dia.cicero.controller;
 
 import it.uniroma3.dia.cicero.graph.model.RecommendedObject;
+import it.uniroma3.dia.cicero.recommender.Recommender;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -24,7 +24,7 @@ public class RecommendAction extends Action {
 		String[] rankerSocialNames = request.getParameterValues("rankerSocialType");
 		String[] rankerDbpediaNames = request.getParameterValues("rankerDbpediaType");
 		String[] rankerEuropeanaNames = request.getParameterValues("rankerEuropeanaType");
-
+		request.getSession().setAttribute("recommenderNumber", request.getParameter("recommenderNumber"));
 		//TODO: remove this initilization of categories since now the sistem calculates the categories for the user
 		List<String> categories = (ArrayList<String>) request.getSession().getAttribute("choosenCategories");
 		

@@ -34,6 +34,7 @@ public class AbstractSelectedCategoriesSocialRecommender extends Recommender {
 	@Override
 	public List<RecommendedObject> recommendObject(String userId, List<RecommendedObject> inputObjects) {
 		this.getRepository().startDB();
+		List<RecommendedObject> outputObjects = new ArrayList<RecommendedObject>();
 		if (this.getCategories().isEmpty()) { // if it is empty add default
 												// categories
 			this.getCategories().add("Monument");
@@ -57,18 +58,33 @@ public class AbstractSelectedCategoriesSocialRecommender extends Recommender {
 		// maxscore
 
 		// create the ranked places list
+		double avgScore = 0;
+		double sumScore = 0;
 		List<RecommendedObject> rankedPlaces = new ArrayList<RecommendedObject>();
 		for (Couple<PolarPlace, Long> couple : placesAndVisitorsByTouristAttractionCategory) {
 			RecommendedObject rankedPlace = convertToRecommendedObject(couple.getFirst());
 			Long visitors = couple.getSecond();
 			double normalizedScore = visitors.doubleValue() / maxScore;
+			sumScore += normalizedScore;
 			rankedPlace.setScore(normalizedScore);
 			rankedPlaces.add(rankedPlace);
 		}
+		
+		avgScore = sumScore / rankedPlaces.size();
+		System.out.println(avgScore);
+		//if there are too many returned places, filter them: keep them only if their score is better than the average
+		if(rankedPlaces.size() > 10){
+			for(int i =0; i< rankedPlaces.size(); i++){
+				if(rankedPlaces.get(i).getScore() > avgScore){
+					outputObjects.add(rankedPlaces.get(i));
+				}
+			}
+		}
 
 		// sort the list according to the score
-		Collections.sort(rankedPlaces, new RecommendedObjectComparatorByScoreDesc());
-		return rankedPlaces;
+		Collections.sort(outputObjects, new RecommendedObjectComparatorByScoreDesc());
+
+		return outputObjects;
 	}
 
 	public List<Couple<PolarPlace, Long>> queryTheRepository(String userId) {

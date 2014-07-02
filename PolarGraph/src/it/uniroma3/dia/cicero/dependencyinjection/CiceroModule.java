@@ -8,6 +8,7 @@ import it.uniroma3.dia.cicero.disambiguator.SemanticPlacesDisambiguator;
 import it.uniroma3.dia.cicero.parser.JSONParser;
 import it.uniroma3.dia.cicero.parser.XMLParser;
 import it.uniroma3.dia.cicero.persistance.CypherRepository;
+import it.uniroma3.dia.cicero.persistance.EvaluationRepository;
 import it.uniroma3.dia.cicero.persistance.FacebookRepository;
 import it.uniroma3.dia.cicero.rdf.JenaManager;
 import it.uniroma3.dia.cicero.recommender.Recommender;
@@ -78,6 +79,7 @@ public class CiceroModule extends AbstractModule {
 		bind(SelectedCategoriesCollaborativeFilteringSocialRecommender.class).in(Singleton.class);
 
 		bind(CategoriesManager.class).in(Singleton.class);
+		bind(EvaluationRepository.class).in(Singleton.class);
 //		bind(String.class)
 //	    .annotatedWith(Names.named("access_token"))
 //	    .toProvider(Providers.<String>of(null));

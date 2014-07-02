@@ -1,0 +1,24 @@
+-- Database: cicero
+
+-- DROP DATABASE cicero;
+
+CREATE TABLE Ratings
+(
+RatingID int NOT NULL,
+UserID int,
+Recommender int,
+Rating int,
+ PRIMARY KEY (RatingID)
+); 
+
+CREATE SEQUENCE sequence_id;
+
+CREATE TABLE Users
+(
+UserID int,
+FacebookID varchar(255),
+Birthday varchar(255),
+Gender varchar(255),
+Location varchar(255),
+ PRIMARY KEY (UserID)
+); 

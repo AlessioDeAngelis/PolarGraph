@@ -198,7 +198,7 @@ public class FacebookRepository {
 			JsonObject object = array.getJsonObject(i);
 			JsonObject placeString = object.getJsonObject("place");
 			// System.out.println(placeString);
-			// TODO: vedere se questo è fattibile da fare con l'oath
+			// TODO: vedere se questo ï¿½ fattibile da fare con l'oath
 		}
 
 		return messages;

@@ -62,6 +62,15 @@ th,td {
 			</li>
 		</ul>
 	</c:forEach>
-
+<h2> Do you like those recommended objects?</h2>
+<h3>Please, give a rating of your satisfation</h3>
+<p><form action="storeRecommenderRating.do" method="post">
+<input type="radio" name="recommender_rating" value="1">Poor</input>
+<input type="radio" name="recommender_rating" value="2">Fair</input>
+<input type="radio" name="recommender_rating" value="3">Average</input>
+<input type="radio" name="recommender_rating" value="4">Good</input>
+<input type="radio" name="recommender_rating" value="5">Excellent</input>
+<input type="submit" value="RATE"/>
+</form></p>
 </body>
 </html>

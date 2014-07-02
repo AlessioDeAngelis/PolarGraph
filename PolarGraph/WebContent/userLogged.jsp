@@ -12,7 +12,7 @@ Welcome ${facebookUser.firstName}
 <p><a href="storeFacebookUserData.do" method="post"> Store your info </a></p>
 <p><a href="storeFacebookFriendData.do" method="post"> Store your friends info </a></p>
 <!-- <p><a href="chooseSocialCategories.jsp"> Go to the recommendation page </a></p> -->
-<p><a href="chooseRecommender.jsp"> Go to the recommendation page </a></p>
+<p><a href="recommenderMain.jsp"> Go to the recommendation page </a></p>
 
 <p><a href="clearGraphDatabase.do" method="post"> Remove all your data from our database </a></p>
 

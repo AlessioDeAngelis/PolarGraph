@@ -27,15 +27,15 @@ public class LoginAction extends Action {
 		
 		/**
 		 * 
-    client_id – corrisponde all’id della nostra applicazione precedentemente registrata sul sito Facebook.
-    redirect_uri – l’url alla quale l’utente verrà rediretto dopo aver completato l’autenticazione ed aver autorizzato la nostra applicazione ad accedere alle informazioni riservate. Tale Url deve corrispondere all’Url impostata in fase di registrazione dell’applicazione.
-    client_secret – corrispondende alla chiave segreta assegnata durante la fase di registrazione.
-    code – il parametro appena ricevuto nell’url di risposta.
+    client_id ï¿½ corrisponde allï¿½id della nostra applicazione precedentemente registrata sul sito Facebook.
+    redirect_uri ï¿½ lï¿½url alla quale lï¿½utente verrï¿½ rediretto dopo aver completato lï¿½autenticazione ed aver autorizzato la nostra applicazione ad accedere alle informazioni riservate. Tale Url deve corrispondere allï¿½Url impostata in fase di registrazione dellï¿½applicazione.
+    client_secret ï¿½ corrispondende alla chiave segreta assegnata durante la fase di registrazione.
+    code ï¿½ il parametro appena ricevuto nellï¿½url di risposta.
 http://www.html.it/articoli/interazione-con-facebook/
 		 * */
 		
 		String code = request.getParameter("code");
-		String redirectUri = "http://localhost:8080/PolarGraph/fblogin.do";
+		String redirectUri = "http://193.204.161.190:8080/Cicero/fblogin.do";
 		String accessToken = "";
 		Integer expires = null;
 
@@ -87,11 +87,11 @@ http://www.html.it/articoli/interazione-con-facebook/
 		facebookRepository.extendTokenLife();
 		User user = facebookRepository.retrieveLoggedUser();
 		CiceroFacade ciceroFacade = injector.getInstance(CiceroFacade.class);
-		CypherRepository repository = injector.getInstance(CypherRepository.class);
-		repository.setDbPath("data/db/db_"+ user.getId()+".graph");
-		repository.setDbPath(request.getServletContext().getRealPath("/")+repository.getDbPath());
-		System.out.println(repository.getDbPath());
-
+		CypherRepository cypherRepository = injector.getInstance(CypherRepository.class);
+		cypherRepository.setDbPath("data/db/db_"+ user.getId()+".graph");
+		cypherRepository.setDbPath(request.getServletContext().getRealPath("/")+cypherRepository.getDbPath());
+		System.out.println(cypherRepository.getDbPath());
+		
 		request.getSession().setAttribute("facade", ciceroFacade);	
 		request.getSession().setAttribute("facebookUser", user );	
 		request.getSession().setAttribute("fb_user_id", user.getId() );	
