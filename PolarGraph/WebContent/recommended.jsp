@@ -19,8 +19,8 @@ th,td {
 <title>Recommendation page</title>
 </head>
 <body>
-	<h1>YOU LIKE ${recommendedObjects[0].why} SO WE RECOMMEND YOU</h1>
 	<c:forEach var="concept" items="${recommendedObjects}">
+	<h3>YOU LIKE ${concept.why} SO WE RECOMMEND YOU</h3>		
 		<ul>
 			<li>
 				<table>
@@ -62,15 +62,33 @@ th,td {
 			</li>
 		</ul>
 	</c:forEach>
-<h2> Do you like those recommended objects?</h2>
+<h2> Do you like those recommended objects? Do they match your interests?</h2>
 <h3>Please, give a rating of your satisfation</h3>
 <p><form action="storeRecommenderRating.do" method="post">
-<input type="radio" name="recommender_rating" value="1">Poor</input>
-<input type="radio" name="recommender_rating" value="2">Fair</input>
-<input type="radio" name="recommender_rating" value="3">Average</input>
-<input type="radio" name="recommender_rating" value="4">Good</input>
-<input type="radio" name="recommender_rating" value="5">Excellent</input>
-<input type="submit" value="RATE"/>
+<input type="radio" name="recommender_rating" value="1" required>Poor, I am not interested in those objects</input><br>
+<input type="radio" name="recommender_rating" value="2">Fair</input><br>
+<input type="radio" name="recommender_rating" value="3">Average, I am interested in some objects but I really don't like some others</input><br>
+<input type="radio" name="recommender_rating" value="4">Good</input><br>
+<input type="radio" name="recommender_rating" value="5">Excellent: They exactly match my interests!</input>
+<br>
+<br>
+<h2>Did this recommender help you discover a new place in the list you didn't know before?</h2>
+<input type="radio" name="novelty" value="1" required>Strongly disagree</input>
+<input type="radio" name="novelty" value="2">Disagree</input>
+<input type="radio" name="novelty" value="3">Neither disagree nor agree</input>
+<input type="radio" name="novelty" value="4">Agree</input>
+<input type="radio" name="novelty" value="5">Strongly agree</input>
+
+<br>
+<br>
+<h2>Did you discover a new place in the list and you really want to visit it now?</h2>
+<input type="radio" name="serendipity" value="1" required>Strongly disagree</input>
+<input type="radio" name="serendipity" value="2">Disagree</input>
+<input type="radio" name="serendipity" value="4">Neither Disagree nor agree</input>
+<input type="radio" name="serendipity" value="4">Agree</input>
+<input type="radio" name="serendipity" value="5">Strongly Disagree</input>
+
+<input type="submit" value="SUBMIT"/>
 </form></p>
 </body>
 </html>

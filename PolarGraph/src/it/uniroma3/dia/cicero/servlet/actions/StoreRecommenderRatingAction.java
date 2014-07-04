@@ -22,11 +22,13 @@ public class StoreRecommenderRatingAction extends Action {
 		//parameters from recommenderMain.jsp and recommender.jsp
 		String rating = (String) request.getParameter("recommender_rating");		
 		String fbUserId = (String) request.getSession().getAttribute("fb_user_id");
-		String recommenderId = (String) request.getSession().getAttribute("recommenderNumber"); 
+		String recommenderId = (String) request.getSession().getAttribute("recommenderNumber");
+		String novelty = (String) request.getParameter("novelty");
+		String serendipity = (String) request.getParameter("serendipity");
 		Injector injector = (Injector) request.getSession().getAttribute("injector");
 		
 		CiceroFacade ciceroFacade = injector.getInstance(CiceroFacade.class);
-		ciceroFacade.storeUserRatingForRecommendation(fbUserId, Integer.parseInt(recommenderId), Integer.parseInt(rating));
+		ciceroFacade.storeUserRatingForRecommendation(fbUserId, Integer.parseInt(recommenderId), Integer.parseInt(rating),novelty,serendipity);
 	
 		return "rating_stored";
 	}

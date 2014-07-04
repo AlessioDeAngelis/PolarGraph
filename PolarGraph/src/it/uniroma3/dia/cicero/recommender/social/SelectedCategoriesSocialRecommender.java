@@ -19,18 +19,21 @@ import com.google.inject.Inject;
  * Category. It gives a score according to the number of friends that visited
  * it.
  * */
-public class SelectedCategoriesSocialRecommender extends AbstractSelectedCategoriesSocialRecommender {
+public class SelectedCategoriesSocialRecommender extends
+		AbstractSelectedCategoriesSocialRecommender {
 
 	private CypherRepository repository;
 
 	@Inject
 	public SelectedCategoriesSocialRecommender(CypherRepository repository) {
-		super(repository);	
+		super(repository);
 	}
 
 	@Override
-	public List<RecommendedObject> recommendObject(String userId, List<RecommendedObject> inputObjects) {
+	public List<RecommendedObject> recommendObject(String userId,
+			List<RecommendedObject> inputObjects) {
 		this.getRepository().startDB();
+		List<RecommendedObject> outputObjects = new ArrayList<RecommendedObject>();
 		if (this.getCategories().isEmpty()) { // if it is empty add default
 												// categories
 			this.getCategories().add("Monument");
@@ -52,24 +55,40 @@ public class SelectedCategoriesSocialRecommender extends AbstractSelectedCategor
 		}
 		// the normalized score is the number of visitors divided by the
 		// maxscore
-
+		double sumScore = 0;
+		double avgScore = 0;
 		// create the ranked places list
 		List<RecommendedObject> rankedPlaces = new ArrayList<RecommendedObject>();
 		for (Couple<PolarPlace, Long> couple : placesAndVisitorsByTouristAttractionCategory) {
-			RecommendedObject rankedPlace = convertToRecommendedObject(couple.getFirst());
+			RecommendedObject rankedPlace = convertToRecommendedObject(couple
+					.getFirst());
 			Long visitors = couple.getSecond();
 			double normalizedScore = visitors.doubleValue() / maxScore;
+			sumScore += normalizedScore;
 			rankedPlace.setScore(normalizedScore);
 			rankedPlaces.add(rankedPlace);
 		}
+		avgScore = sumScore / rankedPlaces.size();
+		if (rankedPlaces.size() > 10) {
+			for (int i = 0; i < rankedPlaces.size(); i++) {
+				if (rankedPlaces.get(i).getScore() > avgScore) {
+					outputObjects.add(rankedPlaces.get(i));
+				}
+			}
+		}
 
 		// sort the list according to the score
-		Collections.sort(rankedPlaces, new RecommendedObjectComparatorByScoreDesc());
-		return rankedPlaces;
+		Collections.sort(outputObjects,
+				new RecommendedObjectComparatorByScoreDesc());
+		if (outputObjects.size() > 10) {
+			outputObjects = outputObjects.subList(0, 10);
+		}
+		return outputObjects;
 	}
 
 	public List<Couple<PolarPlace, Long>> queryTheRepository(String userId) {
-		return this.getRepository().findPlacesByMultiplesCategoryNames(userId, this.getCategories());
+		return this.getRepository().findPlacesByMultiplesCategoryNames(userId,
+				this.getCategories());
 	}
 
 }

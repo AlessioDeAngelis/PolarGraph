@@ -115,15 +115,20 @@ public class CiceroFacade {
 		this.cypherRepository.stopDB();
 	}
 
-	public void readPlacesVisitedByFriendsAndStore(String currentFbUserId) {
+	public void readPlacesVisitedByFriendsAndStore(String currentFbUserId,
+			int part) {
 		// read the facebook friend ids only if you didn't do it already
 		List<String> friendsId = this.facebookRepository
 				.retrieveFriendsId(currentFbUserId);
 
-		for (int i = 250; i < 300; i++) {
-			String friendId = friendsId.get(i);
-			logger.info("processing user friend " + friendId);
-			this.readVisitedPlacesFromFacebookAndStore(friendId);
+		for (int i = 0; i < 75; i++) {
+			int index = i * part;
+			if (index < friendsId.size()) {
+
+				String friendId = friendsId.get(index);
+				logger.info("processing user friend " + index);
+				this.readVisitedPlacesFromFacebookAndStore(friendId);
+			}
 		}
 	}
 
@@ -195,11 +200,12 @@ public class CiceroFacade {
 		List<RecommendedObject> rankedPlaces = this.recommenderChainManager
 				.startRecommendationChain(fbUserId);
 
-		for (RecommendedObject rankedPlace : rankedPlaces) {
-			logger.info("Place Name: " + rankedPlace.getName() + ", uri: "
-					+ rankedPlace.getUri() + ", score: "
-					+ rankedPlace.getScore() + ", mediaUrl: "
-					+ rankedPlace.getMediaUrl());
+		for (RecommendedObject rankedPlace : rankedPlaces) {// TODO: togliere i
+															// commenti
+			// logger.info("Place Name: " + rankedPlace.getName() + ", uri: "
+			// + rankedPlace.getUri() + ", score: "
+			// + rankedPlace.getScore() + ", mediaUrl: "
+			// + rankedPlace.getMediaUrl());
 		}
 		return rankedPlaces;
 	}
@@ -272,21 +278,25 @@ public class CiceroFacade {
 		if (user.getGender() != null && !user.getGender().equals("")) {
 			gender = user.getGender();
 		}
-		if(user.getLocation()!=null && user.getLocation().getName() !=null && !user.getLocation().getName().equals("")){
+		if (user.getLocation() != null && user.getLocation().getName() != null
+				&& !user.getLocation().getName().equals("")) {
 			location = user.getLocation().getName();
 		}
-		this.evaluationRepository.storeUserInfo(facebookId, birthday, gender, location);
+		this.evaluationRepository.storeUserInfo(facebookId, birthday, gender,
+				location);
 	}
-	
+
 	/**
-	 * Store the user rating about a recommender inside the evaluation relational db
+	 * Store the user rating about a recommender inside the evaluation
+	 * relational db
 	 * */
-	public void storeUserRatingForRecommendation(String fbUserId, int recommenderId, int rating){
-		//from the facebook id retrieve the actual id in the evaluation relational db
+	public void storeUserRatingForRecommendation(String fbUserId,
+			int recommenderId, int rating, String novelty, String serendipity) {
+		// from the facebook id retrieve the actual id in the evaluation
+		// relational db
 		int userId = this.evaluationRepository.findUserIdByFacebookID(fbUserId);
-		this.evaluationRepository.storeUserRatingForRecommender(userId, recommenderId, rating);
+		this.evaluationRepository.storeUserRatingForRecommender(userId,
+				recommenderId, rating, novelty, serendipity);
 	}
-	
-	
 
 }

@@ -15,11 +15,12 @@ public class StoreFacebookFriendDataAction extends Action {
 	public String executeAction(HttpServletRequest request) throws ServletException {
 		Injector injector = (Injector) request.getSession().getAttribute("injector");
 		User user = (User)request.getSession().getAttribute("facebookUser");
+		String section = (String)request.getParameter("part");
 		String fbUserId = user.getId();
 		CiceroFacade polarController = injector.getInstance(CiceroFacade.class);
 		
 		//store my friends info info
-		polarController.readPlacesVisitedByFriendsAndStore(fbUserId);
+		polarController.readPlacesVisitedByFriendsAndStore(fbUserId, Integer.parseInt(section));
 		return "friendsDataStored";
 	}
 

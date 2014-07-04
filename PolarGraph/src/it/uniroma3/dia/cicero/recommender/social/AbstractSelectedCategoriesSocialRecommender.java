@@ -71,7 +71,6 @@ public class AbstractSelectedCategoriesSocialRecommender extends Recommender {
 		}
 		
 		avgScore = sumScore / rankedPlaces.size();
-		System.out.println(avgScore);
 		//if there are too many returned places, filter them: keep them only if their score is better than the average
 		if(rankedPlaces.size() > 10){
 			for(int i =0; i< rankedPlaces.size(); i++){
@@ -83,8 +82,10 @@ public class AbstractSelectedCategoriesSocialRecommender extends Recommender {
 
 		// sort the list according to the score
 		Collections.sort(outputObjects, new RecommendedObjectComparatorByScoreDesc());
-
-		return outputObjects;
+		if (outputObjects.size() > 10) {
+			outputObjects = outputObjects.subList(0, 10);
+		}
+		return outputObjects;//TODO: cambiarlo a outputObjects
 	}
 
 	public List<Couple<PolarPlace, Long>> queryTheRepository(String userId) {

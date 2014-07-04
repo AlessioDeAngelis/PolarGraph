@@ -15,6 +15,10 @@
     
 
 <h1>Choose the recommenders </h1>
+
+<h3>There are several recommenders to try and test. <br> Please answer to the questions after you tested a recommender,  <br> so we can evaluate the system :) 
+Some recommenders can take a long,  <br> we plase ask you to test at least recommender #1, #2, #5, #6,#9,#10,#11,#12.  <br> If you have more time you can test even the others :) Thank you!  <br> </h3>
+
 <p>RECOMMENDER 1:<form action="recommend.do" method="post">
 <!-- <b><p>Select a social Recommender</p></b> -->
 <!-- <p><input type="" value="naive" name="rankerSocialType"/>Naive Social Recommender</p> -->
@@ -41,20 +45,20 @@
 <input type="submit" value="Recommend" name="conferma" />
 </form>
 </p>
-<p>RECOMMENDER 3:<form action="recommend.do" method="post">
+<p>RECOMMENDER 3: (it may be slow, be patient :))<form action="recommend.do" method="post">
 <input readonly name="rankerSocialType" value="select_categories_social"/>
 <input  readonly name="rankerDbpediaType" value="semanticclever"/>
 <input readonly name="recommenderNumber" value="3"/>
 <input type="submit" value="Recommend" name="conferma" />
 </form>
 </p>
-<p>RECOMMENDER 4:<form action="recommend.do" method="post">
+<p>RECOMMENDER 4: (it may be slow, be patient :))<form action="recommend.do" method="post">
 <input readonly name="rankerSocialType" value="selected_categories_social_collaborative_filtering"/>
 <input  readonly name="rankerDbpediaType" value="semanticclever"/>
 <input readonly name="recommenderNumber" value="4"/>
 <input type="submit" value="Recommend" name="conferma" />
 </form>
-<p>RECOMMENDER 5:<form action="recommend.do" method="post">
+<p>RECOMMENDER 5: <form action="recommend.do" method="post">
 
 <input readonly name="rankerSocialType" value="select_categories_social"/>
 <input  readonly name="rankerDbpediaType" value="semantic_closer_places"/>
@@ -71,7 +75,7 @@
 <input type="submit" value="Recommend" name="conferma" />
 </form>
 </p>
-<p>RECOMMENDER 7:<form action="recommend.do" method="post">
+<p>RECOMMENDER 7: (it may be slow, be patient :))<form action="recommend.do" method="post">
 <input readonly name="rankerSocialType" value="select_categories_social"/>
 <input  readonly name="rankerDbpediaType" value="semanticclever"/>
 <input readonly value="europeana" name="rankerEuropeanaType" />
@@ -79,7 +83,7 @@
 <input type="submit" value="Recommend" name="conferma" />
 </form>
 </p>
-<p>RECOMMENDER 8:<form action="recommend.do" method="post">
+<p>RECOMMENDER 8: (it may be slow, be patient :))<form action="recommend.do" method="post">
 <input readonly name="rankerSocialType" value="selected_categories_social_collaborative_filtering"/>
 <input  readonly name="rankerDbpediaType" value="semanticclever"/>
 <input readonly value="europeana" name="rankerEuropeanaType" />

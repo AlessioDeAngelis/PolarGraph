@@ -44,6 +44,7 @@ public class SemanticCloserPlacesRecommender extends Recommender {
 		List<RecommendedObject> recommendedObjects = new ArrayList<RecommendedObject>();
 		String placeUri = " ";
 		int i = 0;
+		int numberOfRecommendedDbPediaObjects = 0;
 		List<String> closeDbpediaConcepts = new ArrayList<>();
 		if (inputObjects == null || inputObjects.size() <= 0) {
 			recommendedObjects = inputObjects;
@@ -62,14 +63,20 @@ public class SemanticCloserPlacesRecommender extends Recommender {
 							String externalLink = extraAttributes2values.get("externalLink");
 							RecommendedObject obj = new RecommendedObject();
 							obj.setUri(concept);
-							obj.setName(concept.replaceFirst("<http://dbpedia.org/resource/", "").replace(">", ""));
+							obj.setName(concept.replaceFirst("http://dbpedia.org/resource/", "").replaceAll("_", " "));
 							obj.setMediaUrl(mediaUrl);
 							obj.setProvider("DBPEDIA");
 							obj.setExternalLink(externalLink);
+							obj.setWhy(inputObjects.get(i).getName());
 							recommendedObjects.add(obj);
+							numberOfRecommendedDbPediaObjects ++;
 						}
-						break;
 					}
+				}
+				//let's suggest at least 5 objects before thebreak
+				if(numberOfRecommendedDbPediaObjects > 5){
+					break;						
+
 				}
 			}
 

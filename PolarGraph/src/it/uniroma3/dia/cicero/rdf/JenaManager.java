@@ -3,13 +3,12 @@ package it.uniroma3.dia.cicero.rdf;
 import it.uniroma3.dia.cicero.graph.model.Couple;
 import it.uniroma3.dia.cicero.graph.model.RecommendedObject;
 
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.HashMap;
 
+import org.apache.jena.atlas.web.HttpException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -179,18 +178,23 @@ public class JenaManager {
 		queryString.append(" WHERE { " + term + "  geo:lat ?lat. ");
 		queryString.append(term + "  geo:long ?lng.");
 		queryString.append("} LIMIT 1");
-
+		Couple<String, String> latLng = new Couple<String, String>("", "");
+		try{
 		QueryExecution queryExecution = QueryExecutionFactory.sparqlService(ontology_service, queryString.toString());
 		ResultSet results = queryExecution.execSelect();
 
 		List<String> retrievedConcepts = new ArrayList<String>();
-		Couple<String, String> latLng = new Couple<String, String>("", "");
 		while (results.hasNext()) {
 			QuerySolution solution = results.next();
 			String lat = "" + solution.getLiteral("lat").getFloat();
 
 			String lng = "" + solution.getLiteral("lng").getFloat();
 			latLng = new Couple<String, String>(lat, lng);
+		}
+		}catch(HttpException e){
+			logger.error("Http Exception occurred");
+		}catch(Exception e ){
+			logger.error("Exception occurred");
 		}
 
 		return latLng;
@@ -394,22 +398,22 @@ public class JenaManager {
 				+ cx + " ?p1 " + cm + ". } LIMIT 50 ";
 
 		List<String> allQueries = new ArrayList<>();
-		// allQueries.add(query1);
-		// allQueries.add(query2);
-		// allQueries.add(query3);
-		// allQueries.add(query4);
-		// allQueries.add(query5);
+		 allQueries.add(query1);
+		 allQueries.add(query2);
+		 allQueries.add(query3);
+		 allQueries.add(query4);
+		 allQueries.add(query5);
 		allQueries.add(query6);
-		allQueries.add(query7);
-		allQueries.add(query8);
-		allQueries.add(query9);
-		allQueries.add(query10);
-		allQueries.add(query11);
+//		allQueries.add(query7);
+//		allQueries.add(query8);
+//		allQueries.add(query9);
+//		allQueries.add(query10);
+//		allQueries.add(query11);
 
-		// allQueries.add(query12);
-		// allQueries.add(query13);
-		// allQueries.add(query14);
-		// allQueries.add(query15);
+		 allQueries.add(query12);
+		 allQueries.add(query13);
+		 allQueries.add(query14);
+		 allQueries.add(query15);
 
 		allQueries.add(query16);
 		allQueries.add(query17);
@@ -446,7 +450,7 @@ public class JenaManager {
 		}
 		// System.out.println(finalResult.toString());
 		return extractedConcepts;
-	}
+	}	
 
 	public static void main(String[] args) {
 		// String cm = "dbpedia:Girl_with_a_Pearl_Earring";

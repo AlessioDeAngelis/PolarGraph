@@ -6,7 +6,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>User data stored</title>
 </head>
-<body>
-User data stored
+<body><
+<h2>Thank you. User data stored successfully. Step 1 is completed.</h2>
+<p><a href="userLogged.jsp">Go back to the main page</a></p>
 </body>
 </html>

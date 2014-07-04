@@ -7,6 +7,7 @@
 <title>User data stored</title>
 </head>
 <body>
-User data stored
+<h2>Thank you. Friends data stored successfully. Step 2 is completed.</h2>
+<p><a href="userLogged.jsp">Go back to the main page and save more friends is you want</a></p>
 </body>
 </html>

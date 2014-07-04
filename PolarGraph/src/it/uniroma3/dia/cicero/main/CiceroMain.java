@@ -102,7 +102,7 @@ public class CiceroMain {
 		Injector injector = Guice.createInjector(new CiceroModule());
 		CiceroFacade polarController = injector.getInstance(CiceroFacade.class);
 
-		polarController.readPlacesVisitedByFriendsAndStore(fbUserId);
+		polarController.readPlacesVisitedByFriendsAndStore(fbUserId,1);
 		polarController.readPlacesTaggedInPhotoByFriendsAndStore(fbUserId);
 
 	}

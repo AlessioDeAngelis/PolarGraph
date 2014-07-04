@@ -43,7 +43,7 @@ public class SemanticCleverRecommender extends Recommender {
 	 * The places where to start are the same as the naive ranker. It extracts
 	 * the title and it queries dbpedia to have more infos
 	 **/
-	@Override
+//	@Override
 	public List<RecommendedObject> recommendObject(String userId, List<RecommendedObject> inputObjects) {
 //		List<RecommendedObject> inputObjects = socialRanker.recommendObject(userId);
 		List<RecommendedObject> recommendedObjects = new ArrayList<RecommendedObject>();
@@ -59,6 +59,7 @@ public class SemanticCleverRecommender extends Recommender {
 						&& !inputObjects.get(j).getUri().equals("")
 
 				) {
+					try{
 					double alphaFactor = inputObjects.get(i).getScore() * 0.6 + inputObjects.get(j).getScore() * 0.4;
 					String cm = "<" + inputObjects.get(i).getUri() + ">";
 					String cx = "<" + inputObjects.get(j).getUri() + ">";
@@ -68,7 +69,9 @@ public class SemanticCleverRecommender extends Recommender {
 					SimilarConcept concept = new SimilarConcept(cm, cx, similarity);
 					similarConceptList.add(concept);
 					Collections.sort(similarConceptList, new SimilarConceptComparator());
-					
+					}catch(Exception e){
+						logger.error("Error but continue");
+					}
 					// logger.info("\n");
 
 				}
@@ -120,7 +123,7 @@ public class SemanticCleverRecommender extends Recommender {
 	 * the title and it queries dbpedia to have more infos
 	 **/
 //	@Override
-	public List<RecommendedObject> recommendObjectBackup(String userId, List<RecommendedObject> inputObjects) {
+	public List<RecommendedObject> recommendObject2(String userId, List<RecommendedObject> inputObjects) {
 //		List<RecommendedObject> inputObjects = socialRanker.recommendObject(userId);
 		List<RecommendedObject> recommendedObjects = new ArrayList<RecommendedObject>();
 

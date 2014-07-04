@@ -183,7 +183,7 @@
 2014-04-30 22:38:57 INFO  SemanticCleverRankerTest:72 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Geiranger> AND <http://dbpedia.org/resource/Carl_Værnet> IS 50.0
 2014-04-30 22:38:57 INFO  SemanticCleverRankerTest:72 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Geiranger> AND <http://dbpedia.org/resource/Trocadéro> IS 50.0
 2014-04-30 22:38:57 INFO  SemanticCleverRankerTest:72 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Geiranger> AND <http://dbpedia.org/resource/Carl_Værnet> IS 50.0
-2014-04-30 22:38:57 INFO  SemanticCleverRankerTest:72 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Geiranger> AND <http://dbpedia.org/resource/�?azienki_Park> IS 50.0
+2014-04-30 22:38:57 INFO  SemanticCleverRankerTest:72 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Geiranger> AND <http://dbpedia.org/resource/�?azienki_Park> IS 50.0
 2014-04-30 22:38:57 INFO  SemanticCleverRankerTest:72 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Geiranger> AND <http://dbpedia.org/resource/Puerta_de_Alcalá> IS 50.0
 2014-04-30 22:38:57 INFO  SemanticCleverRankerTest:72 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Geiranger> AND <http://dbpedia.org/resource/Hells_Gate_National_Park> IS 50.0
 2014-04-30 22:38:57 INFO  SemanticCleverRankerTest:72 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Geiranger> AND <http://dbpedia.org/resource/St_Giles_Cathedral> IS 50.0
@@ -192,7 +192,7 @@
 2014-04-30 22:38:57 INFO  SemanticCleverRankerTest:72 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Ladestien> AND <http://dbpedia.org/resource/Carl_Værnet> IS 50.0
 2014-04-30 22:38:57 INFO  SemanticCleverRankerTest:72 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Ladestien> AND <http://dbpedia.org/resource/Trocadéro> IS 50.0
 2014-04-30 22:38:57 INFO  SemanticCleverRankerTest:72 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Ladestien> AND <http://dbpedia.org/resource/Carl_Værnet> IS 50.0
-2014-04-30 22:38:57 INFO  SemanticCleverRankerTest:72 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Ladestien> AND <http://dbpedia.org/resource/�?azienki_Park> IS 50.0
+2014-04-30 22:38:57 INFO  SemanticCleverRankerTest:72 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Ladestien> AND <http://dbpedia.org/resource/�?azienki_Park> IS 50.0
 2014-04-30 22:38:57 INFO  SemanticCleverRankerTest:72 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Ladestien> AND <http://dbpedia.org/resource/Glacier> IS 50.0
 2014-04-30 22:38:57 INFO  SemanticCleverRankerTest:72 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Ladestien> AND <http://dbpedia.org/resource/Pop_music> IS 50.0
 2014-04-30 22:38:57 INFO  SemanticCleverRankerTest:72 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Ladestien> AND <http://dbpedia.org/resource/Puerta_de_Alcalá> IS 50.0
@@ -205,7 +205,7 @@
 2014-04-30 22:38:57 INFO  SemanticCleverRankerTest:72 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Colosseum> AND <http://dbpedia.org/resource/Carl_Værnet> IS 50.0
 2014-04-30 22:38:57 INFO  SemanticCleverRankerTest:72 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Colosseum> AND <http://dbpedia.org/resource/Trocadéro> IS 50.0
 2014-04-30 22:38:57 INFO  SemanticCleverRankerTest:72 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Colosseum> AND <http://dbpedia.org/resource/Carl_Værnet> IS 50.0
-2014-04-30 22:38:57 INFO  SemanticCleverRankerTest:72 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Colosseum> AND <http://dbpedia.org/resource/�?azienki_Park> IS 50.0
+2014-04-30 22:38:57 INFO  SemanticCleverRankerTest:72 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Colosseum> AND <http://dbpedia.org/resource/�?azienki_Park> IS 50.0
 2014-04-30 22:38:57 INFO  SemanticCleverRankerTest:72 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Colosseum> AND <http://dbpedia.org/resource/Glacier> IS 50.0
 2014-04-30 22:38:57 INFO  SemanticCleverRankerTest:72 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Colosseum> AND <http://dbpedia.org/resource/Abraham> IS 50.0
 2014-04-30 22:38:57 INFO  SemanticCleverRankerTest:72 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Colosseum> AND <http://dbpedia.org/resource/Pop_music> IS 50.0
@@ -254,7 +254,7 @@
 2014-04-30 22:38:57 INFO  SemanticCleverRankerTest:72 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Fløyen> AND <http://dbpedia.org/resource/Carl_Værnet> IS 0.0
 2014-04-30 22:38:57 INFO  SemanticCleverRankerTest:72 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Fløyen> AND <http://dbpedia.org/resource/Whistler_Olympic_Park> IS 0.0
 2014-04-30 22:38:57 INFO  SemanticCleverRankerTest:72 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Fløyen> AND <http://dbpedia.org/resource/Piazza_del_Duomo,_Milan> IS 0.0
-2014-04-30 22:38:57 INFO  SemanticCleverRankerTest:72 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Fløyen> AND <http://dbpedia.org/resource/�?azienki_Park> IS 0.0
+2014-04-30 22:38:57 INFO  SemanticCleverRankerTest:72 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Fløyen> AND <http://dbpedia.org/resource/�?azienki_Park> IS 0.0
 2014-04-30 22:38:57 INFO  SemanticCleverRankerTest:72 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Fløyen> AND <http://dbpedia.org/resource/Glacier> IS 0.0
 2014-04-30 22:38:57 INFO  SemanticCleverRankerTest:72 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Fløyen> AND <http://dbpedia.org/resource/Llanfairpwllgwyngyll> IS 0.0
 2014-04-30 22:38:57 INFO  SemanticCleverRankerTest:72 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Fløyen> AND <http://dbpedia.org/resource/American_Museum_of_Natural_History> IS 0.0
@@ -284,3 +284,88 @@
 2014-04-30 22:38:57 INFO  SemanticCleverRankerTest:72 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Fløyen> AND <http://dbpedia.org/resource/Guggenheim_Museum_Bilbao> IS 0.0
 2014-04-30 22:38:57 INFO  SemanticCleverRankerTest:72 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Fløyen> AND <http://dbpedia.org/resource/Rome_Observatory> IS 0.0
 2014-04-30 22:38:57 INFO  SemanticCleverRankerTest:72 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Fløyen> AND <http://dbpedia.org/resource/St_Giles_Cathedral> IS 0.0
+
+
+2014-07-02 19:20:59 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Naples> IS 374.0 while with the factor is 374.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/London> IS 365.0 while with the factor is 365.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Ravenna> IS 357.0 while with the factor is 357.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Lazio> IS 341.0 while with the factor is 341.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Lazio> IS 341.0 while with the factor is 341.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Lazio> IS 341.0 while with the factor is 341.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Lazio> IS 341.0 while with the factor is 341.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Archbasilica_of_St._John_Lateran> IS 340.0 while with the factor is 340.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Colosseum> IS 337.0 while with the factor is 337.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Florence> IS 322.0 while with the factor is 322.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Florence> IS 322.0 while with the factor is 322.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Milan> IS 321.0 while with the factor is 321.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Jerusalem> IS 310.0 while with the factor is 310.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Berlin> IS 310.0 while with the factor is 310.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Kiev> IS 308.0 while with the factor is 308.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Fiumicino> IS 294.0 while with the factor is 294.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Ponte_Milvio> IS 276.0 while with the factor is 276.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Frankfurt> IS 261.0 while with the factor is 261.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Frankfurt> IS 261.0 while with the factor is 261.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Barcelona> IS 260.0 while with the factor is 260.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Barcelona> IS 260.0 while with the factor is 260.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Lisbon> IS 259.0 while with the factor is 259.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Rome> IS 250.0 while with the factor is 250.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Albano_Laziale> IS 245.0 while with the factor is 245.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Castel_Gandolfo> IS 244.0 while with the factor is 244.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Siena> IS 242.0 while with the factor is 242.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Gaeta> IS 235.0 while with the factor is 235.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Cadiz> IS 233.0 while with the factor is 233.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Cadiz> IS 233.0 while with the factor is 233.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Emilia-Romagna> IS 228.0 while with the factor is 228.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Latvia> IS 228.0 while with the factor is 228.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Viterbo> IS 218.0 while with the factor is 218.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Viterbo> IS 218.0 while with the factor is 218.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Pisa> IS 218.0 while with the factor is 218.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Spain> IS 215.0 while with the factor is 215.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Sardinia> IS 214.0 while with the factor is 214.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Switzerland> IS 211.0 while with the factor is 211.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Genoa> IS 211.0 while with the factor is 211.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Ascoli_Piceno> IS 211.0 while with the factor is 211.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Genoa> IS 211.0 while with the factor is 211.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Viareggio> IS 210.0 while with the factor is 210.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Vienna> IS 210.0 while with the factor is 210.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Janiculum> IS 209.0 while with the factor is 209.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Strasbourg> IS 207.0 while with the factor is 207.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Stuttgart> IS 207.0 while with the factor is 207.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Stuttgart> IS 207.0 while with the factor is 207.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Lyon> IS 207.0 while with the factor is 207.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Seville> IS 206.0 while with the factor is 206.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Marino,_Lazio> IS 205.0 while with the factor is 205.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Netherlands> IS 204.0 while with the factor is 204.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Netherlands> IS 204.0 while with the factor is 204.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Anzio> IS 204.0 while with the factor is 204.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Netherlands> IS 204.0 while with the factor is 204.0
+2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Gda%C5%84sk> IS 203.0 while with the factor is 203.0
+
+2014-07-03 17:46:38 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Trondheim> AND <http://dbpedia.org/resource/Norway> IS 369.0 while with the factor is 369.0
+2014-07-03 17:46:38 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Trondheim> AND <http://dbpedia.org/resource/Bergen> IS 306.0 while with the factor is 306.0
+2014-07-03 17:46:38 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Trondheim> AND <http://dbpedia.org/resource/Amsterdam> IS 296.0 while with the factor is 296.0
+2014-07-03 17:46:38 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Trondheim> AND <http://dbpedia.org/resource/Amsterdam> IS 296.0 while with the factor is 296.0
+2014-07-03 17:46:38 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Trondheim> AND <http://dbpedia.org/resource/Trondheim> IS 250.0 while with the factor is 250.0
+2014-07-03 17:46:38 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Trondheim> AND <http://dbpedia.org/resource/Netherlands> IS 200.0 while with the factor is 200.0
+2014-07-03 17:46:38 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Trondheim> AND <http://dbpedia.org/resource/Rome> IS 196.0 while with the factor is 196.0
+2014-07-03 17:46:38 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Trondheim> AND <http://dbpedia.org/resource/Rome> IS 196.0 while with the factor is 196.0
+2014-07-03 17:46:38 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Trondheim> AND <http://dbpedia.org/resource/Groningen> IS 160.0 while with the factor is 160.0
+2014-07-03 17:46:38 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Trondheim> AND <http://dbpedia.org/resource/Moholt> IS 126.0 while with the factor is 126.0
+2014-07-03 17:46:38 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Trondheim> AND <http://dbpedia.org/resource/Moholt> IS 126.0 while with the factor is 126.0
+2014-07-03 17:46:38 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Trondheim> AND <http://dbpedia.org/resource/Moholt> IS 126.0 while with the factor is 126.0
+2014-07-03 17:46:38 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Trondheim> AND <http://dbpedia.org/resource/Ladestien> IS 125.0 while with the factor is 125.0
+2014-07-03 17:46:38 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Trondheim> AND <http://dbpedia.org/resource/Colosseum> IS 118.0 while with the factor is 118.0
+2014-07-03 17:46:38 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Trondheim> AND <http://dbpedia.org/resource/Archbasilica_of_St._John_Lateran> IS 113.0 while with the factor is 113.0
+2014-07-03 17:46:38 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Trondheim> AND <http://dbpedia.org/resource/Sapienza_University_of_Rome> IS 98.0 while with the factor is 98.0
+2014-07-03 17:46:38 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Trondheim> AND <http://dbpedia.org/resource/Dam_Square> IS 98.0 while with the factor is 98.0
+2014-07-03 17:46:38 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Trondheim> AND <http://dbpedia.org/resource/Eindhoven_Airport> IS 95.0 while with the factor is 95.0
+2014-07-03 17:46:38 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Trondheim> AND <http://dbpedia.org/resource/Ommen> IS 94.0 while with the factor is 94.0
+2014-07-03 17:46:38 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Trondheim> AND <http://dbpedia.org/resource/Geiranger> IS 81.0 while with the factor is 81.0
+2014-07-03 17:46:38 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Trondheim> AND <http://dbpedia.org/resource/Roma_Tre_University> IS 74.0 while with the factor is 74.0
+2014-07-03 17:46:38 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Trondheim> AND <http://dbpedia.org/resource/Nettuno> IS 68.0 while with the factor is 68.0
+2014-07-03 17:46:38 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Trondheim> AND <http://dbpedia.org/resource/Amsterdam-Centrum> IS 64.0 while with the factor is 64.0
+2014-07-03 17:46:38 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Trondheim> AND <http://dbpedia.org/resource/Riccione> IS 61.0 while with the factor is 61.0
+2014-07-03 17:46:38 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Trondheim> AND <http://dbpedia.org/resource/Riccione> IS 61.0 while with the factor is 61.0
+2014-07-03 17:46:38 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Trondheim> AND <http://dbpedia.org/resource/Bologna_Centrale_railway_station> IS 60.0 while with the factor is 60.0
+2014-07-03 17:46:38 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Trondheim> AND <http://dbpedia.org/resource/Roma_Trastevere_railway_station> IS 55.0 while with the factor is 55.0
+2014-07-03 17:46:38 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Trondheim> AND <http://dbpedia.org/resource/Roma_Trastevere_railway_station> IS 55.0 while with the factor is 55.0

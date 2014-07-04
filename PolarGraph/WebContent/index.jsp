@@ -24,7 +24,9 @@
 <!-- <p><input type = "text" name = "nome" /></p> -->
 <!-- <p><input type="submit" value="conferma" name="facebookLogin" /></p> -->
 <!-- </form> -->
+<img src="data/images/Cicero.PNG" width="5%" height="5%" />
+<h2>Log in your Facebook account in order to use the system</h2>
+<a href="https://graph.facebook.com/oauth/authorize?client_id=120449845301&redirect_uri=http://193.204.161.190:8080/Cicero/fblogin.do&scope=email,read_stream"><img src="data/images/fb_button.jpg" width="35%" height="35%" /> </a> 
 
-<a href="https://graph.facebook.com/oauth/authorize?client_id=120449845301&redirect_uri=http://193.204.161.190:8080/Cicero/fblogin.do&scope=email,read_stream"> Log in your Facebook account in order to use the system</a>
 </body>
 </html>
