@@ -26,7 +26,9 @@
 <!-- </form> -->
 <img src="data/images/Cicero.PNG" width="5%" height="5%" />
 <h2>Log in your Facebook account in order to use the system</h2>
-<a href="https://graph.facebook.com/oauth/authorize?client_id=120449845301&redirect_uri=http://193.204.161.190:8080/Cicero/fblogin.do&scope=email,read_stream"><img src="data/images/fb_button.jpg" width="35%" height="35%" /> </a> 
+<!-- <a href="https://graph.facebook.com/oauth/authorize?client_id=120449845301&redirect_uri=http://193.204.161.190:8080/Cicero/fblogin.do&scope=email,read_stream"><img src="data/images/fb_button.jpg" width="35%" height="35%" /> </a>  -->
+<!-- <a href="https://graph.facebook.com/oauth/authorize?client_id=120449845301&redirect_uri=http://193.204.161.190:8080/Cicero/fblogin.do&scope=email,read_stream,user_about_me,user_birthday,user_likes,user_checkins,user_friends,user_hometown,user_location,user_status,user_photos,user_relationships,friends_about_me,friends_location,friends_photo_video_tags,friends_status,friends_checkins,friends_photo,friends_likes,read_friendlists"><img src="data/images/fb_button.jpg" width="35%" height="35%" /> </a>  -->
+<a href="https://graph.facebook.com/oauth/authorize?client_id=120449845301&redirect_uri=http://193.204.161.190:8080/Cicero/fblogin.do&scope=email,read_stream,user_about_me,user_birthday,user_likes,user_checkins,user_friends,user_hometown,user_location,user_status,user_photos,user_relationships,friends_about_me,friends_location,friends_photo_video_tags,friends_status,friends_checkins,friends_photos,friends_likes,read_friendlists"><img src="data/images/fb_button.jpg" width="35%" height="35%" /> </a> 
 
 </body>
 </html>

@@ -10,6 +10,7 @@ Recommender int,
 Rating int,
 Novelty varchar(255),
 Serendipity varchar(255),
+Diversity varchar(255),
  PRIMARY KEY (RatingID)
 ); 
 

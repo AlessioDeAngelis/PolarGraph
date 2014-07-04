@@ -259,8 +259,10 @@ public class JenaManager {
 		String endpointsSparql = "PREFIX dbp-prop: <http://dbpedia.org/property/> PREFIX dbpedia: <http://dbpedia.org/resource/> PREFIX dbpedia-owl: <http://dbpedia.org/ontology/> PREFIX foaf: <http://xmlns.com/foaf/0.1/> select distinct ?mediaUrl ?externalLink { "
 				+ dbpediaUri + " dbpedia-owl:thumbnail ?mediaUrl; foaf:isPrimaryTopicOf ?externalLink.} LIMIT 1";
 
+//		QueryExecution queryExecution = QueryExecutionFactory.sparqlService(ontology_service,
+//				String.format(endpointsSparql, endpoint));
 		QueryExecution queryExecution = QueryExecutionFactory.sparqlService(ontology_service,
-				String.format(endpointsSparql, endpoint));
+				endpointsSparql);
 		ResultSet results = queryExecution.execSelect();
 
 		String mediaUrl = "";

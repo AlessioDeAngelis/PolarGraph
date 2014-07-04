@@ -41,17 +41,21 @@ public class EuropeanaRecommender extends Recommender {
 		int i = 0;
 		while (recommendedObjects.size() <= 10 && i < inputObjects.size()) {
 			String term = inputObjects.get(i).getName();
-			recommendedObjects.addAll(jenaManager.queryEuropeana(term));
+			List<RecommendedObject> tmp = jenaManager.queryEuropeana(term);
+			Collections.sort(tmp,new EuropeanaRecommendedObjectComparatorByMediaUrl());
+			
+			//give less result in order to improve the diversity
+			if(tmp.size()>3){
+				tmp = tmp.subList(0, 3);
+			}
+
+			recommendedObjects.addAll(tmp);
 			System.out.println(term + " " + recommendedObjects.size());
 			i++;
 		}
 		//sort the object: with this strategy. The first result must be the one with a pciture, so that the user is more satisfied
 		Collections.sort(recommendedObjects,new EuropeanaRecommendedObjectComparatorByMediaUrl());
-		for(RecommendedObject r : recommendedObjects){
-			if(r.getMediaUrl()!=null){
-				System.out.println();
-			}
-		}
+
 		return recommendedObjects;
 	}
 }

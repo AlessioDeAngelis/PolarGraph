@@ -51,7 +51,6 @@ public class CypherRepository extends Repository {
 		// load database
 		this.graphDb = new GraphDatabaseFactory().newEmbeddedDatabase(this.getDbPath());
 		graphDb.index().getNodeAutoIndexer().setEnabled(true);
-
 		registerShutdownHook(graphDb);
 		// Execution engin used for cypher queries
 		this.engine = new ExecutionEngine(graphDb);

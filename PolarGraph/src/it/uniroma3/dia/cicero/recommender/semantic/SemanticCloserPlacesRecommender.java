@@ -57,6 +57,7 @@ public class SemanticCloserPlacesRecommender extends Recommender {
 					closeDbpediaConcepts = jenaManager.findCloserPlacesFromDbpedia(placeUri);
 					// extract extra infos and create a recommender object
 					if (closeDbpediaConcepts != null && closeDbpediaConcepts.size() > 0) {
+						List<RecommendedObject> tmp = new ArrayList<RecommendedObject>();
 						for (String concept : closeDbpediaConcepts) {
 							Map<String,String> extraAttributes2values = jenaManager.queryDbpediaForExtraInfo("<"+concept+">");
 							String mediaUrl = extraAttributes2values.get("mediaUrl");
@@ -68,13 +69,18 @@ public class SemanticCloserPlacesRecommender extends Recommender {
 							obj.setProvider("DBPEDIA");
 							obj.setExternalLink(externalLink);
 							obj.setWhy(inputObjects.get(i).getName());
-							recommendedObjects.add(obj);
-							numberOfRecommendedDbPediaObjects ++;
+							tmp.add(obj);
 						}
+						//to increase the diversity in the recommended objects
+						if(tmp.size() > 4){
+							tmp = tmp.subList(0, 4);
+						}
+						numberOfRecommendedDbPediaObjects += tmp.size();
+						recommendedObjects.addAll(tmp);
 					}
 				}
-				//let's suggest at least 5 objects before thebreak
-				if(numberOfRecommendedDbPediaObjects > 5){
+				//let's suggest at least 10 objects before thebreak
+				if(numberOfRecommendedDbPediaObjects > 10){
 					break;						
 
 				}

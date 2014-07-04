@@ -122,7 +122,7 @@ public class CiceroFacade {
 				.retrieveFriendsId(currentFbUserId);
 
 		for (int i = 0; i < 75; i++) {
-			int index = i * part;
+			int index = i + part * 75;
 			if (index < friendsId.size()) {
 
 				String friendId = friendsId.get(index);
@@ -291,12 +291,13 @@ public class CiceroFacade {
 	 * relational db
 	 * */
 	public void storeUserRatingForRecommendation(String fbUserId,
-			int recommenderId, int rating, String novelty, String serendipity) {
+			int recommenderId, int rating, String novelty, String serendipity,
+			String diversity) {
 		// from the facebook id retrieve the actual id in the evaluation
 		// relational db
 		int userId = this.evaluationRepository.findUserIdByFacebookID(fbUserId);
 		this.evaluationRepository.storeUserRatingForRecommender(userId,
-				recommenderId, rating, novelty, serendipity);
+				recommenderId, rating, novelty, serendipity, diversity);
 	}
 
 }

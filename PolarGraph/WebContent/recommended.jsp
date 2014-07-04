@@ -65,14 +65,17 @@ th,td {
 <h2> Do you like those recommended objects? Do they match your interests?</h2>
 <h3>Please, give a rating of your satisfation</h3>
 <p><form action="storeRecommenderRating.do" method="post">
+<input type="radio" name="recommender_rating" value="0">Not applicable(no results)</input>
 <input type="radio" name="recommender_rating" value="1" required>Poor, I am not interested in those objects</input><br>
 <input type="radio" name="recommender_rating" value="2">Fair</input><br>
 <input type="radio" name="recommender_rating" value="3">Average, I am interested in some objects but I really don't like some others</input><br>
 <input type="radio" name="recommender_rating" value="4">Good</input><br>
 <input type="radio" name="recommender_rating" value="5">Excellent: They exactly match my interests!</input>
+
 <br>
 <br>
-<h2>Did this recommender help you discover a new place in the list you didn't know before?</h2>
+<h2>This recommender helped me discover a new place in the list I didn't know before</h2>
+<input type="radio" name="novelty" value="0">Not applicable(no results)</input>
 <input type="radio" name="novelty" value="1" required>Strongly disagree</input>
 <input type="radio" name="novelty" value="2">Disagree</input>
 <input type="radio" name="novelty" value="3">Neither disagree nor agree</input>
@@ -81,12 +84,21 @@ th,td {
 
 <br>
 <br>
-<h2>Did you discover a new place in the list and you really want to visit it now?</h2>
+<h2>This recommender helped me discovered a new place in the list and I really want to watch it live.</h2>
+<input type="radio" name="serendipity" value="0">Not applicable(no results)</input>
 <input type="radio" name="serendipity" value="1" required>Strongly disagree</input>
 <input type="radio" name="serendipity" value="2">Disagree</input>
 <input type="radio" name="serendipity" value="4">Neither Disagree nor agree</input>
 <input type="radio" name="serendipity" value="4">Agree</input>
-<input type="radio" name="serendipity" value="5">Strongly Disagree</input>
+<input type="radio" name="serendipity" value="5">Strongly Agree</input>
+
+<h2>The items recommended to me are similar to each other, they are not diverse</h2>
+<input type="radio" name="diversity" value="5" required>Strongly disagree</input>
+<input type="radio" name="diversity" value="4">Disagree</input>
+<input type="radio" name="diversity" value="3">Neither Disagree nor agree</input>
+<input type="radio" name="diversity" value="2">Agree</input>
+<input type="radio" name="diversity" value="1">Strongly Agree</input>
+<input type="radio" name="diversity" value="0">Not applicable(no results)</input>
 
 <input type="submit" value="SUBMIT"/>
 </form></p>

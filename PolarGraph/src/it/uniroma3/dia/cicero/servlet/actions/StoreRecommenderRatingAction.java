@@ -25,10 +25,11 @@ public class StoreRecommenderRatingAction extends Action {
 		String recommenderId = (String) request.getSession().getAttribute("recommenderNumber");
 		String novelty = (String) request.getParameter("novelty");
 		String serendipity = (String) request.getParameter("serendipity");
+		String diversity = (String) request.getParameter("diversity");
 		Injector injector = (Injector) request.getSession().getAttribute("injector");
 		
 		CiceroFacade ciceroFacade = injector.getInstance(CiceroFacade.class);
-		ciceroFacade.storeUserRatingForRecommendation(fbUserId, Integer.parseInt(recommenderId), Integer.parseInt(rating),novelty,serendipity);
+		ciceroFacade.storeUserRatingForRecommendation(fbUserId, Integer.parseInt(recommenderId), Integer.parseInt(rating),novelty,serendipity,diversity);
 	
 		return "rating_stored";
 	}

@@ -14,11 +14,11 @@ import java.sql.ResultSet;
 public class EvaluationRepository {
 
 	public void storeUserRatingForRecommender(int userId, int recommenderId,
-			int rating, String novelty, String serendipity) {
+			int rating, String novelty, String serendipity, String diversity) {
 		DataSource dataSource = DataSource.getInstance();
 		Connection connection = dataSource.getConnection();
 		PreparedStatement statement = null;
-		String insertQuery = "INSERT INTO Ratings(RatingID, UserID, Recommender, Rating, Novelty, Serendipity) VALUES(?,?,?,?,?,?)";
+		String insertQuery = "INSERT INTO Ratings(RatingID, UserID, Recommender, Rating, Novelty, Serendipity,Diversity) VALUES(?,?,?,?,?,?,?)";
 		try {
 			statement = connection.prepareStatement(insertQuery);
 			Long ratingId = IDBroker.getId(connection);
@@ -28,6 +28,7 @@ public class EvaluationRepository {
 			statement.setInt(4, rating);
 			statement.setString(5, novelty);
 			statement.setString(6, serendipity);
+			statement.setString(7,diversity);
 
 			statement.executeUpdate();
 		} catch (Exception e) {
