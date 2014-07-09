@@ -39,7 +39,7 @@ public class EuropeanaRecommender extends Recommender {
 //		List<RecommendedObject> inputObjects = socialRecommender.recommendObject(userId);
 		List<RecommendedObject> recommendedObjects = new ArrayList<RecommendedObject>();
 		int i = 0;
-		while (recommendedObjects.size() <= 10 && i < inputObjects.size()) {
+		while (recommendedObjects.size() <= 12 && i < inputObjects.size()) {
 			String term = inputObjects.get(i).getName();
 			List<RecommendedObject> tmp = jenaManager.queryEuropeana(term);
 			Collections.sort(tmp,new EuropeanaRecommendedObjectComparatorByMediaUrl());

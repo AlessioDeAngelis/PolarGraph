@@ -35,7 +35,10 @@ public class SelectedCategoriesCollaborativeFilteringSocialRecommender extends A
 	
 	@Override
 	public List<Couple<PolarPlace, Long>> queryTheRepository(String userId){
-		return this.getRepository().findPlacesByMultiplesCategoryNamesCollaborativeFiltering(userId, this.getCategories());
+		
+		List<Couple<PolarPlace, Long>> result = this.getRepository().findPlacesByMultiplesCategoryNamesCollaborativeFiltering(userId, this.getCategories());
+ 		
+		return result;
 	}
 
 }

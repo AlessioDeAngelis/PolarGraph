@@ -45,10 +45,13 @@ public class RecommendAction extends Action {
 		/* let the system find the user favourite categories*/
 		List<Category> userFavouriteCategories = ciceroFacade.calculateUserFavouriteCategories(userId);
 		categories = new ArrayList<String>();
+		//TODO uncomment after this tst
 		for(Category category : userFavouriteCategories){
 			categories.add(category.getName());
 		}
-
+//		categories.add("City");
+//		categories.add("Museum");
+//		categories.add("Monument");
 		// firstly add the social recommender. At least one recommender must be
 		// present in the list
 		if (rankerSocialNames == null || rankerSocialNames.length == 0) {

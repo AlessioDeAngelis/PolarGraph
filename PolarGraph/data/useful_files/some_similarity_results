@@ -341,6 +341,15 @@
 2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Netherlands> IS 204.0 while with the factor is 204.0
 2014-07-02 19:21:00 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Rome> AND <http://dbpedia.org/resource/Gda%C5%84sk> IS 203.0 while with the factor is 203.0
 
+2014-07-06 10:36:41 INFO  SemanticCleverRecommender:82 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Leonardo_da_Vinci%E2%80%93Fiumicino_Airport> AND <http://dbpedia.org/resource/Roma_Termini_railway_station> IS 329.0 while with the factor is 329.0
+2014-07-06 10:36:41 INFO  SemanticCleverRecommender:82 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Leonardo_da_Vinci%E2%80%93Fiumicino_Airport> AND <http://dbpedia.org/resource/Leonardo_da_Vinci%E2%80%93Fiumicino_Airport> IS 300.0 while with the factor is 300.0
+2014-07-06 10:36:42 INFO  SemanticCleverRecommender:82 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Leonardo_da_Vinci%E2%80%93Fiumicino_Airport> AND <http://dbpedia.org/resource/Paris> IS 223.0 while with the factor is 223.0
+2014-07-06 10:36:42 INFO  SemanticCleverRecommender:82 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Leonardo_da_Vinci%E2%80%93Fiumicino_Airport> AND <http://dbpedia.org/resource/Rimini> IS 196.0 while with the factor is 196.0
+2014-07-06 10:36:42 INFO  SemanticCleverRecommender:82 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Leonardo_da_Vinci%E2%80%93Fiumicino_Airport> AND <http://dbpedia.org/resource/Trondheim> IS 186.0 while with the factor is 186.0
+2014-07-06 10:36:42 INFO  SemanticCleverRecommender:82 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Leonardo_da_Vinci%E2%80%93Fiumicino_Airport> AND <http://dbpedia.org/resource/Oulu> IS 171.0 while with the factor is 171.0
+2014-07-06 10:36:42 INFO  SemanticCleverRecommender:82 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Leonardo_da_Vinci%E2%80%93Fiumicino_Airport> AND <http://dbpedia.org/resource/Foro_Italico> IS 115.0 while with the factor is 115.0
+2014-07-06 10:36:42 INFO  SemanticCleverRecommender:82 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Leonardo_da_Vinci%E2%80%93Fiumicino_Airport> AND <http://dbpedia.org/resource/Novara> IS 83.0 while with the factor is 83.0
+
 2014-07-03 17:46:38 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Trondheim> AND <http://dbpedia.org/resource/Norway> IS 369.0 while with the factor is 369.0
 2014-07-03 17:46:38 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Trondheim> AND <http://dbpedia.org/resource/Bergen> IS 306.0 while with the factor is 306.0
 2014-07-03 17:46:38 INFO  SemanticCleverRecommender:79 - SIMILARITY BETWEEN <http://dbpedia.org/resource/Trondheim> AND <http://dbpedia.org/resource/Amsterdam> IS 296.0 while with the factor is 296.0

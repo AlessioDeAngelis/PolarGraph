@@ -733,6 +733,66 @@ public class CypherRepository extends Repository {
 		return placesAndVisitors;
 	}
 	
+	/**
+	 * @param userId
+	 *            the facebook id of the currentUser
+	 * @param categoryNamesList
+	 *            the list containing all the names of the categories linked to
+	 *            the places you want to find
+	 * @return list of Couples: places - number of visiting people
+	 * 
+	 * */
+	public List<Couple<PolarPlace, Long>> findPlacesVisitedOnlyByFriends(String userId,
+			List<String> categoryNamesList) {
+		List<Couple<PolarPlace, Long>> placesAndVisitors = new ArrayList<Couple<PolarPlace, Long>>();
+		ExecutionResult result = null;
+		Transaction tx = graphDb.beginTx();
+		Map<String, Object> params = null;
+		String query = "";
+		try {
+			if (categoryNamesList != null && categoryNamesList.size() > 0) {
+				int i = 0;
+
+				 params = new HashMap<String, Object>();
+				params.put("personId", userId);
+				params.put("categoryName" + i, categoryNamesList.get(i));
+
+				// constructing the query string
+				query = "MATCH (friend:Person)-[rel:VISITED]->(place), (place)-[:HAS_CATEGORY]->(category:Category) WHERE (category.name = {categoryName"
+						+ i + "} ";
+				for (i = 1; i < categoryNamesList.size(); i++) {
+					params.put("categoryName" + i, categoryNamesList.get(i));
+					query += " OR category.name = {categoryName" + i + "} ";
+				}
+				query += ") RETURN distinct place, count(rel) as visitors ORDER BY visitors DESC";
+				logger.debug(query);
+
+			}
+
+			// querying the engine
+			result = this.engine.execute(query, params);
+//			logger.info(result.dumpToString());
+			PolarPlace place = null;
+			for (Map<String, Object> row : result) {
+				Node nodePlace = (Node) row.get("place");
+				String nodePlaceId = (String) nodePlace.getProperty("id", "");
+				String nodePlaceName = (String) nodePlace.getProperty("name", "");
+				String nodePlaceUri = (String) nodePlace.getProperty("uri", "");				
+				Long visitors = (Long) row.get("visitors");
+				place = new PolarPlace();
+				place.setId(nodePlaceId);
+				place.setUri(nodePlaceUri);
+				place.setName(nodePlaceName);
+				placesAndVisitors.add(new Couple<PolarPlace, Long>(place, visitors));
+			}
+
+			tx.success();
+		} finally {
+			tx.close();
+		}
+		return placesAndVisitors;
+	}
+	
 	
 	/**
 	 * @param userId
@@ -756,6 +816,50 @@ public class CypherRepository extends Repository {
 			params = new HashMap<String, Object>();
 			params.put("personId", userId);
 			query = "MATCH (me:Person)-[r1]->(place:Place)-[r2]->(category:Category) WHERE me.id = {personId} RETURN category, COUNT(r2) as links ORDER BY links DESC";
+
+			// querying the engine
+			result = this.engine.execute(query, params);
+			
+			for (Map<String, Object> row : result) {
+				Node nodeCategory = (Node) row.get("category");
+				String nodeCategoryId = (String) nodeCategory.getProperty("id", "");
+				String nodeCategoryName = (String) nodeCategory.getProperty("name", "");
+				Long links = (Long) row.get("links");
+				Category place = new Category();
+				place.setId(nodeCategoryId);
+				place.setName(nodeCategoryName);
+				categoriesAndLinks.add(new Couple<Category, Double>(place, links.doubleValue()));
+			}
+
+			tx.success();
+		} finally {
+			tx.close();
+		}
+		return categoriesAndLinks;
+	}
+	
+	/**
+	 * @param userId
+	 *            the facebook id of the currentUser
+	 * @param categoryNamesList
+	 *            the list containing all the names of the categories linked to
+	 *            the current user and the number of places visited by the user within that category
+	 * @return list of Couples: places - number of visiting people
+	 * 
+	 * */
+	public List<Couple<Category, Double>> findCommunityCategoriesOrderedDesc(String userId) {
+
+		List<Couple<Category,Double>> categoriesAndLinks = new ArrayList<>();
+		ExecutionResult result = null;
+		Transaction tx = graphDb.beginTx();
+		Map<String, Object> params = null;
+		String query = "";
+		try {
+			
+			//construct the query
+			params = new HashMap<String, Object>();
+			params.put("personId", userId);
+			query = "MATCH (place:Place)-[r2:HAS_CATEGORY]->(category:Category) RETURN category, COUNT(r2) as links ORDER BY links DESC";
 
 			// querying the engine
 			result = this.engine.execute(query, params);

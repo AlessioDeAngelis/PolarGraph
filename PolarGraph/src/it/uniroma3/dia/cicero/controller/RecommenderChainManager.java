@@ -24,6 +24,9 @@ public class RecommenderChainManager {
 		List<RecommendedObject> recommendedObjects = new ArrayList();
 		for(Recommender recommender : recommenderChain){
 			recommendedObjects = recommender.recommendObject(userId, recommendedObjects);
+			for(int i = 0; i < 5 && i < recommendedObjects.size(); i++){
+				System.out.println(recommendedObjects.get(i));
+			}
 		}
 		return recommendedObjects;
 	}

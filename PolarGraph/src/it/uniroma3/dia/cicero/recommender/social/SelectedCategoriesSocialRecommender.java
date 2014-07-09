@@ -87,8 +87,13 @@ public class SelectedCategoriesSocialRecommender extends
 	}
 
 	public List<Couple<PolarPlace, Long>> queryTheRepository(String userId) {
-		return this.getRepository().findPlacesByMultiplesCategoryNames(userId,
+		List<Couple<PolarPlace, Long>> result = this.getRepository().findPlacesByMultiplesCategoryNames(userId,
 				this.getCategories());
+		//if the previuous result is null, do another query with less constraints
+		if(result == null || result.size() ==0 ){
+ 			result = this.getRepository().findPlacesVisitedOnlyByFriends(userId, this.getCategories());
+ 		}
+		return result;
 	}
 
 }

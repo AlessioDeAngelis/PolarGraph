@@ -20,7 +20,7 @@ th,td {
 </head>
 <body>
 	<c:forEach var="concept" items="${recommendedObjects}">
-	<h3>YOU LIKE ${concept.why} SO WE RECOMMEND YOU</h3>		
+	<h3>CICERO THINKS YOU MAY LIKE <font color="RED">${concept.why}</font> SO HE RECOMMENDS YOU</h3>		
 		<ul>
 			<li>
 				<table>

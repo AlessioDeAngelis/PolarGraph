@@ -32,7 +32,7 @@ Some recommenders can take a long,  <br> we plase ask you to test at least recom
 <!-- <p><input type="radio" value="europeana" name="rankerEuropeanaType"/>Europeana Recommeder</p> -->
 
 <!-- <p><input type="submit" value="Recommend" name="conferma" /></p> -->
-<input  readonly name="rankerSocialType" value="select_categories_social"/>
+<input  readonly name="rankerSocialType" value="selected_categories_social"/>
 <input readonly name="rankerDbpediaType" value="semantic_closer_places"/>
 <input readonly name="recommenderNumber" value="1"/>
 <input type="submit" value="Recommend" name="conferma" />

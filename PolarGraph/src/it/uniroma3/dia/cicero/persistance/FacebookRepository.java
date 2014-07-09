@@ -61,7 +61,7 @@ public class FacebookRepository {
 	}
 
 	public User retrieveLoggedUser() {
-		return this.facebookClient.fetchObject("me", User.class);
+		return this.facebookClient.fetchObject("me", User.class); //me
 	}
 
 	public Person retrievePersonByUserId(String fbUserId) {

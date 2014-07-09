@@ -64,6 +64,7 @@ public class SemanticPlacesDisambiguator implements Disambiguator {
 		}
 		String[] languages = { "it", "en" };
 		// firstly try to query tag me with italian language, then english
+		try{
 		for (String language : languages) {
 			String tagMeJsonOutput = this.restManager.queryTagMe(termSanitized, language);
 			List<SpottedPlace> tagMePlaces = this.jsonParser.parseTagMe(tagMeJsonOutput, 0.1);
@@ -185,6 +186,9 @@ public class SemanticPlacesDisambiguator implements Disambiguator {
 			if (correctPlace.getLongitude() != null && !correctPlace.getLongitude().equals("")) {
 				placeLocation.setLongitude(Double.parseDouble(correctPlace.getLongitude()));
 			}
+		}
+		}catch(Exception e){
+			
 		}
 		return placeToDisambiguate;
 	}

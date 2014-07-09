@@ -39,31 +39,26 @@ public class CategoriesManager {
 		this.culturalHeritageCategories.add("Attractions/Things to Do");
 		this.culturalHeritageCategories.add("Tourist Information");
 		this.culturalHeritageCategories.add("Tour Guide");
-		this.culturalHeritageCategories.add("Water Park");
-		this.culturalHeritageCategories.add("Outdoor Recreation");
 		this.culturalHeritageCategories.add("Theatre");
 		this.culturalHeritageCategories.add("Tours & Sightseeing");
 		this.culturalHeritageCategories.add("Auditorium");
 		this.culturalHeritageCategories.add("Zoo & Aquarium");
 		this.culturalHeritageCategories.add("State Park");
 		this.culturalHeritageCategories.add("History Museum");
-		this.culturalHeritageCategories.add("Theme Park");
 		this.culturalHeritageCategories.add("Catholic Church");
 		this.culturalHeritageCategories.add("Bridge");
 		this.culturalHeritageCategories.add("Island");
 		this.culturalHeritageCategories.add("Cabin");
 		this.culturalHeritageCategories.add("Church");
-		this.culturalHeritageCategories.add("Cruise");
 		this.culturalHeritageCategories.add("Circus");
 		this.culturalHeritageCategories.add("Art Gallery");
 		this.culturalHeritageCategories.add("Wildlife Sanctuary");
-		this.culturalHeritageCategories.add("Cruise Excursions");
 		this.culturalHeritageCategories.add("Buddhist Temple");
 		this.culturalHeritageCategories.add("River");
 		this.culturalHeritageCategories.add("Environmental Conservation");
 		this.culturalHeritageCategories.add("Modern Art Museum");
 		this.culturalHeritageCategories.add("Public Places");
-		this.culturalHeritageCategories.add("City");
+//		this.culturalHeritageCategories.add("City");
 	}
 
 	public List<Category> calculateUserFavouriteCategories(List<Couple<Category, Double>> retrievedCategories, int topK) {
@@ -74,7 +69,8 @@ public class CategoriesManager {
 		for (Couple<Category, Double> retrievedCategory : retrievedCategories) {
 			scores.add(retrievedCategory.getSecond());
 		}
-		double maxScore = Collections.max(scores);
+		double maxScore = 0;
+		if(scores!=null && scores.size() > 0){Collections.max(scores);}
 		/* Normalize and weight the score*/
 		for (Couple<Category, Double> retrievedCategory : retrievedCategories) {
 			double oldScore = retrievedCategory.getSecond();
@@ -96,7 +92,13 @@ public class CategoriesManager {
 		}
 		for(Category c : favouriteCategories){
 			System.out.println("FAV: " + c.getName());
+		}if(favouriteCategories.size()==0 || maxScore < 3){//for users without tag, you have to chose the categories for him
+//			favouriteCategories.add(new Category("City", "City"));
+			favouriteCategories.add(new Category("Museum", "Museum"));
+			favouriteCategories.add(new Category("Monument", "Monument"));
+
 		}
+		
 		return favouriteCategories;
 	}
 

@@ -1,5 +1,6 @@
 package it.uniroma3.dia.cicero.servlet;
 
+import it.uniroma3.dia.cicero.controller.CiceroFacade;
 import it.uniroma3.dia.cicero.servlet.actions.Action;
 import it.uniroma3.dia.cicero.servlet.actions.ChooseSocialCategoriesAction;
 import it.uniroma3.dia.cicero.servlet.actions.ClearGraphDatabaseAction;
@@ -22,6 +23,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.google.inject.Injector;
 import com.google.inject.Singleton;
 
 /**
@@ -47,22 +49,30 @@ public class ServletController extends HttpServlet {
 		this.command2actionClass.put("/fblogin.do", LoginAction.class);
 		this.command2actionClass.put("/welcome.do", WelcomeAction.class);
 		this.command2actionClass.put("/recommend.do", RecommendAction.class);
-		this.command2actionClass.put("/chooseCategories.do", ChooseSocialCategoriesAction.class);
-		this.command2actionClass.put("/storeFacebookUserData.do", StoreFacebookUserDataAction.class);
-		this.command2actionClass.put("/storeFacebookFriendData.do", StoreFacebookFriendDataAction.class);
-		this.command2actionClass.put("/clearGraphDatabase.do", ClearGraphDatabaseAction.class);
-		this.command2actionClass.put("/storeRecommenderRating.do",StoreRecommenderRatingAction.class);
+		this.command2actionClass.put("/chooseCategories.do",
+				ChooseSocialCategoriesAction.class);
+		this.command2actionClass.put("/storeFacebookUserData.do",
+				StoreFacebookUserDataAction.class);
+		this.command2actionClass.put("/storeFacebookFriendData.do",
+				StoreFacebookFriendDataAction.class);
+		this.command2actionClass.put("/clearGraphDatabase.do",
+				ClearGraphDatabaseAction.class);
+		this.command2actionClass.put("/storeRecommenderRating.do",
+				StoreRecommenderRatingAction.class);
 		this.result2page = new HashMap<String, String>();
 		this.result2page.put("autenticazioneriuscita", "/main.jsp");
-//		this.result2page.put("categories_choosen", "/chooseRecommender.jsp");
-		this.result2page.put("recommended_objects_returned", "/recommended.jsp");
+		// this.result2page.put("categories_choosen", "/chooseRecommender.jsp");
+		this.result2page
+				.put("recommended_objects_returned", "/recommended.jsp");
 		this.result2page.put("facebook_login_ok", "/userLogged.jsp");
-		this.result2page.put("chooseSocialCategories", "/chooseSocialCategories.jsp");
+		this.result2page.put("chooseSocialCategories",
+				"/chooseSocialCategories.jsp");
 		this.result2page.put("userDataStored", "/userDataStored.jsp");
 		this.result2page.put("friendsDataStored", "/friendsDataStored.jsp");
-		this.result2page.put("graphDatabaseCleared", "/graphDatabaseCleared.jsp");
+		this.result2page.put("graphDatabaseCleared",
+				"/graphDatabaseCleared.jsp");
 		this.result2page.put("rating_stored", "/ratingStored.jsp");
-
+		this.result2page.put("noLog", "/index.jsp");
 
 	}
 
@@ -84,19 +94,28 @@ public class ServletController extends HttpServlet {
 		String nextPage = "";
 		try {
 			String servletPath = request.getServletPath();
-			Class clazz = this.command2actionClass
-					.get(servletPath);
-
+			Class clazz = this.command2actionClass.get(servletPath);
+//			Injector injector = (Injector) request.getSession().getAttribute(
+//					"injector");
+//			if (injector == null) {
+//				nextPage = "/index.jsp";
+//			} else {
+//				CiceroFacade ciceroFacade = injector
+//						.getInstance(CiceroFacade.class);
+//				if (ciceroFacade == null) {
+//					nextPage = "/index.jsp";
+//				} else	
 			if (clazz == null) {
-				nextPage = "/classNotFound.jsp";
-			} else {
-				Action action = null;
-				String actionName = clazz.getName();
+					nextPage = "/classNotFound.jsp";
+				} else {
+					Action action = null;
+					String actionName = clazz.getName();
 
-				action = (Action) Class.forName(actionName).newInstance();
-				String actionResult = action.executeAction(request);
-				nextPage = this.result2page.get(actionResult);
-			}
+					action = (Action) Class.forName(actionName).newInstance();
+					String actionResult = action.executeAction(request);
+					nextPage = this.result2page.get(actionResult);
+				}
+//			}
 		} catch (InstantiationException e) {
 			nextPage = "/error.jsp";
 		} catch (IllegalAccessException e) {

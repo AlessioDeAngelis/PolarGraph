@@ -124,10 +124,13 @@ public class CiceroFacade {
 		for (int i = 0; i < 75; i++) {
 			int index = i + part * 75;
 			if (index < friendsId.size()) {
-
+				try{
 				String friendId = friendsId.get(index);
-				logger.info("processing user friend " + index);
+				logger.info(currentFbUserId + " processing user friend " + index);
 				this.readVisitedPlacesFromFacebookAndStore(friendId);
+				}catch(Exception e){
+					
+				}
 			}
 		}
 	}
@@ -202,10 +205,10 @@ public class CiceroFacade {
 
 		for (RecommendedObject rankedPlace : rankedPlaces) {// TODO: togliere i
 															// commenti
-			// logger.info("Place Name: " + rankedPlace.getName() + ", uri: "
-			// + rankedPlace.getUri() + ", score: "
-			// + rankedPlace.getScore() + ", mediaUrl: "
-			// + rankedPlace.getMediaUrl());
+			 logger.info("Place Name: " + rankedPlace.getName() + ", uri: "
+			 + rankedPlace.getUri() + ", score: "
+			 + rankedPlace.getScore() + ", mediaUrl: "
+			 + rankedPlace.getMediaUrl());
 		}
 		return rankedPlaces;
 	}
@@ -257,6 +260,9 @@ public class CiceroFacade {
 		this.cypherRepository.startDB();
 		List<Couple<Category, Double>> retrievedCategories = this.cypherRepository
 				.findUserCategoriesOrderedDesc(fbUserId);
+		if(retrievedCategories == null || retrievedCategories.size() < 2){
+			retrievedCategories = this.cypherRepository.findCommunityCategoriesOrderedDesc(fbUserId);
+		}
 		List<Category> favouriteCategories = this.categoryManager
 				.calculateUserFavouriteCategories(retrievedCategories, 5);
 		this.cypherRepository.stopDB();

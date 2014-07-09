@@ -6635,3 +6635,1204 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 84416; El
 2014-07-04 18:37:55 INFO  CiceroFacade:222 - Place name before: Pattaya - Thailand, place name after disambiguation: Thailand, uri: http://dbpedia.org/resource/Thailand
 2014-07-04 18:37:55 INFO  CiceroFacade:222 - Place name before: İstanbul, place name after disambiguation: Bağcılar, uri: http://dbpedia.org/resource/Ba%C4%9Fc%C4%B1lar
 2014-07-04 18:37:55 INFO  CiceroFacade:222 - Place name before: Dubai, United Arab Emirates, place name after disambiguation: United Arab Emirates, uri: http://dbpedia.org/resource/United_Arab_Emirates
+
+lug 06, 2014 11:01:45 AM org.apache.catalina.core.AprLifecycleListener init
+INFORMAZIONI: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+lug 06, 2014 11:01:46 AM org.apache.tomcat.util.digester.SetPropertiesRule begin
+AVVERTENZA: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'source' to 'org.eclipse.jst.jee.server:Cicero' did not find a matching property.
+lug 06, 2014 11:01:46 AM org.apache.coyote.AbstractProtocol init
+INFORMAZIONI: Initializing ProtocolHandler ["http-bio-8080"]
+lug 06, 2014 11:01:46 AM org.apache.coyote.AbstractProtocol init
+INFORMAZIONI: Initializing ProtocolHandler ["ajp-bio-8009"]
+lug 06, 2014 11:01:46 AM org.apache.catalina.startup.Catalina load
+INFORMAZIONI: Initialization processed in 1405 ms
+lug 06, 2014 11:01:46 AM org.apache.catalina.core.StandardService startInternal
+INFORMAZIONI: Starting service Catalina
+lug 06, 2014 11:01:46 AM org.apache.catalina.core.StandardEngine startInternal
+INFORMAZIONI: Starting Servlet Engine: Apache Tomcat/7.0.47
+lug 06, 2014 11:01:52 AM org.apache.coyote.AbstractProtocol start
+INFORMAZIONI: Starting ProtocolHandler ["http-bio-8080"]
+lug 06, 2014 11:01:52 AM org.apache.coyote.AbstractProtocol start
+INFORMAZIONI: Starting ProtocolHandler ["ajp-bio-8009"]
+lug 06, 2014 11:01:52 AM org.apache.catalina.startup.Catalina start
+INFORMAZIONI: Server startup in 6255 ms
+/home/alessio/workspaceEclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/Cicero/data/db/db_1558802179.graph
+2014-07-06 11:02:25 INFO  CiceroFacade:129 - processing user friend 75
+2014-07-06 11:02:27 INFO  CiceroFacade:222 - Place name before: Piazzale degli Eroi, place name after disambiguation: Piazzale degli Eroi, uri: 
+2014-07-06 11:02:27 INFO  CiceroFacade:222 - Place name before: Piazza Del Cavallo A Vinci, place name after disambiguation: Piazza Del Cavallo A Vinci, uri: 
+2014-07-06 11:02:27 INFO  CiceroFacade:222 - Place name before: Partito Democratico, place name after disambiguation: Partito Democratico, uri: 
+2014-07-06 11:02:28 INFO  CiceroFacade:222 - Place name before: Beira, Mozambique, place name after disambiguation: Beira, Mozambique, uri: http://dbpedia.org/resource/Beira,_Mozambique
+2014-07-06 11:02:28 INFO  CiceroFacade:222 - Place name before: Maputo, Mozambique, place name after disambiguation: Maputo, uri: http://dbpedia.org/resource/Maputo
+2014-07-06 11:02:32 INFO  CiceroFacade:129 - processing user friend 76
+2014-07-06 11:02:35 INFO  CiceroFacade:222 - Place name before: Chalet nel Bosco, place name after disambiguation: Chalet nel Bosco, uri: 
+2014-07-06 11:02:35 INFO  CiceroFacade:222 - Place name before: Palestra Golden Power, place name after disambiguation: Palestra Golden Power, uri: 
+2014-07-06 11:02:36 INFO  CiceroFacade:222 - Place name before: Mo Mó, place name after disambiguation: Mo Mó, uri: 
+2014-07-06 11:02:36 INFO  CiceroFacade:222 - Place name before: Pianeta Terra, place name after disambiguation: Pianeta Terra, uri: 
+2014-07-06 11:02:37 INFO  CiceroFacade:222 - Place name before: Facoltà di Medicina e Psicologia “La Sapienza“, place name after disambiguation: Facoltà di Medicina e Psicologia “La Sapienza“, uri: 
+2014-07-06 11:02:37 INFO  CiceroFacade:222 - Place name before: Casale Della Certosa, place name after disambiguation: Casale Della Certosa, uri: 
+2014-07-06 11:02:37 INFO  CiceroFacade:222 - Place name before: Nell'allegra Fattoria Pongi, place name after disambiguation: Nell'allegra Fattoria Pongi, uri: 
+2014-07-06 11:02:37 INFO  CiceroFacade:222 - Place name before: Amoroma, place name after disambiguation: Amoroma, uri: 
+2014-07-06 11:02:37 INFO  CiceroFacade:222 - Place name before: Circo Massimo, place name after disambiguation: Circus Maximus, uri: http://dbpedia.org/resource/Circus_Maximus
+2014-07-06 11:02:37 INFO  CiceroFacade:222 - Place name before: Roma Vintage, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-07-06 11:02:40 INFO  CiceroFacade:129 - processing user friend 77
+2014-07-06 11:02:45 INFO  CiceroFacade:222 - Place name before: Talamone (Grosseto), place name after disambiguation: Talamone, uri: http://dbpedia.org/resource/Talamone
+2014-07-06 11:02:46 INFO  CiceroFacade:222 - Place name before: Belvedere Sermoneta, place name after disambiguation: Sermoneta, uri: http://dbpedia.org/resource/Sermoneta
+2014-07-06 11:02:46 INFO  CiceroFacade:222 - Place name before: Groovy, place name after disambiguation: Groovy, uri: 
+2014-07-06 11:02:46 INFO  CiceroFacade:222 - Place name before: Beach Open Disco, place name after disambiguation: Beach Open Disco, uri: 
+2014-07-06 11:02:46 INFO  CiceroFacade:222 - Place name before: Oasi Di Kufra Sabaudia, place name after disambiguation: Sabaudia, uri: http://dbpedia.org/resource/Sabaudia
+2014-07-06 11:02:46 INFO  CiceroFacade:222 - Place name before: Dal Brigante Gasperone Fraschetta Ariccia., place name after disambiguation: Ariccia, uri: http://dbpedia.org/resource/Ariccia
+2014-07-06 11:02:46 INFO  CiceroFacade:222 - Place name before: The Old Square, place name after disambiguation: The Old Square, uri: 
+2014-07-06 11:02:46 INFO  CiceroFacade:222 - Place name before: Stazione di Milano Centrale, place name after disambiguation: Stazione di Milano Centrale, uri: http://dbpedia.org/resource/Stazione_di_Milano_Centrale
+2014-07-06 11:02:46 INFO  CiceroFacade:222 - Place name before: Ischia, Italy, place name after disambiguation: Ischia, uri: http://dbpedia.org/resource/Ischia
+2014-07-06 11:02:46 INFO  CiceroFacade:222 - Place name before: Ischiaaaaa :D, place name after disambiguation: Ischiaaaaa :D, uri: 
+2014-07-06 11:02:46 INFO  CiceroFacade:222 - Place name before: Caffetteria Mele, place name after disambiguation: Caffetteria Mele, uri: 
+2014-07-06 11:02:47 INFO  CiceroFacade:222 - Place name before: Ristorante Villa Marcus, place name after disambiguation: Ristorante Villa Marcus, uri: 
+2014-07-06 11:02:47 INFO  CiceroFacade:222 - Place name before: Ischia-S.Angelo, place name after disambiguation: Ischia-S.Angelo, uri: 
+2014-07-06 11:02:47 INFO  CiceroFacade:222 - Place name before: Ristorante Le Pantanelle, place name after disambiguation: Ristorante Le Pantanelle, uri: 
+2014-07-06 11:02:47 INFO  CiceroFacade:222 - Place name before: Terracina Onda Marina, place name after disambiguation: Terracina, uri: http://dbpedia.org/resource/Terracina
+2014-07-06 11:02:47 INFO  CiceroFacade:222 - Place name before: La Capannina, place name after disambiguation: La Capannina, uri: 
+2014-07-06 11:02:47 INFO  CiceroFacade:222 - Place name before: Centosedici - Ristorante Pizzeria Hotel, place name after disambiguation: Centosedici - Ristorante Pizzeria Hotel, uri: 
+2014-07-06 11:02:47 INFO  CiceroFacade:222 - Place name before: Terracina, place name after disambiguation: Terracina, uri: http://dbpedia.org/resource/Terracina
+2014-07-06 11:02:48 INFO  CiceroFacade:222 - Place name before: Stazione Porta Susa Torino, place name after disambiguation: Province of Turin, uri: http://dbpedia.org/resource/Province_of_Turin
+2014-07-06 11:02:48 INFO  CiceroFacade:222 - Place name before: Salone Internazionale del Libro di Torino, place name after disambiguation: Salone Internazionale del Libro di Torino, uri: 
+2014-07-06 11:02:48 INFO  CiceroFacade:222 - Place name before: Gotham, place name after disambiguation: Gotham, uri: 
+2014-07-06 11:02:48 INFO  CiceroFacade:222 - Place name before: Stazione di Aosta, place name after disambiguation: Aosta, uri: http://dbpedia.org/resource/Aosta
+2014-07-06 11:02:48 INFO  CiceroFacade:222 - Place name before: Pescasseroli AQ, place name after disambiguation: Pescasseroli, uri: http://dbpedia.org/resource/Pescasseroli
+2014-07-06 11:02:52 INFO  CiceroFacade:129 - processing user friend 78
+2014-07-06 11:02:58 INFO  CiceroFacade:222 - Place name before: Blue's Café, place name after disambiguation: Blue's Café, uri: 
+2014-07-06 11:02:58 INFO  CiceroFacade:222 - Place name before: ex colonia Vittorio Emanuele, place name after disambiguation: ex colonia Vittorio Emanuele, uri: 
+2014-07-06 11:02:58 INFO  CiceroFacade:222 - Place name before: Cineland, place name after disambiguation: Cineland, uri: 
+2014-07-06 11:02:58 INFO  CiceroFacade:222 - Place name before: Caffè Letterario, place name after disambiguation: Caffè Letterario, uri: 
+2014-07-06 11:02:58 INFO  CiceroFacade:222 - Place name before: Stadio Olimpico, place name after disambiguation: Stadio Olimpico, uri: http://dbpedia.org/resource/Stadio_Olimpico
+2014-07-06 11:02:58 INFO  CiceroFacade:222 - Place name before: San Vito dei Normanni, place name after disambiguation: San Vito dei Normanni, uri: http://dbpedia.org/resource/San_Vito_dei_Normanni
+2014-07-06 11:02:59 INFO  CiceroFacade:222 - Place name before: Museo Nazionale della Scienza e della Tecnologia Leonardo da Vinci, place name after disambiguation: Museo Nazionale della Scienza e della Tecnologia Leonardo da Vinci, uri: http://dbpedia.org/resource/Museo_della_Scienza_e_della_Tecnologia_%22Leonardo_da_Vinci%22
+2014-07-06 11:02:59 INFO  CiceroFacade:222 - Place name before: Lago di Como, place name after disambiguation: Lake Como, uri: http://dbpedia.org/resource/Lake_Como
+2014-07-06 11:02:59 INFO  CiceroFacade:222 - Place name before: Sushissimi, place name after disambiguation: Sushissimi, uri: 
+2014-07-06 11:02:59 INFO  CiceroFacade:222 - Place name before: Duomo di Milano, place name after disambiguation: Milan Cathedral, uri: http://dbpedia.org/resource/Milan_Cathedral
+2014-07-06 11:02:59 INFO  CiceroFacade:222 - Place name before: Stazione di Firenze Santa Maria Novella, place name after disambiguation: Firenze Santa Maria Novella railway station, uri: http://dbpedia.org/resource/Firenze_Santa_Maria_Novella_railway_station
+2014-07-06 11:02:59 INFO  CiceroFacade:222 - Place name before: Cathédrale Notre-Dame de Paris, place name after disambiguation: Notre Dame de Paris, uri: http://dbpedia.org/resource/Notre_Dame_de_Paris
+2014-07-06 11:02:59 INFO  CiceroFacade:222 - Place name before: Facoltà Economia "Federico Caffè" Roma Tre, place name after disambiguation: Roma Tre University, uri: http://dbpedia.org/resource/Roma_Tre_University
+2014-07-06 11:02:59 INFO  CiceroFacade:222 - Place name before: Beira, Mozambique, place name after disambiguation: Beira, Mozambique, uri: http://dbpedia.org/resource/Beira,_Mozambique
+2014-07-06 11:02:59 INFO  CiceroFacade:222 - Place name before: Beira, Mozambique, place name after disambiguation: Beira, Mozambique, uri: 
+2014-07-06 11:03:00 INFO  CiceroFacade:222 - Place name before: Parco Pietro Rosa, place name after disambiguation: Parco Pietro Rosa, uri: 
+2014-07-06 11:03:00 INFO  CiceroFacade:222 - Place name before: Shot and Go, place name after disambiguation: Shot and Go, uri: 
+2014-07-06 11:03:00 INFO  CiceroFacade:222 - Place name before: Rome, Italy, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-07-06 11:03:00 INFO  CiceroFacade:222 - Place name before: Filippine, place name after disambiguation: Filippine, uri: 
+2014-07-06 11:03:00 INFO  CiceroFacade:222 - Place name before: Maputo, Mozambique, place name after disambiguation: Maputo, uri: http://dbpedia.org/resource/Maputo
+2014-07-06 11:03:00 INFO  CiceroFacade:222 - Place name before: Assisi, Italy, place name after disambiguation: Italy, uri: http://dbpedia.org/resource/Italy
+2014-07-06 11:03:00 INFO  CiceroFacade:222 - Place name before: Barcelona, Spain, place name after disambiguation: Barcelona, uri: http://dbpedia.org/resource/Barcelona
+2014-07-06 11:03:00 INFO  CiceroFacade:222 - Place name before: S Marinella, place name after disambiguation: S Marinella, uri: 
+2014-07-06 11:03:04 INFO  CiceroFacade:129 - processing user friend 79
+2014-07-06 11:03:13 INFO  CiceroFacade:222 - Place name before: Rome, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-07-06 11:03:14 INFO  CiceroFacade:222 - Place name before: Rome, Italy, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-07-06 11:03:14 INFO  CiceroFacade:222 - Place name before: Parco dell'Aniene, place name after disambiguation: Parco dell'Aniene, uri: 
+2014-07-06 11:03:14 INFO  CiceroFacade:222 - Place name before: Casa Salazar, place name after disambiguation: Casa Salazar, uri: 
+2014-07-06 11:03:14 INFO  CiceroFacade:222 - Place name before: Trinidad, Cuba, place name after disambiguation: Trinidad, uri: http://dbpedia.org/resource/Trinidad%2C_Cuba
+2014-07-06 11:03:14 INFO  CiceroFacade:222 - Place name before: Parque de la 93, place name after disambiguation: Parque de la 93, uri: http://dbpedia.org/resource/93_Park
+2014-07-06 11:03:14 INFO  CiceroFacade:222 - Place name before: Airport Rome Fiumicino, place name after disambiguation: Fiumicino, uri: http://dbpedia.org/resource/Fiumicino
+2014-07-06 11:03:14 INFO  CiceroFacade:222 - Place name before: Miami Beach, Florida, place name after disambiguation: Miami Beach, Florida, uri: http://dbpedia.org/resource/Miami_Beach,_Florida
+2014-07-06 11:03:14 INFO  CiceroFacade:222 - Place name before: Piazza del Popolo, place name after disambiguation: Piazza del Popolo, uri: http://dbpedia.org/resource/Piazza_del_Popolo
+2014-07-06 11:03:14 INFO  CiceroFacade:222 - Place name before: Stadio Olimpico, Roma, place name after disambiguation: Stadio Olimpico, uri: http://dbpedia.org/resource/Stadio_Olimpico
+2014-07-06 11:03:14 INFO  CiceroFacade:222 - Place name before: Paris, place name after disambiguation: Paris, uri: 
+2014-07-06 11:03:15 INFO  CiceroFacade:222 - Place name before: Sanremo, place name after disambiguation: Sanremo, uri: http://dbpedia.org/resource/Sanremo
+2014-07-06 11:03:15 INFO  CiceroFacade:222 - Place name before: Toledo, Spain, place name after disambiguation: Spain, uri: http://dbpedia.org/resource/Spain
+2014-07-06 11:03:15 INFO  CiceroFacade:222 - Place name before: Barcelona Catalunya!, place name after disambiguation: Barcelona, uri: http://dbpedia.org/resource/Barcelona
+2014-07-06 11:03:16 INFO  CiceroFacade:222 - Place name before: Napoli, place name after disambiguation: Napoli, uri: 
+2014-07-06 11:03:16 INFO  CiceroFacade:222 - Place name before: Bogota, New Jersey, place name after disambiguation: Bogota, New Jersey, uri: http://dbpedia.org/resource/Bogota,_New_Jersey
+2014-07-06 11:03:16 INFO  CiceroFacade:222 - Place name before: Madrid, Spain, place name after disambiguation: Spain, uri: http://dbpedia.org/resource/Spain
+2014-07-06 11:03:16 INFO  CiceroFacade:222 - Place name before: Boadilla del Monte (Madrid), place name after disambiguation: Boadilla del Monte, uri: http://dbpedia.org/resource/Boadilla_del_Monte
+2014-07-06 11:03:16 INFO  CiceroFacade:222 - Place name before: Copenhagen, Denmark, place name after disambiguation: Copenhagen, uri: http://dbpedia.org/resource/Copenhagen
+2014-07-06 11:03:16 INFO  CiceroFacade:222 - Place name before: Brussels Maneken Pis, place name after disambiguation: Brussels, uri: http://dbpedia.org/resource/Brussels
+2014-07-06 11:03:16 INFO  CiceroFacade:222 - Place name before: Albany, New York, place name after disambiguation: New York, uri: http://dbpedia.org/resource/New_York
+2014-07-06 11:03:16 INFO  CiceroFacade:222 - Place name before: La Victoire, place name after disambiguation: Bureau de Poste de Bordeaux Victoire, uri: 
+2014-07-06 11:03:16 INFO  CiceroFacade:222 - Place name before: Parco Nazionale delle 5 Terre, place name after disambiguation: Parco Nazionale delle 5 Terre, uri: 
+2014-07-06 11:03:16 INFO  CiceroFacade:222 - Place name before: Biarritz, place name after disambiguation: Biarritz, uri: 
+2014-07-06 11:03:16 INFO  CiceroFacade:222 - Place name before: Bordeaux, place name after disambiguation: Bordeaux, uri: http://dbpedia.org/resource/Bordeaux
+2014-07-06 11:03:17 INFO  CiceroFacade:222 - Place name before: Bologna ..., place name after disambiguation: Bologna, uri: http://dbpedia.org/resource/Bologna
+2014-07-06 11:03:17 INFO  CiceroFacade:222 - Place name before: Venezia, Italia, place name after disambiguation: Venezia, Italia, uri: 
+2014-07-06 11:03:17 INFO  CiceroFacade:222 - Place name before: Venecia, Italia, place name after disambiguation: Venecia, Italia, uri: 
+2014-07-06 11:03:17 INFO  CiceroFacade:222 - Place name before: PIACENZA, place name after disambiguation: Piacenza, uri: http://dbpedia.org/resource/Piacenza
+2014-07-06 11:03:17 INFO  CiceroFacade:222 - Place name before: Bogotá, Colombia, place name after disambiguation: Colombia, uri: http://dbpedia.org/resource/Colombia
+2014-07-06 11:03:18 INFO  CiceroFacade:222 - Place name before: Marquez, place name after disambiguation: Marquez, uri: 
+2014-07-06 11:03:18 INFO  CiceroFacade:222 - Place name before: Premios Shock, place name after disambiguation: Premios Shock, uri: 
+2014-07-06 11:03:18 INFO  CiceroFacade:222 - Place name before: Cartagena de indias, place name after disambiguation: Cartagena de indias, uri: 
+2014-07-06 11:03:18 INFO  CiceroFacade:222 - Place name before: Restaurant Cafe San Pedro, place name after disambiguation: Restaurant Cafe San Pedro, uri: 
+2014-07-06 11:03:19 INFO  CiceroFacade:222 - Place name before: Bocagrande, place name after disambiguation: Barrio Bocagrande, uri: 
+2014-07-06 11:03:19 INFO  CiceroFacade:222 - Place name before: Gavanna Bar Bogota, place name after disambiguation: Gavanna Bar Bogota, uri: 
+2014-07-06 11:03:19 INFO  CiceroFacade:222 - Place name before: Condominio Campestre El Penon, place name after disambiguation: Condominio Campestre El Penon, uri: 
+2014-07-06 11:03:24 INFO  CiceroFacade:129 - processing user friend 80
+2014-07-06 11:03:28 INFO  CiceroFacade:222 - Place name before: Mò Mò Republic, place name after disambiguation: Mò Mò Republic, uri: 
+2014-07-06 11:03:28 INFO  CiceroFacade:222 - Place name before: Casetta Di Campagna, place name after disambiguation: Casetta Di Campagna, uri: 
+2014-07-06 11:03:28 INFO  CiceroFacade:222 - Place name before: Villa Grant, place name after disambiguation: Villa Grant, uri: 
+2014-07-06 11:03:28 INFO  CiceroFacade:222 - Place name before: Casa Marchionne, place name after disambiguation: Casa Marchionne, uri: 
+2014-07-06 11:03:28 INFO  CiceroFacade:222 - Place name before: gallipoli, place name after disambiguation: gallipoli, uri: 
+2014-07-06 11:03:28 INFO  CiceroFacade:222 - Place name before: Lido Baia Verde Gallipoli, place name after disambiguation: Lido Baia Verde Gallipoli, uri: 
+2014-07-06 11:03:29 INFO  CiceroFacade:222 - Place name before: B&B Torre Dello Ziro, place name after disambiguation: B&B Torre Dello Ziro, uri: 
+2014-07-06 11:03:29 INFO  CiceroFacade:222 - Place name before: Facoltà di Ingegneria, Sapienza, place name after disambiguation: Facoltà di Ingegneria, Sapienza, uri: 
+2014-07-06 11:03:29 INFO  CiceroFacade:222 - Place name before: NY.LON - Seven Hours Forty, place name after disambiguation: NY.LON - Seven Hours Forty, uri: 
+2014-07-06 11:03:29 INFO  CiceroFacade:222 - Place name before: Lampedusa, place name after disambiguation: Lampedusa, uri: http://dbpedia.org/resource/Lampedusa
+2014-07-06 11:03:29 INFO  CiceroFacade:222 - Place name before: Vila Praia Do Bilene, Gaza, Mozambique, place name after disambiguation: Mozambique, uri: http://dbpedia.org/resource/Mozambique
+2014-07-06 11:03:31 INFO  CiceroFacade:129 - processing user friend 81
+2014-07-06 11:03:32 INFO  CiceroFacade:222 - Place name before: Le Chateau De Versailles, place name after disambiguation: Le Chateau De Versailles, uri: 
+2014-07-06 11:03:34 INFO  CiceroFacade:129 - processing user friend 82
+2014-07-06 11:03:36 INFO  CiceroFacade:222 - Place name before: Zerozero100 - Via Del Verano, 27, place name after disambiguation: Zerozero100 - Via Del Verano, 27, uri: 
+2014-07-06 11:03:36 INFO  CiceroFacade:222 - Place name before: Madonna Di Campiglio, Trentino-Alto Adige, Italy, place name after disambiguation: Madonna di Campiglio, uri: http://dbpedia.org/resource/Madonna_di_Campiglio
+2014-07-06 11:03:36 INFO  CiceroFacade:222 - Place name before: Eataly Roma, place name after disambiguation: Eataly Roma, uri: 
+2014-07-06 11:03:36 INFO  CiceroFacade:222 - Place name before: Santa Severa, place name after disambiguation: Santa Severa, uri: http://dbpedia.org/resource/Santa_Severa
+2014-07-06 11:03:36 INFO  CiceroFacade:222 - Place name before: Facoltà Di Ingegneria San Pietro In Vincoli, place name after disambiguation: San Pietro in Vincoli, uri: http://dbpedia.org/resource/San_Pietro_in_Vincoli
+2014-07-06 11:03:36 INFO  CiceroFacade:222 - Place name before: 3jolì, place name after disambiguation: 3jolì, uri: 
+2014-07-06 11:03:38 INFO  CiceroFacade:129 - processing user friend 83
+2014-07-06 11:03:39 INFO  CiceroFacade:222 - Place name before: Pasticceria Marini di Tatiana e Luana Marini, place name after disambiguation: Pasticceria Marini di Tatiana e Luana Marini, uri: 
+2014-07-06 11:03:40 INFO  CiceroFacade:129 - processing user friend 84
+2014-07-06 11:03:44 INFO  CiceroFacade:222 - Place name before: momart restaurant cafè, place name after disambiguation: momart restaurant cafè, uri: 
+2014-07-06 11:03:44 INFO  CiceroFacade:222 - Place name before: Palazzo Borghese, place name after disambiguation: Palazzo Borghese, uri: http://dbpedia.org/resource/Palazzo_Borghese
+2014-07-06 11:03:44 INFO  CiceroFacade:222 - Place name before: Ombre Rosse - Trastevere, place name after disambiguation: Trastevere, uri: http://dbpedia.org/resource/Trastevere
+2014-07-06 11:03:44 INFO  CiceroFacade:222 - Place name before: Aereoporto Fiumicino, place name after disambiguation: Aereoporto Fiumicino, uri: 
+2014-07-06 11:03:44 INFO  CiceroFacade:222 - Place name before: Baia Di Paraggi, place name after disambiguation: Santa Margherita Ligure, uri: http://dbpedia.org/resource/Santa_Margherita_Ligure
+2014-07-06 11:03:44 INFO  CiceroFacade:222 - Place name before: Piazza Augusto Imperatore, place name after disambiguation: Piazza Augusto Imperatore, uri: 
+2014-07-06 11:03:44 INFO  CiceroFacade:222 - Place name before: Capalbio, place name after disambiguation: Capalbio, uri: http://dbpedia.org/resource/Capalbio
+2014-07-06 11:03:44 INFO  CiceroFacade:222 - Place name before: Roma Rione Monti, place name after disambiguation: Monti (rione of Rome), uri: http://dbpedia.org/resource/Monti_(rione_of_Rome)
+2014-07-06 11:03:44 INFO  CiceroFacade:222 - Place name before: Dipartimento di Giurisprudenza Università Roma Tre, place name after disambiguation: Roma Tre University, uri: http://dbpedia.org/resource/Roma_Tre_University
+2014-07-06 11:03:44 INFO  CiceroFacade:222 - Place name before: Udine, Italy, place name after disambiguation: Udine, uri: http://dbpedia.org/resource/Udine
+2014-07-06 11:03:44 INFO  CiceroFacade:222 - Place name before: Biblioteca della Camera dei Deputati, place name after disambiguation: Biblioteca della Camera dei Deputati, uri: 
+2014-07-06 11:03:44 INFO  CiceroFacade:222 - Place name before: Bakery House Roma, place name after disambiguation: Bakery House Roma, uri: 
+2014-07-06 11:03:47 INFO  CiceroFacade:129 - processing user friend 85
+2014-07-06 11:03:48 INFO  CiceroFacade:129 - processing user friend 86
+2014-07-06 11:03:50 INFO  CiceroFacade:129 - processing user friend 87
+2014-07-06 11:03:53 INFO  CiceroFacade:222 - Place name before: Polo Nord da Babbo Natale, place name after disambiguation: Polo Nord da Babbo Natale, uri: 
+2014-07-06 11:03:53 INFO  CiceroFacade:222 - Place name before: Washington, District of Columbia, place name after disambiguation: Washington, D.C., uri: http://dbpedia.org/resource/Washington,_D.C.
+2014-07-06 11:03:53 INFO  CiceroFacade:222 - Place name before: Villa Miani, place name after disambiguation: Villa Miani, uri: 
+2014-07-06 11:03:53 INFO  CiceroFacade:222 - Place name before: Rome, Italy, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-07-06 11:03:54 INFO  CiceroFacade:222 - Place name before: 61 Bergeron St., place name after disambiguation: 61 Bergeron St., uri: 
+2014-07-06 11:03:54 INFO  CiceroFacade:222 - Place name before: Rehoboth, Massachusetts, place name after disambiguation: Rehoboth, Massachusetts, uri: http://dbpedia.org/resource/Rehoboth,_Massachusetts
+2014-07-06 11:03:54 INFO  CiceroFacade:222 - Place name before: Roma, Italia, place name after disambiguation: Italy, uri: http://dbpedia.org/resource/Italy
+2014-07-06 11:03:54 INFO  CiceroFacade:222 - Place name before: Via Di Monteverde, place name after disambiguation: Via Di Monteverde, uri: 
+2014-07-06 11:03:54 INFO  CiceroFacade:222 - Place name before: Rome, Italy, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-07-06 11:03:54 INFO  CiceroFacade:222 - Place name before: John Cabot University, place name after disambiguation: John Cabot University, uri: 
+2014-07-06 11:03:56 INFO  CiceroFacade:129 - processing user friend 88
+2014-07-06 11:03:59 INFO  CiceroFacade:222 - Place name before: Scotland, place name after disambiguation: Scotland, uri: http://dbpedia.org/resource/Scotland
+2014-07-06 11:03:59 INFO  CiceroFacade:222 - Place name before: Buenos Aires, Argentina, place name after disambiguation: Buenos Aires, uri: http://dbpedia.org/resource/Buenos_Aires
+2014-07-06 11:04:01 INFO  CiceroFacade:222 - Place name before: Montserrat, Spain, place name after disambiguation: Montserrat, Spain, uri: 
+2014-07-06 11:04:01 INFO  CiceroFacade:222 - Place name before: Edimburgo, Escocia., place name after disambiguation: Edinburgh, uri: http://dbpedia.org/resource/Edinburgh
+2014-07-06 11:04:01 INFO  CiceroFacade:222 - Place name before: Dublin, Ireland, place name after disambiguation: Dublin, uri: http://dbpedia.org/resource/Dublin
+2014-07-06 11:04:01 INFO  CiceroFacade:222 - Place name before: Paris, France, place name after disambiguation: Paris, uri: http://dbpedia.org/resource/Paris
+2014-07-06 11:04:02 INFO  CiceroFacade:222 - Place name before: Young & Happy Hostel, place name after disambiguation: Young & Happy Hostel, uri: 
+2014-07-06 11:04:04 INFO  CiceroFacade:222 - Place name before: Aeropuerto Internacional - Ezeiza, place name after disambiguation: Aeropuerto Internacional - Ezeiza, uri: 
+2014-07-06 11:04:04 INFO  CiceroFacade:222 - Place name before: Facultad de Ciencias Sociales UBA, place name after disambiguation: Facultad de Ciencias Sociales UBA, uri: 
+2014-07-06 11:04:06 INFO  CiceroFacade:129 - processing user friend 89
+2014-07-06 11:04:13 INFO  CiceroFacade:222 - Place name before: Rome, Italy, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-07-06 11:04:13 INFO  CiceroFacade:222 - Place name before: Venice, Italy, place name after disambiguation: Venice, uri: http://dbpedia.org/resource/Venice
+2014-07-06 11:04:13 INFO  CiceroFacade:222 - Place name before: Florence, Italy, place name after disambiguation: Florence, uri: http://dbpedia.org/resource/Florence
+2014-07-06 11:04:13 INFO  CiceroFacade:222 - Place name before: Pisa, Italy, place name after disambiguation: Pisa, uri: http://dbpedia.org/resource/Pisa
+2014-07-06 11:04:13 INFO  CiceroFacade:222 - Place name before: Fiesole, Italy, place name after disambiguation: Fiesole, uri: http://dbpedia.org/resource/Fiesole
+2014-07-06 11:04:13 INFO  CiceroFacade:222 - Place name before: Viareggio, Italy, place name after disambiguation: Viareggio, uri: http://dbpedia.org/resource/Viareggio
+2014-07-06 11:04:13 INFO  CiceroFacade:222 - Place name before: Groningen, place name after disambiguation: Groningen, uri: http://dbpedia.org/resource/Groningen
+2014-07-06 11:04:13 INFO  CiceroFacade:222 - Place name before: Zandvoort aan Zee, place name after disambiguation: Zandvoort aan Zee railway station, uri: http://dbpedia.org/resource/Zandvoort_aan_Zee_railway_station
+2014-07-06 11:04:13 INFO  CiceroFacade:222 - Place name before: Kazimierz Plac Nowy, place name after disambiguation: Kazimierz, uri: http://dbpedia.org/resource/Kazimierz
+2014-07-06 11:04:13 INFO  CiceroFacade:222 - Place name before: Miss Sushi, place name after disambiguation: Miss Sushi, uri: 
+2014-07-06 11:04:15 INFO  CiceroFacade:222 - Place name before: Sky Night Puerta América, place name after disambiguation: Sky Night Puerta América, uri: 
+2014-07-06 11:04:15 INFO  CiceroFacade:222 - Place name before: Milan, Italy, place name after disambiguation: Milan, uri: http://dbpedia.org/resource/Milan
+2014-07-06 11:04:15 INFO  CiceroFacade:222 - Place name before: Wageningen, place name after disambiguation: Wageningen, uri: http://dbpedia.org/resource/Wageningen
+2014-07-06 11:04:16 INFO  CiceroFacade:222 - Place name before: Club inc., place name after disambiguation: Club inc., uri: 
+2014-07-06 11:04:16 INFO  CiceroFacade:222 - Place name before: Groningen, place name after disambiguation: Groningen, uri: http://dbpedia.org/resource/Groningen
+2014-07-06 11:04:16 INFO  CiceroFacade:222 - Place name before: Valencia, Spain, place name after disambiguation: Valencia, uri: http://dbpedia.org/resource/Valencia
+2014-07-06 11:04:16 INFO  CiceroFacade:222 - Place name before: Plaza de España (Madrid), place name after disambiguation: Spanish square, uri: http://dbpedia.org/resource/Plaza_de_Espa%C3%B1a_%28Madrid%29
+2014-07-06 11:04:16 INFO  CiceroFacade:222 - Place name before: Madrid, Spain, place name after disambiguation: Spain, uri: http://dbpedia.org/resource/Spain
+2014-07-06 11:04:16 INFO  CiceroFacade:222 - Place name before: Ameland, place name after disambiguation: Ameland, uri: http://dbpedia.org/resource/Ameland
+2014-07-06 11:04:16 INFO  CiceroFacade:222 - Place name before: Winschoterdiep 46, place name after disambiguation: Winschoterdiep, uri: http://dbpedia.org/resource/Winschoterdiep
+2014-07-06 11:04:16 INFO  CiceroFacade:222 - Place name before: Zernike College, Westerse Drift, place name after disambiguation: Zernike College, Westerse Drift, uri: 
+2014-07-06 11:04:16 INFO  CiceroFacade:222 - Place name before: Segovia, Spain, place name after disambiguation: Spain, uri: http://dbpedia.org/resource/Spain
+2014-07-06 11:04:16 INFO  CiceroFacade:222 - Place name before: Granada, Spain, place name after disambiguation: Granada, uri: http://dbpedia.org/resource/Granada
+2014-07-06 11:04:16 INFO  CiceroFacade:222 - Place name before: TEATRO KAPITAL, place name after disambiguation: TEATRO KAPITAL, uri: 
+2014-07-06 11:04:17 INFO  CiceroFacade:222 - Place name before: Joy Eslava, place name after disambiguation: Joy Eslava, uri: 
+
+2014-07-07 12:04:48 INFO  CiceroFacade:222 - Place name before: 100 Montaditos - Ponte Milvio, place name after disambiguation: Ponte Milvio, uri: http://dbpedia.org/resource/Ponte_Milvio
+2014-07-07 12:04:48 INFO  CiceroFacade:222 - Place name before: Rome Cavalieri, Waldorf Astoria Hotels & Resorts, place name after disambiguation: Rome Cavalieri, Waldorf Astoria Hotels & Resorts, uri: 
+2014-07-07 12:04:48 INFO  CiceroFacade:222 - Place name before: In Cameretta, place name after disambiguation: In Cameretta, uri: 
+2014-07-07 12:04:48 INFO  CiceroFacade:222 - Place name before: Lío Ibiza, place name after disambiguation: Ibiza, uri: http://dbpedia.org/resource/Ibiza
+2014-07-07 12:04:48 INFO  CiceroFacade:222 - Place name before: Nel Letto, place name after disambiguation: Nel Letto, uri: 
+2014-07-07 12:04:48 INFO  CiceroFacade:222 - Place name before: A Casetta!, place name after disambiguation: A Casetta!, uri: 
+2014-07-07 12:04:49 INFO  CiceroFacade:222 - Place name before: Yemaja Cala Des Jondal, place name after disambiguation: Yemaja Cala Des Jondal, uri: 
+2014-07-07 12:04:49 INFO  CiceroFacade:222 - Place name before: A State Of Trance @ Privilege Ibiza, place name after disambiguation: Privilege Ibiza, uri: http://dbpedia.org/resource/Privilege_Ibiza
+2014-07-07 12:04:49 INFO  CiceroFacade:222 - Place name before: Cristalli Di Zucchero, place name after disambiguation: Cristalli Di Zucchero, uri: 
+2014-07-07 12:04:49 INFO  CiceroFacade:222 - Place name before: Parco dei Principi Grand Hotel & Spa, place name after disambiguation: Parco dei Principi Grand Hotel & Spa, uri: 
+2014-07-07 12:04:49 INFO  CiceroFacade:222 - Place name before: Manhattan, New York City, place name after disambiguation: Manhattan, uri: http://dbpedia.org/resource/Manhattan
+2014-07-07 12:04:49 INFO  CiceroFacade:222 - Place name before: Fifth Avenue - New York City, place name after disambiguation: New York City, uri: http://dbpedia.org/resource/New_York_City
+2014-07-07 12:04:49 INFO  CiceroFacade:222 - Place name before: The Brooklyn Bridge, place name after disambiguation: Brooklyn Bridge, uri: http://dbpedia.org/resource/Brooklyn_Bridge
+2014-07-07 12:04:49 INFO  CiceroFacade:222 - Place name before: Manhattan, New York City, place name after disambiguation: Manhattan, uri: http://dbpedia.org/resource/Manhattan
+2014-07-07 12:04:49 INFO  CiceroFacade:222 - Place name before: Pacifico Dinner, place name after disambiguation: Pacifico Dinner, uri: 
+2014-07-07 12:04:49 INFO  CiceroFacade:222 - Place name before: Piadineria vecchia rimini, place name after disambiguation: Piadineria vecchia rimini, uri: 
+2014-07-07 12:04:49 INFO  CiceroFacade:222 - Place name before: Corallo Beach, place name after disambiguation: Corallo Beach, uri: 
+2014-07-07 12:04:50 INFO  CiceroFacade:222 - Place name before: 45giri, place name after disambiguation: 45giri, uri: 
+2014-07-07 12:04:50 INFO  CiceroFacade:222 - Place name before: Ristorante Giapponese Senba, place name after disambiguation: Ristorante Giapponese Senba, uri: 
+2014-07-07 12:04:50 INFO  CiceroFacade:222 - Place name before: Ristorante La Bussola Ostia Catel Porziano, place name after disambiguation: Ostia Antica, uri: http://dbpedia.org/resource/Ostia_Antica
+2014-07-07 12:04:51 INFO  CiceroFacade:222 - Place name before: Monte Pratello, place name after disambiguation: Monte Pratello, uri: 
+2014-07-07 12:04:51 INFO  CiceroFacade:222 - Place name before: Le Scalette Café Rivisondoli, place name after disambiguation: Rivisondoli, uri: http://dbpedia.org/resource/Rivisondoli
+2014-07-07 12:04:51 INFO  CiceroFacade:222 - Place name before: Wok, place name after disambiguation: Wok, uri: 
+2014-07-07 12:04:52 INFO  CiceroFacade:222 - Place name before: Gone-Ponte Milvio, place name after disambiguation: Gone-Ponte Milvio, uri: 
+2014-07-07 12:04:52 INFO  CiceroFacade:222 - Place name before: Sweety Gelato Roma, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-07-07 12:04:52 INFO  CiceroFacade:222 - Place name before: Volterra - Toscana, place name after disambiguation: Volterra, uri: http://dbpedia.org/resource/Volterra
+2014-07-07 12:04:52 INFO  CiceroFacade:222 - Place name before: Badesi ..Beach ..., place name after disambiguation: Badesi, uri: http://dbpedia.org/resource/Badesi
+2014-07-07 12:04:52 INFO  CiceroFacade:222 - Place name before: Porto Rotondo, place name after disambiguation: Porto Rotondo, uri: 
+2014-07-07 12:04:52 INFO  CiceroFacade:222 - Place name before: A1, place name after disambiguation: A1, uri: 
+2014-07-07 12:04:52 INFO  CiceroFacade:222 - Place name before: Ristorante Gatta ci cova, place name after disambiguation: Ristorante Gatta ci cova, uri: 
+2014-07-07 12:04:52 INFO  CiceroFacade:222 - Place name before: Ambra Night, place name after disambiguation: Ambra Night, uri: 
+2014-07-07 12:04:52 INFO  CiceroFacade:222 - Place name before: Sofia Club By Prestige!!!, place name after disambiguation: Sofia Club By Prestige!!!, uri: 
+2014-07-07 12:04:52 INFO  CiceroFacade:222 - Place name before: NICE By PRESTIGE!!!, place name after disambiguation: NICE By PRESTIGE!!!, uri: 
+2014-07-07 12:04:52 INFO  CiceroFacade:222 - Place name before: Sofia By Prestige!!, place name after disambiguation: Sofia By Prestige!!, uri: 
+2014-07-07 12:04:52 INFO  CiceroFacade:222 - Place name before: Ira beach Porto rotondo, place name after disambiguation: Ira beach Porto rotondo, uri: 
+2014-07-07 12:04:53 INFO  CiceroFacade:222 - Place name before: "Il Gabbiano" Sabaudia Da Paolo, place name after disambiguation: "Il Gabbiano" Sabaudia Da Paolo, uri: 
+2014-07-07 12:04:53 INFO  CiceroFacade:222 - Place name before: Aeroporto Internazionale Leonardo Da Vinci, place name after disambiguation: Leonardo da Vinci–Fiumicino Airport, uri: http://dbpedia.org/resource/Leonardo_da_Vinci%E2%80%93Fiumicino_Airport
+2014-07-07 12:04:53 INFO  CiceroFacade:222 - Place name before: Ponte Milvio, place name after disambiguation: Ponte Milvio, uri: http://dbpedia.org/resource/Ponte_Milvio
+2014-07-07 12:04:53 INFO  CiceroFacade:222 - Place name before: Lago Di Campotosto, place name after disambiguation: Lake Campotosto, uri: http://dbpedia.org/resource/Lake_Campotosto
+2014-07-07 12:04:53 INFO  CiceroFacade:222 - Place name before: Villaggio Vip By Prestige!!!, place name after disambiguation: Villaggio Vip By Prestige!!!, uri: 
+2014-07-07 12:04:53 INFO  CiceroFacade:222 - Place name before: Fregene Sinjita, place name after disambiguation: Fregene Sinjita, uri: 
+2014-07-07 12:04:53 INFO  CiceroFacade:222 - Place name before: Villaggio VIP - Internazionali Tennis, place name after disambiguation: Villaggio VIP - Internazionali Tennis, uri: 
+2014-07-07 12:04:53 INFO  CiceroFacade:222 - Place name before: Ristorante Portobello, place name after disambiguation: Ristorante Portobello, uri: 
+2014-07-07 12:04:53 INFO  CiceroFacade:222 - Place name before: Waldorf Astoria, Rome, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-07-07 12:04:53 INFO  CiceroFacade:222 - Place name before: Jet Set By Prestige!!!, place name after disambiguation: Jet Set By Prestige!!!, uri: 
+2014-07-07 12:04:53 INFO  CiceroFacade:222 - Place name before: A Casetta ... :), place name after disambiguation: A Casetta ... :), uri: 
+2014-07-07 12:04:53 INFO  CiceroFacade:222 - Place name before: Hilton Cavalieri, place name after disambiguation: Hilton Cavalieri - Rome, uri: 
+2014-07-07 12:04:53 INFO  CiceroFacade:222 - Place name before: Oasi Di Kufra By Prestige!!, place name after disambiguation: Oasi Di Kufra By Prestige!!, uri: 
+2014-07-07 12:04:53 INFO  CiceroFacade:222 - Place name before: Uomino E Donne Studio, place name after disambiguation: Uomino E Donne Studio, uri: 
+2014-07-07 12:04:53 INFO  CiceroFacade:222 - Place name before: PAT Club, place name after disambiguation: PAT Club, uri: 
+2014-07-07 12:04:53 INFO  CiceroFacade:222 - Place name before: Eurochocolate Perugia, place name after disambiguation: Perugia, uri: http://dbpedia.org/resource/Perugia
+2014-07-07 12:04:53 INFO  CiceroFacade:222 - Place name before: Studi Televisivi Elios - Mediaset, place name after disambiguation: Studi Televisivi Elios - Mediaset, uri: 
+2014-07-07 12:04:53 INFO  CiceroFacade:222 - Place name before: Circle Club By Prestige!!!, place name after disambiguation: Circle Club By Prestige!!!, uri: 
+2014-07-07 12:04:53 INFO  CiceroFacade:222 - Place name before: Nonna Renata, place name after disambiguation: Nonna Renata, uri: 
+2014-07-07 12:04:53 INFO  CiceroFacade:222 - Place name before: Ondanomala Suite Club, place name after disambiguation: Ondanomala Suite Club, uri: 
+2014-07-07 12:04:53 INFO  CiceroFacade:222 - Place name before: Villa Sciarra - Frammenti - Mannarino In Concerto, place name after disambiguation: Villa Sciarra, uri: http://dbpedia.org/resource/Villa_Sciarra
+2014-07-07 12:04:53 INFO  CiceroFacade:222 - Place name before: Bagni Medusa, San Benedetto Del Tronto, place name after disambiguation: San Benedetto del Tronto, uri: http://dbpedia.org/resource/San_Benedetto_del_Tronto
+2014-07-07 12:04:54 INFO  CiceroFacade:222 - Place name before: Albero Di Prezzemolo, place name after disambiguation: Albero Di Prezzemolo, uri: 
+2014-07-07 12:04:54 INFO  CiceroFacade:222 - Place name before: Lago di Garda.., place name after disambiguation: Desenzano del Garda, uri: 
+2014-07-07 12:04:54 INFO  CiceroFacade:222 - Place name before: Trastevere, place name after disambiguation: Trastevere, uri: http://dbpedia.org/resource/Trastevere
+2014-07-07 12:04:54 INFO  CiceroFacade:222 - Place name before: Faber Beach, place name after disambiguation: Faber Beach, uri: 
+2014-07-07 12:04:54 INFO  CiceroFacade:222 - Place name before: Shari Vari, place name after disambiguation: Shari Vari, uri: 
+2014-07-07 12:04:54 INFO  CiceroFacade:222 - Place name before: Jasmine Club, place name after disambiguation: Jasmine Club, uri: 
+2014-07-07 12:04:54 INFO  CiceroFacade:222 - Place name before: Buozzi, place name after disambiguation: Buozzi, uri: 
+2014-07-07 12:04:54 INFO  CiceroFacade:222 - Place name before: Via dell'assunzione, place name after disambiguation: Via dell'assunzione, uri: 
+2014-07-07 12:04:55 INFO  CiceroFacade:222 - Place name before: Lavinio, place name after disambiguation: Lavinio, uri: http://dbpedia.org/resource/Lavinio
+2014-07-07 12:04:55 INFO  CiceroFacade:222 - Place name before: Ristorante Chalet Il Grillo, place name after disambiguation: Ristorante Chalet Il Grillo, uri: 
+2014-07-07 12:04:55 INFO  CiceroFacade:222 - Place name before: Starbucks Piccadilli Circus London, place name after disambiguation: London, uri: http://dbpedia.org/resource/London
+2014-07-07 12:04:55 INFO  CiceroFacade:222 - Place name before: Cinecitta studios, place name after disambiguation: Cinecitta studios, uri: 
+2014-07-07 12:04:55 INFO  CiceroFacade:222 - Place name before: Tagliacozzo, place name after disambiguation: Tagliacozzo, uri: http://dbpedia.org/resource/Tagliacozzo
+2014-07-07 12:04:55 INFO  CiceroFacade:222 - Place name before: Batik, place name after disambiguation: Batik, uri: 
+2014-07-07 12:04:55 INFO  CiceroFacade:222 - Place name before: Circolo Nautico - Porto Potenza Picena, place name after disambiguation: Potenza Picena, uri: http://dbpedia.org/resource/Potenza_Picena
+2014-07-07 12:04:55 INFO  CiceroFacade:222 - Place name before: Nonna's House, place name after disambiguation: Nonna's House, uri: 
+2014-07-07 12:04:55 INFO  CiceroFacade:222 - Place name before: Terrazza Caffarelli, place name after disambiguation: Terrazza Caffarelli, uri: 
+2014-07-07 12:04:55 INFO  CiceroFacade:222 - Place name before: Phe Beach - Baia Sardinia - By Prestige!!!, place name after disambiguation: Phe Beach - Baia Sardinia - By Prestige!!!, uri: 
+2014-07-07 12:04:55 INFO  CiceroFacade:222 - Place name before: Puntaldia, place name after disambiguation: Puntaldia, uri: 
+2014-07-07 12:04:55 INFO  CiceroFacade:222 - Place name before: Castel Sant'Angelo, place name after disambiguation: Castel Sant'Angelo, uri: http://dbpedia.org/resource/Castel_SantAngelo
+2014-07-07 12:04:55 INFO  CiceroFacade:222 - Place name before: Roma, Piazza Del Popolo, place name after disambiguation: Piazza del Popolo, uri: http://dbpedia.org/resource/Piazza_del_Popolo
+2014-07-07 12:04:55 INFO  CiceroFacade:222 - Place name before: Country Club - Porto Rotondo - By Prestige Eventi, place name after disambiguation: Country Club - Porto Rotondo - By Prestige Eventi, uri: 
+2014-07-07 12:04:55 INFO  CiceroFacade:222 - Place name before: HEAVEN SPA Hotel San Giorgio, place name after disambiguation: HEAVEN SPA Hotel San Giorgio, uri: 
+2014-07-07 12:04:55 INFO  CiceroFacade:222 - Place name before: BAL HARBOUR | SAN TEODORO, place name after disambiguation: BAL HARBOUR | SAN TEODORO, uri: 
+2014-07-07 12:04:55 INFO  CiceroFacade:222 - Place name before: Via del Corso, place name after disambiguation: Via del Corso, uri: http://dbpedia.org/resource/Via_del_Corso
+2014-07-07 12:04:55 INFO  CiceroFacade:222 - Place name before: Playa Porto Rotondo Golfo Della Marinella, place name after disambiguation: Playa Porto Rotondo Golfo Della Marinella, uri: 
+2014-07-07 12:04:55 INFO  CiceroFacade:222 - Place name before: Ice Club  Rome, place name after disambiguation: Ice Club  Rome, uri: 
+2014-07-07 12:04:55 INFO  CiceroFacade:222 - Place name before: Biblioteca Nazionale Castro Pretorio, place name after disambiguation: Biblioteca Nazionale Centrale di Roma, uri: http://dbpedia.org/resource/Biblioteca_Nazionale_Centrale_di_Roma
+2014-07-07 12:04:55 INFO  CiceroFacade:222 - Place name before: Panella L'arte Del Pane, place name after disambiguation: Panella L'arte Del Pane, uri: 
+2014-07-07 12:04:56 INFO  CiceroFacade:222 - Place name before: La Feltrinelli - Libri e Musica, place name after disambiguation: La Feltrinelli - Libri e Musica, uri: 
+2014-07-07 12:04:56 INFO  CiceroFacade:222 - Place name before: Pinocchio, Marche, Italy, place name after disambiguation: Pinocchio di Ancona, uri: 
+2014-07-07 12:04:56 INFO  CiceroFacade:222 - Place name before: Club Vela Portocivitanova, place name after disambiguation: Civitanova Marche, uri: http://dbpedia.org/resource/Civitanova_Marche
+2014-07-07 12:04:56 INFO  CiceroFacade:222 - Place name before: Gianicolo 150 - Salotto Su Roma, place name after disambiguation: Janiculum, uri: http://dbpedia.org/resource/Janiculum
+2014-07-07 12:04:56 INFO  CiceroFacade:222 - Place name before: Freak & C., place name after disambiguation: Freak & C., uri: 
+2014-07-07 12:04:56 INFO  CiceroFacade:222 - Place name before: Acquario Romano, place name after disambiguation: Acquario Romano, uri: http://dbpedia.org/resource/Acquario_Romano
+2014-07-07 12:04:56 INFO  CiceroFacade:222 - Place name before: Rione Monti, place name after disambiguation: Monti (rione of Rome), uri: http://dbpedia.org/resource/Monti_(rione_of_Rome)
+2014-07-07 12:04:56 INFO  CiceroFacade:222 - Place name before: Nice Living, place name after disambiguation: Nice Living, uri: 
+2014-07-07 12:04:56 INFO  CiceroFacade:222 - Place name before: Planetario Roma, place name after disambiguation: Planetario Roma, uri: 
+2014-07-07 12:04:56 INFO  CiceroFacade:222 - Place name before: Lancia Beach Club Riva-The Lounge Playa- Fregene, place name after disambiguation: Lancia Beach Club Riva-The Lounge Playa- Fregene, uri: 
+2014-07-07 12:04:56 INFO  CiceroFacade:222 - Place name before: Villetta Aniballi @ Nettuno, place name after disambiguation: Nettuno, uri: http://dbpedia.org/resource/Nettuno
+2014-07-07 12:04:56 INFO  CiceroFacade:222 - Place name before: @Area Disco@...The Opening, place name after disambiguation: @Area Disco@...The Opening, uri: 
+2014-07-07 12:04:56 INFO  CiceroFacade:222 - Place name before: SETTIMO ALL'ARANCIO - RISTORANTI E PIZZERIE, place name after disambiguation: SETTIMO ALL'ARANCIO - RISTORANTI E PIZZERIE, uri: 
+2014-07-07 12:04:56 INFO  CiceroFacade:222 - Place name before: Miraggio Ristorante e Club - Fregene, place name after disambiguation: Miraggio Ristorante e Club - Fregene, uri: 
+2014-07-07 12:04:57 INFO  CiceroFacade:222 - Place name before: Sicilia, Italy, place name after disambiguation: Messina, uri: 
+2014-07-07 12:05:04 INFO  CiceroFacade:129 - processing user friend 63
+2014-07-07 12:05:08 INFO  CiceroFacade:222 - Place name before: Le Rughe, place name after disambiguation: Le Rughe, uri: 
+2014-07-07 12:05:08 INFO  CiceroFacade:222 - Place name before: Pontile di ostia, place name after disambiguation: Ostia Antica, uri: http://dbpedia.org/resource/Ostia_Antica
+2014-07-07 12:05:08 INFO  CiceroFacade:222 - Place name before: Camera dei Deputati, place name after disambiguation: Camera dei Deputati, uri: 
+2014-07-07 12:05:08 INFO  CiceroFacade:222 - Place name before: LRI - Laura Rossi International, place name after disambiguation: LRI - Laura Rossi International, uri: 
+2014-07-07 12:05:09 INFO  CiceroFacade:129 - processing user friend 26
+2014-07-07 12:05:09 INFO  CiceroFacade:222 - Place name before: Borgo Hotel Le Terre del Verde, place name after disambiguation: Borgo Hotel Le Terre del Verde, uri: 
+2014-07-07 12:05:09 INFO  CiceroFacade:222 - Place name before: Foro Italico, place name after disambiguation: Foro Italico, uri: http://dbpedia.org/resource/Foro_Italico
+2014-07-07 12:05:09 INFO  CiceroFacade:222 - Place name before: Non Ti Scordar Di Te, place name after disambiguation: Non Ti Scordar Di Te, uri: 
+2014-07-07 12:05:09 INFO  CiceroFacade:222 - Place name before: Sacrofano, place name after disambiguation: Sacrofano, uri: http://dbpedia.org/resource/Sacrofano
+2014-07-07 12:05:09 INFO  CiceroFacade:222 - Place name before: San Benedetto del Tronto, place name after disambiguation: San Benedetto del Tronto, uri: http://dbpedia.org/resource/San_Benedetto_del_Tronto
+2014-07-07 12:05:09 INFO  CiceroFacade:222 - Place name before: Ascoli Piceno, place name after disambiguation: Ascoli Piceno, uri: http://dbpedia.org/resource/Ascoli_Piceno
+2014-07-07 12:05:11 INFO  CiceroFacade:129 - processing user friend 64
+2014-07-07 12:05:14 INFO  CiceroFacade:222 - Place name before: THE MAGICK BAR, place name after disambiguation: THE MAGICK BAR, uri: 
+2014-07-07 12:05:15 INFO  CiceroFacade:222 - Place name before: MAXXI, place name after disambiguation: MAXXI – National Museum of the 21st Century Arts, uri: http://dbpedia.org/resource/MAXXI_%E2%80%93_National_Museum_of_the_21st_Century_Arts
+2014-07-07 12:05:15 INFO  CiceroFacade:222 - Place name before: Terme dei Papi, place name after disambiguation: Terme Dei Papi, uri: 
+2014-07-07 12:05:15 INFO  CiceroFacade:222 - Place name before: Siena, place name after disambiguation: Siena, uri: http://dbpedia.org/resource/Siena
+2014-07-07 12:05:16 INFO  CiceroFacade:222 - Place name before: Dolce, place name after disambiguation: Alla Dolce Vita B&B & Suites, uri: 
+2014-07-07 12:05:16 INFO  CiceroFacade:222 - Place name before: La Pace Del Cervello Ristorante Pub, place name after disambiguation: La Pace Del Cervello Ristorante Pub, uri: 
+2014-07-07 12:05:16 INFO  CiceroFacade:222 - Place name before: Caffè degli Orti, place name after disambiguation: Caffè degli Orti, uri: 
+2014-07-07 12:05:16 INFO  CiceroFacade:222 - Place name before: La Terrazza BB, place name after disambiguation: La Terrazza BB, uri: 
+2014-07-07 12:05:16 INFO  CiceroFacade:222 - Place name before: Rotella, place name after disambiguation: Rotella, uri: http://dbpedia.org/resource/Rotella
+2014-07-07 12:05:16 INFO  CiceroFacade:222 - Place name before: Pietragrande, place name after disambiguation: Calalunga-Pietragrande, uri: 
+2014-07-07 12:05:16 INFO  CiceroFacade:222 - Place name before: Ristorante Casale Tor di Quinto, place name after disambiguation: Ristorante Casale Tor di Quinto, uri: 
+2014-07-07 12:05:16 INFO  CiceroFacade:222 - Place name before: Universita' di RomaTre - Facolta' di Lettere e Filosofia, place name after disambiguation: Universita' di RomaTre - Facolta' di Lettere e Filosofia, uri: 
+2014-07-07 12:05:16 INFO  CiceroFacade:222 - Place name before: Università Roma Tre - Lettere e Filosofia, place name after disambiguation: Roma Tre University, uri: http://dbpedia.org/resource/Roma_Tre_University
+2014-07-07 12:05:16 INFO  CiceroFacade:222 - Place name before: Porto Fluviale, place name after disambiguation: Porto Fluviale, uri: 
+2014-07-07 12:05:16 INFO  CiceroFacade:222 - Place name before: Viale Europa, place name after disambiguation: Viale Europa, uri: 
+2014-07-07 12:05:17 INFO  CiceroFacade:222 - Place name before: Li rioni a Santiquattro, place name after disambiguation: Li rioni a Santiquattro, uri: 
+2014-07-07 12:05:17 INFO  CiceroFacade:222 - Place name before: Campofilone, place name after disambiguation: Campofilone, uri: http://dbpedia.org/resource/Campofilone
+2014-07-07 12:05:17 INFO  CiceroFacade:222 - Place name before: Villa Pamphili, place name after disambiguation: Villa Doria Pamphili, uri: http://dbpedia.org/resource/Villa_Doria_Pamphili
+2014-07-07 12:05:17 INFO  CiceroFacade:222 - Place name before: Biblioteca  roma tre-Lettere E Filosofia, place name after disambiguation: Biblioteca  roma tre-Lettere E Filosofia, uri: 
+2014-07-07 12:05:17 INFO  CiceroFacade:222 - Place name before: Intifada, place name after disambiguation: Intifada, uri: 
+2014-07-07 12:05:17 INFO  CiceroFacade:222 - Place name before: Barcelona, Spain, place name after disambiguation: Barcelona, uri: http://dbpedia.org/resource/Barcelona
+2014-07-07 12:05:17 INFO  CiceroFacade:222 - Place name before: Parigi, place name after disambiguation: Parigi, uri: 
+2014-07-07 12:05:19 INFO  CiceroFacade:222 - Place name before: Villa Casale, place name after disambiguation: Villa Casale, uri: 
+2014-07-07 12:05:19 INFO  CiceroFacade:222 - Place name before: Porto Selvaggio, place name after disambiguation: Porto Selvaggio, uri: 
+2014-07-07 12:05:19 INFO  CiceroFacade:222 - Place name before: Pepe nero, place name after disambiguation: Pepe nero, uri: 
+2014-07-07 12:05:19 INFO  CiceroFacade:222 - Place name before: Minervino di Lecce, place name after disambiguation: Minervino di Lecce, uri: http://dbpedia.org/resource/Minervino_di_Lecce
+2014-07-07 12:05:19 INFO  CiceroFacade:222 - Place name before: "Vini Divini", place name after disambiguation: "Vini Divini", uri: 
+2014-07-07 12:05:20 INFO  CiceroFacade:222 - Place name before: Cooperativa Sociale Mettere Le Ali Onlus, place name after disambiguation: Cooperativa Sociale Mettere Le Ali Onlus, uri: 
+2014-07-07 12:05:20 INFO  CiceroFacade:129 - processing user friend 27
+2014-07-07 12:05:20 INFO  CiceroFacade:222 - Place name before: La Plaza, place name after disambiguation: La Plaza, uri: 
+2014-07-07 12:05:20 INFO  CiceroFacade:222 - Place name before: Gallipoli resort ****, place name after disambiguation: Gallipoli resort ****, uri: 
+2014-07-07 12:05:20 INFO  CiceroFacade:222 - Place name before: Il Villino Santa Cesarea Terme, place name after disambiguation: Santa Cesarea Terme, uri: http://dbpedia.org/resource/Santa_Cesarea_Terme
+2014-07-07 12:05:21 INFO  CiceroFacade:222 - Place name before: Kenzia, place name after disambiguation: Kenzia, uri: 
+2014-07-07 12:05:21 INFO  CiceroFacade:222 - Place name before: Pontile di ostia, place name after disambiguation: Ostia Antica, uri: http://dbpedia.org/resource/Ostia_Antica
+2014-07-07 12:05:21 INFO  CiceroFacade:222 - Place name before: Santa Caterina di Nardò, place name after disambiguation: Santa Caterina, uri: 
+2014-07-07 12:05:21 INFO  CiceroFacade:222 - Place name before: circolo degli artisti, place name after disambiguation: circolo degli artisti, uri: 
+2014-07-07 12:05:21 INFO  CiceroFacade:222 - Place name before: Barrueco, place name after disambiguation: Barrueco, uri: 
+2014-07-07 12:05:21 INFO  CiceroFacade:222 - Place name before: Eden Salento, place name after disambiguation: Eden Salento, uri: 
+2014-07-07 12:05:21 INFO  CiceroFacade:222 - Place name before: Caffè Saracino, place name after disambiguation: Caffè Saracino, uri: 
+2014-07-07 12:05:21 INFO  CiceroFacade:222 - Place name before: Bologna, place name after disambiguation: Bologna, uri: 
+2014-07-07 12:05:22 INFO  CiceroFacade:222 - Place name before: Stadio Renato Dall'Ara, place name after disambiguation: Stadio Renato Dall'Ara, uri: 
+2014-07-07 12:05:22 INFO  CiceroFacade:222 - Place name before: Lido Mar Y Sol, place name after disambiguation: Lido Mar Y Sol, uri: 
+2014-07-07 12:05:22 INFO  CiceroFacade:222 - Place name before: Ristorante Messicano Sonora (galatina), place name after disambiguation: Ristorante Messicano Sonora (galatina), uri: 
+2014-07-07 12:05:22 INFO  CiceroFacade:222 - Place name before: La Maruzzella, place name after disambiguation: La Maruzzella, uri: 
+2014-07-07 12:05:22 INFO  CiceroFacade:129 - processing user friend 28
+2014-07-07 12:05:22 INFO  CiceroFacade:222 - Place name before: LA PERGOLA Santa Maria al Bagno, place name after disambiguation: LA PERGOLA Santa Maria al Bagno, uri: 
+2014-07-07 12:05:22 INFO  CiceroFacade:222 - Place name before: Piazzetta san Lorenzo, place name after disambiguation: Piazzetta san Lorenzo, uri: 
+2014-07-07 12:05:22 INFO  CiceroFacade:222 - Place name before: Lido "Bossa Nova", place name after disambiguation: Lido "Bossa Nova", uri: 
+2014-07-07 12:05:23 INFO  CiceroFacade:222 - Place name before: Fico D'india - Porto Selvaggio - Nardò, place name after disambiguation: Fico D'india - Porto Selvaggio - Nardò, uri: 
+2014-07-07 12:05:23 INFO  CiceroFacade:222 - Place name before: Scapricciatiello, place name after disambiguation: Scapricciatiello, uri: 
+2014-07-07 12:05:23 INFO  CiceroFacade:222 - Place name before: Cantiere..., place name after disambiguation: Cantiere..., uri: 
+2014-07-07 12:05:23 INFO  CiceroFacade:222 - Place name before: Barcelona, Spain, place name after disambiguation: Barcelona, uri: http://dbpedia.org/resource/Barcelona
+2014-07-07 12:05:26 INFO  CiceroFacade:129 - processing user friend 0
+2014-07-07 12:05:27 INFO  CiceroFacade:129 - processing user friend 65
+2014-07-07 12:05:28 INFO  CiceroFacade:222 - Place name before: Flashback discorestaurant, place name after disambiguation: Flashback discorestaurant, uri: 
+2014-07-07 12:05:29 INFO  CiceroFacade:129 - processing user friend 66
+2014-07-07 12:05:30 INFO  CiceroFacade:222 - Place name before: Grotte di Nerone, place name after disambiguation: Grotte di Nerone, uri: 
+2014-07-07 12:05:30 INFO  CiceroFacade:222 - Place name before: Castel Sant'Angelo, place name after disambiguation: Castel Sant'Angelo, uri: http://dbpedia.org/resource/Castel_SantAngelo
+2014-07-07 12:05:30 INFO  CiceroFacade:222 - Place name before: Quisisana Jazz Club, place name after disambiguation: Quisisana Jazz Club, uri: 
+2014-07-07 12:05:30 INFO  CiceroFacade:222 - Place name before: Palacavicchi, place name after disambiguation: Palacavicchi, uri: 
+2014-07-07 12:05:30 INFO  CiceroFacade:222 - Place name before: Piper Club - Roma, place name after disambiguation: Piper Club - Roma, uri: 
+2014-07-07 12:05:30 INFO  CiceroFacade:222 - Place name before: Pincio, Roma, place name after disambiguation: Pincian Hill, uri: http://dbpedia.org/resource/Pincian_Hill
+2014-07-07 12:05:31 INFO  CiceroFacade:222 - Place name before: Blackout Rock Club Roma, place name after disambiguation: Blackout Rock Club Roma, uri: 
+2014-07-07 12:05:31 INFO  CiceroFacade:222 - Place name before: Il Bistrot - Ristorante & Pizzeria, place name after disambiguation: Il Bistrot - Ristorante & Pizzeria, uri: 
+2014-07-07 12:05:31 INFO  CiceroFacade:222 - Place name before: BARRIO LATINO, place name after disambiguation: BARRIO LATINO, uri: 
+2014-07-07 12:05:31 INFO  CiceroFacade:222 - Place name before: Teatro Roma, place name after disambiguation: Teatro di Marcello, uri: http://dbpedia.org/resource/Theatre_of_Marcellus
+2014-07-07 12:05:31 INFO  CiceroFacade:222 - Place name before: Testaccio, place name after disambiguation: Testaccio, uri: http://dbpedia.org/resource/Testaccio
+2014-07-07 12:05:31 INFO  CiceroFacade:222 - Place name before: Piazza Navona, place name after disambiguation: Piazza Navona, uri: http://dbpedia.org/resource/Piazza_Navona
+2014-07-07 12:05:31 INFO  CiceroFacade:222 - Place name before: Teatro Posillipo, place name after disambiguation: Posillipo, uri: http://dbpedia.org/resource/Posillipo
+2014-07-07 12:05:31 INFO  CiceroFacade:222 - Place name before: Occhi Occhi Oh, place name after disambiguation: Occhi Occhi Oh, uri: 
+2014-07-07 12:05:31 INFO  CiceroFacade:222 - Place name before: Roma - San Paolo, place name after disambiguation: Porta San Paolo, uri: http://dbpedia.org/resource/Porta_San_Paolo
+2014-07-07 12:05:31 INFO  CiceroFacade:222 - Place name before: Rome, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-07-07 12:05:31 INFO  CiceroFacade:222 - Place name before: Stazione Tiburtina, place name after disambiguation: Tiburtina (Rome Metro), uri: http://dbpedia.org/resource/Tiburtina_(Rome_Metro)
+2014-07-07 12:05:31 INFO  CiceroFacade:222 - Place name before: Colosseo, place name after disambiguation: Colosseum, uri: http://dbpedia.org/resource/Colosseum
+2014-07-07 12:05:31 INFO  CiceroFacade:222 - Place name before: Via del Corso, place name after disambiguation: Via del Corso, uri: http://dbpedia.org/resource/Via_del_Corso
+2014-07-07 12:05:31 INFO  CiceroFacade:222 - Place name before: Underwater Safaris, place name after disambiguation: Underwater Safaris, uri: 
+2014-07-07 12:05:31 INFO  CiceroFacade:222 - Place name before: Via Del Corso, Roma, place name after disambiguation: Via del Corso, uri: http://dbpedia.org/resource/Via_del_Corso
+2014-07-07 12:05:31 INFO  CiceroFacade:222 - Place name before: La Muffineria, place name after disambiguation: La Muffineria, uri: 
+2014-07-07 12:05:31 INFO  CiceroFacade:222 - Place name before: St. Thomas, VI, place name after disambiguation: Saint Thomas Island, uri: http://dbpedia.org/resource/Saint_Thomas%2C_U.S._Virgin_Islands
+2014-07-07 12:05:31 INFO  CiceroFacade:222 - Place name before: Coki Beach, place name after disambiguation: Coki Beach, uri: 
+2014-07-07 12:05:31 INFO  CiceroFacade:222 - Place name before: Università degli Studi Internazionali di Roma - UNINT, place name after disambiguation: Università degli Studi Internazionali di Roma - UNINT, uri: 
+2014-07-07 12:05:32 INFO  CiceroFacade:222 - Place name before: Alexandria Old Town, place name after disambiguation: Alexandria, Virginia, uri: http://dbpedia.org/resource/Alexandria,_Virginia
+2014-07-07 12:05:32 INFO  CiceroFacade:222 - Place name before: Piazza di Spagna, Roma, Italia, place name after disambiguation: Spanish Steps, uri: http://dbpedia.org/resource/Spanish_Steps
+2014-07-07 12:05:32 INFO  CiceroFacade:222 - Place name before: Spiaggia - Ardea, place name after disambiguation: Ardea, Lazio, uri: http://dbpedia.org/resource/Ardea,_Lazio
+2014-07-07 12:05:32 INFO  CiceroFacade:222 - Place name before: Sala Teatro San Damaso, place name after disambiguation: Sala Teatro San Damaso, uri: 
+2014-07-07 12:05:32 INFO  CiceroFacade:222 - Place name before: Pho 75, place name after disambiguation: Pho 75, uri: 
+2014-07-07 12:05:32 INFO  CiceroFacade:222 - Place name before: Amsterdam, Netherlands, place name after disambiguation: Netherlands, uri: http://dbpedia.org/resource/Netherlands
+2014-07-07 12:05:32 INFO  CiceroFacade:222 - Place name before: Ristorante Cinese Oceano D'oro, place name after disambiguation: Ristorante Cinese Oceano D'oro, uri: 
+2014-07-07 12:05:32 INFO  CiceroFacade:222 - Place name before: Roma, Italia, place name after disambiguation: Italy, uri: http://dbpedia.org/resource/Italy
+2014-07-07 12:05:32 INFO  CiceroFacade:222 - Place name before: Stazione Cerveteri-Ladispoli, place name after disambiguation: Stazione Cerveteri-Ladispoli, uri: 
+2014-07-07 12:05:32 INFO  CiceroFacade:222 - Place name before: Villa Pamphili, place name after disambiguation: Villa Doria Pamphili, uri: http://dbpedia.org/resource/Villa_Doria_Pamphili
+2014-07-07 12:05:32 INFO  CiceroFacade:222 - Place name before: Domina Coral Bay Hotel, Resort, Spa & Casino - Sharm El Sheikh, place name after disambiguation: Sharm el-Sheikh, uri: http://dbpedia.org/resource/Sharm_el-Sheikh
+2014-07-07 12:05:32 INFO  CiceroFacade:222 - Place name before: Disco Club c/o Sporting Club Ostiense, place name after disambiguation: Ostiense, uri: http://dbpedia.org/resource/Ostiense
+2014-07-07 12:05:32 INFO  CiceroFacade:222 - Place name before: Sheikh Coast Diving & Kiting Center, place name after disambiguation: Sheikh Coast Diving & Kiting Center, uri: 
+2014-07-07 12:05:32 INFO  CiceroFacade:222 - Place name before: Giardini Naxos Recanati, place name after disambiguation: Giardini Naxos, uri: http://dbpedia.org/resource/Giardini_Naxos
+2014-07-07 12:05:32 INFO  CiceroFacade:222 - Place name before: Casa Zennaro, place name after disambiguation: Casa Zennaro, uri: 
+2014-07-07 12:05:32 INFO  CiceroFacade:222 - Place name before: Isola Bella-Taormina, place name after disambiguation: Hotel Isola Bella, uri: 
+2014-07-07 12:05:32 INFO  CiceroFacade:222 - Place name before: Quijotes+Dulcineas Ultimate Madrid, place name after disambiguation: Madrid, uri: http://dbpedia.org/resource/Madrid
+2014-07-07 12:05:32 INFO  CiceroFacade:222 - Place name before: Globe Theatre, place name after disambiguation: Globe Theatre, uri: 
+2014-07-07 12:05:32 INFO  CiceroFacade:222 - Place name before: Madrid, Spain, place name after disambiguation: Spain, uri: http://dbpedia.org/resource/Spain
+2014-07-07 12:05:32 INFO  CiceroFacade:222 - Place name before: Rimini, Italy, place name after disambiguation: Rimini, uri: http://dbpedia.org/resource/Rimini
+2014-07-07 12:05:32 INFO  CiceroFacade:222 - Place name before: Rimini, place name after disambiguation: Rimini, uri: 
+2014-07-07 12:05:33 INFO  CiceroFacade:222 - Place name before: San Benedetto del Tronto, place name after disambiguation: San Benedetto del Tronto, uri: http://dbpedia.org/resource/San_Benedetto_del_Tronto
+2014-07-07 12:05:33 INFO  CiceroFacade:222 - Place name before: San Lorenzo, place name after disambiguation: San Lorenzo, uri: 
+lug 07, 2014 12:05:33 PM org.apache.catalina.core.StandardWrapperValve invoke
+GRAVE: Servlet.service() for servlet [it.uniroma3.dia.cicero.servlet.ServletController] in context with path [/Cicero] threw exception
+java.lang.RuntimeException: Error starting org.neo4j.kernel.EmbeddedGraphDatabase, /home/alessio/workspaceEclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/Cicero/data/db/db_586386124.graph
+	at org.neo4j.kernel.InternalAbstractGraphDatabase.run(InternalAbstractGraphDatabase.java:351)
+	at org.neo4j.kernel.EmbeddedGraphDatabase.<init>(EmbeddedGraphDatabase.java:56)
+	at org.neo4j.graphdb.factory.GraphDatabaseFactory$1.newDatabase(GraphDatabaseFactory.java:90)
+	at org.neo4j.graphdb.factory.GraphDatabaseBuilder.newGraphDatabase(GraphDatabaseBuilder.java:199)
+	at org.neo4j.graphdb.factory.GraphDatabaseFactory.newEmbeddedDatabase(GraphDatabaseFactory.java:70)
+	at it.uniroma3.dia.cicero.persistance.CypherRepository.startDB(CypherRepository.java:52)
+	at it.uniroma3.dia.cicero.controller.CiceroFacade.storePlaces(CiceroFacade.java:240)
+	at it.uniroma3.dia.cicero.controller.CiceroFacade.readVisitedPlacesFromFacebookAndStore(CiceroFacade.java:167)
+	at it.uniroma3.dia.cicero.controller.CiceroFacade.readPlacesVisitedByFriendsAndStore(CiceroFacade.java:130)
+	at it.uniroma3.dia.cicero.servlet.actions.StoreFacebookFriendDataAction.executeAction(StoreFacebookFriendDataAction.java:23)
+	at it.uniroma3.dia.cicero.servlet.ServletController.doPost(ServletController.java:97)
+	at it.uniroma3.dia.cicero.servlet.ServletController.doGet(ServletController.java:75)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.neo4j.kernel.lifecycle.LifecycleException: Component 'org.neo4j.kernel.StoreLockerLifecycleAdapter@2ce2b1f6' was successfully initialized, but failed to start. Please see attached cause exception.
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.start(LifeSupport.java:513)
+	at org.neo4j.kernel.lifecycle.LifeSupport.start(LifeSupport.java:115)
+	at org.neo4j.kernel.InternalAbstractGraphDatabase.run(InternalAbstractGraphDatabase.java:328)
+	... 32 more
+Caused by: org.neo4j.kernel.StoreLockException: Unable to obtain lock on store lock file: /home/alessio/workspaceEclipse/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/Cicero/data/db/db_586386124.graph/store_lock. Please ensure no other process is using this database, and that the directory is writable (required even for read-only access)
+	at org.neo4j.kernel.StoreLocker.checkLock(StoreLocker.java:78)
+	at org.neo4j.kernel.StoreLockerLifecycleAdapter.start(StoreLockerLifecycleAdapter.java:44)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.start(LifeSupport.java:507)
+	... 34 more
+Caused by: java.nio.channels.OverlappingFileLockException
+	at sun.nio.ch.SharedFileLockTable.checkList(FileLockTable.java:255)
+	at sun.nio.ch.SharedFileLockTable.add(FileLockTable.java:152)
+	at sun.nio.ch.FileChannelImpl.tryLock(FileChannelImpl.java:1060)
+	at java.nio.channels.FileChannel.tryLock(FileChannel.java:1155)
+	at org.neo4j.kernel.impl.nioneo.store.StoreFileChannel.tryLock(StoreFileChannel.java:113)
+	at org.neo4j.kernel.impl.nioneo.store.FileLock.wrapFileChannelLock(FileLock.java:35)
+	at org.neo4j.kernel.impl.nioneo.store.FileLock.getOsSpecificFileLock(FileLock.java:93)
+	at org.neo4j.kernel.DefaultFileSystemAbstraction.tryLock(DefaultFileSystemAbstraction.java:92)
+	at org.neo4j.kernel.StoreLocker.checkLock(StoreLocker.java:74)
+	... 36 more
+
+2014-07-07 12:05:33 INFO  CiceroFacade:222 - Place name before: Boh, place name after disambiguation: Boh, uri: 
+2014-07-07 12:05:33 INFO  CiceroFacade:222 - Place name before: Cinema Madison, place name after disambiguation: Cinema Madison, uri: 
+2014-07-07 12:05:33 INFO  CiceroFacade:222 - Place name before: Bar dei cesaroni, place name after disambiguation: Bar dei cesaroni, uri: 
+2014-07-07 12:05:34 INFO  CiceroFacade:222 - Place name before: CampusX Tor Vergata, place name after disambiguation: CampusX Tor Vergata, uri: 
+2014-07-07 12:05:34 INFO  CiceroFacade:222 - Place name before: Firenze, place name after disambiguation: Firenze, uri: 
+2014-07-07 12:05:34 INFO  CiceroFacade:222 - Place name before: Trieste Centro, place name after disambiguation: Trieste, uri: http://dbpedia.org/resource/Trieste
+2014-07-07 12:05:34 INFO  CiceroFacade:222 - Place name before: Revolution Disco Club, place name after disambiguation: Revolution Disco Club, uri: 
+2014-07-07 12:05:34 INFO  CiceroFacade:222 - Place name before: Parco Termale Negombo Ischia, place name after disambiguation: Ischia, uri: http://dbpedia.org/resource/Ischia
+2014-07-07 12:05:34 INFO  CiceroFacade:222 - Place name before: San Marco di Castellabate, place name after disambiguation: Castellabate, uri: http://dbpedia.org/resource/Castellabate
+2014-07-07 12:05:34 INFO  CiceroFacade:129 - processing user friend 67
+2014-07-07 12:05:34 INFO  CiceroFacade:222 - Place name before: Zrće beach, place name after disambiguation: Zrće beach, uri: 
+2014-07-07 12:05:38 INFO  CiceroFacade:129 - processing user friend 29
+2014-07-07 12:05:40 INFO  CiceroFacade:222 - Place name before: Museo Nazionale Romano-Terme di Diocleziano, place name after disambiguation: Museo Nazionale Romano-Terme di Diocleziano, uri: 
+2014-07-07 12:05:40 INFO  CiceroFacade:222 - Place name before: Lago di Castel Gandolfo, place name after disambiguation: Castel Gandolfo, uri: http://dbpedia.org/resource/Castel_Gandolfo
+2014-07-07 12:05:40 INFO  CiceroFacade:222 - Place name before: Romics Nuova Fiera Di Roma, place name after disambiguation: Romics Nuova Fiera Di Roma, uri: 
+2014-07-07 12:05:41 INFO  CiceroFacade:222 - Place name before: Hotel Brunella Roma, place name after disambiguation: Hotel Brunella Roma, uri: 
+2014-07-07 12:05:41 INFO  CiceroFacade:222 - Place name before: Sant'Antìoco, Sardegna, Italy, place name after disambiguation: Sardinia, uri: http://dbpedia.org/resource/Sardinia
+2014-07-07 12:05:41 INFO  CiceroFacade:222 - Place name before: Piazza Meucci, place name after disambiguation: Piazza Meucci, uri: 
+2014-07-07 12:05:41 INFO  CiceroFacade:222 - Place name before: Jailbreak Live Club, place name after disambiguation: Jailbreak Live Club, uri: 
+2014-07-07 12:05:41 INFO  CiceroFacade:222 - Place name before: London, United Kingdom, place name after disambiguation: London, uri: http://dbpedia.org/resource/London
+2014-07-07 12:05:41 INFO  CiceroFacade:222 - Place name before: British Museum, place name after disambiguation: British Museum, uri: http://dbpedia.org/resource/British_Museum
+2014-07-07 12:05:41 INFO  CiceroFacade:222 - Place name before: London Stansted Airport, place name after disambiguation: London Stansted Airport, uri: http://dbpedia.org/resource/London_Stansted_Airport
+2014-07-07 12:05:41 INFO  CiceroFacade:222 - Place name before: Vivid Video, place name after disambiguation: Vivid Video, uri: 
+2014-07-07 12:05:41 INFO  CiceroFacade:222 - Place name before: St Jean de Maurienne, place name after disambiguation: Saint-Jean-de-Maurienne, uri: http://dbpedia.org/resource/Saint-Jean-de-Maurienne
+2014-07-07 12:05:41 INFO  CiceroFacade:222 - Place name before: Agriturismo I 4 Ricci, place name after disambiguation: Agriturismo I 4 Ricci, uri: 
+2014-07-07 12:05:41 INFO  CiceroFacade:222 - Place name before: Taffic, place name after disambiguation: Taffic, uri: 
+2014-07-07 12:05:41 INFO  CiceroFacade:222 - Place name before: Circo Massimo, place name after disambiguation: Circus Maximus, uri: http://dbpedia.org/resource/Circus_Maximus
+2014-07-07 12:05:41 INFO  CiceroFacade:222 - Place name before: Autostrada A4, place name after disambiguation: Autostrada A4, uri: 
+2014-07-07 12:05:42 INFO  CiceroFacade:222 - Place name before: Bar Buffet Stella D'Oro, place name after disambiguation: Bar Buffet Stella D'Oro, uri: 
+2014-07-07 12:05:42 INFO  CiceroFacade:222 - Place name before: Lanuvio, Italy, place name after disambiguation: Lanuvio, uri: http://dbpedia.org/resource/Lanuvio
+2014-07-07 12:05:42 INFO  CiceroFacade:222 - Place name before: Lapangan D Senayan, place name after disambiguation: Lapangan D Senayan, uri: 
+2014-07-07 12:05:42 INFO  CiceroFacade:222 - Place name before: Pensione Brunella, place name after disambiguation: Pensione Brunella, uri: 
+2014-07-07 12:05:43 INFO  CiceroFacade:222 - Place name before: Piazza della Radio, place name after disambiguation: Piazza della Radio, uri: 
+2014-07-07 12:05:43 INFO  CiceroFacade:222 - Place name before: Contestaccio, place name after disambiguation: Contestaccio, uri: 
+2014-07-07 12:05:43 INFO  CiceroFacade:222 - Place name before: Le Brin De Zinc, place name after disambiguation: Le Brin De Zinc, uri: 
+2014-07-07 12:05:43 INFO  CiceroFacade:222 - Place name before: Nella Merda, place name after disambiguation: Nella Merda, uri: 
+2014-07-07 12:05:46 INFO  CiceroFacade:222 - Place name before: Bistro Sabir, place name after disambiguation: Bistro Sabir, uri: 
+2014-07-07 12:05:48 INFO  CiceroFacade:222 - Place name before: Rome, Italy, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-07-07 12:05:48 INFO  CiceroFacade:222 - Place name before: Via Cola Di Rienzo, place name after disambiguation: Via Cola Di Rienzo, uri: 
+2014-07-07 12:05:49 INFO  CiceroFacade:222 - Place name before: Sofia Lounge Bar & Restaurant, place name after disambiguation: Sofia Lounge Bar & Restaurant, uri: 
+2014-07-07 12:05:49 INFO  CiceroFacade:222 - Place name before: Città di Spoleto, place name after disambiguation: Spoleto, uri: http://dbpedia.org/resource/Spoleto
+2014-07-07 12:05:49 INFO  CiceroFacade:222 - Place name before: Il Gianicolo, place name after disambiguation: Janiculum, uri: http://dbpedia.org/resource/Janiculum
+2014-07-07 12:05:49 INFO  CiceroFacade:222 - Place name before: Scuola Delle Costellazioni, place name after disambiguation: Scuola Delle Costellazioni, uri: 
+2014-07-07 12:05:49 INFO  CiceroFacade:222 - Place name before: Via della Conciliazione, Roma, place name after disambiguation: Via della Conciliazione, uri: http://dbpedia.org/resource/Via_della_Conciliazione
+2014-07-07 12:05:49 INFO  CiceroFacade:222 - Place name before: Frida Kahlo alle Scuderie Del Quirinale, place name after disambiguation: Frida Kahlo alle Scuderie Del Quirinale, uri: 
+2014-07-07 12:05:49 INFO  CiceroFacade:222 - Place name before: Piazza Navona, place name after disambiguation: Piazza Navona, uri: http://dbpedia.org/resource/Piazza_Navona
+2014-07-07 12:05:49 INFO  CiceroFacade:222 - Place name before: Ristorante Il Fungo - Ristoranti E Pizzerie, place name after disambiguation: Ristorante Il Fungo - Ristoranti E Pizzerie, uri: 
+2014-07-07 12:05:49 INFO  CiceroFacade:222 - Place name before: Eataly Roma, place name after disambiguation: Eataly Roma, uri: 
+2014-07-07 12:05:49 INFO  CiceroFacade:222 - Place name before: Stardust village, place name after disambiguation: Stardust village, uri: 
+2014-07-07 12:05:49 INFO  CiceroFacade:222 - Place name before: Gelateria Tony, place name after disambiguation: Gelateria Tony, uri: 
+2014-07-07 12:05:49 INFO  CiceroFacade:222 - Place name before: Azienda Ospedaliera San Camillo-Forlanini di Roma, place name after disambiguation: Azienda Ospedaliera San Camillo-Forlanini di Roma, uri: 
+2014-07-07 12:05:50 INFO  CiceroFacade:129 - processing user friend 68
+2014-07-07 12:05:50 INFO  CiceroFacade:222 - Place name before: Tsc, Torrino Sporting Center, place name after disambiguation: Tsc, Torrino Sporting Center, uri: 
+2014-07-07 12:05:50 INFO  CiceroFacade:222 - Place name before: Campo Dei Fiori, place name after disambiguation: Campo Dei Fiori, uri: 
+2014-07-07 12:05:50 INFO  CiceroFacade:222 - Place name before: Zion Beach, place name after disambiguation: Zion Beach, uri: 
+2014-07-07 12:05:50 INFO  CiceroFacade:222 - Place name before: Campo Ascolano, place name after disambiguation: Campo Ascolano, uri: 
+2014-07-07 12:05:50 INFO  CiceroFacade:222 - Place name before: Torrino Nord, place name after disambiguation: Torrino Nord, uri: 
+2014-07-07 12:05:50 INFO  CiceroFacade:222 - Place name before: Eur Viale America, place name after disambiguation: Eur Viale America, uri: 
+2014-07-07 12:05:50 INFO  CiceroFacade:222 - Place name before: Ristorante Pingusto Eden Wok, place name after disambiguation: Ristorante Pingusto Eden Wok, uri: 
+2014-07-07 12:05:50 INFO  CiceroFacade:222 - Place name before: Eur Roma 2, place name after disambiguation: Eur Roma 2, uri: 
+2014-07-07 12:05:50 INFO  CiceroFacade:222 - Place name before: Roma - Cecchignola, place name after disambiguation: Cecchignola, uri: 
+2014-07-07 12:05:51 INFO  CiceroFacade:222 - Place name before: Capannelle Racecourse, place name after disambiguation: Capannelle Racecourse, uri: http://dbpedia.org/resource/Capannelle_Racecourse
+2014-07-07 12:05:51 INFO  CiceroFacade:222 - Place name before: La Spiaggetta-Ostia, place name after disambiguation: La Spiaggetta-Ostia, uri: 
+2014-07-07 12:05:51 INFO  CiceroFacade:129 - processing user friend 69
+2014-07-07 12:05:51 INFO  CiceroFacade:222 - Place name before: Bleid Cafè, place name after disambiguation: Bleid Cafè, uri: 
+2014-07-07 12:05:51 INFO  CiceroFacade:222 - Place name before: Roma Piazza Sempione, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-07-07 12:05:51 INFO  CiceroFacade:222 - Place name before: Piazza Sempione, place name after disambiguation: Piazza Sempione, uri: 
+2014-07-07 12:05:51 INFO  CiceroFacade:222 - Place name before: IKEA Roma Anagnina, place name after disambiguation: Anagnina (Rome Metro), uri: http://dbpedia.org/resource/Anagnina_(Rome_Metro)
+2014-07-07 12:05:51 INFO  CiceroFacade:222 - Place name before: Wok Viale Cesare Pavese, place name after disambiguation: Wok Viale Cesare Pavese, uri: 
+2014-07-07 12:05:51 INFO  CiceroFacade:222 - Place name before: OS Club, place name after disambiguation: OS Club, uri: 
+2014-07-07 12:05:51 INFO  CiceroFacade:222 - Place name before: Venturini Ceramiche, place name after disambiguation: Venturini Ceramiche, uri: 
+2014-07-07 12:05:51 INFO  CiceroFacade:222 - Place name before: Leroy Merlin, place name after disambiguation: Leroy Merlin, uri: 
+2014-07-07 12:05:52 INFO  CiceroFacade:222 - Place name before: Er Pozzo Der Gelato, place name after disambiguation: Er Pozzo Der Gelato, uri: 
+2014-07-07 12:05:52 INFO  CiceroFacade:222 - Place name before: Ristorante La Lupa, place name after disambiguation: Ristorante La Lupa, uri: 
+2014-07-07 12:05:52 INFO  CiceroFacade:222 - Place name before: Laghetto Dell'Eur, place name after disambiguation: Laghetto Dell'Eur, uri: 
+2014-07-07 12:05:52 INFO  CiceroFacade:222 - Place name before: Agriturismo Agricoltura Nuova, place name after disambiguation: Agriturismo Agricoltura Nuova, uri: 
+2014-07-07 12:05:52 INFO  CiceroFacade:129 - processing user friend 70
+2014-07-07 12:05:52 INFO  CiceroFacade:222 - Place name before: Viale Europa, place name after disambiguation: Viale Europa, uri: 
+2014-07-07 12:05:52 INFO  CiceroFacade:222 - Place name before: Castello della Cecchignola, place name after disambiguation: Castello della Cecchignola, uri: 
+2014-07-07 12:05:55 INFO  CiceroFacade:222 - Place name before: La Bracioleria, place name after disambiguation: La Bracioleria, uri: 
+2014-07-07 12:05:55 INFO  CiceroFacade:222 - Place name before: Scuola Eueopa Isia, place name after disambiguation: Scuola Eueopa Isia, uri: 
+2014-07-07 12:05:55 INFO  CiceroFacade:222 - Place name before: 090 Via Solferino, place name after disambiguation: 090 Via Solferino, uri: 
+2014-07-07 12:05:55 INFO  CiceroFacade:222 - Place name before: Ivo a Trastevere, place name after disambiguation: Trastevere, uri: http://dbpedia.org/resource/Trastevere
+2014-07-07 12:05:55 INFO  CiceroFacade:222 - Place name before: Lungomare di Milazzo, place name after disambiguation: Milazzo, uri: http://dbpedia.org/resource/Milazzo
+2014-07-07 12:05:55 INFO  CiceroFacade:222 - Place name before: Monte Sole, place name after disambiguation: Monte Sole, uri: 
+2014-07-07 12:05:55 INFO  CiceroFacade:222 - Place name before: Capo Calavà, place name after disambiguation: Capo Calavà, uri: 
+2014-07-07 12:05:55 INFO  CiceroFacade:222 - Place name before: Oliveri, place name after disambiguation: Oliveri, uri: http://dbpedia.org/resource/Oliveri
+2014-07-07 12:05:56 INFO  CiceroFacade:222 - Place name before: Parco Nazionale Monti Della Laga, place name after disambiguation: Parco Nazionale Monti Della Laga, uri: 
+2014-07-07 12:05:56 INFO  CiceroFacade:222 - Place name before: Rome, Italy, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-07-07 12:05:56 INFO  CiceroFacade:222 - Place name before: Monte Soratte Innevato (insieme A Seneca), place name after disambiguation: Monte Soratte Innevato (insieme A Seneca), uri: 
+2014-07-07 12:05:56 INFO  CiceroFacade:222 - Place name before: Scavi di Ostia Antica, place name after disambiguation: Ostia Antica, uri: http://dbpedia.org/resource/Ostia_Antica
+2014-07-07 12:05:57 INFO  CiceroFacade:129 - processing user friend 30
+2014-07-07 12:05:59 INFO  CiceroFacade:129 - processing user friend 71
+2014-07-07 12:06:00 INFO  CiceroFacade:129 - processing user friend 31
+2014-07-07 12:06:00 INFO  CiceroFacade:129 - processing user friend 72
+2014-07-07 12:06:02 INFO  CiceroFacade:129 - processing user friend 73
+2014-07-07 12:06:04 INFO  CiceroFacade:222 - Place name before: Casa Persichetti fondi, place name after disambiguation: Fondi, uri: http://dbpedia.org/resource/Fondi
+2014-07-07 12:06:05 INFO  CiceroFacade:222 - Place name before: Marina di Ragusa, Sicily, place name after disambiguation: Marina di Ragusa, uri: http://dbpedia.org/resource/Marina_di_Ragusa
+2014-07-07 12:06:05 INFO  CiceroFacade:222 - Place name before: Sapienza Università di Roma, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-07-07 12:06:05 INFO  CiceroFacade:222 - Place name before: Centro Storico di  Fondi (Latina), place name after disambiguation: Fondi, uri: http://dbpedia.org/resource/Fondi
+2014-07-07 12:06:05 INFO  CiceroFacade:222 - Place name before: Maranola, Lazio, Italy, place name after disambiguation: Lazio, uri: http://dbpedia.org/resource/Lazio
+2014-07-07 12:06:05 INFO  CiceroFacade:222 - Place name before: Monte Giove,Terracina, place name after disambiguation: Monte Giove,Terracina, uri: 
+2014-07-07 12:06:05 INFO  CiceroFacade:222 - Place name before: Il Roseto Comunale Roma, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-07-07 12:06:06 INFO  CiceroFacade:222 - Place name before: Villa Mirafiori, place name after disambiguation: Villa Mirafiori, uri: 
+2014-07-07 12:06:06 INFO  CiceroFacade:222 - Place name before: cristallo di neve, place name after disambiguation: cristallo di neve, uri: 
+2014-07-07 12:06:06 INFO  CiceroFacade:222 - Place name before: LUISS Guido Carli, place name after disambiguation: LUISS Guido Carli, uri: 
+2014-07-07 12:06:06 INFO  CiceroFacade:222 - Place name before: Goa / Ultrabeat (OFFICIAL), place name after disambiguation: Goa / Ultrabeat (OFFICIAL), uri: 
+2014-07-07 12:06:07 INFO  CiceroFacade:129 - processing user friend 74
+2014-07-07 12:06:07 INFO  CiceroFacade:222 - Place name before: München, place name after disambiguation: Munich, uri: http://dbpedia.org/resource/Munich
+2014-07-07 12:06:07 INFO  CiceroFacade:222 - Place name before: Rome, Italy, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-07-07 12:06:07 INFO  CiceroFacade:222 - Place name before: Via Pavia 20 Roma, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-07-07 12:06:07 INFO  CiceroFacade:222 - Place name before: Pista di pattinaggio Grinzing Village 2012 a Castel Sant'Angelo, place name after disambiguation: Pista di pattinaggio Grinzing Village 2012 a Castel Sant'Angelo, uri: 
+2014-07-07 12:06:07 INFO  CiceroFacade:222 - Place name before: Il Romitello Hotel, place name after disambiguation: Il Romitello Hotel, uri: 
+2014-07-07 12:06:08 INFO  CiceroFacade:222 - Place name before: Rome, Georgia, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome%2C_Georgia
+2014-07-07 12:06:08 INFO  CiceroFacade:222 - Place name before: Sabaudia, place name after disambiguation: Sabaudia, uri: http://dbpedia.org/resource/Sabaudia
+2014-07-07 12:06:08 INFO  CiceroFacade:222 - Place name before: Terme di Cretone, place name after disambiguation: Cretone, uri: http://dbpedia.org/resource/Cretone
+2014-07-07 12:06:08 INFO  CiceroFacade:222 - Place name before: Lungotevere, place name after disambiguation: Lungotevere, uri: 
+2014-07-07 12:06:08 INFO  CiceroFacade:222 - Place name before: Les Invalides, place name after disambiguation: Les Invalides, uri: http://dbpedia.org/resource/Les_Invalides
+2014-07-07 12:06:08 INFO  CiceroFacade:222 - Place name before: Paris, France, place name after disambiguation: Paris, uri: http://dbpedia.org/resource/Paris
+2014-07-07 12:06:08 INFO  CiceroFacade:222 - Place name before: BIANCO Pizzeria - Bar Lounge, place name after disambiguation: BIANCO Pizzeria - Bar Lounge, uri: 
+2014-07-07 12:06:08 INFO  CiceroFacade:222 - Place name before: Olevano Romano, place name after disambiguation: Olevano Romano, uri: http://dbpedia.org/resource/Olevano_Romano
+2014-07-07 12:06:08 INFO  CiceroFacade:222 - Place name before: Le Pompon, place name after disambiguation: Le Pompon, uri: 
+2014-07-07 12:06:09 INFO  CiceroFacade:222 - Place name before: Café des Deux Moulins, place name after disambiguation: Café des Deux Moulins, uri: 
+2014-07-07 12:06:09 INFO  CiceroFacade:222 - Place name before: Alle antiche scuderie -ristorante pizzeria-, place name after disambiguation: Alle antiche scuderie -ristorante pizzeria-, uri: 
+2014-07-07 12:06:10 INFO  CiceroFacade:222 - Place name before: La Cremaillere 1900, place name after disambiguation: La Cremaillere 1900, uri: 
+2014-07-07 12:06:10 INFO  CiceroFacade:222 - Place name before: Hôtel D'Albret, place name after disambiguation: Hôtel D'Albret, uri: 
+2014-07-07 12:06:13 INFO  CiceroFacade:129 - processing user friend 32
+2014-07-07 12:06:15 INFO  CiceroFacade:222 - Place name before: Villadose, place name after disambiguation: Villadose, uri: http://dbpedia.org/resource/Villadose
+2014-07-07 12:06:16 INFO  CiceroFacade:222 - Place name before: Jesolo Pala Arrex, place name after disambiguation: Jesolo Pala Arrex, uri: 
+2014-07-07 12:06:16 INFO  CiceroFacade:222 - Place name before: Piancavallo, place name after disambiguation: Piancavallo, uri: http://dbpedia.org/resource/Piancavallo
+2014-07-07 12:06:16 INFO  CiceroFacade:222 - Place name before: Bar - La Fenice, place name after disambiguation: Bar - La Fenice, uri: 
+2014-07-07 12:06:18 INFO  CiceroFacade:222 - Place name before: Collins, place name after disambiguation: Collins, uri: 
+2014-07-07 12:06:18 INFO  CiceroFacade:222 - Place name before: Biblioteca Comunale G. Bassani, place name after disambiguation: Biblioteca Comunale G. Bassani, uri: 
+2014-07-07 12:06:18 INFO  CiceroFacade:222 - Place name before: Università degli Studi di Padova - Facoltà di Psicologia, place name after disambiguation: Università degli Studi di Padova - Facoltà di Psicologia, uri: 
+2014-07-07 12:06:19 INFO  CiceroFacade:222 - Place name before: Corso del Popolo, place name after disambiguation: Corso del Popolo, uri: 
+2014-07-07 12:06:19 INFO  CiceroFacade:222 - Place name before: Occhiobello, place name after disambiguation: Occhiobello, uri: http://dbpedia.org/resource/Occhiobello
+2014-07-07 12:06:19 INFO  CiceroFacade:222 - Place name before: Giarola di Ligonchio (RE), place name after disambiguation: Giarola di Ligonchio (RE), uri: 
+2014-07-07 12:06:19 INFO  CiceroFacade:222 - Place name before: Santa Maria Maddalena, Emilia-Romagna, Italy, place name after disambiguation: Emilia-Romagna, uri: http://dbpedia.org/resource/Emilia-Romagna
+2014-07-07 12:06:19 INFO  CiceroFacade:222 - Place name before: Castelmassa, place name after disambiguation: Castelmassa, uri: http://dbpedia.org/resource/Castelmassa
+2014-07-07 12:06:19 INFO  CiceroFacade:222 - Place name before: Mizuumi asian fusion, place name after disambiguation: Mizuumi asian fusion, uri: 
+2014-07-07 12:06:19 INFO  CiceroFacade:222 - Place name before: Pejo, place name after disambiguation: Peio, uri: http://dbpedia.org/resource/Peio
+2014-07-07 12:06:19 INFO  CiceroFacade:222 - Place name before: Marola (RE), place name after disambiguation: Marola, uri: 
+2014-07-07 12:06:19 INFO  CiceroFacade:222 - Place name before: Base Scout Bracciano, place name after disambiguation: Bracciano, uri: http://dbpedia.org/resource/Bracciano
+2014-07-07 12:06:20 INFO  CiceroFacade:222 - Place name before: Stazione Ffss Rm Ostiense, place name after disambiguation: Ostiense, uri: http://dbpedia.org/resource/Ostiense
+2014-07-07 12:06:20 INFO  CiceroFacade:222 - Place name before: Bonello, place name after disambiguation: Bonello, uri: 
+2014-07-07 12:06:20 INFO  CiceroFacade:222 - Place name before: Pecol - Zoldo Alto, place name after disambiguation: Zoldo Alto, uri: http://dbpedia.org/resource/Zoldo_Alto
+2014-07-07 12:06:20 INFO  CiceroFacade:222 - Place name before: Ruina, Veneto, Italy, place name after disambiguation: Ruina, uri: 
+2014-07-07 12:06:20 INFO  CiceroFacade:222 - Place name before: Ferrara, Italy, place name after disambiguation: Ferrara, uri: http://dbpedia.org/resource/Ferrara
+2014-07-07 12:06:20 INFO  CiceroFacade:222 - Place name before: Occhiobello (RO), place name after disambiguation: Occhiobello, uri: http://dbpedia.org/resource/Occhiobello
+2014-07-07 12:06:21 INFO  CiceroFacade:222 - Place name before: Villa Buri, place name after disambiguation: Villa Buri, uri: 
+2014-07-07 12:06:21 INFO  CiceroFacade:222 - Place name before: Padua, Italy, place name after disambiguation: Padua, uri: http://dbpedia.org/resource/Padua
+2014-07-07 12:06:21 INFO  CiceroFacade:222 - Place name before: Pontelagoscuro ( FE ) - argine Destra Po, place name after disambiguation: Ferrara, uri: http://dbpedia.org/resource/Ferrara
+2014-07-07 12:06:21 INFO  CiceroFacade:222 - Place name before: Marotta beach, place name after disambiguation: Marotta beach, uri: 
+2014-07-07 12:06:21 INFO  CiceroFacade:222 - Place name before: Dovadola, place name after disambiguation: Dovadola, uri: http://dbpedia.org/resource/Dovadola
+2014-07-07 12:06:21 INFO  CiceroFacade:222 - Place name before: Pieve Tesino, place name after disambiguation: Pieve Tesino, uri: http://dbpedia.org/resource/Pieve_Tesino
+2014-07-07 12:06:21 INFO  CiceroFacade:222 - Place name before: S.m.maddalena, place name after disambiguation: S.m.maddalena, uri: 
+2014-07-07 12:06:22 INFO  CiceroFacade:222 - Place name before: Corsica, place name after disambiguation: Corsica, uri: 
+2014-07-07 12:06:22 INFO  CiceroFacade:222 - Place name before: Revolution Lounge Bar, place name after disambiguation: Revolution Lounge Bar, uri: 
+2014-07-07 12:06:22 INFO  CiceroFacade:222 - Place name before: Caffè Diemme Padova, place name after disambiguation: Padua, uri: http://dbpedia.org/resource/Padua
+2014-07-07 12:06:22 INFO  CiceroFacade:222 - Place name before: Peio, place name after disambiguation: Peio, uri: http://dbpedia.org/resource/Peio
+2014-07-07 12:06:24 INFO  CiceroFacade:222 - Place name before: Smart.  Piazza Pio Xi, place name after disambiguation: Saint Peter's Square, uri: http://dbpedia.org/resource/Saint_Peter's_Square
+2014-07-07 12:06:24 INFO  CiceroFacade:222 - Place name before: Festival del Verde E del Paesaggio, place name after disambiguation: Festival del Verde E del Paesaggio, uri: 
+2014-07-07 12:06:24 INFO  CiceroFacade:222 - Place name before: Polisportivo Cinecitta Bettini, place name after disambiguation: Polisportivo Cinecitta Bettini, uri: 
+2014-07-07 12:06:24 INFO  CiceroFacade:222 - Place name before: 100 Montaditos, place name after disambiguation: 100 Montaditos, uri: 
+2014-07-07 12:06:24 INFO  CiceroFacade:222 - Place name before: Plaza Del Duque Sevilla, place name after disambiguation: Seville, uri: http://dbpedia.org/resource/Seville
+2014-07-07 12:06:25 INFO  CiceroFacade:222 - Place name before: Algarve. Portugal, place name after disambiguation: Algarve, uri: 
+2014-07-07 12:06:25 INFO  CiceroFacade:222 - Place name before: Stadio Olimpico, place name after disambiguation: Stadio Olimpico, uri: http://dbpedia.org/resource/Stadio_Olimpico
+2014-07-07 12:06:25 INFO  CiceroFacade:222 - Place name before: Tbar, place name after disambiguation: Tbar, uri: 
+2014-07-07 12:06:25 INFO  CiceroFacade:222 - Place name before: Stazione 4venti, place name after disambiguation: Stazione 4venti, uri: 
+2014-07-07 12:06:25 INFO  CiceroFacade:222 - Place name before: Ostia Lido, place name after disambiguation: Lido di Ostia, uri: http://dbpedia.org/resource/Ostia_%28Rome%29
+2014-07-07 12:06:25 INFO  CiceroFacade:222 - Place name before: Facoltà Economia "Federico Caffè" Roma Tre, place name after disambiguation: Roma Tre University, uri: http://dbpedia.org/resource/Roma_Tre_University
+2014-07-07 12:06:25 INFO  CiceroFacade:222 - Place name before: Via Ottaviano, place name after disambiguation: Le Suite di Via Ottaviano(200MT Piazza San Pietro 150MT  Musei v, uri: 
+2014-07-07 12:06:25 INFO  CiceroFacade:222 - Place name before: San Teodoro, Sardegna, Italy, place name after disambiguation: Sardinia, uri: http://dbpedia.org/resource/Sardinia
+2014-07-07 12:06:25 INFO  CiceroFacade:222 - Place name before: Lattepiu', place name after disambiguation: Lattepiu', uri: 
+2014-07-07 12:06:25 INFO  CiceroFacade:222 - Place name before: the CLIFTON pub - Roma, place name after disambiguation: the CLIFTON pub - Roma, uri: 
+2014-07-07 12:06:25 INFO  CiceroFacade:222 - Place name before: MAXXI - MUSEO NAZIONALE DELLE ARTI DEL XXI SECOLO, place name after disambiguation: MAXXI - MUSEO NAZIONALE DELLE ARTI DEL XXI SECOLO, uri: 
+2014-07-07 12:06:25 INFO  CiceroFacade:222 - Place name before: Genzano di Roma, place name after disambiguation: Genzano di Roma, uri: http://dbpedia.org/resource/Genzano_di_Roma
+2014-07-07 12:06:26 INFO  CiceroFacade:222 - Place name before: Appia Antica, place name after disambiguation: Parco Regionale Appia Antica, uri: 
+2014-07-07 12:06:26 INFO  CiceroFacade:222 - Place name before: Colle Romito, place name after disambiguation: Colle Romito, uri: 
+2014-07-07 12:06:26 INFO  CiceroFacade:222 - Place name before: Caffè Letterario, place name after disambiguation: Caffè Letterario, uri: 
+2014-07-07 12:06:26 INFO  CiceroFacade:222 - Place name before: Roma Vintage, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-07-07 12:06:26 INFO  CiceroFacade:222 - Place name before: Piazza Navona, place name after disambiguation: Piazza Navona, uri: http://dbpedia.org/resource/Piazza_Navona
+2014-07-07 12:06:26 INFO  CiceroFacade:222 - Place name before: Capitan Cono San Pietro, place name after disambiguation: Capitan Cono San Pietro, uri: 
+2014-07-07 12:06:26 INFO  CiceroFacade:222 - Place name before: Andy's Cafe, place name after disambiguation: Andy's Cafe, uri: 
+2014-07-07 12:06:27 INFO  CiceroFacade:222 - Place name before: Clifton, place name after disambiguation: Clifton, uri: 
+2014-07-07 12:06:27 INFO  CiceroFacade:222 - Place name before: G Dj-Bar Trastevere, place name after disambiguation: Trastevere, uri: http://dbpedia.org/resource/Trastevere
+2014-07-07 12:06:27 INFO  CiceroFacade:222 - Place name before: Lucca, place name after disambiguation: Lucca, uri: http://dbpedia.org/resource/Lucca
+2014-07-07 12:06:27 INFO  CiceroFacade:222 - Place name before: Villa Medicea - Il Melograno, place name after disambiguation: Villa Medicea - Il Melograno, uri: 
+2014-07-07 12:06:27 INFO  CiceroFacade:222 - Place name before: Brusati Street :), place name after disambiguation: Brusati Street :), uri: 
+2014-07-07 12:06:27 INFO  CiceroFacade:222 - Place name before: Colosseo, place name after disambiguation: Colosseum, uri: http://dbpedia.org/resource/Colosseum
+2014-07-07 12:06:27 INFO  CiceroFacade:222 - Place name before: Cafè Momus, place name after disambiguation: Cafè Momus, uri: 
+2014-07-07 12:06:27 INFO  CiceroFacade:222 - Place name before: Palazzo Montecitorio, place name after disambiguation: Palazzo Montecitorio, uri: 
+2014-07-07 12:06:28 INFO  CiceroFacade:222 - Place name before: Cinema Adriano, place name after disambiguation: Cinema Adriano, uri: 
+2014-07-07 12:06:28 INFO  CiceroFacade:222 - Place name before: Èlite Caffè, place name after disambiguation: Èlite Caffè, uri: 
+2014-07-07 12:06:28 INFO  CiceroFacade:222 - Place name before: Janiculum, place name after disambiguation: Janiculum, uri: http://dbpedia.org/resource/Janiculum
+2014-07-07 12:06:28 INFO  CiceroFacade:222 - Place name before: Lime Bar, place name after disambiguation: Lime Bar, uri: 
+2014-07-07 12:06:28 INFO  CiceroFacade:222 - Place name before: Piazza di Spagna, Roma, Italia, place name after disambiguation: Spanish Steps, uri: http://dbpedia.org/resource/Spanish_Steps
+2014-07-07 12:06:28 INFO  CiceroFacade:222 - Place name before: Circuito F1 Valencia, place name after disambiguation: Circuito F1 Valencia, uri: 
+2014-07-07 12:06:28 INFO  CiceroFacade:222 - Place name before: Starbucks España, place name after disambiguation: Starbucks España, uri: 
+2014-07-07 12:06:28 INFO  CiceroFacade:222 - Place name before: Palau de Congressos, place name after disambiguation: Palau de Congressos, uri: 
+2014-07-07 12:06:28 INFO  CiceroFacade:222 - Place name before: Piazza Mazzini, place name after disambiguation: Saint Peter's Square, uri: http://dbpedia.org/resource/Saint_Peter's_Square
+2014-07-07 12:06:29 INFO  CiceroFacade:222 - Place name before: Pizzeria I Gerani Da Peppe, place name after disambiguation: Pizzeria I Gerani Da Peppe, uri: 
+2014-07-07 12:06:29 INFO  CiceroFacade:222 - Place name before: Castel Sant'Angelo, place name after disambiguation: Castel Sant'Angelo, uri: http://dbpedia.org/resource/Castel_SantAngelo
+2014-07-07 12:06:29 INFO  CiceroFacade:222 - Place name before: Piazza Trilussa, place name after disambiguation: Piazza Trilussa, uri: 
+2014-07-07 12:06:29 INFO  CiceroFacade:222 - Place name before: Nel Letto!, place name after disambiguation: Nel Letto!, uri: 
+2014-07-07 12:06:34 INFO  CiceroFacade:129 - processing user friend 33
+2014-07-07 12:06:39 INFO  CiceroFacade:222 - Place name before: Palazzo delle Esposizioni, place name after disambiguation: Palazzo delle Esposizioni, uri: http://dbpedia.org/resource/Palazzo_delle_Esposizioni
+2014-07-07 12:06:39 INFO  CiceroFacade:222 - Place name before: Rifugio Orso Bruno, place name after disambiguation: Rifugio Orso Bruno, uri: 
+2014-07-07 12:06:39 INFO  CiceroFacade:222 - Place name before: Trentino-Alto Adige, Italy, place name after disambiguation: Trentino-Alto Adige, Italy, uri: 
+2014-07-07 12:06:39 INFO  CiceroFacade:222 - Place name before: Val Di Rabbi, place name after disambiguation: Val Di Rabbi, uri: 
+2014-07-07 12:06:39 INFO  CiceroFacade:222 - Place name before: VAL DI SOLE, place name after disambiguation: Val di Sole, uri: http://dbpedia.org/resource/Val_di_Sole
+2014-07-07 12:06:40 INFO  CiceroFacade:222 - Place name before: Agritur Malga Valpiana, place name after disambiguation: Agritur Malga Valpiana, uri: 
+2014-07-07 12:06:40 INFO  CiceroFacade:222 - Place name before: Lago Dei Caprioli, place name after disambiguation: Lago Dei Caprioli, uri: 
+2014-07-07 12:06:40 INFO  CiceroFacade:222 - Place name before: Guardiaregia, place name after disambiguation: Guardiaregia, uri: http://dbpedia.org/resource/Guardiaregia
+2014-07-07 12:06:40 INFO  CiceroFacade:222 - Place name before: Ippodromo delle Capannelle, place name after disambiguation: Capannelle Racecourse, uri: http://dbpedia.org/resource/Capannelle_Racecourse
+2014-07-07 12:06:40 INFO  CiceroFacade:222 - Place name before: Ippodromo delle Capannelle, place name after disambiguation: Capannelle Racecourse, uri: http://dbpedia.org/resource/Capannelle_Racecourse
+2014-07-07 12:06:40 INFO  CiceroFacade:222 - Place name before: Monte Sole, place name after disambiguation: Monte Sole, uri: 
+2014-07-07 12:06:40 INFO  CiceroFacade:222 - Place name before: Molfetta, Italy, place name after disambiguation: Molfetta, uri: http://dbpedia.org/resource/Molfetta
+2014-07-07 12:06:40 INFO  CiceroFacade:222 - Place name before: Cristalli Di Zucchero, place name after disambiguation: Cristalli Di Zucchero, uri: 
+2014-07-07 12:06:40 INFO  CiceroFacade:222 - Place name before: Parco Nazionale Monti Della Laga, place name after disambiguation: Parco Nazionale Monti Della Laga, uri: 
+2014-07-07 12:06:40 INFO  CiceroFacade:222 - Place name before: Rome, Italy, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-07-07 12:06:40 INFO  CiceroFacade:222 - Place name before: Monte Soratte Innevato (insieme A Seneca), place name after disambiguation: Monte Soratte Innevato (insieme A Seneca), uri: 
+2014-07-07 12:06:41 INFO  CiceroFacade:222 - Place name before: Villa Pamphili, place name after disambiguation: Villa Doria Pamphili, uri: http://dbpedia.org/resource/Villa_Doria_Pamphili
+2014-07-07 12:06:43 INFO  CiceroFacade:129 - processing user friend 34
+2014-07-07 12:06:46 INFO  CiceroFacade:222 - Place name before: Rik'El Travel, place name after disambiguation: Rik'El Travel, uri: 
+2014-07-07 12:06:47 INFO  CiceroFacade:222 - Place name before: Bicocca, place name after disambiguation: Bicocca, uri: 
+2014-07-07 12:06:47 INFO  CiceroFacade:222 - Place name before: Via Della Stazione di Ciampino, place name after disambiguation: Ciampino, uri: http://dbpedia.org/resource/Ciampino
+2014-07-07 12:06:47 INFO  CiceroFacade:222 - Place name before: Stadio Olimpico CURVA SUD, place name after disambiguation: Stadio Olimpico, uri: http://dbpedia.org/resource/Stadio_Olimpico
+2014-07-07 12:06:47 INFO  CiceroFacade:222 - Place name before: Marsa Alam Kharamana, place name after disambiguation: Marsa Alam Kharamana, uri: 
+2014-07-07 12:06:47 INFO  CiceroFacade:222 - Place name before: Biblioteca Facoltà Di Economia - Tor Vergata, place name after disambiguation: Biblioteca Facoltà Di Economia - Tor Vergata, uri: 
+2014-07-07 12:06:47 INFO  CiceroFacade:222 - Place name before: Castel Sant'Angelo, place name after disambiguation: Castel Sant'Angelo, uri: http://dbpedia.org/resource/Castel_SantAngelo
+2014-07-07 12:06:47 INFO  CiceroFacade:222 - Place name before: Università degli Studi di Roma Tor Vergata, place name after disambiguation: Università degli Studi di Roma Tor Vergata, uri: 
+2014-07-07 12:06:47 INFO  CiceroFacade:222 - Place name before: Bar Mary, place name after disambiguation: Bar Mary, uri: 
+2014-07-07 12:06:47 INFO  CiceroFacade:222 - Place name before: Viareggio, Italy, place name after disambiguation: Viareggio, uri: http://dbpedia.org/resource/Viareggio
+2014-07-07 12:06:49 INFO  CiceroFacade:129 - processing user friend 35
+2014-07-07 12:06:53 INFO  CiceroFacade:222 - Place name before: Poggio Mirteto, place name after disambiguation: Poggio Mirteto, uri: http://dbpedia.org/resource/Poggio_Mirteto
+2014-07-07 12:06:53 INFO  CiceroFacade:222 - Place name before: Great Wall Of China, place name after disambiguation: Great Wall Of China, uri: 
+2014-07-07 12:06:53 INFO  CiceroFacade:222 - Place name before: Università Roma Tre - Facoltà di Scienze Politiche, place name after disambiguation: Roma Tre University, uri: http://dbpedia.org/resource/Roma_Tre_University
+2014-07-07 12:06:54 INFO  CiceroFacade:222 - Place name before: Akab Roma, place name after disambiguation: Akab Roma, uri: 
+2014-07-07 12:06:54 INFO  CiceroFacade:222 - Place name before: Piazza di Santa Maria in Trastevere, place name after disambiguation: Santa Maria in Trastevere, uri: http://dbpedia.org/resource/Santa_Maria_in_Trastevere
+2014-07-07 12:06:54 INFO  CiceroFacade:222 - Place name before: Rome, Italy, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-07-07 12:06:54 INFO  CiceroFacade:222 - Place name before: San Pablo City, place name after disambiguation: San Pablo, Laguna, uri: http://dbpedia.org/resource/San_Pablo,_Laguna
+2014-07-07 12:06:54 INFO  CiceroFacade:222 - Place name before: Ez-Cinema Palazzo, Sala Vittorio Arrigoni, place name after disambiguation: Ez-Cinema Palazzo, Sala Vittorio Arrigoni, uri: 
+2014-07-07 12:06:54 INFO  CiceroFacade:222 - Place name before: Trastevere, place name after disambiguation: Trastevere, uri: http://dbpedia.org/resource/Trastevere
+2014-07-07 12:06:54 INFO  CiceroFacade:222 - Place name before: Nagcarlan, Laguna, place name after disambiguation: Laguna (province), uri: http://dbpedia.org/resource/Laguna_(province)
+2014-07-07 12:06:54 INFO  CiceroFacade:222 - Place name before: Rione Di Trastevere, Lazio, Italy, place name after disambiguation: Trastevere, uri: http://dbpedia.org/resource/Trastevere
+2014-07-07 12:06:54 INFO  CiceroFacade:222 - Place name before: Circolo Degli Illuminati, place name after disambiguation: Circolo Degli Illuminati, uri: 
+2014-07-07 12:06:54 INFO  CiceroFacade:222 - Place name before: Qube @ Roma Extrema Live, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-07-07 12:06:54 INFO  CiceroFacade:222 - Place name before: Liceo Keplero, place name after disambiguation: Liceo Keplero, uri: 
+2014-07-07 12:06:54 INFO  CiceroFacade:222 - Place name before: Il Vittoriano, place name after disambiguation: Altare della Patria, uri: http://dbpedia.org/resource/Altare_della_Patria
+2014-07-07 12:06:57 INFO  CiceroFacade:129 - processing user friend 36
+2014-07-07 12:07:04 INFO  CiceroFacade:222 - Place name before: Cimetière du Père-Lachaise, place name after disambiguation: Père Lachaise Cemetery, uri: http://dbpedia.org/resource/P%C3%A8re_Lachaise_Cemetery
+2014-07-07 12:07:04 INFO  CiceroFacade:222 - Place name before: London City, place name after disambiguation: London, uri: http://dbpedia.org/resource/London
+2014-07-07 12:07:04 INFO  CiceroFacade:222 - Place name before: London Gatwick South Terminal, place name after disambiguation: Gatwick Airport, uri: http://dbpedia.org/resource/Gatwick_Airport
+2014-07-07 12:07:04 INFO  CiceroFacade:222 - Place name before: Morocco, place name after disambiguation: Morocco, uri: http://dbpedia.org/resource/Morocco
+2014-07-07 12:07:05 INFO  CiceroFacade:222 - Place name before: Costwolds, place name after disambiguation: Costwolds, uri: 
+2014-07-07 12:07:06 INFO  CiceroFacade:222 - Place name before: Republic of Ireland, place name after disambiguation: Republic of Ireland, uri: http://dbpedia.org/resource/Republic_of_Ireland
+2014-07-07 12:07:06 INFO  CiceroFacade:222 - Place name before: Istanbul - Turchia, place name after disambiguation: Turkey, uri: http://dbpedia.org/resource/Turkey
+2014-07-07 12:07:06 INFO  CiceroFacade:222 - Place name before: Beograd Aeroport, place name after disambiguation: Belgrade Nikola Tesla Airport, uri: http://dbpedia.org/resource/Belgrade_Nikola_Tesla_Airport
+2014-07-07 12:07:06 INFO  CiceroFacade:222 - Place name before: Redford House, place name after disambiguation: Redford House, uri: 
+2014-07-07 12:07:06 INFO  CiceroFacade:222 - Place name before: Bibury Cotswolds, place name after disambiguation: Bibury, uri: http://dbpedia.org/resource/Bibury
+2014-07-07 12:07:06 INFO  CiceroFacade:222 - Place name before: Greenwich foot tunnel, place name after disambiguation: Greenwich foot tunnel, uri: http://dbpedia.org/resource/Greenwich_foot_tunnel
+2014-07-07 12:07:06 INFO  CiceroFacade:222 - Place name before: Bibury, Gloucestershire, place name after disambiguation: Bibury, uri: http://dbpedia.org/resource/Bibury
+2014-07-07 12:07:06 INFO  CiceroFacade:222 - Place name before: The Cotswolds, place name after disambiguation: The Cotswolds, uri: 
+2014-07-07 12:07:06 INFO  CiceroFacade:222 - Place name before: The Cotswolds, place name after disambiguation: The Cotswolds, uri: 
+2014-07-07 12:07:06 INFO  CiceroFacade:222 - Place name before: Cairo, Egypt, place name after disambiguation: Cairo, uri: http://dbpedia.org/resource/Cairo
+2014-07-07 12:07:07 INFO  CiceroFacade:222 - Place name before: Botswana, place name after disambiguation: Botswana, uri: http://dbpedia.org/resource/Botswana
+2014-07-07 12:07:07 INFO  CiceroFacade:222 - Place name before: Tiran Island, place name after disambiguation: Tiran Island, uri: 
+2014-07-07 12:07:07 INFO  CiceroFacade:222 - Place name before: Cilento, place name after disambiguation: Cilento, uri: http://dbpedia.org/resource/Cilento
+2014-07-07 12:07:07 INFO  CiceroFacade:222 - Place name before: Table Mountain, place name after disambiguation: Table Mountain, uri: http://dbpedia.org/resource/Table_Mountain
+2014-07-07 12:07:07 INFO  CiceroFacade:222 - Place name before: London, England, place name after disambiguation: London, uri: http://dbpedia.org/resource/London
+2014-07-07 12:07:07 INFO  CiceroFacade:222 - Place name before: Ras Mohammed National Park, place name after disambiguation: Ras Mohammed National Park, uri: 
+2014-07-07 12:07:07 INFO  CiceroFacade:222 - Place name before: Egypt, place name after disambiguation: Egypt, uri: http://dbpedia.org/resource/Egypt
+2014-07-07 12:07:07 INFO  CiceroFacade:222 - Place name before: Paris, France, place name after disambiguation: Paris, uri: http://dbpedia.org/resource/Paris
+2014-07-07 12:07:07 INFO  CiceroFacade:222 - Place name before: Santuario La Mentorella ( Guadagnolo ), place name after disambiguation: Santuario La Mentorella ( Guadagnolo ), uri: 
+2014-07-07 12:07:08 INFO  CiceroFacade:222 - Place name before: Umbria, Italy, place name after disambiguation: Giano dell'Umbria, uri: 
+2014-07-07 12:07:08 INFO  CiceroFacade:222 - Place name before: Rome, Italy, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-07-07 12:07:08 INFO  CiceroFacade:222 - Place name before: Todi, Italy, place name after disambiguation: Todi, uri: http://dbpedia.org/resource/Todi
+2014-07-07 12:07:08 INFO  CiceroFacade:222 - Place name before: Atlas Studios Ouarzazate, place name after disambiguation: Ouarzazate, uri: http://dbpedia.org/resource/Ouarzazate
+2014-07-07 12:07:08 INFO  CiceroFacade:222 - Place name before: Aït Ben Hadou, Ouarzazate, Morocco, place name after disambiguation: Ouarzazate, uri: http://dbpedia.org/resource/Ouarzazate
+2014-07-07 12:07:08 INFO  CiceroFacade:222 - Place name before: Telouet, place name after disambiguation: Telouet, uri: http://dbpedia.org/resource/Telouet
+2014-07-07 12:07:14 INFO  CiceroFacade:129 - processing user friend 37
+2014-07-07 12:07:16 INFO  CiceroFacade:222 - Place name before: Torre Paola, place name after disambiguation: Torre Paola, uri: 
+2014-07-07 12:07:16 INFO  CiceroFacade:222 - Place name before: Latina, Italy, place name after disambiguation: Italy, uri: http://dbpedia.org/resource/Italy
+2014-07-07 12:07:16 INFO  CiceroFacade:222 - Place name before: Oasi Le Mortine - Venafro, place name after disambiguation: Oasi Le Mortine - Venafro, uri: 
+2014-07-07 12:07:17 INFO  CiceroFacade:129 - processing user friend 38
+2014-07-07 12:07:21 INFO  CiceroFacade:222 - Place name before: Tomoko Tudini, place name after disambiguation: Tomoko Tudini, uri: 
+2014-07-07 12:07:21 INFO  CiceroFacade:222 - Place name before: Visiva - La città dell'immagine, place name after disambiguation: Visiva - La città dell'immagine, uri: 
+2014-07-07 12:07:21 INFO  CiceroFacade:222 - Place name before: Fontana di Trevi, place name after disambiguation: Trevi Fountain, uri: http://dbpedia.org/resource/Trevi_Fountain
+2014-07-07 12:07:21 INFO  CiceroFacade:222 - Place name before: Parco della Caffarella, place name after disambiguation: Parco della Caffarella, uri: 
+2014-07-07 12:07:21 INFO  CiceroFacade:222 - Place name before: Rome, Italy, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-07-07 12:07:21 INFO  CiceroFacade:222 - Place name before: Akab club, place name after disambiguation: Akab club, uri: 
+2014-07-07 12:07:22 INFO  CiceroFacade:222 - Place name before: Qalam wa Lawh Center for Arabic Studies, place name after disambiguation: Qalam wa Lawh Center for Arabic Studies, uri: 
+2014-07-07 12:07:22 INFO  CiceroFacade:222 - Place name before: Rabat, Morocco, place name after disambiguation: Rabat, uri: http://dbpedia.org/resource/Rabat
+2014-07-07 12:07:22 INFO  CiceroFacade:222 - Place name before: Fes, place name after disambiguation: Fes, uri: 
+2014-07-07 12:07:22 INFO  CiceroFacade:222 - Place name before: Roma, Italia, place name after disambiguation: Italy, uri: http://dbpedia.org/resource/Italy
+2014-07-07 12:07:22 INFO  CiceroFacade:222 - Place name before: Campo Dei Fiori, place name after disambiguation: Campo Dei Fiori, uri: 
+
+2014-07-08 18:27:52 INFO  CiceroFacade:225 - Place name before: Autostrada del Sole A1, place name after disambiguation: Autostrada del Sole A1, uri: 
+2014-07-08 18:27:53 INFO  CiceroFacade:225 - Place name before: Spaghetteria La Cantinella, place name after disambiguation: Spaghetteria La Cantinella, uri: 
+2014-07-08 18:27:53 INFO  CiceroFacade:225 - Place name before: Galleria Borghese, place name after disambiguation: Galleria Borghese, uri: http://dbpedia.org/resource/Galleria_Borghese
+2014-07-08 18:27:53 INFO  CiceroFacade:225 - Place name before: Museo Thyssen-Bornemisza, place name after disambiguation: Thyssen-Bornemisza Museum, uri: http://dbpedia.org/resource/Thyssen-Bornemisza_Museum
+2014-07-08 18:27:53 INFO  CiceroFacade:225 - Place name before: The Art Institute of Chicago, place name after disambiguation: Art Institute of Chicago, uri: http://dbpedia.org/resource/Art_Institute_of_Chicago
+2014-07-08 18:27:53 INFO  CiceroFacade:225 - Place name before: Wawel Castle Krakow, place name after disambiguation: Wawel, uri: http://dbpedia.org/resource/Wawel
+2014-07-08 18:27:53 INFO  CiceroFacade:225 - Place name before: Mauritshuis, place name after disambiguation: Mauritshuis, uri: http://dbpedia.org/resource/Mauritshuis
+2014-07-08 18:27:53 INFO  CiceroFacade:225 - Place name before: Milano Linate, place name after disambiguation: Linate Airport, uri: http://dbpedia.org/resource/Linate_Airport
+2014-07-08 18:27:53 INFO  CiceroFacade:225 - Place name before: Musée du Louvre, place name after disambiguation: The Louvre, uri: http://dbpedia.org/resource/The_Louvre
+2014-07-08 18:27:53 INFO  CiceroFacade:225 - Place name before: Cappella Sistina, place name after disambiguation: Sistine Chapel, uri: http://dbpedia.org/resource/Sistine_Chapel
+2014-07-08 18:27:53 INFO  CiceroFacade:225 - Place name before: Via del Corso, place name after disambiguation: Via del Corso, uri: http://dbpedia.org/resource/Via_del_Corso
+2014-07-08 18:27:53 INFO  CiceroFacade:225 - Place name before: Roma, Italia, place name after disambiguation: Italy, uri: http://dbpedia.org/resource/Italy
+2014-07-08 18:27:53 INFO  CiceroFacade:225 - Place name before: Nuovo Cinema Aquila, place name after disambiguation: Nuovo Cinema Aquila, uri: 
+2014-07-08 18:27:53 INFO  CiceroFacade:225 - Place name before: Falcone Beach..:), place name after disambiguation: Falcone Beach..:), uri: 
+2014-07-08 18:27:53 INFO  CiceroFacade:225 - Place name before: Baia Di Venere, place name after disambiguation: Baia Di Venere, uri: 
+2014-07-08 18:27:53 INFO  CiceroFacade:225 - Place name before: Circolo degli Artisti, place name after disambiguation: Circolo degli Artisti, uri: 
+2014-07-08 18:27:53 INFO  CiceroFacade:225 - Place name before: Aeroporto di Comiso, place name after disambiguation: Comiso, uri: http://dbpedia.org/resource/Comiso
+2014-07-08 18:27:53 INFO  CiceroFacade:225 - Place name before: Traghetto - Stretto Di Messina-Calabria, place name after disambiguation: Traghetto - Stretto Di Messina-Calabria, uri: 
+2014-07-08 18:27:53 INFO  CiceroFacade:225 - Place name before: Aeroporto Falcone Borsellino - Palermo, place name after disambiguation: Palermo Airport, uri: http://dbpedia.org/resource/Falcone%E2%80%93Borsellino_Airport
+2014-07-08 18:27:53 INFO  CiceroFacade:225 - Place name before: Pitch Club, place name after disambiguation: Pitch Club, uri: 
+2014-07-08 18:27:53 INFO  CiceroFacade:225 - Place name before: Aeroporto Internazionale Leonardo Da Vinci, place name after disambiguation: Leonardo da Vinci–Fiumicino Airport, uri: http://dbpedia.org/resource/Leonardo_da_Vinci%E2%80%93Fiumicino_Airport
+2014-07-08 18:27:54 INFO  CiceroFacade:225 - Place name before: Discoteca Genesi Portorosa, place name after disambiguation: Discoteca Genesi Portorosa, uri: 
+2014-07-08 18:27:54 INFO  CiceroFacade:225 - Place name before: Stazione ferroviaria Fiumicino Aeroporto, place name after disambiguation: Stazione ferroviaria Fiumicino Aeroporto, uri: 
+2014-07-08 18:27:54 INFO  CiceroFacade:225 - Place name before: Villa Pamphili, place name after disambiguation: Villa Doria Pamphili, uri: http://dbpedia.org/resource/Villa_Doria_Pamphili
+2014-07-08 18:27:54 INFO  CiceroFacade:225 - Place name before: Adler Terme (Bagno Vignoni), place name after disambiguation: San Quirico d'Orcia, uri: http://dbpedia.org/resource/San_Quirico_d'Orcia
+2014-07-08 18:27:54 INFO  CiceroFacade:225 - Place name before: Cannes, France, place name after disambiguation: Cannes, France, uri: 
+2014-07-08 18:27:54 INFO  CiceroFacade:225 - Place name before: Aeroporto di Catania-Fontanarossa, place name after disambiguation: Catania-Fontanarossa Airport, uri: http://dbpedia.org/resource/Catania%E2%80%93Fontanarossa_Airport
+2014-07-08 18:27:54 INFO  CiceroFacade:225 - Place name before: Palais des Festivals, Cannes, place name after disambiguation: Cannes, uri: http://dbpedia.org/resource/Cannes
+2014-07-08 18:27:54 INFO  CiceroFacade:225 - Place name before: Via del Forte Bravetta 124, place name after disambiguation: Via del Forte Bravetta 124, uri: 
+2014-07-08 18:27:54 INFO  CiceroFacade:225 - Place name before: Messina, Italy, place name after disambiguation: Messina, uri: http://dbpedia.org/resource/Messina
+2014-07-08 18:27:54 INFO  CiceroFacade:225 - Place name before: Council of the European Union, place name after disambiguation: Council of the European Union, uri: 
+2014-07-08 18:27:54 INFO  CiceroFacade:225 - Place name before: Messina:'), place name after disambiguation: Messina, uri: http://dbpedia.org/resource/Messina
+2014-07-08 18:27:54 INFO  CiceroFacade:225 - Place name before: Brussel - Bruxelles (Belgio), place name after disambiguation: Brussels, uri: http://dbpedia.org/resource/Brussels
+2014-07-08 18:27:54 INFO  CiceroFacade:225 - Place name before: Mè Cumpari Turiddu, place name after disambiguation: Mè Cumpari Turiddu, uri: 
+2014-07-08 18:27:54 INFO  CiceroFacade:225 - Place name before: Walla Walla live, place name after disambiguation: Walla Walla live, uri: 
+2014-07-08 18:27:54 INFO  CiceroFacade:225 - Place name before: Teatro Olimpico, place name after disambiguation: Teatro Olimpico, uri: 
+2014-07-08 18:27:54 INFO  CiceroFacade:225 - Place name before: Palermo, place name after disambiguation: Palermo, uri: http://dbpedia.org/resource/Palermo
+2014-07-08 18:27:54 INFO  CiceroFacade:225 - Place name before: Senato, place name after disambiguation: Albergo del Senato, uri: 
+2014-07-08 18:27:54 INFO  CiceroFacade:225 - Place name before: Castiglione di Sicilia, place name after disambiguation: Castiglione di Sicilia, uri: http://dbpedia.org/resource/Castiglione_di_Sicilia
+2014-07-08 18:27:54 INFO  CiceroFacade:225 - Place name before: Bakery House Roma, place name after disambiguation: Bakery House Roma, uri: 
+2014-07-08 18:27:54 INFO  CiceroFacade:225 - Place name before: Rome, Italy, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-07-08 18:27:54 INFO  CiceroFacade:225 - Place name before: Roma, Queensland, place name after disambiguation: Roma, Queensland, uri: http://dbpedia.org/resource/Roma,_Queensland
+2014-07-08 18:27:55 INFO  CiceroFacade:225 - Place name before: Publicis Modem, place name after disambiguation: Publicis Modem, uri: 
+2014-07-08 18:27:55 INFO  CiceroFacade:225 - Place name before: Villa Romana Del Tellaro, place name after disambiguation: Villa Romana Del Tellaro, uri: 
+2014-07-08 18:27:55 INFO  CiceroFacade:225 - Place name before: Spiaggia Di San Marco, place name after disambiguation: Spiaggia Di San Marco, uri: 
+2014-07-08 18:27:55 INFO  CiceroFacade:225 - Place name before: Laghetto di Villa Borghese, place name after disambiguation: Laghetto di Villa Borghese, uri: 
+2014-07-08 18:27:55 INFO  CiceroFacade:225 - Place name before: Gragnano, place name after disambiguation: Gragnano, uri: http://dbpedia.org/resource/Gragnano
+2014-07-08 18:27:55 INFO  CiceroFacade:225 - Place name before: Da Remo, place name after disambiguation: Da Remo, uri: 
+2014-07-08 18:27:55 INFO  CiceroFacade:225 - Place name before: Flughafen Berlin Tempelhof, place name after disambiguation: Berlin Tempelhof Airport, uri: http://dbpedia.org/resource/Berlin_Tempelhof_Airport
+2014-07-08 18:27:55 INFO  CiceroFacade:225 - Place name before: Disco Play Club Roma, place name after disambiguation: Disco Play Club Roma, uri: 
+2014-07-08 18:27:55 INFO  CiceroFacade:225 - Place name before: Berlin Airport, place name after disambiguation: Berlin Tegel Airport, uri: http://dbpedia.org/resource/Berlin_Tegel_Airport
+2014-07-08 18:27:55 INFO  CiceroFacade:225 - Place name before: REC 23, place name after disambiguation: REC 23, uri: 
+2014-07-08 18:27:55 INFO  CiceroFacade:225 - Place name before: Stazione Trastevere, place name after disambiguation: Trastevere, uri: http://dbpedia.org/resource/Trastevere
+2014-07-08 18:27:55 INFO  CiceroFacade:225 - Place name before: Roma, place name after disambiguation: Roma, uri: 
+2014-07-08 18:27:55 INFO  CiceroFacade:225 - Place name before: Piazza Abramo Lincoln, place name after disambiguation: Piazza Abramo Lincoln, uri: 
+2014-07-08 18:27:55 INFO  CiceroFacade:225 - Place name before: Millennium Bridge London, place name after disambiguation: London, uri: http://dbpedia.org/resource/London
+2014-07-08 18:27:55 INFO  CiceroFacade:225 - Place name before: Tate Britain Gallery, London, place name after disambiguation: London, uri: http://dbpedia.org/resource/London
+2014-07-08 18:27:56 INFO  CiceroFacade:225 - Place name before: Sarni, place name after disambiguation: Sarni, uri: 
+2014-07-08 18:27:56 INFO  CiceroFacade:225 - Place name before: Piazza Teatro Massimo, place name after disambiguation: Piazza Teatro Massimo, uri: 
+2014-07-08 18:27:56 INFO  CiceroFacade:225 - Place name before: Teatro Massimo Bellini Catania, place name after disambiguation: Teatro Massimo Bellini, uri: http://dbpedia.org/resource/Teatro_Massimo_Bellini
+2014-07-08 18:27:56 INFO  CiceroFacade:225 - Place name before: Cristoforo Colombo, place name after disambiguation: Cristoforo Colombo, uri: 
+2014-07-08 18:27:56 INFO  CiceroFacade:225 - Place name before: Matera, Italy, place name after disambiguation: Matera, uri: http://dbpedia.org/resource/Matera
+2014-07-08 18:27:56 INFO  CiceroFacade:225 - Place name before: A Fanculo, place name after disambiguation: A Fanculo, uri: 
+2014-07-08 18:27:56 INFO  CiceroFacade:225 - Place name before: Sul Pullman:), place name after disambiguation: Sul Pullman:), uri: 
+2014-07-08 18:27:56 INFO  CiceroFacade:225 - Place name before: Mirabilandia, place name after disambiguation: Mirabilandia, uri: 
+2014-07-08 18:27:56 INFO  CiceroFacade:225 - Place name before: BOCS, place name after disambiguation: BOCS, uri: 
+2014-07-08 18:27:56 INFO  CiceroFacade:225 - Place name before: Residenza Ponte Sant'Angelo, place name after disambiguation: Residenza Ponte Sant'Angelo, uri: 
+2014-07-08 18:27:56 INFO  CiceroFacade:129 - 1054474223 processing user friend 209
+2014-07-08 18:27:59 INFO  CiceroFacade:225 - Place name before: Louise Road, place name after disambiguation: Louise Road, uri: 
+2014-07-08 18:27:59 INFO  CiceroFacade:225 - Place name before: Mercati  Generali, place name after disambiguation: Mercati  Generali, uri: 
+2014-07-08 18:28:00 INFO  CiceroFacade:225 - Place name before: Partito Democratico, place name after disambiguation: Partito Democratico, uri: 
+2014-07-08 18:28:00 INFO  CiceroFacade:225 - Place name before: Aeroporto Di Fiumicino, place name after disambiguation: Fiumicino, uri: http://dbpedia.org/resource/Fiumicino
+2014-07-08 18:28:00 INFO  CiceroFacade:225 - Place name before: Catania Airport - Sicily, place name after disambiguation: Catania-Fontanarossa Airport, uri: http://dbpedia.org/resource/Catania-Fontanarossa_Airport
+2014-07-08 18:28:00 INFO  CiceroFacade:225 - Place name before: Aereoporto Internazionale Di Catania, place name after disambiguation: Catania, uri: http://dbpedia.org/resource/Catania
+2014-07-08 18:28:00 INFO  CiceroFacade:225 - Place name before: Hotel Ramada Reggio Emilia, place name after disambiguation: Reggio Emilia, uri: http://dbpedia.org/resource/Reggio_Emilia
+2014-07-08 18:28:00 INFO  CiceroFacade:225 - Place name before: In Treno, place name after disambiguation: In Treno, uri: 
+2014-07-08 18:28:00 INFO  CiceroFacade:225 - Place name before: Stazione Bologna, place name after disambiguation: Bologna, uri: http://dbpedia.org/resource/Bologna
+2014-07-08 18:28:00 INFO  CiceroFacade:225 - Place name before: Caol Ishka Hotel, place name after disambiguation: Caol Ishka Hotel, uri: 
+2014-07-08 18:28:00 INFO  CiceroFacade:225 - Place name before: Terme Di Caracalla, place name after disambiguation: Terme di Caracalla, uri: http://dbpedia.org/resource/Baths_of_Caracalla
+2014-07-08 18:28:00 INFO  CiceroFacade:225 - Place name before: Municipio, place name after disambiguation: Municipio, uri: 
+2014-07-08 18:28:00 INFO  CiceroFacade:225 - Place name before: St James's Park, place name after disambiguation: St James Park, uri: http://dbpedia.org/resource/St._James%27s_Park
+2014-07-08 18:28:00 INFO  CiceroFacade:225 - Place name before: Misterbianco, place name after disambiguation: Misterbianco, uri: http://dbpedia.org/resource/Misterbianco
+2014-07-08 18:28:00 INFO  CiceroFacade:225 - Place name before: Catania, Italy, place name after disambiguation: Catania, uri: http://dbpedia.org/resource/Catania
+2014-07-08 18:28:01 INFO  CiceroFacade:225 - Place name before: Roma Termini, place name after disambiguation: Roma Termini railway station, uri: http://dbpedia.org/resource/Roma_Termini_railway_station
+2014-07-08 18:28:01 INFO  CiceroFacade:225 - Place name before: La Caravella, place name after disambiguation: La Caravella, uri: 
+2014-07-08 18:28:01 INFO  CiceroFacade:225 - Place name before: Grand Hotel Sofia, Noto, place name after disambiguation: Noto, uri: http://dbpedia.org/resource/Noto
+2014-07-08 18:28:01 INFO  CiceroFacade:225 - Place name before: Badeschiff Berlin, place name after disambiguation: Badeschiff, uri: http://dbpedia.org/resource/Badeschiff
+2014-07-08 18:28:01 INFO  CiceroFacade:225 - Place name before: Mauerpark, place name after disambiguation: Mauerpark, uri: http://dbpedia.org/resource/Mauerpark
+2014-07-08 18:28:03 INFO  CiceroFacade:225 - Place name before: Due di Coppe, place name after disambiguation: Due di Coppe, uri: 
+2014-07-08 18:28:03 INFO  CiceroFacade:225 - Place name before: Schlesische Straße, Berlin Kreuzberg, place name after disambiguation: Kreuzberg, uri: http://dbpedia.org/resource/Kreuzberg
+2014-07-08 18:28:03 INFO  CiceroFacade:225 - Place name before: Aeroporto Federico Fellini Rimini, place name after disambiguation: Rimini, uri: http://dbpedia.org/resource/Rimini
+2014-07-08 18:28:03 INFO  CiceroFacade:225 - Place name before: Aeroporto Cristoforo Colombo, place name after disambiguation: Genoa Airport, uri: http://dbpedia.org/resource/Genoa_Cristoforo_Colombo_Airport
+2014-07-08 18:28:03 INFO  CiceroFacade:225 - Place name before: Fiera Internazionale di Genova, place name after disambiguation: Genoa, uri: http://dbpedia.org/resource/Genoa
+2014-07-08 18:28:04 INFO  CiceroFacade:225 - Place name before: Starhotels President - Genova, place name after disambiguation: Genoa, uri: http://dbpedia.org/resource/Genoa
+2014-07-08 18:28:04 INFO  CiceroFacade:225 - Place name before: Genova, Italy, place name after disambiguation: Genoa, uri: http://dbpedia.org/resource/Genoa
+2014-07-08 18:28:04 INFO  CiceroFacade:225 - Place name before: Castiglione di Sicilia, place name after disambiguation: Castiglione di Sicilia, uri: http://dbpedia.org/resource/Castiglione_di_Sicilia
+2014-07-08 18:28:04 INFO  CiceroFacade:225 - Place name before: Haiku - Cucina Naturale - Fan Page, place name after disambiguation: Haiku - Cucina Naturale - Fan Page, uri: 
+2014-07-08 18:28:04 INFO  CiceroFacade:225 - Place name before: Ramacca, place name after disambiguation: Ramacca, uri: http://dbpedia.org/resource/Ramacca
+2014-07-08 18:28:04 INFO  CiceroFacade:225 - Place name before: Wyeth Lederle S.P.A (Pfizer Group), place name after disambiguation: Wyeth Lederle S.P.A (Pfizer Group), uri: 
+2014-07-08 18:28:04 INFO  CiceroFacade:225 - Place name before: Circolo Pd Ramacca, place name after disambiguation: Ramacca, uri: http://dbpedia.org/resource/Ramacca
+2014-07-08 18:28:04 INFO  CiceroFacade:225 - Place name before: Ragusa Ibla, place name after disambiguation: Ragusa Ibla, uri: 
+2014-07-08 18:28:04 INFO  CiceroFacade:225 - Place name before: Hotel Mediterraneo Palace Best Western, place name after disambiguation: Hotel Mediterraneo Palace Best Western, uri: 
+2014-07-08 18:28:04 INFO  CiceroFacade:225 - Place name before: Hotel Il Principe, place name after disambiguation: Il Principe Hotel, uri: 
+2014-07-08 18:28:05 INFO  CiceroFacade:225 - Place name before: Haiku, place name after disambiguation: Haiku, uri: 
+2014-07-08 18:28:05 INFO  CiceroFacade:225 - Place name before: Piedimonte Etneo, place name after disambiguation: Piedimonte Etneo, uri: http://dbpedia.org/resource/Piedimonte_Etneo
+2014-07-08 18:28:05 INFO  CiceroFacade:225 - Place name before: Circolo PD Adrano, place name after disambiguation: Circolo PD Adrano, uri: 
+2014-07-08 18:28:05 INFO  CiceroFacade:225 - Place name before: Hotel Radisson Blu Hotel Roma, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-07-08 18:28:05 INFO  CiceroFacade:225 - Place name before: Da Giggetto, place name after disambiguation: Trattoria da Giggetto, uri: 
+2014-07-08 18:28:05 INFO  CiceroFacade:225 - Place name before: Partito Democratico Unione Provinciale Catania, place name after disambiguation: Catania, uri: http://dbpedia.org/resource/Catania
+2014-07-08 18:28:05 INFO  CiceroFacade:225 - Place name before: Scenario Pubblico, place name after disambiguation: Scenario Pubblico, uri: 
+2014-07-08 18:28:05 INFO  CiceroFacade:225 - Place name before: Via Teatro Massimo/Piazza Vincenzo Bellini, place name after disambiguation: Via Teatro Massimo/Piazza Vincenzo Bellini, uri: 
+2014-07-08 18:28:05 INFO  CiceroFacade:225 - Place name before: Scenapparente, place name after disambiguation: Scenapparente, uri: 
+2014-07-08 18:28:06 INFO  CiceroFacade:225 - Place name before: A Casa, place name after disambiguation: A Casa, uri: 
+2014-07-08 18:28:06 INFO  CiceroFacade:129 - 1054474223 processing user friend 220
+2014-07-08 18:28:06 INFO  CiceroFacade:225 - Place name before: Lanificio159, place name after disambiguation: Lanificio159, uri: 
+2014-07-08 18:28:06 INFO  CiceroFacade:225 - Place name before: Sa Trinxa, place name after disambiguation: Sa Trinxa, uri: 
+2014-07-08 18:28:07 INFO  CiceroFacade:129 - 1054474223 processing user friend 221
+2014-07-08 18:28:07 INFO  CiceroFacade:225 - Place name before: Gusto, place name after disambiguation: Gusto, uri: 
+2014-07-08 18:28:07 INFO  CiceroFacade:225 - Place name before: Riva Beach Club Fregene, place name after disambiguation: Riva Beach Club Fregene, uri: 
+2014-07-08 18:28:07 INFO  CiceroFacade:225 - Place name before: Ballroom official - Internazionali Bnl d'Italia 2014, place name after disambiguation: Ballroom official - Internazionali Bnl d'Italia 2014, uri: 
+2014-07-08 18:28:07 INFO  CiceroFacade:225 - Place name before: Corso Garibaldi, Milano, place name after disambiguation: Milan, uri: http://dbpedia.org/resource/Milan
+2014-07-08 18:28:07 INFO  CiceroFacade:225 - Place name before: Piazza Trilussa, place name after disambiguation: Piazza Trilussa, uri: 
+2014-07-08 18:28:07 INFO  CiceroFacade:225 - Place name before: Open Baladin, place name after disambiguation: Open Baladin, uri: 
+2014-07-08 18:28:07 INFO  CiceroFacade:225 - Place name before: La Dogana Food, place name after disambiguation: La Dogana Food, uri: 
+2014-07-08 18:28:07 INFO  CiceroFacade:225 - Place name before: Reggio di Calabria, place name after disambiguation: Reggio Calabria, uri: http://dbpedia.org/resource/Reggio_Calabria
+2014-07-08 18:28:07 INFO  CiceroFacade:225 - Place name before: Rome, Italy, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-07-08 18:28:07 INFO  CiceroFacade:129 - 1054474223 processing user friend 222
+2014-07-08 18:28:07 INFO  CiceroFacade:225 - Place name before: BACK, place name after disambiguation: BACK, uri: 
+2014-07-08 18:28:07 INFO  CiceroFacade:225 - Place name before: CapoBoi, place name after disambiguation: CapoBoi, uri: 
+2014-07-08 18:28:08 INFO  CiceroFacade:225 - Place name before: Campo Santa Margherita, place name after disambiguation: Campo Santa Margherita, uri: 
+2014-07-08 18:28:08 INFO  CiceroFacade:225 - Place name before: Piazza San Marco, Venice, place name after disambiguation: Piazza San Marco, uri: http://dbpedia.org/resource/Piazza_San_Marco
+2014-07-08 18:28:08 INFO  CiceroFacade:225 - Place name before: Grazia e Graziella, place name after disambiguation: Grazia e Graziella, uri: 
+2014-07-08 18:28:08 INFO  CiceroFacade:225 - Place name before: Milano Stazione Centrale, place name after disambiguation: Stazione di Milano Centrale, uri: http://dbpedia.org/resource/Stazione_di_Milano_Centrale
+2014-07-08 18:28:08 INFO  CiceroFacade:225 - Place name before: Gran Teatro - Romeo & Giulietta, place name after disambiguation: Gran Teatro - Romeo & Giulietta, uri: 
+2014-07-08 18:28:08 INFO  CiceroFacade:225 - Place name before: VIVACE bollicine&food Perugia Centro Storico, place name after disambiguation: Perugia, uri: http://dbpedia.org/resource/Perugia
+2014-07-08 18:28:08 INFO  CiceroFacade:225 - Place name before: Castello Sforzesco, Milano, place name after disambiguation: Milan, uri: http://dbpedia.org/resource/Milan
+2014-07-08 18:28:08 INFO  CiceroFacade:225 - Place name before: Rebel Rebel at Circolo Andrea Doria, place name after disambiguation: Rebel Rebel at Circolo Andrea Doria, uri: 
+2014-07-08 18:28:08 INFO  CiceroFacade:225 - Place name before: Rosarno, place name after disambiguation: Rosarno, uri: http://dbpedia.org/resource/Rosarno
+2014-07-08 18:28:08 INFO  CiceroFacade:225 - Place name before: Il Bosco Delle Fragole, place name after disambiguation: Il Bosco Delle Fragole, uri: 
+2014-07-08 18:28:08 INFO  CiceroFacade:225 - Place name before: Teatro Annibale Di Francia, place name after disambiguation: Teatro Annibale Di Francia, uri: 
+2014-07-08 18:28:08 INFO  CiceroFacade:129 - 1054474223 processing user friend 223
+2014-07-08 18:28:08 INFO  CiceroFacade:225 - Place name before: Piazza di Spagna, Roma, Italia, place name after disambiguation: Spanish Steps, uri: http://dbpedia.org/resource/Spanish_Steps
+2014-07-08 18:28:08 INFO  CiceroFacade:225 - Place name before: Teatro Ambra alla Garbatella, place name after disambiguation: Garbatella, uri: http://dbpedia.org/resource/Garbatella
+2014-07-08 18:28:08 INFO  CiceroFacade:225 - Place name before: L'Ambretta, place name after disambiguation: L'Ambretta, uri: 
+2014-07-08 18:28:08 INFO  CiceroFacade:225 - Place name before: Venezia - Venice - Venedig, place name after disambiguation: Venice, uri: http://dbpedia.org/resource/Venice
+2014-07-08 18:28:08 INFO  CiceroFacade:225 - Place name before: Stazione di Roma Termini, place name after disambiguation: Roma Termini railway station, uri: http://dbpedia.org/resource/Roma_Termini_railway_station
+2014-07-08 18:28:09 INFO  CiceroFacade:225 - Place name before: Piazza Bologna, place name after disambiguation: Mercure Roma Piazza Bologna, uri: 
+2014-07-08 18:28:09 INFO  CiceroFacade:225 - Place name before: 692 restaurant & lounge bar, place name after disambiguation: 692 restaurant & lounge bar, uri: 
+2014-07-08 18:28:09 INFO  CiceroFacade:225 - Place name before: OS Club, place name after disambiguation: OS Club, uri: 
+2014-07-08 18:28:09 INFO  CiceroFacade:225 - Place name before: El Mojito Cocktail Bar, place name after disambiguation: El Mojito Cocktail Bar, uri: 
+2014-07-08 18:28:09 INFO  CiceroFacade:225 - Place name before: Qube-Any Given Monday, place name after disambiguation: Qube-Any Given Monday, uri: 
+2014-07-08 18:28:09 INFO  CiceroFacade:225 - Place name before: Cybo, place name after disambiguation: Cybo, uri: 
+2014-07-08 18:28:09 INFO  CiceroFacade:225 - Place name before: Castello Della Castelluccia, place name after disambiguation: Castello della Castelluccia, uri: 
+2014-07-08 18:28:09 INFO  CiceroFacade:225 - Place name before: Golf Club Castel Gandolfo, place name after disambiguation: Castel Gandolfo, uri: http://dbpedia.org/resource/Castel_Gandolfo
+2014-07-08 18:28:09 INFO  CiceroFacade:225 - Place name before: Td IX - Teatro Tor Di Nona, place name after disambiguation: Td IX - Teatro Tor Di Nona, uri: 
+2014-07-08 18:28:09 INFO  CiceroFacade:225 - Place name before: Stazione Bologna Centrale, place name after disambiguation: Bologna Centrale railway station, uri: http://dbpedia.org/resource/Bologna_Centrale_railway_station
+2014-07-08 18:28:09 INFO  CiceroFacade:225 - Place name before: Fiera di Roma, place name after disambiguation: Nuova Fiera di Roma, uri: 
+2014-07-08 18:28:09 INFO  CiceroFacade:225 - Place name before: Aventura Mall, place name after disambiguation: Aventura Mall, uri: http://dbpedia.org/resource/Aventura_Mall
+2014-07-08 18:28:09 INFO  CiceroFacade:225 - Place name before: Aeroporto Internazionale Leonardo Da Vinci, place name after disambiguation: Leonardo da Vinci–Fiumicino Airport, uri: http://dbpedia.org/resource/Leonardo_da_Vinci%E2%80%93Fiumicino_Airport
+2014-07-08 18:28:10 INFO  CiceroFacade:225 - Place name before: Ducati Cafè, place name after disambiguation: Ducati Cafè, uri: 
+2014-07-08 18:28:10 INFO  CiceroFacade:225 - Place name before: Facoltà Di Scienze Della Formazione, place name after disambiguation: Facoltà Di Scienze Della Formazione, uri: 
+2014-07-08 18:28:10 INFO  CiceroFacade:225 - Place name before: Pratica Di Mare, Lazio, Italy, place name after disambiguation: Italy, uri: http://dbpedia.org/resource/Italy
+2014-07-08 18:28:10 INFO  CiceroFacade:225 - Place name before: Saponeria Club, place name after disambiguation: Saponeria Club, uri: 
+2014-07-08 18:28:10 INFO  CiceroFacade:225 - Place name before: A Mare A Ganzirri sl Mio Masso...*.*, place name after disambiguation: A Mare A Ganzirri sl Mio Masso...*.*, uri: 
+2014-07-08 18:28:10 INFO  CiceroFacade:225 - Place name before: Caicco!!, place name after disambiguation: Caicco!!, uri: 
+2014-07-08 18:28:10 INFO  CiceroFacade:129 - 1054474223 processing user friend 224
+2014-07-08 18:28:10 INFO  CiceroFacade:225 - Place name before: Emporio Cafè, place name after disambiguation: Emporio Cafè, uri: 
+2014-07-08 18:28:10 INFO  CiceroFacade:129 - 1054474223 processing user friend 210
+2014-07-08 18:28:11 INFO  CiceroFacade:129 - 1054474223 processing user friend 211
+2014-07-08 18:28:16 INFO  CiceroFacade:225 - Place name before: Quarto di luna-windsurf club, place name after disambiguation: Quarto di luna-windsurf club, uri: 
+2014-07-08 18:28:16 INFO  CiceroFacade:225 - Place name before: Via Alessandro Manzoni, place name after disambiguation: Via Alessandro Manzoni, uri: 
+2014-07-08 18:28:16 INFO  CiceroFacade:225 - Place name before: Meridien Beach Lounge, place name after disambiguation: Meridien Beach Lounge, uri: 
+2014-07-08 18:28:16 INFO  CiceroFacade:225 - Place name before: Gli Antenati Pub, place name after disambiguation: Gli Antenati Pub, uri: 
+2014-07-08 18:28:16 INFO  CiceroFacade:225 - Place name before: Ertè Cafè, place name after disambiguation: Ertè Cafè, uri: 
+2014-07-08 18:28:17 INFO  CiceroFacade:225 - Place name before: Lucky, place name after disambiguation: Lucky, uri: 
+2014-07-08 18:28:17 INFO  CiceroFacade:225 - Place name before: Musolino, place name after disambiguation: Musolino, uri: 
+2014-07-08 18:28:17 INFO  CiceroFacade:225 - Place name before: Vintage ;), place name after disambiguation: Vintage ;), uri: 
+2014-07-08 18:28:17 INFO  CiceroFacade:225 - Place name before: Caffé Le Roi, place name after disambiguation: Caffé Le Roi, uri: 
+2014-07-08 18:28:17 INFO  CiceroFacade:225 - Place name before: Messina, Italy, place name after disambiguation: Messina, uri: http://dbpedia.org/resource/Messina
+2014-07-08 18:28:17 INFO  CiceroFacade:225 - Place name before: Naples, Italy, place name after disambiguation: Naples, uri: http://dbpedia.org/resource/Naples
+2014-07-08 18:28:17 INFO  CiceroFacade:225 - Place name before: Palermo, Italy, place name after disambiguation: Palermo, uri: http://dbpedia.org/resource/Palermo
+2014-07-08 18:28:17 INFO  CiceroFacade:225 - Place name before: Messina, place name after disambiguation: Messina, uri: http://dbpedia.org/resource/Messina
+2014-07-08 18:28:17 INFO  CiceroFacade:225 - Place name before: Blu Sky, place name after disambiguation: Blu Sky, uri: 
+2014-07-08 18:28:17 INFO  CiceroFacade:225 - Place name before: Isole Eolie, place name after disambiguation: Isole Eolie, uri: 
+2014-07-08 18:28:20 INFO  CiceroFacade:225 - Place name before: Madrid,, place name after disambiguation: Madrid, uri: http://dbpedia.org/resource/Madrid
+2014-07-08 18:28:20 INFO  CiceroFacade:225 - Place name before: Estadio Santiago Bernabéu, place name after disambiguation: Bernabeu Stadium, uri: http://dbpedia.org/resource/Santiago_Bernab%C3%A9u_Stadium
+2014-07-08 18:28:20 INFO  CiceroFacade:225 - Place name before: Madrid, España, place name after disambiguation: Madrid, uri: http://dbpedia.org/resource/Madrid
+2014-07-08 18:28:20 INFO  CiceroFacade:225 - Place name before: Aeroporto Di Bergamo Orio Al Serio Gate 13, place name after disambiguation: Orio al Serio, uri: http://dbpedia.org/resource/Orio_al_Serio
+2014-07-08 18:28:21 INFO  CiceroFacade:225 - Place name before: TClub Lounge Bar, place name after disambiguation: TClub Lounge Bar, uri: 
+2014-07-08 18:28:21 INFO  CiceroFacade:225 - Place name before: Cafè Progresso, place name after disambiguation: Cafè Progresso, uri: 
+2014-07-08 18:28:21 INFO  CiceroFacade:225 - Place name before: Budello di Alassio, place name after disambiguation: Alassio, uri: http://dbpedia.org/resource/Alassio
+2014-07-08 18:28:21 INFO  CiceroFacade:225 - Place name before: Sportlife, place name after disambiguation: Sportlife, uri: 
+2014-07-08 18:28:21 INFO  CiceroFacade:225 - Place name before: Laghi Avigliana, place name after disambiguation: Avigliana, uri: http://dbpedia.org/resource/Avigliana
+2014-07-08 18:28:21 INFO  CiceroFacade:225 - Place name before: A4/E64 Autostrada Milano-Brescia, place name after disambiguation: A4/E64 Autostrada Milano-Brescia, uri: 
+2014-07-08 18:28:21 INFO  CiceroFacade:225 - Place name before: Ajaccio, place name after disambiguation: Ajaccio, uri: http://dbpedia.org/resource/Ajaccio
+2014-07-08 18:28:21 INFO  CiceroFacade:225 - Place name before: Ospedale San Luigi Gonzaga, place name after disambiguation: Ospedale San Luigi Gonzaga, uri: 
+2014-07-08 18:28:21 INFO  CiceroFacade:225 - Place name before: Frullò - tutta frutta frullata, place name after disambiguation: Frullò - tutta frutta frullata, uri: 
+2014-07-08 18:28:22 INFO  CiceroFacade:225 - Place name before: Ponte di Rialto, place name after disambiguation: Rialto Bridge, uri: http://dbpedia.org/resource/Rialto_Bridge
+2014-07-08 18:28:22 INFO  CiceroFacade:225 - Place name before: Riviera Del Brenta, place name after disambiguation: Riviera Del Brenta, uri: 
+2014-07-08 18:28:22 INFO  CiceroFacade:225 - Place name before: La Pace, place name after disambiguation: La Pace, uri: 
+2014-07-08 18:28:22 INFO  CiceroFacade:225 - Place name before: Oriago Venezia, place name after disambiguation: Canale di Raccordo Oriago-Marghera, uri: 
+2014-07-08 18:28:22 INFO  CiceroFacade:225 - Place name before: Uscita autostrada MIRANO-DOLO, place name after disambiguation: Uscita autostrada MIRANO-DOLO, uri: 
+2014-07-08 18:28:22 INFO  CiceroFacade:225 - Place name before: Autostrada A4, place name after disambiguation: Autostrada A4, uri: 
+2014-07-08 18:28:23 INFO  CiceroFacade:225 - Place name before: Autostrada Mi-ve, place name after disambiguation: Autostrada Mi-ve, uri: 
+2014-07-08 18:28:23 INFO  CiceroFacade:225 - Place name before: Ceriale Beach, place name after disambiguation: Ceriale, uri: http://dbpedia.org/resource/Ceriale
+2014-07-08 18:28:23 INFO  CiceroFacade:225 - Place name before: Pizza Victoria, Цар Освободител, place name after disambiguation: Pizza Victoria, Цар Освободител, uri: 
+2014-07-08 18:28:23 INFO  CiceroFacade:225 - Place name before: Веселото Село - Борисовата Градина, place name after disambiguation: Веселото Село - Борисовата Градина, uri: 
+2014-07-08 18:28:23 INFO  CiceroFacade:225 - Place name before: Spaghetti Kitchen, place name after disambiguation: Spaghetti Kitchen, uri: 
+2014-07-08 18:28:23 INFO  CiceroFacade:225 - Place name before: Vicolungo The Style Outlets, place name after disambiguation: Vicolungo, uri: http://dbpedia.org/resource/Vicolungo
+2014-07-08 18:28:24 INFO  CiceroFacade:225 - Place name before: El Centenario, place name after disambiguation: El Centenario, uri: 
+2014-07-08 18:28:24 INFO  CiceroFacade:225 - Place name before: Druento, place name after disambiguation: Druento, uri: http://dbpedia.org/resource/Druento
+2014-07-08 18:28:24 INFO  CiceroFacade:225 - Place name before: HOTEL SILVER HOUSE, place name after disambiguation: HOTEL SILVER HOUSE, uri: 
+2014-07-08 18:28:24 INFO  CiceroFacade:225 - Place name before: Aereoporto Leonardo da Vinci Fiumicino, place name after disambiguation: Fiumicino, uri: http://dbpedia.org/resource/Fiumicino
+2014-07-08 18:28:24 INFO  CiceroFacade:225 - Place name before: Ugc, place name after disambiguation: Ugc, uri: 
+2014-07-08 18:28:24 INFO  CiceroFacade:225 - Place name before: Asti, place name after disambiguation: Asti, uri: http://dbpedia.org/resource/Asti
+2014-07-08 18:28:25 INFO  CiceroFacade:225 - Place name before: Pizzeria Totò&Macario, place name after disambiguation: Pizzeria Totò&Macario, uri: 
+2014-07-08 18:28:25 INFO  CiceroFacade:225 - Place name before: Asti Lido, place name after disambiguation: Asti, uri: http://dbpedia.org/resource/Asti
+2014-07-08 18:28:25 INFO  CiceroFacade:225 - Place name before: CLANCY'S, place name after disambiguation: CLANCY'S, uri: 
+2014-07-08 18:28:25 INFO  CiceroFacade:225 - Place name before: Four Street Vicolungo Outlets, place name after disambiguation: Vicolungo, uri: http://dbpedia.org/resource/Vicolungo
+2014-07-08 18:28:25 INFO  CiceroFacade:225 - Place name before: SKY Italia Srl, place name after disambiguation: SKY Italia Srl, uri: 
+2014-07-08 18:28:25 INFO  CiceroFacade:225 - Place name before: Comune Di Riolo Terme, place name after disambiguation: Riolo Terme, uri: http://dbpedia.org/resource/Riolo_Terme
+2014-07-08 18:28:25 INFO  CiceroFacade:225 - Place name before: Il Portolotto, place name after disambiguation: Il Portolotto, uri: 
+2014-07-08 18:28:25 INFO  CiceroFacade:225 - Place name before: Bar Blanco, place name after disambiguation: Bar Blanco, uri: 
+2014-07-08 18:28:25 INFO  CiceroFacade:225 - Place name before: Un1co, place name after disambiguation: Un1co, uri: 
+2014-07-08 18:28:25 INFO  CiceroFacade:225 - Place name before: Old Wild West, place name after disambiguation: Old Wild West, uri: 
+2014-07-08 18:28:25 INFO  CiceroFacade:129 - 1054474223 processing user friend 212
+2014-07-08 18:28:26 INFO  CiceroFacade:225 - Place name before: Roma, Italia, place name after disambiguation: Italy, uri: http://dbpedia.org/resource/Italy
+2014-07-08 18:28:26 INFO  CiceroFacade:225 - Place name before: Lisbon, Portugal, place name after disambiguation: Lisbon, uri: http://dbpedia.org/resource/Lisbon
+2014-07-08 18:28:27 INFO  CiceroFacade:129 - 1054474223 processing user friend 213
+2014-07-08 18:28:27 INFO  CiceroFacade:129 - 1054474223 processing user friend 214
+2014-07-08 18:28:33 INFO  CiceroFacade:225 - Place name before: Torre Dello Sproposito, place name after disambiguation: Torre Dello Sproposito, uri: 
+2014-07-08 18:28:33 INFO  CiceroFacade:225 - Place name before: Roma Stazione Ostiense, place name after disambiguation: Ostiense, uri: http://dbpedia.org/resource/Ostiense
+2014-07-08 18:28:33 INFO  CiceroFacade:225 - Place name before: Giardino degli Aranci, place name after disambiguation: Giardino degli Aranci, uri: 
+2014-07-08 18:28:33 INFO  CiceroFacade:225 - Place name before: Passeggiata del Gianicolo, place name after disambiguation: Janiculum, uri: http://dbpedia.org/resource/Janiculum
+2014-07-08 18:28:33 INFO  CiceroFacade:225 - Place name before: Piazza Duomo, place name after disambiguation: Piazza Duomo, uri: 
+2014-07-08 18:28:34 INFO  CiceroFacade:225 - Place name before: Naples, Italy, place name after disambiguation: Naples, uri: http://dbpedia.org/resource/Naples
+2014-07-08 18:28:34 INFO  CiceroFacade:225 - Place name before: Hotel Cristina Napoli, place name after disambiguation: Naples, uri: http://dbpedia.org/resource/Naples
+2014-07-08 18:28:34 INFO  CiceroFacade:225 - Place name before: Città della Scienza, place name after disambiguation: Città della Scienza, uri: 
+2014-07-08 18:28:34 INFO  CiceroFacade:225 - Place name before: Il Pincio., place name after disambiguation: Pincian Hill, uri: http://dbpedia.org/resource/Pincian_Hill
+2014-07-08 18:28:34 INFO  CiceroFacade:225 - Place name before: Lido Di Ostia, place name after disambiguation: Lido di Ostia, uri: http://dbpedia.org/resource/Ostia_%28Rome%29
+2014-07-08 18:28:34 INFO  CiceroFacade:225 - Place name before: Meyer, place name after disambiguation: Meyer, uri: 
+2014-07-08 18:28:35 INFO  CiceroFacade:225 - Place name before: Messina, place name after disambiguation: Messina, uri: http://dbpedia.org/resource/Messina
+2014-07-08 18:28:35 INFO  CiceroFacade:225 - Place name before: Autostrada Catania-Messina, place name after disambiguation: Autostrada Catania-Messina, uri: 
+2014-07-08 18:28:35 INFO  CiceroFacade:225 - Place name before: Autostrada Catania -Messina, place name after disambiguation: Catania, uri: http://dbpedia.org/resource/Catania
+2014-07-08 18:28:35 INFO  CiceroFacade:225 - Place name before: Catania!!!!, place name after disambiguation: Catania, uri: http://dbpedia.org/resource/Catania
+2014-07-08 18:28:35 INFO  CiceroFacade:225 - Place name before: Aeroporto Internazionale Leonardo Da Vinci, place name after disambiguation: Leonardo da Vinci–Fiumicino Airport, uri: http://dbpedia.org/resource/Leonardo_da_Vinci%E2%80%93Fiumicino_Airport
+2014-07-08 18:28:35 INFO  CiceroFacade:225 - Place name before: Emporio Militare SRLS, place name after disambiguation: Emporio Militare SRLS, uri: 
+2014-07-08 18:28:35 INFO  CiceroFacade:225 - Place name before: Genzano di Roma, place name after disambiguation: Genzano di Roma, uri: http://dbpedia.org/resource/Genzano_di_Roma
+2014-07-08 18:28:35 INFO  CiceroFacade:225 - Place name before: Bitonto, place name after disambiguation: Bitonto, uri: http://dbpedia.org/resource/Bitonto
+2014-07-08 18:28:35 INFO  CiceroFacade:225 - Place name before: Autostrada Roma Napoli, place name after disambiguation: Autostrada Roma Napoli, uri: 
+2014-07-08 18:28:35 INFO  CiceroFacade:225 - Place name before: Il Canneto - Mili Marina, place name after disambiguation: Il Canneto - Mili Marina, uri: 
+2014-07-08 18:28:35 INFO  CiceroFacade:225 - Place name before: Ristorante Ginza & Ginza Gold, place name after disambiguation: Ristorante Ginza & Ginza Gold, uri: 
+2014-07-08 18:28:35 INFO  CiceroFacade:225 - Place name before: Verona, Italy, place name after disambiguation: Verona, uri: http://dbpedia.org/resource/Verona
+2014-07-08 18:28:36 INFO  CiceroFacade:129 - 1054474223 processing user friend 215
+2014-07-08 18:28:40 INFO  CiceroFacade:225 - Place name before: Grandma Bistrot, place name after disambiguation: Grandma Bistrot, uri: 
+2014-07-08 18:28:40 INFO  CiceroFacade:225 - Place name before: Rome, Italy, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-07-08 18:28:40 INFO  CiceroFacade:225 - Place name before: Roma Fringe Festival, place name after disambiguation: Roma Fringe Festival, uri: 
+2014-07-08 18:28:40 INFO  CiceroFacade:225 - Place name before: XVII municipio, place name after disambiguation: XVII municipio, uri: 
+2014-07-08 18:28:40 INFO  CiceroFacade:225 - Place name before: Bruxelles/Brussel, place name after disambiguation: Brussels, uri: http://dbpedia.org/resource/Brussels
+2014-07-08 18:28:40 INFO  CiceroFacade:225 - Place name before: Chengdu, Sichuan, place name after disambiguation: Chengdu, uri: http://dbpedia.org/resource/Chengdu
+2014-07-08 18:28:40 INFO  CiceroFacade:225 - Place name before: Termini Underground, place name after disambiguation: Termini Underground, uri: 
+2014-07-08 18:28:40 INFO  CiceroFacade:225 - Place name before: Delhi, India, place name after disambiguation: Delhi, uri: http://dbpedia.org/resource/Delhi
+2014-07-08 18:28:41 INFO  CiceroFacade:225 - Place name before: Patrai, place name after disambiguation: Pátrai, uri: http://dbpedia.org/resource/Patras
+2014-07-08 18:28:41 INFO  CiceroFacade:225 - Place name before: Budapest, Hungary, place name after disambiguation: Budapest, uri: http://dbpedia.org/resource/Budapest
+2014-07-08 18:28:41 INFO  CiceroFacade:225 - Place name before: León, Spain, place name after disambiguation: León, uri: 
+2014-07-08 18:28:41 INFO  CiceroFacade:225 - Place name before: Barcelona, Spain, place name after disambiguation: Barcelona, uri: http://dbpedia.org/resource/Barcelona
+2014-07-08 18:28:41 INFO  CiceroFacade:225 - Place name before: Madrid, Spain, place name after disambiguation: Spain, uri: http://dbpedia.org/resource/Spain
+2014-07-08 18:28:41 INFO  CiceroFacade:225 - Place name before: Dublin, Ireland, place name after disambiguation: Dublin, uri: http://dbpedia.org/resource/Dublin
+2014-07-08 18:28:41 INFO  CiceroFacade:225 - Place name before: Amsterdam, Netherlands, place name after disambiguation: Netherlands, uri: http://dbpedia.org/resource/Netherlands
+2014-07-08 18:28:41 INFO  CiceroFacade:225 - Place name before: Berlin, Germany, place name after disambiguation: Berlin, uri: http://dbpedia.org/resource/Berlin
+2014-07-08 18:28:41 INFO  CiceroFacade:129 - 1054474223 processing user friend 216
+2014-07-08 18:28:45 INFO  CiceroFacade:225 - Place name before: Crossing's Pub, place name after disambiguation: Crossing's Pub, uri: 
+2014-07-08 18:28:45 INFO  CiceroFacade:225 - Place name before: Dal Dentista, place name after disambiguation: Dal Dentista, uri: 
+2014-07-08 18:28:45 INFO  CiceroFacade:225 - Place name before: Morabito Art Villa, place name after disambiguation: Morabito Art Villa, uri: 
+2014-07-08 18:28:45 INFO  CiceroFacade:225 - Place name before: Schiavi D'abruzzo, place name after disambiguation: Schiavi D'abruzzo, uri: 
+2014-07-08 18:28:45 INFO  CiceroFacade:225 - Place name before: Casarile, place name after disambiguation: Casarile, uri: http://dbpedia.org/resource/Casarile
+2014-07-08 18:28:45 INFO  CiceroFacade:225 - Place name before: Messina, Italy, place name after disambiguation: Messina, uri: http://dbpedia.org/resource/Messina
+2014-07-08 18:28:45 INFO  CiceroFacade:225 - Place name before: Villa San Giovanni, place name after disambiguation: Villa San Giovanni, uri: http://dbpedia.org/resource/Villa_San_Giovanni
+2014-07-08 18:28:45 INFO  CiceroFacade:225 - Place name before: Santo Bevitore beer shop - enoteca, place name after disambiguation: Santo Bevitore beer shop - enoteca, uri: 
+2014-07-08 18:28:45 INFO  CiceroFacade:225 - Place name before: Via del Corso, place name after disambiguation: Via del Corso, uri: http://dbpedia.org/resource/Via_del_Corso
+2014-07-08 18:28:45 INFO  CiceroFacade:225 - Place name before: Roma, Piazza Del Popolo, place name after disambiguation: Piazza del Popolo, uri: http://dbpedia.org/resource/Piazza_del_Popolo
+2014-07-08 18:28:45 INFO  CiceroFacade:225 - Place name before: Colosseum, place name after disambiguation: Colosseum, uri: http://dbpedia.org/resource/Colosseum
+2014-07-08 18:28:46 INFO  CiceroFacade:225 - Place name before: Messina, place name after disambiguation: Messina, uri: 
+2014-07-08 18:28:46 INFO  CiceroFacade:129 - 1054474223 processing user friend 217
+2014-07-08 18:28:50 INFO  CiceroFacade:225 - Place name before: Montalcino, place name after disambiguation: Montalcino, uri: http://dbpedia.org/resource/Montalcino
+2014-07-08 18:28:50 INFO  CiceroFacade:225 - Place name before: isola d'elba, place name after disambiguation: isola d'elba, uri: 
+2014-07-08 18:28:51 INFO  CiceroFacade:225 - Place name before: Paola(:, place name after disambiguation: Paola, uri: http://dbpedia.org/resource/Paola%2C_Calabria
+2014-07-08 18:28:51 INFO  CiceroFacade:225 - Place name before: Cinquantatrecento Siena, place name after disambiguation: Siena, uri: http://dbpedia.org/resource/Siena
+2014-07-08 18:28:52 INFO  CiceroFacade:225 - Place name before: Mostra Di Steve Mccurry - Siena, place name after disambiguation: Mostra Di Steve Mccurry - Siena, uri: 
+2014-07-08 18:28:52 INFO  CiceroFacade:225 - Place name before: Santa Colomba- Siena, place name after disambiguation: Santa Colomba, uri: 
+2014-07-08 18:28:52 INFO  CiceroFacade:225 - Place name before: Porto ferraio, Isola d'Elba, place name after disambiguation: Portoferraio, uri: http://dbpedia.org/resource/Portoferraio
+2014-07-08 18:28:52 INFO  CiceroFacade:225 - Place name before: Siena, Italy, place name after disambiguation: Siena, uri: http://dbpedia.org/resource/Siena
+2014-07-08 18:28:52 INFO  CiceroFacade:225 - Place name before: BLANCO BEACH BAR, place name after disambiguation: BLANCO BEACH BAR, uri: 
+2014-07-08 18:28:52 INFO  CiceroFacade:225 - Place name before: Flò Firenze, place name after disambiguation: Flò Firenze, uri: 
+2014-07-08 18:28:52 INFO  CiceroFacade:225 - Place name before: Morocco, place name after disambiguation: Morocco, uri: http://dbpedia.org/resource/Morocco
+2014-07-08 18:28:52 INFO  CiceroFacade:225 - Place name before: Scienze della Formazione Unifi, place name after disambiguation: Scienze della Formazione Unifi, uri: 
+2014-07-08 18:28:52 INFO  CiceroFacade:225 - Place name before: Contrada Priora della Civetta, place name after disambiguation: Contrada Priora della Civetta, uri: 
+2014-07-08 18:28:52 INFO  CiceroFacade:225 - Place name before: Casina, place name after disambiguation: Casina, uri: http://dbpedia.org/resource/Casina
+2014-07-08 18:28:52 INFO  CiceroFacade:225 - Place name before: Nelson Mandela Forum, place name after disambiguation: Nelson Mandela Forum, uri: http://dbpedia.org/resource/Nelson_Mandela_Forum
+2014-07-08 18:28:52 INFO  CiceroFacade:225 - Place name before: Isola del Gran Sasso d'Italia, place name after disambiguation: Isola del Gran Sasso d'Italia, uri: http://dbpedia.org/resource/Isola_del_Gran_Sasso_d'Italia
+2014-07-08 18:28:52 INFO  CiceroFacade:129 - 1054474223 processing user friend 218
+2014-07-08 18:28:55 INFO  CiceroFacade:225 - Place name before: Ostia Beach, place name after disambiguation: Ostia Beach, uri: 
+2014-07-08 18:28:55 INFO  CiceroFacade:225 - Place name before: Ostia Lido, place name after disambiguation: Lido di Ostia, uri: http://dbpedia.org/resource/Ostia_%28Rome%29
+2014-07-08 18:28:55 INFO  CiceroFacade:225 - Place name before: Il Vittoriano, place name after disambiguation: Altare della Patria, uri: http://dbpedia.org/resource/Altare_della_Patria
+2014-07-08 18:28:55 INFO  CiceroFacade:225 - Place name before: Villa Pamphili, place name after disambiguation: Villa Doria Pamphili, uri: http://dbpedia.org/resource/Villa_Doria_Pamphili
+2014-07-08 18:28:55 INFO  CiceroFacade:225 - Place name before: Casa Fassi, place name after disambiguation: Casa Fassi, uri: 
+2014-07-08 18:28:55 INFO  CiceroFacade:225 - Place name before: Liceo Classico Eugenio Montale, place name after disambiguation: Liceo Classico Eugenio Montale, uri: 
+2014-07-08 18:28:55 INFO  CiceroFacade:225 - Place name before: In Ogni Dove, place name after disambiguation: In Ogni Dove, uri: 
+2014-07-08 18:28:56 INFO  CiceroFacade:225 - Place name before: Nella Gabbia Di Matti, place name after disambiguation: Nella Gabbia Di Matti, uri: 
+2014-07-08 18:28:56 INFO  CiceroFacade:129 - 1054474223 processing user friend 219
+2014-07-08 18:29:14 INFO  CiceroFacade:225 - Place name before: Milano Linate, place name after disambiguation: Linate Airport, uri: http://dbpedia.org/resource/Linate_Airport
+2014-07-08 18:29:14 INFO  CiceroFacade:225 - Place name before: Circolo degli Artisti, place name after disambiguation: Circolo degli Artisti, uri: 
+2014-07-08 18:29:14 INFO  CiceroFacade:225 - Place name before: Nuovo Cinema Aquila, place name after disambiguation: Nuovo Cinema Aquila, uri: 
+2014-07-08 18:29:14 INFO  CiceroFacade:225 - Place name before: Aeroporto di Comiso, place name after disambiguation: Comiso, uri: http://dbpedia.org/resource/Comiso
+2014-07-08 18:29:14 INFO  CiceroFacade:225 - Place name before: Aeroporto Falcone Borsellino - Palermo, place name after disambiguation: Palermo Airport, uri: http://dbpedia.org/resource/Falcone%E2%80%93Borsellino_Airport
+2014-07-08 18:29:14 INFO  CiceroFacade:225 - Place name before: Aeroporto Internazionale Leonardo Da Vinci, place name after disambiguation: Leonardo da Vinci–Fiumicino Airport, uri: http://dbpedia.org/resource/Leonardo_da_Vinci%E2%80%93Fiumicino_Airport
+2014-07-08 18:29:14 INFO  CiceroFacade:225 - Place name before: Stazione ferroviaria Fiumicino Aeroporto, place name after disambiguation: Stazione ferroviaria Fiumicino Aeroporto, uri: 
+2014-07-08 18:29:14 INFO  CiceroFacade:225 - Place name before: Villa Pamphili, place name after disambiguation: Villa Doria Pamphili, uri: http://dbpedia.org/resource/Villa_Doria_Pamphili
+2014-07-08 18:29:14 INFO  CiceroFacade:225 - Place name before: Adler Terme (Bagno Vignoni), place name after disambiguation: San Quirico d'Orcia, uri: http://dbpedia.org/resource/San_Quirico_d'Orcia
+2014-07-08 18:29:14 INFO  CiceroFacade:225 - Place name before: Aeroporto di Catania-Fontanarossa, place name after disambiguation: Catania–Fontanarossa Airport, uri: http://dbpedia.org/resource/Catania%E2%80%93Fontanarossa_Airport
+2014-07-08 18:29:17 INFO  CiceroFacade:225 - Place name before: Council of the European Union, place name after disambiguation: Council of the European Union, uri: 
+2014-07-08 18:29:17 INFO  CiceroFacade:225 - Place name before: Brussel - Bruxelles (Belgio), place name after disambiguation: Brussels, uri: http://dbpedia.org/resource/Brussels
+2014-07-08 18:29:17 INFO  CiceroFacade:225 - Place name before: Mè Cumpari Turiddu, place name after disambiguation: Mè Cumpari Turiddu, uri: 
+2014-07-08 18:29:17 INFO  CiceroFacade:225 - Place name before: Teatro Olimpico, place name after disambiguation: Teatro Olimpico, uri: 
+2014-07-08 18:29:17 INFO  CiceroFacade:225 - Place name before: Palermo, place name after disambiguation: Palermo, uri: http://dbpedia.org/resource/Palermo
+2014-07-08 18:29:17 INFO  CiceroFacade:225 - Place name before: Senato, place name after disambiguation: Albergo del Senato, uri: 
+2014-07-08 18:29:17 INFO  CiceroFacade:225 - Place name before: Castiglione di Sicilia, place name after disambiguation: Castiglione di Sicilia, uri: http://dbpedia.org/resource/Castiglione_di_Sicilia
+2014-07-08 18:29:17 INFO  CiceroFacade:225 - Place name before: Villa Romana Del Tellaro, place name after disambiguation: Villa Romana Del Tellaro, uri: 
+2014-07-08 18:29:17 INFO  CiceroFacade:225 - Place name before: Spiaggia Di San Marco, place name after disambiguation: Spiaggia Di San Marco, uri: 
+2014-07-08 18:29:17 INFO  CiceroFacade:225 - Place name before: Da Remo, place name after disambiguation: Da Remo, uri: 
+2014-07-08 18:29:17 INFO  CiceroFacade:225 - Place name before: Hamburger Bahnhof- Museum für Gegenwart, place name after disambiguation: Hamburger Bahnhof, uri: http://dbpedia.org/resource/Hamburger_Bahnhof
+2014-07-08 18:29:17 INFO  CiceroFacade:225 - Place name before: Flughafen Berlin Tempelhof, place name after disambiguation: Berlin Tempelhof Airport, uri: http://dbpedia.org/resource/Berlin_Tempelhof_Airport
+2014-07-08 18:29:18 INFO  CiceroFacade:225 - Place name before: Berlin Airport, place name after disambiguation: Berlin Tegel Airport, uri: http://dbpedia.org/resource/Berlin_Tegel_Airport
+2014-07-08 18:29:18 INFO  CiceroFacade:225 - Place name before: REC 23, place name after disambiguation: REC 23, uri: 
+2014-07-08 18:29:18 INFO  CiceroFacade:225 - Place name before: Stazione Trastevere, place name after disambiguation: Trastevere, uri: http://dbpedia.org/resource/Trastevere
+2014-07-08 18:29:18 INFO  CiceroFacade:225 - Place name before: Piazza Abramo Lincoln, place name after disambiguation: Piazza Abramo Lincoln, uri: 
+2014-07-08 18:29:18 INFO  CiceroFacade:225 - Place name before: Millennium Bridge London, place name after disambiguation: London, uri: http://dbpedia.org/resource/London
+2014-07-08 18:29:18 INFO  CiceroFacade:225 - Place name before: Tate Britain Gallery, London, place name after disambiguation: London, uri: http://dbpedia.org/resource/London
+2014-07-08 18:29:18 INFO  CiceroFacade:225 - Place name before: Piazza Teatro Massimo, place name after disambiguation: Piazza Teatro Massimo, uri: 
+2014-07-08 18:29:18 INFO  CiceroFacade:225 - Place name before: Teatro Massimo Bellini Catania, place name after disambiguation: Teatro Massimo Bellini, uri: http://dbpedia.org/resource/Teatro_Massimo_Bellini
+2014-07-08 18:29:18 INFO  CiceroFacade:225 - Place name before: Sul Pullman:), place name after disambiguation: Sul Pullman:), uri: 
+2014-07-08 18:29:18 INFO  CiceroFacade:225 - Place name before: BOCS, place name after disambiguation: BOCS, uri: 
+2014-07-08 18:29:25 INFO  CiceroFacade:225 - Place name before: Louise Road, place name after disambiguation: Louise Road, uri: 
+2014-07-08 18:29:26 INFO  CiceroFacade:225 - Place name before: Mercati  Generali, place name after disambiguation: Mercati  Generali, uri: 
+2014-07-08 18:29:26 INFO  CiceroFacade:225 - Place name before: Partito Democratico, place name after disambiguation: Partito Democratico, uri: 
+2014-07-08 18:29:26 INFO  CiceroFacade:225 - Place name before: Aeroporto Di Fiumicino, place name after disambiguation: Fiumicino, uri: http://dbpedia.org/resource/Fiumicino
+2014-07-08 18:29:26 INFO  CiceroFacade:225 - Place name before: Catania Airport - Sicily, place name after disambiguation: Catania-Fontanarossa Airport, uri: http://dbpedia.org/resource/Catania-Fontanarossa_Airport
+2014-07-08 18:29:26 INFO  CiceroFacade:225 - Place name before: Aereoporto Internazionale Di Catania, place name after disambiguation: Catania, uri: http://dbpedia.org/resource/Catania
+2014-07-08 18:29:26 INFO  CiceroFacade:225 - Place name before: Hotel Ramada Reggio Emilia, place name after disambiguation: Reggio Emilia, uri: http://dbpedia.org/resource/Reggio_Emilia
+2014-07-08 18:29:26 INFO  CiceroFacade:225 - Place name before: In Treno, place name after disambiguation: In Treno, uri: 
+2014-07-08 18:29:26 INFO  CiceroFacade:225 - Place name before: Stazione Bologna, place name after disambiguation: Bologna, uri: http://dbpedia.org/resource/Bologna
+2014-07-08 18:29:26 INFO  CiceroFacade:225 - Place name before: Caol Ishka Hotel, place name after disambiguation: Caol Ishka Hotel, uri: 
+2014-07-08 18:29:26 INFO  CiceroFacade:225 - Place name before: Terme Di Caracalla, place name after disambiguation: Terme di Caracalla, uri: http://dbpedia.org/resource/Baths_of_Caracalla
+2014-07-08 18:29:27 INFO  CiceroFacade:225 - Place name before: Municipio, place name after disambiguation: Municipio, uri: 
+2014-07-08 18:29:27 INFO  CiceroFacade:225 - Place name before: Tinkite', place name after disambiguation: Tinkite', uri: 
+2014-07-08 18:29:27 INFO  CiceroFacade:225 - Place name before: St James's Park, place name after disambiguation: St James Park, uri: http://dbpedia.org/resource/St._James%27s_Park
+2014-07-08 18:29:27 INFO  CiceroFacade:225 - Place name before: Misterbianco, place name after disambiguation: Misterbianco, uri: http://dbpedia.org/resource/Misterbianco
+2014-07-08 18:29:27 INFO  CiceroFacade:225 - Place name before: Catania, Italy, place name after disambiguation: Catania, uri: http://dbpedia.org/resource/Catania
+2014-07-08 18:29:27 INFO  CiceroFacade:225 - Place name before: Roma Termini, place name after disambiguation: Roma Termini railway station, uri: http://dbpedia.org/resource/Roma_Termini_railway_station
+2014-07-08 18:29:27 INFO  CiceroFacade:225 - Place name before: La Caravella, place name after disambiguation: La Caravella, uri: 
+2014-07-08 18:29:27 INFO  CiceroFacade:225 - Place name before: Grand Hotel Sofia, Noto, place name after disambiguation: Noto, uri: http://dbpedia.org/resource/Noto
+2014-07-08 18:29:27 INFO  CiceroFacade:225 - Place name before: Badeschiff Berlin, place name after disambiguation: Badeschiff, uri: http://dbpedia.org/resource/Badeschiff
+2014-07-08 18:29:27 INFO  CiceroFacade:225 - Place name before: Mauerpark, place name after disambiguation: Mauerpark, uri: http://dbpedia.org/resource/Mauerpark
+2014-07-08 18:29:36 INFO  CiceroFacade:225 - Place name before: Due di Coppe, place name after disambiguation: Due di Coppe, uri: 
+2014-07-08 18:29:36 INFO  CiceroFacade:225 - Place name before: Schlesische Straße, Berlin Kreuzberg, place name after disambiguation: Kreuzberg, uri: http://dbpedia.org/resource/Kreuzberg
+2014-07-08 18:29:36 INFO  CiceroFacade:225 - Place name before: Aeroporto Federico Fellini Rimini, place name after disambiguation: Rimini, uri: http://dbpedia.org/resource/Rimini
+2014-07-08 18:29:36 INFO  CiceroFacade:225 - Place name before: Aeroporto Cristoforo Colombo, place name after disambiguation: Genoa Airport, uri: http://dbpedia.org/resource/Genoa_Cristoforo_Colombo_Airport
+2014-07-08 18:29:36 INFO  CiceroFacade:225 - Place name before: Fiera Internazionale di Genova, place name after disambiguation: Genoa, uri: http://dbpedia.org/resource/Genoa
+2014-07-08 18:29:36 INFO  CiceroFacade:225 - Place name before: Starhotels President - Genova, place name after disambiguation: Genoa, uri: http://dbpedia.org/resource/Genoa
+2014-07-08 18:29:36 INFO  CiceroFacade:225 - Place name before: Genova, Italy, place name after disambiguation: Genoa, uri: http://dbpedia.org/resource/Genoa
+2014-07-08 18:29:36 INFO  CiceroFacade:225 - Place name before: Castiglione di Sicilia, place name after disambiguation: Castiglione di Sicilia, uri: http://dbpedia.org/resource/Castiglione_di_Sicilia
+2014-07-08 18:29:36 INFO  CiceroFacade:225 - Place name before: Haiku - Cucina Naturale - Fan Page, place name after disambiguation: Haiku - Cucina Naturale - Fan Page, uri: 
+2014-07-08 18:29:36 INFO  CiceroFacade:225 - Place name before: Ramacca, place name after disambiguation: Ramacca, uri: http://dbpedia.org/resource/Ramacca
+2014-07-08 18:29:37 INFO  CiceroFacade:225 - Place name before: Wyeth Lederle S.P.A (Pfizer Group), place name after disambiguation: Wyeth Lederle S.P.A (Pfizer Group), uri: 
+2014-07-08 18:29:37 INFO  CiceroFacade:225 - Place name before: Circolo Pd Ramacca, place name after disambiguation: Ramacca, uri: http://dbpedia.org/resource/Ramacca
+2014-07-08 18:29:37 INFO  CiceroFacade:225 - Place name before: Ragusa Ibla, place name after disambiguation: Ragusa Ibla, uri: 
+2014-07-08 18:29:37 INFO  CiceroFacade:225 - Place name before: Hotel Mediterraneo Palace Best Western, place name after disambiguation: Hotel Mediterraneo Palace Best Western, uri: 
+2014-07-08 18:29:37 INFO  CiceroFacade:225 - Place name before: Hotel Il Principe, place name after disambiguation: Il Principe Hotel, uri: 
+2014-07-08 18:29:37 INFO  CiceroFacade:225 - Place name before: Haiku, place name after disambiguation: Haiku, uri: 
+2014-07-08 18:29:37 INFO  CiceroFacade:225 - Place name before: Piedimonte Etneo, place name after disambiguation: Piedimonte Etneo, uri: http://dbpedia.org/resource/Piedimonte_Etneo
+2014-07-08 18:29:37 INFO  CiceroFacade:225 - Place name before: Circolo PD Adrano, place name after disambiguation: Circolo PD Adrano, uri: 
+2014-07-08 18:29:37 INFO  CiceroFacade:225 - Place name before: Hotel Radisson Blu Hotel Roma, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-07-08 18:29:37 INFO  CiceroFacade:225 - Place name before: Da Giggetto, place name after disambiguation: Trattoria da Giggetto, uri: 
+2014-07-08 18:29:37 INFO  CiceroFacade:225 - Place name before: Partito Democratico Unione Provinciale Catania, place name after disambiguation: Catania, uri: http://dbpedia.org/resource/Catania
+2014-07-08 18:29:37 INFO  CiceroFacade:225 - Place name before: Scenario Pubblico, place name after disambiguation: Scenario Pubblico, uri: 
+2014-07-08 18:29:37 INFO  CiceroFacade:225 - Place name before: Via Teatro Massimo/Piazza Vincenzo Bellini, place name after disambiguation: Via Teatro Massimo/Piazza Vincenzo Bellini, uri: 
+2014-07-08 18:29:38 INFO  CiceroFacade:225 - Place name before: Scenapparente, place name after disambiguation: Scenapparente, uri: 
+2014-07-08 18:29:38 INFO  CiceroFacade:225 - Place name before: A Casa, place name after disambiguation: A Casa, uri: 
+2014-07-08 18:29:38 INFO  CiceroFacade:129 - 1054474223 processing user friend 220
+2014-07-08 18:29:38 INFO  CiceroFacade:129 - 1054474223 processing user friend 221
+2014-07-08 18:29:39 INFO  CiceroFacade:225 - Place name before: Reggio di Calabria, place name after disambiguation: Reggio Calabria, uri: http://dbpedia.org/resource/Reggio_Calabria
+2014-07-08 18:29:39 INFO  CiceroFacade:225 - Place name before: Rome, Italy, place name after disambiguation: Rome, uri: http://dbpedia.org/resource/Rome
+2014-07-08 18:29:39 INFO  CiceroFacade:129 - 1054474223 processing user friend 222
+2014-07-08 18:29:40 INFO  CiceroFacade:225 - Place name before: Rosarno, place name after disambiguation: Rosarno, uri: http://dbpedia.org/resource/Rosarno
+2014-07-08 18:29:40 INFO  CiceroFacade:225 - Place name before: Teatro Annibale Di Francia, place name after disambiguation: Teatro Annibale Di Francia, uri: 
+2014-07-08 18:29:40 INFO  CiceroFacade:129 - 1054474223 processing user friend 223
+2014-07-08 18:29:41 INFO  CiceroFacade:225 - Place name before: Facoltà Di Scienze Della Formazione, place name after disambiguation: Facoltà Di Scienze Della Formazione, uri: 
+2014-07-08 18:29:41 INFO  CiceroFacade:225 - Place name before: A Mare A Ganzirri sl Mio Masso...*.*, place name after disambiguation: A Mare A Ganzirri sl Mio Masso...*.*, uri: 
+2014-07-08 18:29:41 INFO  CiceroFacade:225 - Place name before: Caicco!!, place name after disambiguation: Caicco!!, uri: 
+2014-07-08 18:29:41 INFO  CiceroFacade:129 - 1054474223 processing user friend 224
+2014-07-08 18:29:46 INFO  CiceroFacade:225 - Place name before: Quarto di luna-windsurf club, place name after disambiguation: Quarto di luna-windsurf club, uri: 
+2014-07-08 18:29:46 INFO  CiceroFacade:225 - Place name before: Via Alessandro Manzoni, place name after disambiguation: Via Alessandro Manzoni, uri: 
+2014-07-08 18:29:46 INFO  CiceroFacade:225 - Place name before: Meridien Beach Lounge, place name after disambiguation: Meridien Beach Lounge, uri: 
+2014-07-08 18:29:46 INFO  CiceroFacade:225 - Place name before: Gli Antenati Pub, place name after disambiguation: Gli Antenati Pub, uri: 
+2014-07-08 18:29:46 INFO  CiceroFacade:225 - Place name before: Ertè Cafè, place name after disambiguation: Ertè Cafè, uri: 
+2014-07-08 18:29:46 INFO  CiceroFacade:225 - Place name before: Lucky, place name after disambiguation: Lucky, uri: 
+2014-07-08 18:29:46 INFO  CiceroFacade:225 - Place name before: Musolino, place name after disambiguation: Musolino, uri: 
+2014-07-08 18:29:47 INFO  CiceroFacade:225 - Place name before: Vintage ;), place name after disambiguation: Vintage ;), uri: 
+2014-07-08 18:29:47 INFO  CiceroFacade:225 - Place name before: Caffé Le Roi, place name after disambiguation: Caffé Le Roi, uri: 
+2014-07-08 18:29:47 INFO  CiceroFacade:225 - Place name before: Messina, Italy, place name after disambiguation: Messina, uri: http://dbpedia.org/resource/Messina
+2014-07-08 18:29:47 INFO  CiceroFacade:225 - Place name before: Naples, Italy, place name after disambiguation: Naples, uri: http://dbpedia.org/resource/Naples
+2014-07-08 18:29:47 INFO  CiceroFacade:225 - Place name before: Palermo, Italy, place name after disambiguation: Palermo, uri: http://dbpedia.org/resource/Palermo
+2014-07-08 18:29:47 INFO  CiceroFacade:225 - Place name before: Messina, place name after disambiguation: Messina, uri: http://dbpedia.org/resource/Messina
+2014-07-08 18:29:47 INFO  CiceroFacade:225 - Place name before: Blu Sky, place name after disambiguation: Blu Sky, uri: 
+2014-07-08 18:29:47 INFO  CiceroFacade:225 - Place name before: Isole Eolie, place name after disambiguation: Isole Eolie, uri: 
+

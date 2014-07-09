@@ -89,6 +89,7 @@ http://www.html.it/articoli/interazione-con-facebook/
 		CiceroFacade ciceroFacade = injector.getInstance(CiceroFacade.class);
 		CypherRepository cypherRepository = injector.getInstance(CypherRepository.class);
 		cypherRepository.setDbPath("data/db/db_"+ user.getId()+".graph");
+//		cypherRepository.setDbPath("data/db/db_"+ "1054474223"+".graph");
 		cypherRepository.setDbPath(request.getServletContext().getRealPath("/")+cypherRepository.getDbPath());
 		System.out.println(cypherRepository.getDbPath());
 		
