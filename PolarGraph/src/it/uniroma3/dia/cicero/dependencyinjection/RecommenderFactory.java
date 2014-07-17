@@ -6,6 +6,7 @@ import it.uniroma3.dia.cicero.recommender.semantic.SemanticBaseRecommender;
 import it.uniroma3.dia.cicero.recommender.semantic.SemanticCleverRecommender;
 import it.uniroma3.dia.cicero.recommender.semantic.SemanticCloserPlacesRecommender;
 import it.uniroma3.dia.cicero.recommender.social.NaiveSocialRecommender;
+import it.uniroma3.dia.cicero.recommender.social.RandomSocialRecommender;
 import it.uniroma3.dia.cicero.recommender.social.SelectedCategoriesCollaborativeFilteringSocialRecommender;
 import it.uniroma3.dia.cicero.recommender.social.SelectedCategoriesSocialRecommender;
 
@@ -23,7 +24,9 @@ public class RecommenderFactory {
 		case "naive":
 			recommender = injector.getInstance(NaiveSocialRecommender.class);
 			break;
-
+		case "randomsocial":
+			recommender = injector.getInstance(RandomSocialRecommender.class);
+			break;
 		case "semanticbase":
 			recommender = injector.getInstance(SemanticBaseRecommender.class);
 			break;

@@ -74,7 +74,7 @@ th,td {
 
 <br>
 <br>
-<h2>This recommender helped me discover a new place in the list I didn't know before</h2>
+<h2>This recommender helped me discover a new item in the list I didn't know before</h2>
 <input type="radio" name="novelty" value="0">Not applicable(no results)</input>
 <input type="radio" name="novelty" value="1" required>Strongly disagree</input>
 <input type="radio" name="novelty" value="2">Disagree</input>
@@ -84,7 +84,7 @@ th,td {
 
 <br>
 <br>
-<h2>This recommender helped me discovered a new place in the list and I really want to watch it live.</h2>
+<h2>This recommender helped me discovered a new item in the list and I really want to watch it live.</h2>
 <input type="radio" name="serendipity" value="0">Not applicable(no results)</input>
 <input type="radio" name="serendipity" value="1" required>Strongly disagree</input>
 <input type="radio" name="serendipity" value="2">Disagree</input>

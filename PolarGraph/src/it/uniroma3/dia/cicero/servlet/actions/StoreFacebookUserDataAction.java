@@ -16,14 +16,18 @@ public class StoreFacebookUserDataAction extends Action {
 		Injector injector = (Injector) request.getSession().getAttribute("injector");
 		User user = (User)request.getSession().getAttribute("facebookUser");
 		String fbUserId = user.getId();
-		CiceroFacade polarController = injector.getInstance(CiceroFacade.class);
+		CiceroFacade ciceroFacade = injector.getInstance(CiceroFacade.class);
 		
 		//store the user in the evaluation relational db
-		polarController.storeUserDataInEvaluationRepository(user);
+		ciceroFacade.storeUserDataInEvaluationRepository(user);
 		//store my info on neo4j
-		polarController.readUserFromFacebookAndStore(fbUserId);
-		polarController.readVisitedPlacesFromFacebookAndStore(fbUserId);
-		polarController.readFriendsFromFacebookAndStore(fbUserId);
+		try{
+		ciceroFacade.readUserFromFacebookAndStore(fbUserId);
+		ciceroFacade.readVisitedPlacesFromFacebookAndStore(fbUserId);
+		ciceroFacade.readFriendsFromFacebookAndStore(fbUserId);
+		}catch(Exception e){
+			//lock exception
+		}
 		return "userDataStored";
 	}
 

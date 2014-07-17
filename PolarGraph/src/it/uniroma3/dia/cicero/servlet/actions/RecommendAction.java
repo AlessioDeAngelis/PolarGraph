@@ -43,6 +43,7 @@ public class RecommendAction extends Action {
 		RecommenderFactory recommenderFactory = injector.getInstance(RecommenderFactory.class);
 		
 		/* let the system find the user favourite categories*/
+		try{
 		List<Category> userFavouriteCategories = ciceroFacade.calculateUserFavouriteCategories(userId);
 		categories = new ArrayList<String>();
 		//TODO uncomment after this tst
@@ -89,7 +90,9 @@ public class RecommendAction extends Action {
 		}
 		List<RecommendedObject> objs = ciceroFacade.recommendPlace(userId);
 		request.getSession().setAttribute("recommendedObjects", objs);
-
+		}catch(Exception e ){//Lock exceptions. remove it if you are working with neo4j server
+			
+		}
 		return "recommended_objects_returned";
 	}
 }

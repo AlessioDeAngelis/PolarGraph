@@ -202,7 +202,7 @@ public class CiceroFacade {
 		// this.recommender.recommendObject(fbUserId);
 		List<RecommendedObject> rankedPlaces = this.recommenderChainManager
 				.startRecommendationChain(fbUserId);
-
+		
 		for (RecommendedObject rankedPlace : rankedPlaces) {// TODO: togliere i
 															// commenti
 			 logger.info("Place Name: " + rankedPlace.getName() + ", uri: "

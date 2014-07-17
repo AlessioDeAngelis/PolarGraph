@@ -674,6 +674,46 @@ public class CypherRepository extends Repository {
 	}
 	
 	/**
+	 * 
+	 * @return list of all places in the db	 * 
+	 * */
+	public List<PolarPlace> findAllPlaces() {
+		List<PolarPlace> placesAndVisitors = new ArrayList<>();
+		ExecutionResult result = null;
+		Transaction tx = graphDb.beginTx();
+		Map<String, Object> params = null;
+		String query = "";
+		try {
+			
+				// constructing the query string
+				query = "MATCH (place:Place) return place";
+				
+				logger.debug(query);			
+
+			// querying the engine
+			result = this.engine.execute(query);
+//			logger.info(result.dumpToString());
+			PolarPlace place = null;
+			for (Map<String, Object> row : result) {
+				Node nodePlace = (Node) row.get("place");
+				String nodePlaceId = (String) nodePlace.getProperty("id", "");
+				String nodePlaceName = (String) nodePlace.getProperty("name", "");
+				String nodePlaceUri = (String) nodePlace.getProperty("uri", "");				
+				place = new PolarPlace();
+				place.setId(nodePlaceId);
+				place.setUri(nodePlaceUri);
+				place.setName(nodePlaceName);
+				placesAndVisitors.add(place);
+			}
+
+			tx.success();
+		} finally {
+			tx.close();
+		}
+		return placesAndVisitors;
+	}
+	
+	/**
 	 * @param userId
 	 *            the facebook id of the currentUser
 	 * @param categoryNamesList

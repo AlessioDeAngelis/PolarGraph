@@ -20,7 +20,11 @@ public class StoreFacebookFriendDataAction extends Action {
 		CiceroFacade polarController = injector.getInstance(CiceroFacade.class);
 		
 		//store my friends info info
+		try{
 		polarController.readPlacesVisitedByFriendsAndStore(fbUserId, Integer.parseInt(section));
+		}catch(Exception e){
+			//lock exception
+		}
 		return "friendsDataStored";
 	}
 

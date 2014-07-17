@@ -17,7 +17,8 @@
 <h1>Choose the recommenders </h1>
 
 <h3>There are several recommenders to try and test. <br> Please answer to the questions after you tested a recommender,  <br> so we can evaluate the system :) 
-Some recommenders can take a long,  <br> we plase ask you to test at least recommender #1, #2, #5, #6,#9,#10,#11,#12.  <br> If you have more time you can test even the others :) Thank you!  <br> </h3>
+Some recommenders can take a long,  <br> we plase ask you to test at least recommender #0,#1, #2, #5, #6,#9,#10,#11,#12.  <br> If you have more time you can test even the others :) Thank you!  <br> </h3>
+
 
 <p>RECOMMENDER 1:<form action="recommend.do" method="post">
 <!-- <b><p>Select a social Recommender</p></b> -->
@@ -35,6 +36,11 @@ Some recommenders can take a long,  <br> we plase ask you to test at least recom
 <input  readonly name="rankerSocialType" value="selected_categories_social"/>
 <input readonly name="rankerDbpediaType" value="semantic_closer_places"/>
 <input readonly name="recommenderNumber" value="1"/>
+<input type="submit" value="Recommend" name="conferma" />
+</form>
+<p>RECOMMENDER 0:<form action="recommend.do" method="post">
+<input readonly name="rankerSocialType" value="randomsocial"/>
+<input readonly name="recommenderNumber" value="0"/>
 <input type="submit" value="Recommend" name="conferma" />
 </form>
 </p>
